@@ -1,0 +1,989 @@
+{
+  "num_pages": 2,
+  "n_widgets": 64,
+  "widgets": [
+    {
+      "name": "topmostSubform[0].Page1[0].f1_01[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        36.0,
+        106.0,
+        373.6,
+        120.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_02[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        374.4,
+        106.0,
+        468.0,
+        120.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_03[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        468.0,
+        106.0,
+        576.0,
+        120.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_04[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        36.0,
+        130.0,
+        576.0,
+        144.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_05[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        36.0,
+        154.0,
+        576.0,
+        168.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_06[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        36.0,
+        178.0,
+        576.0,
+        192.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_07[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        36.0,
+        202.0,
+        576.0,
+        216.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_08[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        36.0,
+        226.0,
+        424.0,
+        240.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_09[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        430.8,
+        228.0,
+        460.8,
+        240.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_10[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        467.8,
+        228.0,
+        576.0,
+        240.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_1[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        64.8,
+        266.0,
+        72.8,
+        274.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_1[1]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        64.8,
+        278.0,
+        72.8,
+        286.0
+      ],
+      "button_states": {
+        "normal": [
+          "2"
+        ],
+        "down": [
+          "2",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_1[2]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        64.8,
+        290.0,
+        72.8,
+        298.0
+      ],
+      "button_states": {
+        "normal": [
+          "3"
+        ],
+        "down": [
+          "3",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_1[3]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        64.8,
+        302.0,
+        72.8,
+        310.0
+      ],
+      "button_states": {
+        "normal": [
+          "4"
+        ],
+        "down": [
+          "4",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_1[4]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        64.8,
+        314.0,
+        72.8,
+        322.0
+      ],
+      "button_states": {
+        "normal": [
+          "5"
+        ],
+        "down": [
+          "5",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_1[5]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        64.8,
+        326.0,
+        72.8,
+        334.0
+      ],
+      "button_states": {
+        "normal": [
+          "6"
+        ],
+        "down": [
+          "6",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_1[6]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        64.8,
+        338.0,
+        72.8,
+        346.0
+      ],
+      "button_states": {
+        "normal": [
+          "7"
+        ],
+        "down": [
+          "7",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_11[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        147.6,
+        336.0,
+        576.0,
+        348.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_12[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        288.8,
+        348.0,
+        410.4,
+        360.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_13[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        504.8,
+        360.0,
+        576.0,
+        372.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_14[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        64.8,
+        372.0,
+        576.0,
+        384.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_2[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        216.0,
+        404.2,
+        224.0,
+        412.2
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_3[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        273.6,
+        404.2,
+        281.6,
+        412.2
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_4[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        316.8,
+        404.2,
+        324.8,
+        412.2
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_5[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        367.2,
+        404.2,
+        375.2,
+        412.2
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_6[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        511.2,
+        404.2,
+        519.2,
+        412.2
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_7[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        64.8,
+        416.2,
+        72.8,
+        424.2
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_8[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        122.4,
+        416.2,
+        130.4,
+        424.2
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_15[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        205.2,
+        414.0,
+        576.0,
+        426.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_9[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        269.4,
+        428.0,
+        277.4,
+        436.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_10[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        348.6,
+        428.0,
+        356.6,
+        436.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_11[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        406.2,
+        428.0,
+        414.2,
+        436.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_12[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        463.8,
+        428.0,
+        471.8,
+        436.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_13[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        75.0,
+        440.0,
+        83.0,
+        448.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_14[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        183.0,
+        440.0,
+        191.0,
+        448.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_15[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        240.6,
+        440.0,
+        248.6,
+        448.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_16[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        298.2,
+        440.0,
+        306.2,
+        448.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_16[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        356.4,
+        438.0,
+        576.0,
+        450.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].c1_17[0]",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        564.8,
+        452.0,
+        572.8,
+        460.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_17[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        298.8,
+        462.0,
+        576.0,
+        474.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page1[0].f1_18[0]",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        64.8,
+        474.0,
+        576.0,
+        486.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].c2_1[0]",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        564.8,
+        86.0,
+        572.8,
+        94.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].c2_2[0]",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        64.8,
+        110.0,
+        72.8,
+        118.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].c2_2[1]",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        64.8,
+        122.0,
+        72.8,
+        130.0
+      ],
+      "button_states": {
+        "normal": [
+          "2"
+        ],
+        "down": [
+          "2",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].c2_2[2]",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        64.8,
+        134.0,
+        72.8,
+        142.0
+      ],
+      "button_states": {
+        "normal": [
+          "3"
+        ],
+        "down": [
+          "3",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_01[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        147.6,
+        132.0,
+        576.0,
+        144.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_02[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        64.8,
+        144.0,
+        576.0,
+        156.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].c2_3[0]",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        564.8,
+        188.0,
+        572.8,
+        196.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_03[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        64.8,
+        210.0,
+        576.0,
+        222.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_04[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        64.8,
+        222.0,
+        576.0,
+        234.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].c2_4[0]",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        564.8,
+        266.0,
+        572.8,
+        274.0
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_05[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        64.8,
+        276.0,
+        576.0,
+        288.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_06[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        64.8,
+        288.0,
+        576.0,
+        300.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_07[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        36.0,
+        328.0,
+        395.2,
+        342.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_08[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        397.0,
+        328.0,
+        576.0,
+        342.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_09[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        36.0,
+        352.0,
+        395.2,
+        366.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_10[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.0,
+        352.0,
+        576.0,
+        366.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_11[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        36.0,
+        376.0,
+        337.6,
+        390.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_12[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        338.4,
+        376.0,
+        403.2,
+        390.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].Time_ReadOrder[0].f2_13[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        403.2,
+        376.0,
+        446.4,
+        390.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].Time_ReadOrder[0].c2_5[0]",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        451.4,
+        368.5,
+        459.4,
+        376.5
+      ],
+      "button_states": {
+        "normal": [
+          "1"
+        ],
+        "down": [
+          "1",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].Time_ReadOrder[0].c2_5[1]",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        451.4,
+        379.5,
+        459.4,
+        387.5
+      ],
+      "button_states": {
+        "normal": [
+          "2"
+        ],
+        "down": [
+          "2",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_14[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        483.4,
+        376.0,
+        576.0,
+        390.0
+      ]
+    },
+    {
+      "name": "topmostSubform[0].Page2[0].f2_15[0]",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        316.8,
+        438.0,
+        453.6,
+        450.0
+      ]
+    }
+  ]
+}

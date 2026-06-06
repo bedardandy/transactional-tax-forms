@@ -1,0 +1,1594 @@
+{
+  "num_pages": 3,
+  "n_widgets": 129,
+  "widgets": [
+    {
+      "name": "Clear Form",
+      "type": "Button",
+      "page": 0,
+      "rect": [
+        40.2,
+        16.5,
+        112.2,
+        34.5
+      ]
+    },
+    {
+      "name": "Print Form",
+      "type": "Button",
+      "page": 0,
+      "rect": [
+        497.7,
+        16.8,
+        569.7,
+        34.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Year from",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        131.8,
+        78.6,
+        193.0,
+        96.6
+      ]
+    },
+    {
+      "name": "Fidu 1040 Year to",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        259.9,
+        78.4,
+        369.1,
+        96.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Amended return",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        397.6,
+        78.8,
+        415.6,
+        96.8
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Name of estate or trust",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        44.4,
+        102.7,
+        369.0,
+        120.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Name and title of fiduciary trustee",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        44.4,
+        137.6,
+        369.0,
+        155.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Address of fiduciary",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        44.4,
+        174.2,
+        348.0,
+        192.2
+      ]
+    },
+    {
+      "name": "Fidu 1041 City",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        44.4,
+        209.7,
+        261.3,
+        227.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 State",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        283.5,
+        210.0,
+        304.3,
+        228.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Zip code",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        314.1,
+        209.8,
+        369.0,
+        227.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Estate/trust/qft/ein",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        452.6,
+        102.8,
+        570.3,
+        120.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 ss or EIN number",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        452.9,
+        137.5,
+        569.6,
+        155.5
+      ]
+    },
+    {
+      "name": "FIdu 1041 Contact persons first name",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        390.0,
+        173.8,
+        462.7,
+        191.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Contact persons last name",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        476.4,
+        173.6,
+        568.1,
+        191.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Area code",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        441.0,
+        209.2,
+        471.4,
+        227.2
+      ]
+    },
+    {
+      "name": "Fidu 1041 Telephone number",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        485.5,
+        209.2,
+        568.1,
+        227.2
+      ]
+    },
+    {
+      "name": "Fidu DE",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        125.1,
+        245.3,
+        138.8,
+        264.2
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "decedent ssn",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        140.0,
+        265.5,
+        228.6,
+        281.5
+      ]
+    },
+    {
+      "name": "Qualified Funeral Trust.1",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        237.6,
+        246.2,
+        251.1,
+        264.2
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Qualified Disability Trust.1",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        370.6,
+        245.3,
+        384.3,
+        264.2
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "bankruptcy ch 7.0",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        457.2,
+        246.2,
+        470.7,
+        264.2
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Simple Trust",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        46.9,
+        282.3,
+        60.5,
+        301.0
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Complex Trust",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        125.1,
+        281.6,
+        138.8,
+        301.0
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "ESBT",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        237.6,
+        282.2,
+        251.3,
+        301.0
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Pooled Income",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        371.1,
+        281.6,
+        384.8,
+        301.0
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "bankruptcy ch 11",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        456.7,
+        282.2,
+        470.2,
+        301.0
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Resident",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        149.0,
+        305.9,
+        167.0,
+        323.9
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Nonresident",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        268.6,
+        305.9,
+        286.6,
+        323.9
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Initial return",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        405.5,
+        305.9,
+        423.5,
+        323.9
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Final Return",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        492.2,
+        305.9,
+        510.2,
+        323.9
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Federal taxable income",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        432.4,
+        329.9,
+        547.9,
+        347.9
+      ]
+    },
+    {
+      "name": "Fidu 1041 adjustment",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        432.1,
+        354.8,
+        547.9,
+        372.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Maine Taxable Income",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        432.9,
+        378.5,
+        547.9,
+        396.5
+      ]
+    },
+    {
+      "name": "Fidu 1041 Maine income tax",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        438.1,
+        402.7,
+        547.9,
+        420.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Adjustments tax",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        437.0,
+        426.1,
+        547.9,
+        444.1
+      ]
+    },
+    {
+      "name": "Fidu 1041 Adjusted Maine income tax",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        436.8,
+        449.6,
+        547.9,
+        467.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Tax payments",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        436.6,
+        473.8,
+        547.9,
+        491.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Estimated tax payments",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        437.2,
+        498.4,
+        547.9,
+        516.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Refunable tax credits",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        437.2,
+        522.3,
+        547.9,
+        540.3
+      ]
+    },
+    {
+      "name": "Fidu 1041 Total payments",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        436.4,
+        545.0,
+        547.9,
+        563.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Tax balance due",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        468.7,
+        570.1,
+        547.9,
+        588.1
+      ]
+    },
+    {
+      "name": "Fidu 1041 Check here",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        344.5,
+        595.3,
+        362.5,
+        613.3
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Penalty for underpayment",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        436.0,
+        593.7,
+        547.9,
+        611.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Total amount due",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        436.4,
+        618.1,
+        547.9,
+        636.1
+      ]
+    },
+    {
+      "name": "Fidu 1041 Overpayment",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        437.4,
+        642.3,
+        547.9,
+        660.3
+      ]
+    },
+    {
+      "name": "Fidu 1041 Credited",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        202.5,
+        666.8,
+        290.3,
+        684.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Refunded",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        436.8,
+        666.0,
+        547.9,
+        684.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Check if refund going outside United States",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        143.5,
+        725.6,
+        161.5,
+        743.6
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Routing numbers",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        302.5,
+        700.6,
+        433.4,
+        718.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Checking account number",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        302.6,
+        725.6,
+        546.9,
+        743.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Estate/trust EIN",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        39.9,
+        64.9,
+        149.3,
+        82.9
+      ]
+    },
+    {
+      "name": "Fidu 1041 Additions, Income from Municipal and state bonds",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        92.9,
+        546.3,
+        110.9
+      ]
+    },
+    {
+      "name": "Fidu 1041 Additions, Net operating loss",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        116.4,
+        546.3,
+        134.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Additions, Maine public retirement contributions",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        138.3,
+        546.3,
+        156.3
+      ]
+    },
+    {
+      "name": "Fidu 1041 Additions, Qualified income deduction add-back",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        162.9,
+        546.3,
+        180.9
+      ]
+    },
+    {
+      "name": "Fidu 1041 Additions, Bonus depreciation add-back",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        187.6,
+        546.3,
+        205.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Additions, Capital investment credit bonus depreciation add-back",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        210.7,
+        546.3,
+        228.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Additions, Other",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        259.0,
+        546.3,
+        277.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Total additions",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        307.7,
+        546.3,
+        325.7
+      ]
+    },
+    {
+      "name": "FIdu 1041 Government Bond Interest",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        332.5,
+        546.3,
+        350.5
+      ]
+    },
+    {
+      "name": "Fidu 1041 Subtractions, SS and railroad retirement benefits",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        356.6,
+        546.3,
+        374.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Subtractions, Maine public retirement",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        379.5,
+        546.3,
+        397.5
+      ]
+    },
+    {
+      "name": "Fidu 1041 Subtractions, Bonus depreciation",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        403.0,
+        546.3,
+        421.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Subtractions, Medical marijuana",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        427.3,
+        546.3,
+        445.3
+      ]
+    },
+    {
+      "name": "Fidu 1041 NOL",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        451.2,
+        546.3,
+        469.2
+      ]
+    },
+    {
+      "name": "Fidu 1041 Subtractions, Other (see instructions)",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        474.4,
+        546.3,
+        492.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Total deductions",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        522.3,
+        546.3,
+        540.3
+      ]
+    },
+    {
+      "name": "Fidu 1041 Net fidu adjustment",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        546.2,
+        546.3,
+        564.2
+      ]
+    },
+    {
+      "name": "Do you want to allow someone to discuss return with MRS",
+      "type": "RadioButton",
+      "page": 1,
+      "rect": [
+        392.1,
+        586.9,
+        405.8,
+        604.9
+      ],
+      "button_states": {
+        "normal": [
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Designee's name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        147.1,
+        606.4,
+        244.9,
+        624.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Area code",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        287.9,
+        606.6,
+        310.5,
+        624.6
+      ]
+    },
+    {
+      "name": "Do you want to allow someone to discuss return with MRS",
+      "type": "RadioButton",
+      "page": 1,
+      "rect": [
+        521.1,
+        585.9,
+        535.1,
+        603.9
+      ],
+      "button_states": {
+        "normal": [
+          "No"
+        ],
+        "down": [
+          "No",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "Fidu 1041 Phone number",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        319.6,
+        605.6,
+        398.8,
+        623.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 PIN number",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        508.5,
+        605.6,
+        575.7,
+        623.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Date",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        292.3,
+        642.6,
+        404.4,
+        660.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Date estate or trust created",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        438.6,
+        643.2,
+        548.7,
+        661.2
+      ]
+    },
+    {
+      "name": "Fidu 1041 Date1",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        292.2,
+        670.9,
+        404.5,
+        688.9
+      ]
+    },
+    {
+      "name": "Fidu 1041 Print preparer's name",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        49.3,
+        701.4,
+        282.5,
+        719.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Preparer's phone number",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        294.3,
+        701.4,
+        422.2,
+        719.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Preparer's social or PTIN",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        438.3,
+        701.4,
+        548.3,
+        719.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Additions, certain gains on installment sales",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        467.1,
+        234.8,
+        546.3,
+        252.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3 Estate/Trust EIN",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        134.3,
+        64.7,
+        284.3,
+        86.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3 name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        63.2,
+        148.0,
+        176.8,
+        166.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3 share of income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        193.6,
+        146.6,
+        304.4,
+        164.6
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3 percent",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        308.9,
+        146.4,
+        339.1,
+        164.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3 state",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        363.6,
+        147.2,
+        384.4,
+        165.2
+      ]
+    },
+    {
+      "name": "Fidu1041 Page 3 Fiduciary ss or EIN number",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        399.6,
+        147.5,
+        462.3,
+        165.5
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3 Maine source income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        480.7,
+        147.7,
+        575.3,
+        165.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3A name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        63.2,
+        170.4,
+        176.8,
+        188.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3A share of income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        194.2,
+        169.4,
+        304.6,
+        187.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3B percent%",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        308.9,
+        170.4,
+        339.1,
+        188.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3A state",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        363.6,
+        169.4,
+        384.4,
+        187.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3A Fiduciary ss or EIN number",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        399.6,
+        169.4,
+        462.3,
+        187.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3A Maine source income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        480.7,
+        171.0,
+        575.3,
+        189.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3B name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        63.2,
+        193.4,
+        176.8,
+        211.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3B share of income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        193.6,
+        192.4,
+        304.4,
+        210.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3A percent",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        308.9,
+        192.4,
+        339.1,
+        210.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3B state",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        363.6,
+        192.4,
+        384.4,
+        210.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3B Fiduciary ss or EIN number",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        399.6,
+        192.7,
+        462.3,
+        210.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3C maine source income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        480.7,
+        192.7,
+        575.3,
+        210.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3C name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        63.2,
+        215.7,
+        176.8,
+        233.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3C share of income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        193.6,
+        215.7,
+        304.4,
+        233.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3C percent",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        308.9,
+        214.7,
+        339.1,
+        232.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3C state",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        363.6,
+        214.7,
+        384.4,
+        232.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3C Fiduciary ss or EIN number",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        399.6,
+        214.7,
+        462.3,
+        232.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3D Maine source income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        480.7,
+        214.7,
+        575.3,
+        232.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3D name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        63.2,
+        237.7,
+        176.8,
+        255.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3D share of income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        193.6,
+        237.7,
+        304.4,
+        255.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3D percent",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        308.9,
+        238.3,
+        339.1,
+        255.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3D state",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        363.6,
+        237.7,
+        384.4,
+        255.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3D Fiduciary ss or EIN number",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        399.6,
+        237.7,
+        462.3,
+        255.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3E Maine source income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        480.7,
+        237.7,
+        575.3,
+        255.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3E name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        66.2,
+        259.7,
+        176.2,
+        278.9
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3E share of income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        193.6,
+        259.7,
+        304.4,
+        277.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3E percent",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        308.9,
+        259.7,
+        339.1,
+        277.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3F share of income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        193.6,
+        282.7,
+        304.4,
+        300.7
+      ]
+    },
+    {
+      "name": "Fidu 1041 Page 3F Maine source income",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        480.7,
+        283.1,
+        575.3,
+        301.1
+      ]
+    },
+    {
+      "name": "Fidu 1041 Schedule 3 1",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        462.6,
+        367.1,
+        543.4,
+        385.1
+      ]
+    },
+    {
+      "name": "Fidu 1041 Income taxed by",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        162.5,
+        391.0,
+        240.3,
+        409.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Schedule 3 1A",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        463.4,
+        391.0,
+        543.4,
+        409.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Schedule 3 1B",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        462.6,
+        415.0,
+        543.4,
+        433.0
+      ]
+    },
+    {
+      "name": "Fidu 1041 Schedule 3 1C",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        170.3,
+        453.4,
+        222.1,
+        471.4
+      ]
+    },
+    {
+      "name": "Fidu 1041 Schedule 3 1D",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        270.1,
+        453.6,
+        305.3,
+        471.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Schedule 3 1E",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        462.6,
+        452.8,
+        543.4,
+        470.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Schedule 3 1F",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        462.6,
+        474.8,
+        543.4,
+        492.8
+      ]
+    },
+    {
+      "name": "Fidu 1041 Schedule 3 1G",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        462.6,
+        498.8,
+        543.4,
+        516.8
+      ]
+    },
+    {
+      "name": "Print",
+      "type": "Button",
+      "page": 2,
+      "rect": [
+        473.0,
+        562.8,
+        545.0,
+        580.8
+      ]
+    },
+    {
+      "name": "Clear",
+      "type": "Button",
+      "page": 2,
+      "rect": [
+        43.0,
+        564.4,
+        115.0,
+        582.4
+      ]
+    }
+  ]
+}

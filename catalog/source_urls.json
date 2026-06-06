@@ -1,0 +1,28 @@
+{
+  "note": "Source PDFs are not redistributed here. Maine forms are public records of Maine Revenue Services; federal forms are public-domain works of the U.S. Government (IRS). Each is fetched on demand and verified byte-for-byte against catalog/pdf_manifest.json.",
+  "domains": {
+    "corporations": ["MRS-1120ME", "MRS-941ME", "MRS-900ME", "MRS-W4ME", "IRS-SS-4", "IRS-2553", "IRS-8832"],
+    "real-estate": ["ME-RETTD"],
+    "probate": ["MRS-706ME", "MRS-700SOV", "MRS-1041ME", "IRS-706", "IRS-1041", "IRS-56"]
+  },
+  "cross_listed": {
+    "IRS-SS-4": ["corporations", "probate"],
+    "IRS-706": ["probate"]
+  },
+  "forms": {
+    "MRS-706ME": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/25_706ME_fillable_0.pdf",
+    "MRS-700SOV": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/25_700_SOV_ff.pdf",
+    "MRS-1041ME": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/20_1041me_dwnloadff.pdf",
+    "MRS-1120ME": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/24_1120me_downloadable_ff.pdf",
+    "MRS-941ME": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/25_941ME_ff.pdf",
+    "MRS-900ME": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/25_900ME_ff.pdf",
+    "MRS-W4ME": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/24_form_w-4me_ff.pdf",
+    "ME-RETTD": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2024-10/RETT_declaration_form.pdf",
+    "IRS-SS-4": "https://www.irs.gov/pub/irs-pdf/fss4.pdf",
+    "IRS-2553": "https://www.irs.gov/pub/irs-pdf/f2553.pdf",
+    "IRS-8832": "https://www.irs.gov/pub/irs-pdf/f8832.pdf",
+    "IRS-706": "https://www.irs.gov/pub/irs-pdf/f706.pdf",
+    "IRS-1041": "https://www.irs.gov/pub/irs-pdf/f1041.pdf",
+    "IRS-56": "https://www.irs.gov/pub/irs-pdf/f56.pdf"
+  }
+}

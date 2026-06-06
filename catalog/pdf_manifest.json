@@ -1,0 +1,104 @@
+{
+  "forms": {
+    "IRS-1041": {
+      "sha256": "95540fbdb580102735b89866554bb0b556d37f3e6c8781c677c8398db7908c10",
+      "bytes": 181366,
+      "num_pages": 3,
+      "has_acroform": true,
+      "url": "https://www.irs.gov/pub/irs-pdf/f1041.pdf"
+    },
+    "IRS-2553": {
+      "sha256": "b462579a45e4ce3877019b02ee159b11d5abee6e71a5a8c9d9271daa7ec25b66",
+      "bytes": 123289,
+      "num_pages": 4,
+      "has_acroform": true,
+      "url": "https://www.irs.gov/pub/irs-pdf/f2553.pdf"
+    },
+    "IRS-56": {
+      "sha256": "e5d5258289c677a091527e492491daf9d412149994dde10ea747152f001ae9d8",
+      "bytes": 92313,
+      "num_pages": 2,
+      "has_acroform": true,
+      "url": "https://www.irs.gov/pub/irs-pdf/f56.pdf"
+    },
+    "IRS-706": {
+      "sha256": "7cd9b5370e1eb29f89916a00fe4fd762b13f3244926a4d1d0818385e1415885d",
+      "bytes": 273746,
+      "num_pages": 5,
+      "has_acroform": true,
+      "url": "https://www.irs.gov/pub/irs-pdf/f706.pdf"
+    },
+    "IRS-8832": {
+      "sha256": "bc7f2715e631b5bc3fc60eedaace27f68bd71cfc9236589f1e08f600dc37507f",
+      "bytes": 544716,
+      "num_pages": 8,
+      "has_acroform": true,
+      "url": "https://www.irs.gov/pub/irs-pdf/f8832.pdf"
+    },
+    "IRS-SS-4": {
+      "sha256": "23d295529950b05979596cf58d559db6c433a4ec852407b1820265c117cb3ca2",
+      "bytes": 122921,
+      "num_pages": 2,
+      "has_acroform": true,
+      "url": "https://www.irs.gov/pub/irs-pdf/fss4.pdf"
+    },
+    "ME-RETTD": {
+      "sha256": "bf4b299bc203475985a1a250ede1f4c1330aa0e1347c6faceb5351c8e18c99f8",
+      "bytes": 331988,
+      "num_pages": 4,
+      "has_acroform": true,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2024-10/RETT_declaration_form.pdf"
+    },
+    "MRS-1041ME": {
+      "sha256": "6ead8e1f652725264a59fa90a8bb48b121faa321516faafb7fdba4450822d67e",
+      "bytes": 204769,
+      "num_pages": 3,
+      "has_acroform": true,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/20_1041me_dwnloadff.pdf"
+    },
+    "MRS-1120ME": {
+      "sha256": "6ff66647a90940fec3da549b60bc08879c24b3087b20422ff20e823dfe6dae7f",
+      "bytes": 1926383,
+      "num_pages": 3,
+      "has_acroform": true,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/24_1120me_downloadable_ff.pdf"
+    },
+    "MRS-700SOV": {
+      "sha256": "881fd7927b3a0c67ed7f4d3d05c6775498444fba6bed1acbe68d78882fadf753",
+      "bytes": 226072,
+      "num_pages": 2,
+      "has_acroform": true,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/25_700_SOV_ff.pdf"
+    },
+    "MRS-706ME": {
+      "sha256": "299ed40dd3d922403494df7136130e79dafd707c6cf6a20a64655db21ef938fb",
+      "bytes": 301827,
+      "num_pages": 3,
+      "has_acroform": true,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/25_706ME_fillable_0.pdf"
+    },
+    "MRS-900ME": {
+      "sha256": "62a4f72b90de633e73f94be90fe88ee7342f7fdd29649d28e37cab2d06b19f56",
+      "bytes": 1830928,
+      "num_pages": 1,
+      "has_acroform": true,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/25_900ME_ff.pdf"
+    },
+    "MRS-941ME": {
+      "sha256": "7861d454bc3a1d0dc8cf920532be4965d6fbb93e23dd7ca261cec01bc2db90e4",
+      "bytes": 1902346,
+      "num_pages": 3,
+      "has_acroform": true,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/25_941ME_ff.pdf"
+    },
+    "MRS-W4ME": {
+      "sha256": "4033ea2fcc3620cba73907e4a9d5a39dcdf8bbdb4255d30c596bf051c4270e8a",
+      "bytes": 1905330,
+      "num_pages": 3,
+      "has_acroform": true,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/24_form_w-4me_ff.pdf"
+    }
+  },
+  "count": 14,
+  "note": "SHA-256 of each official blank (Maine Revenue Services / IRS). Verified at fill time and by tools/check_upstream.py."
+}

@@ -1,0 +1,7 @@
+form_id: IRS-706
+title: "United States Estate (and GST) Tax Return"
+agency: "IRS"
+domain: probate
+num_pages: 5
+n_widgets: 316
+status: unmapped   # widgets.json captured; mapping.json/schema.json pending

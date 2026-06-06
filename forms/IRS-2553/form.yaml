@@ -1,0 +1,7 @@
+form_id: IRS-2553
+title: "Election by a Small Business Corporation (S corporation)"
+agency: "IRS"
+domain: corporations
+num_pages: 4
+n_widgets: 100
+status: unmapped   # widgets.json captured; mapping.json/schema.json pending

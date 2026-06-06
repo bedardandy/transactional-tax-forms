@@ -1,0 +1,1209 @@
+{
+  "num_pages": 3,
+  "n_widgets": 93,
+  "widgets": [
+    {
+      "name": "Clear",
+      "type": "Button",
+      "page": 0,
+      "rect": [
+        36.0,
+        12.2,
+        108.0,
+        32.4
+      ]
+    },
+    {
+      "name": "Print",
+      "type": "Button",
+      "page": 0,
+      "rect": [
+        504.0,
+        12.2,
+        576.0,
+        32.4
+      ]
+    },
+    {
+      "name": "Tax year begin",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        187.2,
+        66.1,
+        248.4,
+        84.2
+      ]
+    },
+    {
+      "name": "Tax year end",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        315.5,
+        66.1,
+        421.5,
+        84.2
+      ]
+    },
+    {
+      "name": "Name of Corporation",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        43.8,
+        95.8,
+        388.8,
+        113.8
+      ]
+    },
+    {
+      "name": "Fed Business Code",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        403.2,
+        95.8,
+        469.3,
+        113.8
+      ]
+    },
+    {
+      "name": "990T or 1120-H check box",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        547.2,
+        95.8,
+        561.6,
+        113.8
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Address",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        43.8,
+        131.5,
+        388.8,
+        149.5
+      ]
+    },
+    {
+      "name": "Fed Employer ID Number",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        403.2,
+        131.5,
+        505.1,
+        149.5
+      ]
+    },
+    {
+      "name": "State of Incorporation",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        540.0,
+        131.5,
+        562.3,
+        149.5
+      ]
+    },
+    {
+      "name": "City, Town or Post Office",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        43.8,
+        167.8,
+        344.9,
+        185.8
+      ]
+    },
+    {
+      "name": "State",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        356.7,
+        167.8,
+        377.7,
+        185.8
+      ]
+    },
+    {
+      "name": "Zip Code",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        388.8,
+        167.8,
+        439.8,
+        185.8
+      ]
+    },
+    {
+      "name": "Parent Company Employer ID Number",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        454.9,
+        167.8,
+        562.3,
+        185.8
+      ]
+    },
+    {
+      "name": "Contact Person's First Name",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        43.8,
+        203.8,
+        223.8,
+        221.8
+      ]
+    },
+    {
+      "name": "Contact Person's Last Name",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        237.6,
+        203.8,
+        418.8,
+        221.8
+      ]
+    },
+    {
+      "name": "Area Code",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        432.7,
+        203.8,
+        462.1,
+        221.8
+      ]
+    },
+    {
+      "name": "Telephone Number",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        477.1,
+        203.8,
+        562.3,
+        221.8
+      ]
+    },
+    {
+      "name": "Address Change",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        417.9,
+        247.2,
+        432.3,
+        265.2
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Exemption due to 86-272",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        417.9,
+        271.9,
+        432.3,
+        289.9
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "During tax year member of Combined Group disposed of an interest in a pass through entity doing business in Maine",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        417.9,
+        307.9,
+        432.3,
+        325.9
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Initial Return",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        50.4,
+        368.3,
+        65.5,
+        386.3
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Amended Return",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        191.9,
+        368.3,
+        207.0,
+        386.3
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Combined return",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        295.2,
+        368.3,
+        310.3,
+        386.3
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Final Return",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        50.4,
+        393.0,
+        65.5,
+        411.0
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Final Business Date",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        209.4,
+        391.9,
+        267.4,
+        409.9
+      ]
+    },
+    {
+      "name": "ceased",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        72.4,
+        417.0,
+        87.5,
+        435.0
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "dissolved",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        209.9,
+        417.0,
+        225.0,
+        435.0
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "merged",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        317.2,
+        416.9,
+        332.3,
+        435.0
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Member of an affiliated group filing a separate return",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        50.4,
+        442.0,
+        65.5,
+        460.0
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Based on a pro-forma",
+      "type": "CheckBox",
+      "page": 0,
+      "rect": [
+        209.9,
+        442.0,
+        225.0,
+        460.0
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "EIN of Pass-Through",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        439.8,
+        370.0,
+        562.3,
+        388.0
+      ]
+    },
+    {
+      "name": "successEIN",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        439.8,
+        417.0,
+        562.3,
+        435.0
+      ]
+    },
+    {
+      "name": "Federal Consolidated Income (Fed Form1120, line 30)",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        467.5,
+        547.6,
+        485.5
+      ]
+    },
+    {
+      "name": "Tentative Total Tax Filed on Fed Form 7004",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        491.3,
+        547.6,
+        509.3
+      ]
+    },
+    {
+      "name": "Federal Taxable Income (Fed Form 1120, Line 30)",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        515.2,
+        547.6,
+        533.2
+      ]
+    },
+    {
+      "name": "Total Subtractions",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        539.0,
+        547.6,
+        557.0
+      ]
+    },
+    {
+      "name": "Total additions",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        562.6,
+        547.6,
+        580.6
+      ]
+    },
+    {
+      "name": "Adjusted federal taxable income",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        587.4,
+        547.6,
+        605.4
+      ]
+    },
+    {
+      "name": "Gross Tax",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        635.7,
+        547.6,
+        653.7
+      ]
+    },
+    {
+      "name": "Maine Corporate Income Tax",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        659.5,
+        547.6,
+        677.5
+      ]
+    },
+    {
+      "name": "Credit Recapture",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        683.1,
+        547.6,
+        701.1
+      ]
+    },
+    {
+      "name": "Total Tax",
+      "type": "Text",
+      "page": 0,
+      "rect": [
+        396.0,
+        706.9,
+        547.6,
+        724.9
+      ]
+    },
+    {
+      "name": "Federal EIN page 2",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        58.3,
+        54.3,
+        165.6,
+        72.3
+      ]
+    },
+    {
+      "name": "Maine Estimated Tax",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        397.3,
+        95.7,
+        548.9,
+        113.7
+      ]
+    },
+    {
+      "name": "Extension Payment",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        397.3,
+        117.6,
+        548.9,
+        135.6
+      ]
+    },
+    {
+      "name": "Tax credits",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        397.3,
+        143.1,
+        548.9,
+        161.1
+      ]
+    },
+    {
+      "name": "Income Tax Withheld",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        397.3,
+        165.9,
+        548.9,
+        183.9
+      ]
+    },
+    {
+      "name": "If amended, enter payments",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        397.3,
+        192.4,
+        548.9,
+        210.4
+      ]
+    },
+    {
+      "name": "If amended , enter overpayments",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        397.3,
+        215.1,
+        548.9,
+        233.1
+      ]
+    },
+    {
+      "name": "Total payments and credits",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.8,
+        238.8,
+        548.4,
+        256.8
+      ]
+    },
+    {
+      "name": "Tax due",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        282.5,
+        288.0,
+        390.9,
+        306.0
+      ]
+    },
+    {
+      "name": "Overpayment",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        282.5,
+        312.0,
+        390.9,
+        330.0
+      ]
+    },
+    {
+      "name": "Check here if 2220ME box 5a is checked",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        312.0,
+        346.8,
+        325.8,
+        364.8
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Penalty for underpayment of estimated tax",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        397.4,
+        347.0,
+        549.0,
+        365.0
+      ]
+    },
+    {
+      "name": "Total due",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.8,
+        395.0,
+        548.4,
+        413.0
+      ]
+    },
+    {
+      "name": "Total overpayment",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.8,
+        437.8,
+        549.6,
+        455.8
+      ]
+    },
+    {
+      "name": "Amount of line 11 to be Credited",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        208.2,
+        464.2,
+        289.2,
+        482.2
+      ]
+    },
+    {
+      "name": "Amount of line 11 to be Refunded",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        396.8,
+        464.2,
+        548.4,
+        482.2
+      ]
+    },
+    {
+      "name": "Check if refund will go to an account outside the US",
+      "type": "CheckBox",
+      "page": 1,
+      "rect": [
+        122.4,
+        528.6,
+        136.7,
+        546.7
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Routing Number",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        208.2,
+        529.0,
+        289.2,
+        547.0
+      ]
+    },
+    {
+      "name": "Checking Account Number",
+      "type": "Text",
+      "page": 1,
+      "rect": [
+        398.2,
+        528.7,
+        548.9,
+        546.7
+      ]
+    },
+    {
+      "name": "Federal EIN page 3",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        65.3,
+        53.8,
+        172.6,
+        71.8
+      ]
+    },
+    {
+      "name": "Check if using alternate apportionment",
+      "type": "CheckBox",
+      "page": 2,
+      "rect": [
+        61.6,
+        187.0,
+        75.5,
+        205.1
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Total Sales within Maine",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        85.7,
+        259.0,
+        244.8,
+        277.0
+      ]
+    },
+    {
+      "name": "Total Sales Everywhere",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        287.7,
+        259.0,
+        446.8,
+        277.0
+      ]
+    },
+    {
+      "name": "Total Payroll within Maine",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        85.7,
+        283.4,
+        244.8,
+        301.4
+      ]
+    },
+    {
+      "name": "Total Payroll Everywhere",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        287.7,
+        283.4,
+        446.8,
+        301.4
+      ]
+    },
+    {
+      "name": "Total Property within Maine",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        85.7,
+        306.6,
+        244.8,
+        324.6
+      ]
+    },
+    {
+      "name": "Total Property Everywhere",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        287.7,
+        306.6,
+        446.8,
+        324.6
+      ]
+    },
+    {
+      "name": "Apportionment Factor",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        497.1,
+        259.0,
+        561.9,
+        277.0
+      ]
+    },
+    {
+      "name": "Gross Tax (form 1120ME line 6)",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        400.0,
+        343.2,
+        541.4,
+        361.3
+      ]
+    },
+    {
+      "name": "Maine Corp Income Tax (line 5 x line 4 factor)",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        400.0,
+        367.1,
+        541.4,
+        385.1
+      ]
+    },
+    {
+      "name": "Tangible Personal Property",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        400.0,
+        390.5,
+        541.4,
+        408.5
+      ]
+    },
+    {
+      "name": "Paid Prep (yes/no)",
+      "type": "RadioButton",
+      "page": 2,
+      "rect": [
+        396.5,
+        461.7,
+        414.5,
+        479.7
+      ],
+      "button_states": {
+        "normal": [
+          "Off",
+          "Yes"
+        ],
+        "down": [
+          "Off",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "name": "Paid Prep (yes/no)",
+      "type": "RadioButton",
+      "page": 2,
+      "rect": [
+        531.5,
+        461.7,
+        549.5,
+        479.7
+      ],
+      "button_states": {
+        "normal": [
+          "No",
+          "Off"
+        ],
+        "down": [
+          "No",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "Paid Preparer's Name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        44.2,
+        485.5,
+        302.9,
+        503.6
+      ]
+    },
+    {
+      "name": "Paid Preparer's Phone Number",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        324.5,
+        486.4,
+        461.5,
+        504.4
+      ]
+    },
+    {
+      "name": "Paid Preparer's Pin",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        482.9,
+        485.5,
+        570.5,
+        503.6
+      ]
+    },
+    {
+      "name": "Corporation Presidents Name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        188.8,
+        526.2,
+        325.3,
+        544.2
+      ]
+    },
+    {
+      "name": "Presidents social security number",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        448.1,
+        526.2,
+        563.4,
+        544.2
+      ]
+    },
+    {
+      "name": "Treasurer's Name",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        137.6,
+        550.2,
+        325.5,
+        568.2
+      ]
+    },
+    {
+      "name": "Treasurer's social security number",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        448.1,
+        550.2,
+        563.4,
+        568.2
+      ]
+    },
+    {
+      "name": "Company Email Address",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        212.4,
+        573.8,
+        563.4,
+        591.8
+      ]
+    },
+    {
+      "name": "Date officer signed",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        44.2,
+        623.2,
+        94.6,
+        641.2
+      ]
+    },
+    {
+      "name": "Officer Signature",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        124.4,
+        623.2,
+        275.6,
+        641.2
+      ]
+    },
+    {
+      "name": "Officer title",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        290.3,
+        623.2,
+        440.2,
+        641.2
+      ]
+    },
+    {
+      "name": "Officer SSN",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        454.6,
+        623.2,
+        570.4,
+        641.2
+      ]
+    },
+    {
+      "name": "Date preparer signed",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        44.2,
+        658.2,
+        94.6,
+        676.2
+      ]
+    },
+    {
+      "name": "signature and address of Preparer",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        124.4,
+        658.2,
+        440.2,
+        676.2
+      ]
+    },
+    {
+      "name": "Preparer  SSN or PTIN",
+      "type": "Text",
+      "page": 2,
+      "rect": [
+        454.6,
+        658.2,
+        569.7,
+        676.2
+      ]
+    },
+    {
+      "name": "Clear - End",
+      "type": "Button",
+      "page": 2,
+      "rect": [
+        36.0,
+        759.6,
+        108.0,
+        779.6
+      ]
+    },
+    {
+      "name": "Print - End",
+      "type": "Button",
+      "page": 2,
+      "rect": [
+        504.0,
+        759.6,
+        576.0,
+        779.6
+      ]
+    }
+  ]
+}

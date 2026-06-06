@@ -1,0 +1,13 @@
+# Blank source PDFs are fetched on demand, never committed (see catalog/pdf_manifest.json).
+*.pdf
+# Fill artifacts.
+*.filled.pdf
+out/
+/tmp/
+# Python.
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# Drift reports.
+drift-report.json

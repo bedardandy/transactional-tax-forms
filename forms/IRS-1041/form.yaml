@@ -1,0 +1,7 @@
+form_id: IRS-1041
+title: "U.S. Income Tax Return for Estates and Trusts"
+agency: "IRS"
+domain: probate
+num_pages: 3
+n_widgets: 173
+status: unmapped   # widgets.json captured; mapping.json/schema.json pending

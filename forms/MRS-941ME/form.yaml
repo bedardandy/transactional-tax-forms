@@ -1,0 +1,7 @@
+form_id: MRS-941ME
+title: "Maine Employer Income Tax Withholding Return (Quarterly)"
+agency: "Maine Revenue Services"
+domain: corporations
+num_pages: 3
+n_widgets: 262
+status: mapped  # 1 discontinued field (W-3ME amend checkbox) no longer in 2025 blank

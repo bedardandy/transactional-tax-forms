@@ -1,0 +1,22 @@
+transactional-tax-forms
+Copyright 2026 the transactional-tax-forms authors.
+
+Licensed under the Apache License, Version 2.0 (the "LICENSE" file).
+
+This repository contains structured metadata, field mappings, and tooling for
+tax forms filed alongside business-entity, real-estate, and probate matters. It
+does not redistribute the blank forms themselves.
+
+The blank forms are fetched on demand from their official sources:
+
+- Maine forms (form ids prefixed "MRS-" and "ME-") are public records of
+  Maine Revenue Services (https://www.maine.gov/revenue). They are fetched from
+  maine.gov and verified against catalog/pdf_manifest.json.
+
+- Federal forms (form ids prefixed "IRS-") are works of the United States
+  Government and are in the public domain (17 U.S.C. § 105). They are fetched
+  from https://www.irs.gov/pub/irs-pdf and verified against the manifest.
+
+This project is not affiliated with, endorsed by, or sponsored by Maine Revenue
+Services or the Internal Revenue Service. Filled output is a draft and is not
+tax or legal advice; verify every form against the official source before filing.

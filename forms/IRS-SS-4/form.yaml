@@ -1,0 +1,7 @@
+form_id: IRS-SS-4
+title: "Application for Employer Identification Number (EIN)"
+agency: "IRS"
+domain: corporations
+num_pages: 2
+n_widgets: 89
+status: unmapped   # widgets.json captured; mapping.json/schema.json pending

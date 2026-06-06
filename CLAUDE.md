@@ -1,0 +1,35 @@
+# Transactional Tax Forms — agent guide (CLAUDE.md; same as AGENTS.md)
+
+A form-by-form automation library for the tax forms filed alongside business
+formations, real-estate closings, and estates — Maine Revenue Services forms
+(`MRS-*`, `ME-*`) and federal IRS forms (`IRS-*`). You can drive it to **fill a
+tax form from a structured case-data object**.
+
+When the user says *"use this project to prepare \<tax form / transaction\>"*:
+
+1. **Route by domain:** read `catalog/by_domain.json` (corporations /
+   real-estate / probate) or `catalog/forms_index.json` to pick the form.
+2. **Understand:** read `forms/<ID>/form.yaml` (title, agency, domain, status).
+   - `status: mapped` — has a verified `mapping.json`; fillable now.
+   - `status: remap-pending` — the upstream blank drifted; mapping is stale.
+   - `status: unmapped` — only `widgets.json` (raw AcroForm inventory) exists;
+     not yet fillable.
+3. **Fetch the blank:** `python3 tools/fetch_pdfs.py --forms <ID>` (verified
+   against `catalog/pdf_manifest.json`).
+4. **Build the case data** (canonical fact object) and fill:
+   `python3 -m engine.fill_via_mapping --form <ID> --case case.json --out out.pdf`.
+5. **Verify & report:** open the output, surface the form's `status`, any
+   unresolved fields, and that it must be verified before filing.
+
+## Rules
+- **Not tax or legal advice.** Filled output is a draft; say so, and say it must
+  be verified against the official form before filing.
+- **Respect the manifest guard.** The engine warns if the on-disk blank is not
+  the revision the mapping was built against (`MCF_VERIFY_BLANK`). Don't suppress
+  it without re-verifying the mapping.
+- **Don't redistribute the blanks.** Maine forms are public records; IRS forms
+  are public domain — but this repo ships metadata only, fetched on demand.
+- **Adding / remapping a form:** capture its widgets with
+  `tools/build_manifest.py --forms <ID>`, write `mapping.json` + `schema.json`,
+  set `form.yaml` `status: mapped`, then `tools/gen_catalog.py`.
+- Licensed Apache-2.0 (`LICENSE`, `NOTICE`).

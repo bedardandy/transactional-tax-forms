@@ -1,0 +1,7 @@
+form_id: IRS-8832
+title: "Entity Classification Election"
+agency: "IRS"
+domain: corporations
+num_pages: 8
+n_widgets: 70
+status: unmapped   # widgets.json captured; mapping.json/schema.json pending

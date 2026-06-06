@@ -1,0 +1,7 @@
+form_id: ME-RETTD
+title: "Maine Real Estate Transfer Tax Declaration"
+agency: "Maine Revenue Services"
+domain: real-estate
+num_pages: 4
+n_widgets: 91
+status: unmapped   # widgets.json captured; mapping.json/schema.json pending
