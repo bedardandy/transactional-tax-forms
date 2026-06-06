@@ -31,10 +31,11 @@ SS-4 and 706 are cross-listed (an estate also needs an EIN). See
 14 forms. The seven Maine Revenue forms were mapped in `maine-court-forms` and
 lifted here; the rest are fetched and inventoried, with mappings in progress.
 
-- **Mapped & verified (6):** MRS 706ME, 700-SOV, 1120ME, 900ME, W-4ME, 941ME —
+- **Mapped & verified (5):** MRS 706ME, 1120ME, 941ME, 900ME, W-4ME —
   widget-survival confirmed against the current maine.gov blanks.
-- **Re-map pending (1):** MRS 1041ME — the current maine.gov blank drifted from
-  the mapped revision (44 of 117 widgets renamed); needs re-mapping.
+- **Re-map pending (2):** MRS 1041ME (current maine.gov blank drifted from the
+  mapped revision — 44 of 117 widgets renamed) and MRS 700-SOV (was recipe-tier
+  in `maine-court-forms` with an empty field map; needs a direct map).
 - **Inventoried, mapping in progress (7):** IRS SS-4, 2553, 8832, 706, 1041, 56
   and ME RETTD — each form's raw AcroForm widget inventory is captured in
   `forms/<ID>/widgets.json`, the input for mapping.
