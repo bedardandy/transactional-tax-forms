@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "transactional-tax-forms": {
+      "command": "python3",
+      "args": ["tools/agent_server.py"],
+      "description": "Find and fill the tax forms filed alongside corporation, real-estate, and probate matters (Maine Revenue Services + IRS)."
+    }
+  }
+}

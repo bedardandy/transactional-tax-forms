@@ -114,7 +114,12 @@ tools/
   fetch_pdfs.py       download verified blanks
   build_manifest.py   fetch + hash + dump widget inventory
   check_upstream.py   re-probe official URLs; flag revised forms
+  vision_map.py       Qwen-VL draft mapping from the rendered form
+  opus_adjudicate.py  Opus caption-grounded review of the drafts
+  infer_labels.py     heuristic widget-caption inventory
   gen_catalog.py      regenerate the catalogs
+  agent_server.py     MCP server (find_forms / get_form / fill_form)
+.mcp.json             MCP registration; AGENTS.md / CLAUDE.md — agent guide
 ```
 
 ## License

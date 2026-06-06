@@ -37,6 +37,16 @@ transferor.{name,address,ssn_or_ein}  transferee.{name,address,ssn_or_ein,mailin
 property.{address,town,county,map_block_lot,book_page,type,purchase_price,transfer_date}
 facts.<snake_case>   today()   signature"""
 
+_ROLES = ("entity", "responsible_party", "owner", "officer", "shareholder", "decedent",
+          "executor", "fiduciary", "estate", "trust", "beneficiary", "transferor",
+          "transferee", "property", "preparer", "facts")
+_KEY_RE = re.compile(rf"^(?:({'|'.join(_ROLES)})\.[a-z0-9_]+(?:\.[a-z0-9_]+)?|today\(\)|signature)$")
+
+
+def _key_ok(key: str) -> bool:
+    return bool(_KEY_RE.match(key or ""))
+
+
 SYSTEM = (
     "You audit a DRAFT field-mapping for a U.S. tax form. A vision model assigned "
     "each fillable field a canonical fact-key. Catch keys that do not match the "
@@ -97,7 +107,10 @@ def adjudicate(fid: str) -> dict:
     out = _parse_json(_opus(SYSTEM, user))
     corr = out.get("corrections", {}) or {}
     rem = out.get("remove", []) or []
-    applied = {f: corr[f] for f in corr if f in mp and corr[f] != mp[f]}
+    # Only apply corrections that are in-vocabulary (defensive: Opus is told to
+    # use the controlled set, but never let an off-vocab key into the mapping).
+    applied = {f: corr[f] for f in corr if f in mp and corr[f] != mp[f] and _key_ok(corr[f])}
+    rejected = [(f, corr[f]) for f in corr if f in mp and corr[f] != mp[f] and not _key_ok(corr[f])]
     removed = [f for f in rem if f in mp]
     for f, k in applied.items():
         mp[f] = k
@@ -106,10 +119,12 @@ def adjudicate(fid: str) -> dict:
     mapping["map"] = mp
     mapping["status"] = "opus-adjudicated"
     mapping["adjudication"] = {"model": "claude-opus (cli)", "corrected": applied,
-                               "removed": removed, "notes": out.get("notes", "")}
+                               "removed": removed, "rejected_off_vocab": dict(rejected),
+                               "notes": out.get("notes", "")}
     (fdir / "mapping.json").write_text(json.dumps(mapping, indent=2) + "\n")
     return {"form_id": fid, "fields": len(mp), "corrected": len(applied),
-            "removed": len(removed), "notes": out.get("notes", "")[:90]}
+            "removed": len(removed), "rejected": len(rejected),
+            "notes": out.get("notes", "")[:90]}
 
 
 def main() -> int:

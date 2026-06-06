@@ -49,9 +49,8 @@ def main():
         json.dumps({"by_domain": by_domain, "cross_listed": src.get("cross_listed", {})}, indent=2) + "\n")
 
     print(f"forms_index: {len(forms)} forms | "
-          f"mapped {sum(1 for f in forms if f['status'] == 'mapped')} / "
-          f"remap-pending {sum(1 for f in forms if f['status'] == 'remap-pending')} / "
-          f"unmapped {sum(1 for f in forms if f['status'] == 'unmapped')}")
+          + " / ".join(f"{s} {n}" for s, n in
+                        __import__("collections").Counter(f["status"] for f in forms).most_common()))
 
 
 if __name__ == "__main__":

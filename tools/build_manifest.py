@@ -32,7 +32,7 @@ USER_AGENT = "transactional-tax-forms/build_manifest (public records / public-do
 
 def _download(url: str, timeout: int, retries: int) -> bytes:
     last = None
-    for attempt in range(retries):
+    for attempt in range(max(1, retries)):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=timeout) as r:  # noqa: S310
