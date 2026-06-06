@@ -1,11 +1,11 @@
 {
   "form_id": "IRS-56",
-  "status": "vision-mapped",
+  "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
     "topmostsubform_0_page1_0_f1_01_0": "decedent.name",
-    "topmostsubform_0_page1_0_f1_02_0": "decedent.ssn_itin_ein",
+    "topmostsubform_0_page1_0_f1_02_0": "facts.identifying_number",
     "topmostsubform_0_page1_0_f1_03_0": "decedent.ssn",
     "topmostsubform_0_page1_0_f1_04_0": "decedent.address",
     "topmostsubform_0_page1_0_f1_05_0": "decedent.domicile_county",
@@ -36,6 +36,15 @@
     "topmostsubform_0_page2_0_f2_12_0": "facts.proceeding_date",
     "topmostsubform_0_page2_0_time_readorder_0_f2_13_0": "facts.proceeding_time",
     "topmostsubform_0_page2_0_f2_14_0": "facts.place_of_other_proceedings",
-    "topmostsubform_0_page2_0_f2_15_0": "fiduciary.title"
+    "topmostsubform_0_page2_0_f2_15_0": "signature"
+  },
+  "adjudication": {
+    "model": "claude-opus (cli)",
+    "corrected": {
+      "topmostsubform_0_page1_0_f1_02_0": "facts.identifying_number",
+      "topmostsubform_0_page2_0_f2_15_0": "signature"
+    },
+    "removed": [],
+    "notes": "f1_02 'Identifying number' used non-vocab key decedent.ssn_itin_ein -> facts.identifying_number; f2_15 caption 'Here' (=Sign Here) is the fiduciary signature line, not fiduciary.title; other keys match captions/form structure."
   }
 }

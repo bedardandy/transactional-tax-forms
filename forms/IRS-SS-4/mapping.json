@@ -1,6 +1,6 @@
 {
   "form_id": "IRS-SS-4",
-  "status": "vision-mapped",
+  "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
@@ -9,15 +9,14 @@
     "topmostsubform_0_page1_0_f1_3_0": "entity.trade_name",
     "topmostsubform_0_page1_0_f1_4_0": "executor.name",
     "topmostsubform_0_page1_0_line4readorder_0_f1_5_0": "entity.mailing_address",
-    "topmostsubform_0_page1_0_line4readorder_0_f1_6_0": "entity.street_address",
-    "topmostsubform_0_page1_0_f1_7_0": "entity.mailing_city",
-    "topmostsubform_0_page1_0_f1_8_0": "entity.mailing_state",
-    "topmostsubform_0_page1_0_f1_9_0": "entity.mailing_zip",
-    "topmostsubform_0_page1_0_f1_10_0": "entity.county",
-    "topmostsubform_0_page1_0_f1_11_0": "responsible_party.name",
-    "topmostsubform_0_page1_0_c1_1_0": "responsible_party.ssn_itin_ein",
+    "topmostsubform_0_page1_0_line4readorder_0_f1_6_0": "entity.mailing_city",
+    "topmostsubform_0_page1_0_f1_7_0": "entity.street_address",
+    "topmostsubform_0_page1_0_f1_8_0": "facts.street_city_state_zip",
+    "topmostsubform_0_page1_0_f1_9_0": "entity.county",
+    "topmostsubform_0_page1_0_f1_10_0": "responsible_party.name",
+    "topmostsubform_0_page1_0_f1_11_0": "responsible_party.ssn_itin_ein",
     "topmostsubform_0_page1_0_f1_12_0": "facts.number_of_llc_members",
-    "topmostsubform_0_page1_0_f1_13_0": "entity.ein",
+    "topmostsubform_0_page1_0_f1_13_0": "facts.sole_proprietor_ssn",
     "topmostsubform_0_page1_0_f1_14_0": "decedent.ssn",
     "topmostsubform_0_page1_0_f1_15_0": "facts.plan_administrator_tin",
     "topmostsubform_0_page1_0_f1_16_0": "facts.corp_form_number",
@@ -47,7 +46,25 @@
     "topmostsubform_0_page1_0_f1_42_0": "facts.designee_address",
     "topmostsubform_0_page1_0_f1_43_0": "facts.designee_fax",
     "topmostsubform_0_page1_0_f1_44_0": "responsible_party.name",
-    "topmostsubform_0_page1_0_f1_45_0": "responsible_party.phone",
-    "topmostsubform_0_page1_0_f1_46_0": "responsible_party.title"
+    "topmostsubform_0_page1_0_f1_45_0": "entity.phone",
+    "topmostsubform_0_page1_0_f1_46_0": "today()"
+  },
+  "adjudication": {
+    "model": "claude-opus (cli)",
+    "corrected": {
+      "topmostsubform_0_page1_0_line4readorder_0_f1_6_0": "entity.mailing_city",
+      "topmostsubform_0_page1_0_f1_7_0": "entity.street_address",
+      "topmostsubform_0_page1_0_f1_8_0": "facts.street_city_state_zip",
+      "topmostsubform_0_page1_0_f1_9_0": "entity.county",
+      "topmostsubform_0_page1_0_f1_10_0": "responsible_party.name",
+      "topmostsubform_0_page1_0_f1_11_0": "responsible_party.ssn_itin_ein",
+      "topmostsubform_0_page1_0_f1_13_0": "facts.sole_proprietor_ssn",
+      "topmostsubform_0_page1_0_f1_45_0": "entity.phone",
+      "topmostsubform_0_page1_0_f1_46_0": "today()"
+    },
+    "removed": [
+      "topmostsubform_0_page1_0_c1_1_0"
+    ],
+    "notes": "Draft over-split the combined 4b/5b city-state-zip fields, shifting line 6 county and the 7a/7b responsible-party name+TIN down by two; also fixed sole-proprietor SSN box (was entity.ein), applicant phone (responsible_party.phone is not in vocab), signature date, and dropped the line 8a LLC Yes/No checkbox."
   }
 }

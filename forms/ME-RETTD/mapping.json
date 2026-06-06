@@ -1,10 +1,10 @@
 {
   "form_id": "ME-RETTD",
-  "status": "vision-mapped",
+  "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
-    "text_field_7": "transferee.ssn_or_ein",
+    "text_field_7": "property.county",
     "text_field_5": "property.town",
     "text_field_6": "transferee.name",
     "text_field_9": "transferee.name",
@@ -26,7 +26,6 @@
     "text_field_27": "property.map_block_lot",
     "text_field_29": "property.type",
     "text_field_28": "property.address",
-    "text_field_36": "facts.acreage",
     "text_field_30": "property.purchase_price",
     "text_field_31": "facts.adjusted_assessed_value",
     "text_field_33": "property.transfer_date",
@@ -79,5 +78,15 @@
     "text_field_83": "property.map_block_lot",
     "text_field_84": "property.map_block_lot",
     "text_field_85": "property.map_block_lot"
+  },
+  "adjudication": {
+    "model": "claude-opus (cli)",
+    "corrected": {
+      "text_field_7": "property.county"
+    },
+    "removed": [
+      "text_field_36"
+    ],
+    "notes": "field_7 caption '1. County' is the property's location county, not a grantee SSN/EIN; field_36 caption 'Not applicable' is a checkbox/option label, not an acreage value, so it shouldn't be mapped."
   }
 }

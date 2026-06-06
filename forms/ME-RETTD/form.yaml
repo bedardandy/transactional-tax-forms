@@ -4,4 +4,4 @@ agency: "Maine Revenue Services"
 domain: real-estate
 num_pages: 4
 n_widgets: 91
-status: vision-mapped   # 75 fields mapped (Qwen-VL draft); review before production
+status: opus-adjudicated   # 74 fields (Qwen-VL draft + Opus review: 1 corrected, 1 removed)

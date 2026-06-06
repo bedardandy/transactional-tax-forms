@@ -1,6 +1,6 @@
 {
   "form_id": "IRS-2553",
-  "status": "vision-mapped",
+  "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
@@ -12,7 +12,7 @@
     "topmostsubform_0_page1_0_f1_06_0": "entity.state_of_formation",
     "topmostsubform_0_page1_0_f1_07_0": "facts.election_effective_date",
     "topmostsubform_0_page1_0_f1_08_0": "facts.fiscal_year_end",
-    "topmostsubform_0_page1_0_f1_09_0": "facts.fiscal_year_end",
+    "topmostsubform_0_page1_0_f1_09_0": "facts.fiscal_year_52_53_week_month",
     "topmostsubform_0_page1_0_f1_10_0": "responsible_party.name",
     "topmostsubform_0_page1_0_f1_11_0": "entity.phone",
     "topmostsubform_0_page1_0_f1_21_0": "responsible_party.title",
@@ -22,10 +22,21 @@
     "topmostsubform_0_page3_0_f3_02_0": "entity.ein",
     "topmostsubform_0_page4_0_f4_01_0": "entity.legal_name",
     "topmostsubform_0_page4_0_f4_02_0": "entity.ein",
-    "topmostsubform_0_page4_0_f4_03_0": "responsible_party.name",
-    "topmostsubform_0_page4_0_f4_04_0": "responsible_party.ssn_itin_ein",
+    "topmostsubform_0_page4_0_f4_03_0": "facts.income_beneficiary_name",
+    "topmostsubform_0_page4_0_f4_04_0": "facts.income_beneficiary_ssn",
     "topmostsubform_0_page4_0_f4_05_0": "trust.name",
     "topmostsubform_0_page4_0_f4_06_0": "trust.ein",
-    "topmostsubform_0_page4_0_f4_07_0": "facts.election_effective_date"
+    "topmostsubform_0_page4_0_f4_07_0": "facts.stock_transfer_date"
+  },
+  "adjudication": {
+    "model": "claude-opus (cli)",
+    "corrected": {
+      "topmostsubform_0_page1_0_f1_09_0": "facts.fiscal_year_52_53_week_month",
+      "topmostsubform_0_page4_0_f4_03_0": "facts.income_beneficiary_name",
+      "topmostsubform_0_page4_0_f4_04_0": "facts.income_beneficiary_ssn",
+      "topmostsubform_0_page4_0_f4_07_0": "facts.stock_transfer_date"
+    },
+    "removed": [],
+    "notes": "Page-4 f4_03\u2013f4_07 are the Part III QSST block: f4_03/04 = income beneficiary name/SSN (not responsible_party), f4_07 = stock-transfer date (caption 'year)\u25b6', not election date); f1_09 = 52-53-week reference month, distinct from f1_08 fiscal year-end."
   }
 }

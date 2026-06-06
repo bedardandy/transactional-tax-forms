@@ -1,6 +1,6 @@
 {
   "form_id": "IRS-706",
-  "status": "vision-mapped",
+  "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
@@ -30,7 +30,6 @@
     "topmostsubform_0_page1_0_f1_26_0": "executor.address",
     "topmostsubform_0_page1_0_f1_27_0": "executor.address",
     "topmostsubform_0_page1_0_f1_28_0": "executor.address",
-    "topmostsubform_0_page1_0_c1_1_0": "executor.phone",
     "topmostsubform_0_page1_0_f1_29_0": "facts.court_name",
     "topmostsubform_0_page1_0_f1_30_0": "facts.court_location",
     "topmostsubform_0_page1_0_f1_31_0": "facts.case_number",
@@ -63,11 +62,8 @@
     "topmostsubform_0_page2_0_f2_10_0": "facts.tax_due",
     "topmostsubform_0_page2_0_f2_11_0": "facts.overpayment",
     "topmostsubform_0_page2_0_routing_number_0_f2_12_0": "facts.routing_number",
-    "topmostsubform_0_page2_0_c2_1_0": "facts.checking_account_type",
-    "topmostsubform_0_page2_0_c2_1_1": "facts.savings_account_type",
     "topmostsubform_0_page2_0_account_number_0_f2_13_0": "facts.account_number",
     "topmostsubform_0_page2_0_f2_14_0": "facts.preparer_name",
-    "topmostsubform_0_page2_0_c2_2_0": "facts.preparer_signature",
     "topmostsubform_0_page2_0_f2_15_0": "facts.preparer_date",
     "topmostsubform_0_page2_0_f2_16_0": "facts.firm_name",
     "topmostsubform_0_page2_0_f2_17_0": "facts.firm_address",
@@ -154,5 +150,16 @@
     "topmostsubform_0_page4_0_partvtable2_0_line22_0_f4_36_0": "facts.total_charitable_public_and_similar_gifts_and_beqeusts",
     "topmostsubform_0_page4_0_partvtable2_0_line23_0_f4_37_0": "facts.estimated_value_of_deductible_assets_subject_to_special_rule",
     "topmostsubform_0_page4_0_partvtable2_0_line24_0_f4_38_0": "facts.tentative_total_allowable_deductions"
+  },
+  "adjudication": {
+    "model": "claude-opus (cli)",
+    "corrected": {},
+    "removed": [
+      "topmostsubform_0_page1_0_c1_1_0",
+      "topmostsubform_0_page2_0_c2_1_0",
+      "topmostsubform_0_page2_0_c2_1_1",
+      "topmostsubform_0_page2_0_c2_2_0"
+    ],
+    "notes": "Removed 4 checkbox/instruction widgets (multiple-executors check, Checking/Savings selectors, self-employed/PTIN check); all text-field keys match their captions."
   }
 }

@@ -4,4 +4,4 @@ agency: "IRS"
 domain: probate
 num_pages: 3
 n_widgets: 173
-status: vision-mapped   # 88 fields mapped (Qwen-VL draft); review before production
+status: opus-adjudicated   # 79 fields (Qwen-VL draft + Opus review: 68 corrected, 9 removed)

@@ -36,12 +36,15 @@ lifted here; the rest are fetched and inventoried, with mappings in progress.
 - **Re-map pending (2):** MRS 1041ME (current maine.gov blank drifted from the
   mapped revision — 44 of 117 widgets renamed) and MRS 700-SOV (was recipe-tier
   in `maine-court-forms` with an empty field map; needs a direct map).
-- **Vision-mapped — draft (7):** IRS SS-4 (45 fields), 2553 (23), 8832 (53),
-  706 (150), 1041 (88), 56 (33), ME RETTD (75). Mapped from the rendered form by
-  the Qwen-VL cluster (`tools/vision_map.py`); **a draft tier — review before
-  production.** The big returns (706, 1041) map the identity/party fields well;
-  many numbered tax-computation line items stay unmapped (fill those via
-  `facts.*`). Both filled end-to-end in a smoke test.
+- **Opus-adjudicated (7):** IRS SS-4 (44 fields), 2553 (23), 8832 (53), 706
+  (146), 1041 (79), 56 (33), ME RETTD (74). Drafted from the rendered form by the
+  Qwen-VL cluster (`tools/vision_map.py`), then reviewed field-by-field against
+  each printed caption by Opus (`tools/opus_adjudicate.py`), which corrected 86
+  keys and removed 15 non-data widgets — most notably realigning IRS-1041's
+  shifted income/deduction lines (68 fixes) and IRS-SS-4's over-split
+  city/state/zip block (9). Each form records its corrections under
+  `mapping.json.adjudication`. The big returns map identity/party fields; some
+  numbered line items remain `facts.*`. ME-RETTD + IRS-SS-4 fill end-to-end.
 
 > **Two canonical models, for now.** The five inherited Maine Revenue forms use
 > the court library's `parties.<role>` model; the vision-mapped forms above use

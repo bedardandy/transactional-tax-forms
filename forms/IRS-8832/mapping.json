@@ -1,6 +1,6 @@
 {
   "form_id": "IRS-8832",
-  "status": "vision-mapped",
+  "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
@@ -10,8 +10,8 @@
     "topmostsubform_0_page1_0_p1_t5_0": "entity.mailing_address",
     "topmostsubform_0_page1_0_p1_t6_0": "responsible_party.name",
     "topmostsubform_0_page1_0_p1_t7_0": "responsible_party.ssn_itin_ein",
-    "topmostsubform_0_page1_0_p1_t8_0": "entity.legal_name",
-    "topmostsubform_0_page1_0_p1_t9_0": "entity.ein",
+    "topmostsubform_0_page1_0_p1_t8_0": "facts.parent_corporation_name",
+    "topmostsubform_0_page1_0_p1_t9_0": "facts.parent_corporation_ein",
     "topmostsubform_0_page2_0_p2_t1_0": "facts.foreign_country_of_organization",
     "topmostsubform_0_page2_0_p2_t2_0": "facts.election_effective_date",
     "topmostsubform_0_page2_0_p2_t5_0": "facts.contact_person_name_and_title",
@@ -57,5 +57,14 @@
     "topmostsubform_0_page3_0_pg3table_0_bodyrow14_0_f3_023_0": "today()",
     "topmostsubform_0_page3_0_pg3table_0_bodyrow15_0_f3_024_0": "today()",
     "topmostsubform_0_page3_0_pg3table_0_bodyrow16_0_f3_025_0": "today()"
+  },
+  "adjudication": {
+    "model": "claude-opus (cli)",
+    "corrected": {
+      "topmostsubform_0_page1_0_p1_t8_0": "facts.parent_corporation_name",
+      "topmostsubform_0_page1_0_p1_t9_0": "facts.parent_corporation_ein"
+    },
+    "removed": [],
+    "notes": "Lines 5a/5b are the PARENT corporation's name/EIN \u2014 not the electing entity's own legal_name/ein (those are lines 1/2, p1_t1/t2); moved to facts.* to avoid collision. Owner name/id (4a/4b), addresses, line 7/8/9/10, and the date/signature tables read correctly."
   }
 }

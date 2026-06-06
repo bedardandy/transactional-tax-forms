@@ -4,4 +4,4 @@ agency: "IRS"
 domain: corporations
 num_pages: 2
 n_widgets: 89
-status: vision-mapped   # 45 fields mapped (Qwen-VL draft); review before production
+status: opus-adjudicated   # 44 fields (Qwen-VL draft + Opus review: 9 corrected, 1 removed)
