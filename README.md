@@ -12,8 +12,13 @@ form-by-form layout, same fetch-on-demand + drift-detection model, same
 deterministic fill engine. The blank PDFs are **fetched on demand from the
 official source and never redistributed** (see [Getting the blanks](#getting-the-blanks)).
 
-> Not tax or legal advice. Filled output is a draft; verify every form against
-> the official source before filing.
+> ⚠️ **Not legal or tax advice — for professional use only.** This is software
+> that produces *draft* forms. It is meant to be used solely as one component of
+> a broader workflow that is implemented, supervised, and reviewed by a licensed
+> attorney or qualified tax professional — not as a do-it-yourself substitute for
+> professional advice. Output is a draft that may be wrong; verify every form
+> against the current official source and applicable law before filing. See
+> [**DISCLAIMER**](DISCLAIMER.md).
 
 ## Scope — organized by transaction
 
