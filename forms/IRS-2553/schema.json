@@ -1,0 +1,1305 @@
+{
+  "form_id": "IRS-2553",
+  "fields": [
+    {
+      "field_id": "topmostsubform_0_page1_0_nameaddress_0_f1_01_0",
+      "label": "topmostSubform[0].Page1[0].NameAddress[0].f1_01[0]",
+      "caption": "Type",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        80.2,
+        154.0,
+        424.8,
+        168.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_nameaddress_0_f1_02_0",
+      "label": "topmostSubform[0].Page1[0].NameAddress[0].f1_02[0]",
+      "caption": "Print",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        80.2,
+        178.0,
+        424.8,
+        192.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_nameaddress_0_f1_03_0",
+      "label": "topmostSubform[0].Page1[0].NameAddress[0].f1_03[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        80.2,
+        202.0,
+        424.8,
+        216.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_04_0",
+      "label": "topmostSubform[0].Page1[0].f1_04[0]",
+      "caption": "Type",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        424.8,
+        154.0,
+        576.0,
+        168.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_05_0",
+      "label": "topmostSubform[0].Page1[0].f1_05[0]",
+      "caption": "Print",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        424.8,
+        178.0,
+        576.0,
+        192.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_06_0",
+      "label": "topmostSubform[0].Page1[0].f1_06[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        425.8,
+        202.0,
+        576.0,
+        216.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_1_0",
+      "label": "topmostSubform[0].Page1[0].c1_1[0]",
+      "caption": "name or address",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        482.4,
+        218.0,
+        490.4,
+        226.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_2_0",
+      "label": "topmostSubform[0].Page1[0].c1_2[0]",
+      "caption": "address",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        532.8,
+        218.0,
+        540.8,
+        226.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_07_0",
+      "label": "topmostSubform[0].Page1[0].f1_07[0]",
+      "caption": "year) (see instructions) . . . . . . \u25b6",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        482.4,
+        228.0,
+        576.0,
+        240.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_3_0",
+      "label": "topmostSubform[0].Page1[0].c1_3[0]",
+      "caption": "Calendar year",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        75.2,
+        278.2,
+        83.2,
+        286.2
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_3_1",
+      "label": "topmostSubform[0].Page1[0].c1_3[1]",
+      "caption": "Fiscal year ending (month and day) \u25b6",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        75.2,
+        290.3,
+        83.2,
+        298.3
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_08_0",
+      "label": "topmostSubform[0].Page1[0].f1_08[0]",
+      "caption": "(2) Fiscal year ending (month and day) \u25b6",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        244.8,
+        288.0,
+        331.2,
+        300.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_3_2",
+      "label": "topmostSubform[0].Page1[0].c1_3[2]",
+      "caption": "52-53-week year ending with reference to the month",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        75.2,
+        302.3,
+        83.2,
+        310.3
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_3_3",
+      "label": "topmostSubform[0].Page1[0].c1_3[3]",
+      "caption": "52-53-week year ending with reference to the month",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        75.2,
+        314.2,
+        83.2,
+        322.2
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_09_0",
+      "label": "topmostSubform[0].Page1[0].f1_09[0]",
+      "caption": "52-53-week year ending with reference to the month of \u25b6",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        331.2,
+        312.0,
+        439.2,
+        324.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_4_0",
+      "label": "topmostSubform[0].Page1[0].c1_4[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        500.0,
+        361.5,
+        508.0,
+        369.5
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_10_0",
+      "label": "topmostSubform[0].Page1[0].f1_10[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        396.0,
+        417.6,
+        408.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_11_0",
+      "label": "topmostSubform[0].Page1[0].f1_11[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        417.6,
+        396.0,
+        576.0,
+        408.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_12_0",
+      "label": "topmostSubform[0].Page1[0].f1_12[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        480.0,
+        576.0,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_13_0",
+      "label": "topmostSubform[0].Page1[0].f1_13[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        504.0,
+        576.0,
+        516.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_14_0",
+      "label": "topmostSubform[0].Page1[0].f1_14[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        528.0,
+        576.0,
+        540.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_15_0",
+      "label": "topmostSubform[0].Page1[0].f1_15[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        552.0,
+        576.0,
+        564.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_16_0",
+      "label": "topmostSubform[0].Page1[0].f1_16[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        576.0,
+        576.0,
+        588.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_17_0",
+      "label": "topmostSubform[0].Page1[0].f1_17[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        600.0,
+        576.0,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_18_0",
+      "label": "topmostSubform[0].Page1[0].f1_18[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        624.0,
+        576.0,
+        636.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_19_0",
+      "label": "topmostSubform[0].Page1[0].f1_19[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        648.0,
+        576.0,
+        660.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_20_0",
+      "label": "topmostSubform[0].Page1[0].f1_20[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        57.6,
+        672.0,
+        576.0,
+        684.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_21_0",
+      "label": "topmostSubform[0].Page1[0].f1_21[0]",
+      "caption": "Here \u25b2",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        324.0,
+        732.0,
+        489.6,
+        744.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_01_0",
+      "label": "topmostSubform[0].Page2[0].f2_01[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        36.0,
+        58.0,
+        424.8,
+        72.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_02_0",
+      "label": "topmostSubform[0].Page2[0].f2_02[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        424.8,
+        58.0,
+        576.0,
+        72.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row1_0_f2_03_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_03[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        36.0,
+        312.0,
+        187.2,
+        372.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row1_0_f2_04_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_04[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        188.2,
+        312.0,
+        309.6,
+        372.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row1_0_f2_05_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_05[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        309.6,
+        312.0,
+        360.0,
+        372.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row1_0_f2_06_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_06[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        360.0,
+        312.0,
+        410.4,
+        372.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row1_0_f2_07_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_07[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        312.0,
+        460.8,
+        372.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row1_0_f2_08_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_08[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        460.8,
+        312.0,
+        518.4,
+        372.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row1_0_f2_09_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_09[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        519.4,
+        312.0,
+        576.0,
+        372.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row2_0_f2_10_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_10[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        36.0,
+        372.0,
+        187.2,
+        432.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row2_0_f2_11_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_11[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        188.2,
+        372.0,
+        309.6,
+        432.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row2_0_f2_12_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_12[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        309.6,
+        372.0,
+        360.0,
+        432.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row2_0_f2_13_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_13[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        360.0,
+        372.0,
+        410.4,
+        432.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row2_0_f2_14_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_14[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        372.0,
+        460.8,
+        432.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row2_0_f2_15_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_15[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        460.8,
+        372.0,
+        518.4,
+        432.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row2_0_f2_16_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_16[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        519.4,
+        372.0,
+        576.0,
+        432.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row3_0_f2_17_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_17[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        36.0,
+        432.0,
+        187.2,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row3_0_f2_18_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_18[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        188.2,
+        432.0,
+        309.6,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row3_0_f2_19_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_19[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        309.6,
+        432.0,
+        360.0,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row3_0_f2_20_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_20[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        360.0,
+        432.0,
+        410.4,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row3_0_f2_21_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_21[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        432.0,
+        460.8,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row3_0_f2_22_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_22[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        460.8,
+        432.0,
+        518.4,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row3_0_f2_23_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_23[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        519.4,
+        432.0,
+        576.0,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row4_0_f2_24_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_24[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        36.0,
+        492.0,
+        187.2,
+        552.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row4_0_f2_25_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_25[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        188.2,
+        492.0,
+        309.6,
+        552.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row4_0_f2_26_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_26[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        309.6,
+        492.0,
+        360.0,
+        552.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row4_0_f2_27_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_27[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        360.0,
+        492.0,
+        410.4,
+        552.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row4_0_f2_28_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_28[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        492.0,
+        460.8,
+        552.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row4_0_f2_29_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_29[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        460.8,
+        492.0,
+        518.4,
+        552.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row4_0_f2_30_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_30[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        519.4,
+        492.0,
+        576.0,
+        552.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row5_0_f2_31_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_31[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        36.0,
+        552.0,
+        187.2,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row5_0_f2_32_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_32[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        188.2,
+        552.0,
+        309.6,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row5_0_f2_33_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_33[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        309.6,
+        552.0,
+        360.0,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row5_0_f2_34_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_34[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        360.0,
+        552.0,
+        410.4,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row5_0_f2_35_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_35[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        552.0,
+        460.8,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row5_0_f2_36_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_36[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        460.8,
+        552.0,
+        518.4,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row5_0_f2_37_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_37[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        519.4,
+        552.0,
+        576.0,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row6_0_f2_38_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_38[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        36.0,
+        612.0,
+        187.2,
+        672.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row6_0_f2_39_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_39[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        188.2,
+        612.0,
+        309.6,
+        672.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row6_0_f2_40_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_40[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        309.6,
+        612.0,
+        360.0,
+        672.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row6_0_f2_41_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_41[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        360.0,
+        612.0,
+        410.4,
+        672.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row6_0_f2_42_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_42[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        612.0,
+        460.8,
+        672.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row6_0_f2_43_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_43[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        460.8,
+        612.0,
+        518.4,
+        672.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row6_0_f2_44_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_44[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        519.4,
+        612.0,
+        576.0,
+        672.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row7_0_f2_45_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_45[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        36.0,
+        672.0,
+        187.2,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row7_0_f2_46_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_46[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        188.2,
+        672.0,
+        309.6,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row7_0_f2_47_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_47[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        309.6,
+        672.0,
+        360.0,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row7_0_f2_48_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_48[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        360.0,
+        672.0,
+        410.4,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row7_0_f2_49_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_49[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        672.0,
+        460.8,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row7_0_f2_50_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_50[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        460.8,
+        672.0,
+        518.4,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_table_part1_0_row7_0_f2_51_0",
+      "label": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_51[0]",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        519.4,
+        672.0,
+        576.0,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_01_0",
+      "label": "topmostSubform[0].Page3[0].f3_01[0]",
+      "caption": "",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        36.0,
+        58.0,
+        424.8,
+        72.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_02_0",
+      "label": "topmostSubform[0].Page3[0].f3_02[0]",
+      "caption": "",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        424.8,
+        58.0,
+        576.0,
+        72.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_1_0",
+      "label": "topmostSubform[0].Page3[0].c3_1[0]",
+      "caption": "A new corporation adopting the tax year entered",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        75.2,
+        110.0,
+        83.2,
+        118.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_1_1",
+      "label": "topmostSubform[0].Page3[0].c3_1[1]",
+      "caption": "An existing corporation retaining the tax year entered",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        75.2,
+        122.0,
+        83.2,
+        130.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_1_2",
+      "label": "topmostSubform[0].Page3[0].c3_1[2]",
+      "caption": "An existing corporation changing to the tax year",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        75.2,
+        134.0,
+        83.2,
+        142.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_2_0",
+      "label": "topmostSubform[0].Page3[0].c3_2[0]",
+      "caption": "I represent that the corporation is adopting, retaining,",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        173.2,
+        194.5,
+        181.2,
+        202.5
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_3_0",
+      "label": "topmostSubform[0].Page3[0].c3_3[0]",
+      "caption": "I represent that shareholders (as described in section",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        166.0,
+        254.2,
+        174.0,
+        262.2
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_4_0",
+      "label": "topmostSubform[0].Page3[0].c3_4[0]",
+      "caption": "if the fiscal year entered in item F,",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        132.0,
+        386.2,
+        140.0,
+        394.2
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_5_0",
+      "label": "topmostSubform[0].Page3[0].c3_5[0]",
+      "caption": "Yes No",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        58.6,
+        446.0,
+        66.6,
+        454.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_5_1",
+      "label": "topmostSubform[0].Page3[0].c3_5[1]",
+      "caption": "No",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        101.8,
+        446.0,
+        109.8,
+        454.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_6_0",
+      "label": "topmostSubform[0].Page3[0].c3_6[0]",
+      "caption": "to show that the corporation intends to make",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        132.0,
+        470.5,
+        140.0,
+        478.5
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_7_0",
+      "label": "topmostSubform[0].Page3[0].c3_7[0]",
+      "caption": "to show that the corporation agrees to adopt",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        132.0,
+        506.5,
+        140.0,
+        514.5
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_8_0",
+      "label": "topmostSubform[0].Page3[0].c3_8[0]",
+      "caption": "to show that the corporation will make, if",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        132.0,
+        579.5,
+        140.0,
+        587.5
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_9_0",
+      "label": "topmostSubform[0].Page3[0].c3_9[0]",
+      "caption": "to show that the corporation agrees to adopt",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        132.0,
+        626.5,
+        140.0,
+        634.5
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page4_0_f4_01_0",
+      "label": "topmostSubform[0].Page4[0].f4_01[0]",
+      "caption": "",
+      "type": "text",
+      "page": 3,
+      "rect": [
+        36.0,
+        58.0,
+        424.8,
+        72.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page4_0_f4_02_0",
+      "label": "topmostSubform[0].Page4[0].f4_02[0]",
+      "caption": "",
+      "type": "text",
+      "page": 3,
+      "rect": [
+        424.8,
+        58.0,
+        576.0,
+        72.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page4_0_f4_03_0",
+      "label": "topmostSubform[0].Page4[0].f4_03[0]",
+      "caption": "",
+      "type": "text",
+      "page": 3,
+      "rect": [
+        36.0,
+        106.0,
+        381.6,
+        144.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page4_0_f4_04_0",
+      "label": "topmostSubform[0].Page4[0].f4_04[0]",
+      "caption": "",
+      "type": "text",
+      "page": 3,
+      "rect": [
+        381.6,
+        106.0,
+        576.0,
+        144.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page4_0_f4_05_0",
+      "label": "topmostSubform[0].Page4[0].f4_05[0]",
+      "caption": "",
+      "type": "text",
+      "page": 3,
+      "rect": [
+        36.0,
+        154.0,
+        381.6,
+        192.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page4_0_f4_06_0",
+      "label": "topmostSubform[0].Page4[0].f4_06[0]",
+      "caption": "",
+      "type": "text",
+      "page": 3,
+      "rect": [
+        381.6,
+        154.0,
+        576.0,
+        192.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page4_0_f4_07_0",
+      "label": "topmostSubform[0].Page4[0].f4_07[0]",
+      "caption": "year) . . . . . . . . \u25b6",
+      "type": "text",
+      "page": 3,
+      "rect": [
+        496.8,
+        192.0,
+        576.0,
+        204.0
+      ]
+    }
+  ]
+}

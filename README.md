@@ -36,9 +36,18 @@ lifted here; the rest are fetched and inventoried, with mappings in progress.
 - **Re-map pending (2):** MRS 1041ME (current maine.gov blank drifted from the
   mapped revision — 44 of 117 widgets renamed) and MRS 700-SOV (was recipe-tier
   in `maine-court-forms` with an empty field map; needs a direct map).
-- **Inventoried, mapping in progress (7):** IRS SS-4, 2553, 8832, 706, 1041, 56
-  and ME RETTD — each form's raw AcroForm widget inventory is captured in
-  `forms/<ID>/widgets.json`, the input for mapping.
+- **Vision-mapped — draft (7):** IRS SS-4 (45 fields), 2553 (23), 8832 (53),
+  706 (150), 1041 (88), 56 (33), ME RETTD (75). Mapped from the rendered form by
+  the Qwen-VL cluster (`tools/vision_map.py`); **a draft tier — review before
+  production.** The big returns (706, 1041) map the identity/party fields well;
+  many numbered tax-computation line items stay unmapped (fill those via
+  `facts.*`). Both filled end-to-end in a smoke test.
+
+> **Two canonical models, for now.** The five inherited Maine Revenue forms use
+> the court library's `parties.<role>` model; the vision-mapped forms above use
+> the tax-native roles (`entity`, `responsible_party`, `decedent`, `executor`,
+> `fiduciary`, `transferor`/`transferee`, `property`). Unifying the two is a
+> roadmap item; until then, read each form's `mapping.json` for its keys.
 
 ## Getting the blanks
 

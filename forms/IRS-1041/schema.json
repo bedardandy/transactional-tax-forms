@@ -1,0 +1,2254 @@
+{
+  "form_id": "IRS-1041",
+  "fields": [
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_1_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_1[0]",
+      "caption": "that apply: For calendar year 2025 or fiscal year beginning",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        309.6,
+        66.0,
+        388.8,
+        78.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_2_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_2[0]",
+      "caption": "year 2025 or fiscal year beginning , 2025, and ending",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        460.8,
+        66.0,
+        540.0,
+        78.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_3_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_3[0]",
+      "caption": "or fiscal year beginning , 2025, and ending , 20",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        554.4,
+        66.0,
+        576.0,
+        78.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_4_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_4[0]",
+      "caption": "Simple trust",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        137.8,
+        88.0,
+        438.5,
+        102.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_5_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_5[0]",
+      "caption": "Qualified disability trust",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        137.8,
+        112.0,
+        438.5,
+        126.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_6_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_6[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        137.8,
+        136.0,
+        373.6,
+        162.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_7_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_7[0]",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        374.4,
+        136.0,
+        439.2,
+        162.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_8_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_8[0]",
+      "caption": "Pooled income fund",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        137.8,
+        172.0,
+        222.4,
+        186.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_9_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_9[0]",
+      "caption": "Pooled income fund",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        224.2,
+        172.0,
+        301.6,
+        186.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_10_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_10[0]",
+      "caption": "Pooled income fund",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        303.4,
+        172.0,
+        359.2,
+        186.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_11_0",
+      "label": "topmostSubform[0].Page1[0].DateNameAddress_ReadOrder[0].f1_11[0]",
+      "caption": "Pooled income fund",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        360.0,
+        172.0,
+        439.2,
+        186.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_1_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_1[0]",
+      "caption": "Decedent\u2019s estate Name of estate or trust (If",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        80.0,
+        45.0,
+        88.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_2_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_2[0]",
+      "caption": "Simple trust",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        92.0,
+        45.0,
+        100.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_3_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_3[0]",
+      "caption": "Complex trust Name and title of fiduciary D",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        104.0,
+        45.0,
+        112.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_4_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_4[0]",
+      "caption": "Qualified disability trust",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        116.0,
+        45.0,
+        124.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_5_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_5[0]",
+      "caption": "ESBT (S portion only) Number and street (If",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        128.0,
+        45.0,
+        136.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_6_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_6[0]",
+      "caption": "Grantor type trust See instructions.",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        140.0,
+        45.0,
+        148.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_7_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_7[0]",
+      "caption": "Bankruptcy estate\u2014Ch. 7 Described in sec. 4947(a)(1). Check",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        152.0,
+        45.0,
+        160.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_8_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_8[0]",
+      "caption": "Bankruptcy estate\u2014Ch. 11 City or town State or",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        164.0,
+        45.0,
+        172.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_c1_9_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].c1_9[0]",
+      "caption": "Pooled income fund Described in sec. 4947(a)(2)",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        37.0,
+        176.0,
+        45.0,
+        184.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesa_b_0_f1_12_0",
+      "label": "topmostSubform[0].Page1[0].LinesA-B[0].f1_12[0]",
+      "caption": "instructions)",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        90.0,
+        198.0,
+        136.1,
+        210.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesc_e_0_f1_13_0",
+      "label": "topmostSubform[0].Page1[0].LinesC-E[0].f1_13[0]",
+      "caption": "Simple trust",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        439.2,
+        88.0,
+        576.0,
+        102.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesc_e_0_f1_14_0",
+      "label": "topmostSubform[0].Page1[0].LinesC-E[0].f1_14[0]",
+      "caption": "Qualified disability trust",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        439.2,
+        112.0,
+        576.0,
+        126.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesc_e_0_c1_10_0",
+      "label": "topmostSubform[0].Page1[0].LinesC-E[0].c1_10[0]",
+      "caption": "Described in sec. 4947(a)(1). Check here",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        443.2,
+        152.0,
+        451.2,
+        160.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesc_e_0_c1_11_0",
+      "label": "topmostSubform[0].Page1[0].LinesC-E[0].c1_11[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        566.7,
+        162.2,
+        574.7,
+        170.2
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_linesc_e_0_c1_12_0",
+      "label": "topmostSubform[0].Page1[0].LinesC-E[0].c1_12[0]",
+      "caption": "Described in sec. 4947(a)(2)",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        443.2,
+        175.5,
+        451.2,
+        183.5
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_13_0",
+      "label": "topmostSubform[0].Page1[0].c1_13[0]",
+      "caption": "Initial return Final return Amended return Net operating",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        187.2,
+        188.0,
+        195.2,
+        196.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_14_0",
+      "label": "topmostSubform[0].Page1[0].c1_14[0]",
+      "caption": "Final return Amended return Net operating loss carryback",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        280.8,
+        188.0,
+        288.8,
+        196.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_15_0",
+      "label": "topmostSubform[0].Page1[0].c1_15[0]",
+      "caption": "Amended return Net operating loss carryback",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        364.0,
+        188.0,
+        372.0,
+        196.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_16_0",
+      "label": "topmostSubform[0].Page1[0].c1_16[0]",
+      "caption": "Net operating loss carryback",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        470.0,
+        188.0,
+        478.0,
+        196.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_17_0",
+      "label": "topmostSubform[0].Page1[0].c1_17[0]",
+      "caption": "Change in trust\u2019s name Change in fiduciary Change",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        187.2,
+        200.0,
+        195.2,
+        208.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_18_0",
+      "label": "topmostSubform[0].Page1[0].c1_18[0]",
+      "caption": "Change in fiduciary Change in fiduciary\u2019s name Change",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        280.8,
+        200.0,
+        288.8,
+        208.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_19_0",
+      "label": "topmostSubform[0].Page1[0].c1_19[0]",
+      "caption": "Change in fiduciary\u2019s name Change in fiduciary\u2019s address",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        364.0,
+        200.0,
+        372.0,
+        208.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_20_0",
+      "label": "topmostSubform[0].Page1[0].c1_20[0]",
+      "caption": "Change in fiduciary\u2019s address",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        470.0,
+        200.0,
+        478.0,
+        208.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_21_0",
+      "label": "topmostSubform[0].Page1[0].c1_21[0]",
+      "caption": "G(2) Trust TIN",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        363.9,
+        211.7,
+        371.9,
+        219.7
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_15_0",
+      "label": "topmostSubform[0].Page1[0].f1_15[0]",
+      "caption": ". . . . . . . G(2) Trust TIN",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        432.0,
+        210.0,
+        576.0,
+        222.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_16_0",
+      "label": "topmostSubform[0].Page1[0].f1_16[0]",
+      "caption": ". . . . . . . . . 1",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        222.0,
+        576.0,
+        234.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_17_0",
+      "label": "topmostSubform[0].Page1[0].f1_17[0]",
+      "caption": ". . . . . . . . . 2a",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        234.0,
+        576.0,
+        246.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_18_0",
+      "label": "topmostSubform[0].Page1[0].f1_18[0]",
+      "caption": "b Qualified dividends allocable to: (1) Beneficiaries",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        259.2,
+        246.0,
+        331.2,
+        258.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_19_0",
+      "label": "topmostSubform[0].Page1[0].f1_19[0]",
+      "caption": "Qualified dividends allocable to: (1) Beneficiaries (2) Estate or trust",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        403.2,
+        246.0,
+        475.2,
+        258.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_20_0",
+      "label": "topmostSubform[0].Page1[0].f1_20[0]",
+      "caption": ". . . . . . . . . 3",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        258.0,
+        576.0,
+        270.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_21_0",
+      "label": "topmostSubform[0].Page1[0].f1_21[0]",
+      "caption": ". . . . . . . . . 4",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        270.0,
+        576.0,
+        282.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_22_0",
+      "label": "topmostSubform[0].Page1[0].f1_22[0]",
+      "caption": "trusts, etc. Attach Schedule E (Form 1040) . . 5",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        282.0,
+        576.0,
+        294.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_23_0",
+      "label": "topmostSubform[0].Page1[0].f1_23[0]",
+      "caption": ". . . . . . . . . 6",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        294.0,
+        576.0,
+        306.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_24_0",
+      "label": "topmostSubform[0].Page1[0].f1_24[0]",
+      "caption": ". . . . . . . . . 7",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        306.0,
+        576.0,
+        318.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_25_0",
+      "label": "topmostSubform[0].Page1[0].f1_25[0]",
+      "caption": "8 Other income. List type and amount",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        230.4,
+        318.0,
+        475.2,
+        330.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_26_0",
+      "label": "topmostSubform[0].Page1[0].f1_26[0]",
+      "caption": "8 Other income. List type and amount 8",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        318.0,
+        576.0,
+        330.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_27_0",
+      "label": "topmostSubform[0].Page1[0].f1_27[0]",
+      "caption": ". . . . . . . . . 9",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        330.0,
+        576.0,
+        342.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_22_0",
+      "label": "topmostSubform[0].Page1[0].c1_22[0]",
+      "caption": ". . . . . . . .",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        247.2,
+        344.0,
+        255.2,
+        352.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_28_0",
+      "label": "topmostSubform[0].Page1[0].f1_28[0]",
+      "caption": ". . . . . . . . . 10",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        342.0,
+        576.0,
+        354.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_29_0",
+      "label": "topmostSubform[0].Page1[0].f1_29[0]",
+      "caption": ". . . . . . . . . 11",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        354.0,
+        576.0,
+        366.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_30_0",
+      "label": "topmostSubform[0].Page1[0].f1_30[0]",
+      "caption": "67(e), see instructions . . . . . . 12",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        366.0,
+        576.0,
+        378.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_31_0",
+      "label": "topmostSubform[0].Page1[0].f1_31[0]",
+      "caption": ". . . . . . . . . 13",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        378.0,
+        576.0,
+        390.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_32_0",
+      "label": "topmostSubform[0].Page1[0].f1_32[0]",
+      "caption": ". . . . . . . . . 14",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        402.0,
+        576.0,
+        414.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_33_0",
+      "label": "topmostSubform[0].Page1[0].f1_33[0]",
+      "caption": "schedule). See instructions for deductions allowable under section 67(e) 15a",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        414.0,
+        576.0,
+        426.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_34_0",
+      "label": "topmostSubform[0].Page1[0].f1_34[0]",
+      "caption": ". . . . . . . . . 15b",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        426.0,
+        576.0,
+        438.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_35_0",
+      "label": "topmostSubform[0].Page1[0].f1_35[0]",
+      "caption": ". . . . . . . . . 16",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        438.0,
+        576.0,
+        450.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_36_0",
+      "label": "topmostSubform[0].Page1[0].f1_36[0]",
+      "caption": "16 from line 9 . . . . . 17",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        410.4,
+        450.0,
+        481.6,
+        462.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_37_0",
+      "label": "topmostSubform[0].Page1[0].f1_37[0]",
+      "caption": "line 15). Attach Schedules K-1 (Form 1041) . . 18",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        462.0,
+        576.0,
+        474.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_38_0",
+      "label": "topmostSubform[0].Page1[0].f1_38[0]",
+      "caption": "certain generation-skipping taxes (attach computation) . . . . 19",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        474.0,
+        576.0,
+        486.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_39_0",
+      "label": "topmostSubform[0].Page1[0].f1_39[0]",
+      "caption": ". . . . . . . . . 20",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        486.0,
+        576.0,
+        498.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_40_0",
+      "label": "topmostSubform[0].Page1[0].f1_40[0]",
+      "caption": ". . . . . . . . . 21",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        498.0,
+        576.0,
+        510.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_41_0",
+      "label": "topmostSubform[0].Page1[0].f1_41[0]",
+      "caption": ". . . . . . . . . 22",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        510.0,
+        576.0,
+        522.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_42_0",
+      "label": "topmostSubform[0].Page1[0].f1_42[0]",
+      "caption": ". . . . . . . . . 23",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        522.0,
+        576.0,
+        534.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_43_0",
+      "label": "topmostSubform[0].Page1[0].f1_43[0]",
+      "caption": ". . . . . . . . . 24",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        534.0,
+        576.0,
+        546.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_44_0",
+      "label": "topmostSubform[0].Page1[0].f1_44[0]",
+      "caption": "965-A, Part II, column (k) (see instructions) . . 25a",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        546.0,
+        576.0,
+        558.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_45_0",
+      "label": "topmostSubform[0].Page1[0].f1_45[0]",
+      "caption": "tax liability. Enter amount from Form 1062, line 15 25b",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        558.0,
+        576.0,
+        570.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_46_0",
+      "label": "topmostSubform[0].Page1[0].f1_46[0]",
+      "caption": ". . . . . . . . . 26",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        570.0,
+        576.0,
+        582.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_47_0",
+      "label": "topmostSubform[0].Page1[0].f1_47[0]",
+      "caption": ". . . . . . . . . 27",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        582.0,
+        576.0,
+        594.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_48_0",
+      "label": "topmostSubform[0].Page1[0].f1_48[0]",
+      "caption": "25a, 25b, and 27, enter amount owed . . 28",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        594.0,
+        576.0,
+        606.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_49_0",
+      "label": "topmostSubform[0].Page1[0].f1_49[0]",
+      "caption": "lines 24, 25a, 25b, and 27, enter amount overpaid 29",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        606.0,
+        576.0,
+        618.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_50_0",
+      "label": "topmostSubform[0].Page1[0].f1_50[0]",
+      "caption": "Amount of line 29 to be: a Credited to 2026",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        266.4,
+        618.0,
+        338.4,
+        630.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_51_0",
+      "label": "topmostSubform[0].Page1[0].f1_51[0]",
+      "caption": "; b Refunded . . . . . . 30b",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        618.0,
+        576.0,
+        630.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_line30ccombfield_0_f1_52_0",
+      "label": "topmostSubform[0].Page1[0].Line30cCombfield[0].f1_52[0]",
+      "caption": "c Routing number",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        151.2,
+        642.0,
+        280.8,
+        653.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_23_0",
+      "label": "topmostSubform[0].Page1[0].c1_23[0]",
+      "caption": "Checking Savings",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        352.8,
+        644.0,
+        360.8,
+        652.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_23_1",
+      "label": "topmostSubform[0].Page1[0].c1_23[1]",
+      "caption": "Savings",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        417.6,
+        644.0,
+        425.6,
+        652.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_line30ecombfield_0_f1_53_0",
+      "label": "topmostSubform[0].Page1[0].Line30eCombfield[0].f1_53[0]",
+      "caption": "e Account number",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        151.2,
+        654.0,
+        396.0,
+        664.3
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_54_0",
+      "label": "topmostSubform[0].Page1[0].f1_54[0]",
+      "caption": "Here",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        345.6,
+        684.0,
+        475.2,
+        696.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_24_0",
+      "label": "topmostSubform[0].Page1[0].c1_24[0]",
+      "caption": "Yes No",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        534.8,
+        699.2,
+        540.8,
+        705.2
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_24_1",
+      "label": "topmostSubform[0].Page1[0].c1_24[1]",
+      "caption": "No",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        557.4,
+        699.2,
+        563.4,
+        705.2
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_55_0",
+      "label": "topmostSubform[0].Page1[0].f1_55[0]",
+      "caption": "Preparer",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        87.4,
+        718.0,
+        236.9,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_c1_25_0",
+      "label": "topmostSubform[0].Page1[0].c1_25[0]",
+      "caption": "if PTIN",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        482.5,
+        711.3,
+        490.5,
+        719.3
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_56_0",
+      "label": "topmostSubform[0].Page1[0].f1_56[0]",
+      "caption": "Preparer self-employed",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        504.0,
+        718.0,
+        576.0,
+        732.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_57_0",
+      "label": "topmostSubform[0].Page1[0].f1_57[0]",
+      "caption": "Use Only Firm\u2019s name",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        144.0,
+        732.0,
+        445.6,
+        744.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_58_0",
+      "label": "topmostSubform[0].Page1[0].f1_58[0]",
+      "caption": "Use Only Firm\u2019s address",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        144.0,
+        744.0,
+        445.6,
+        756.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_59_0",
+      "label": "topmostSubform[0].Page1[0].f1_59[0]",
+      "caption": "Use Only Firm\u2019s name Firm\u2019s EIN",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        489.6,
+        732.0,
+        576.0,
+        744.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page1_0_f1_60_0",
+      "label": "topmostSubform[0].Page1[0].f1_60[0]",
+      "caption": "Use Only Firm\u2019s address Phone no.",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        489.6,
+        744.0,
+        576.0,
+        756.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_1_0",
+      "label": "topmostSubform[0].Page2[0].f2_1[0]",
+      "caption": "for charitable purposes from gross income. See instructions . 1",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        60.0,
+        576.0,
+        72.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_2_0",
+      "label": "topmostSubform[0].Page2[0].f2_2[0]",
+      "caption": ". . . . . . . . . 2",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        72.0,
+        576.0,
+        84.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_3_0",
+      "label": "topmostSubform[0].Page2[0].f2_3[0]",
+      "caption": ". . . . . . . . . 3",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        84.0,
+        576.0,
+        96.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_4_0",
+      "label": "topmostSubform[0].Page2[0].f2_4[0]",
+      "caption": ". . . . . . . . . 4",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        108.0,
+        576.0,
+        120.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_5_0",
+      "label": "topmostSubform[0].Page2[0].f2_5[0]",
+      "caption": ". . . . . . . . . 5",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        120.0,
+        576.0,
+        132.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_6_0",
+      "label": "topmostSubform[0].Page2[0].f2_6[0]",
+      "caption": ". . . . . . . . . 6",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        144.0,
+        576.0,
+        156.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_7_0",
+      "label": "topmostSubform[0].Page2[0].f2_7[0]",
+      "caption": "1, line 13 . . . . . . 7",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        156.0,
+        576.0,
+        168.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_8_0",
+      "label": "topmostSubform[0].Page2[0].f2_8[0]",
+      "caption": ". . . . . . . . . 1",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        180.0,
+        576.0,
+        192.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_9_0",
+      "label": "topmostSubform[0].Page2[0].f2_9[0]",
+      "caption": ". . . . . . . . . 2",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        192.0,
+        576.0,
+        204.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_10_0",
+      "label": "topmostSubform[0].Page2[0].f2_10[0]",
+      "caption": "See instructions . . . . . . . 3",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        204.0,
+        576.0,
+        216.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_11_0",
+      "label": "topmostSubform[0].Page2[0].f2_11[0]",
+      "caption": "section 1202 exclusion) . . . . . . 4",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        216.0,
+        576.0,
+        228.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_12_0",
+      "label": "topmostSubform[0].Page2[0].f2_12[0]",
+      "caption": "instructions . . . . . . . . 5",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        228.0,
+        576.0,
+        240.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_13_0",
+      "label": "topmostSubform[0].Page2[0].f2_13[0]",
+      "caption": ". . . . . . . . . 6",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        252.0,
+        576.0,
+        264.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_14_0",
+      "label": "topmostSubform[0].Page2[0].f2_14[0]",
+      "caption": "-0- . . . . . . . . 7",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        264.0,
+        576.0,
+        276.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_15_0",
+      "label": "topmostSubform[0].Page2[0].f2_15[0]",
+      "caption": "local law . . . . . . . 8",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        288.0,
+        481.6,
+        300.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_16_0",
+      "label": "topmostSubform[0].Page2[0].f2_16[0]",
+      "caption": ". . . . . . . . . 9",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        300.0,
+        576.0,
+        312.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_17_0",
+      "label": "topmostSubform[0].Page2[0].f2_17[0]",
+      "caption": ". . . . . . . . . 10",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        312.0,
+        576.0,
+        324.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_18_0",
+      "label": "topmostSubform[0].Page2[0].f2_18[0]",
+      "caption": "instructions . . . . . . . . 11",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        324.0,
+        576.0,
+        336.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_19_0",
+      "label": "topmostSubform[0].Page2[0].f2_19[0]",
+      "caption": ". . . . . . . . . 12",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        336.0,
+        576.0,
+        348.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_20_0",
+      "label": "topmostSubform[0].Page2[0].f2_20[0]",
+      "caption": ". . . . . . . . . 13",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        348.0,
+        576.0,
+        360.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_21_0",
+      "label": "topmostSubform[0].Page2[0].f2_21[0]",
+      "caption": "If zero or less, enter -0- . . . 14",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        360.0,
+        576.0,
+        372.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_22_0",
+      "label": "topmostSubform[0].Page2[0].f2_22[0]",
+      "caption": "14 here and on page 1, line 18 . 15",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        372.0,
+        576.0,
+        384.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_ln1a_readorder_0_f2_23_0",
+      "label": "topmostSubform[0].Page2[0].Ln1a_ReadOrder[0].f2_23[0]",
+      "caption": ". . . . . . . . . 1a",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        420.0,
+        481.6,
+        432.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_24_0",
+      "label": "topmostSubform[0].Page2[0].f2_24[0]",
+      "caption": ". . . . . . . . . 1b",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        432.0,
+        481.6,
+        444.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_25_0",
+      "label": "topmostSubform[0].Page2[0].f2_25[0]",
+      "caption": "(Form 1041), line 54) . . . . . 1c",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        444.0,
+        481.6,
+        456.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_26_0",
+      "label": "topmostSubform[0].Page2[0].f2_26[0]",
+      "caption": ". . . . . . . . . 1d",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        456.0,
+        481.6,
+        468.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_27_0",
+      "label": "topmostSubform[0].Page2[0].f2_27[0]",
+      "caption": ". . . . . . . . . 1e",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        468.0,
+        576.0,
+        480.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_28_0",
+      "label": "topmostSubform[0].Page2[0].f2_28[0]",
+      "caption": ". . . . . . . . . 2a",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        480.0,
+        481.6,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_29_0",
+      "label": "topmostSubform[0].Page2[0].f2_29[0]",
+      "caption": ". . . . . . . . . 2b",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        492.0,
+        481.6,
+        504.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_30_0",
+      "label": "topmostSubform[0].Page2[0].f2_30[0]",
+      "caption": "8801 . . . . . . . . 2c",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        504.0,
+        481.6,
+        516.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_31_0",
+      "label": "topmostSubform[0].Page2[0].f2_31[0]",
+      "caption": ". . . . . . . . . 2d",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        410.4,
+        516.0,
+        481.6,
+        528.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_32_0",
+      "label": "topmostSubform[0].Page2[0].f2_32[0]",
+      "caption": ". . . . . . . . . 2e",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        528.0,
+        576.0,
+        540.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_33_0",
+      "label": "topmostSubform[0].Page2[0].f2_33[0]",
+      "caption": ". . . . . . . . . 3",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        540.0,
+        576.0,
+        552.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_34_0",
+      "label": "topmostSubform[0].Page2[0].f2_34[0]",
+      "caption": "Worksheet, line 17). See instructions . . . . 4",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        552.0,
+        576.0,
+        564.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_35_0",
+      "label": "topmostSubform[0].Page2[0].f2_35[0]",
+      "caption": ". . . . . . . . . 5",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        564.0,
+        576.0,
+        576.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_36_0",
+      "label": "topmostSubform[0].Page2[0].f2_36[0]",
+      "caption": ". . . . . . . . . 6a",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        576.0,
+        576.0,
+        588.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_37_0",
+      "label": "topmostSubform[0].Page2[0].f2_37[0]",
+      "caption": ". . . . . . . . . 6b",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        588.0,
+        576.0,
+        600.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_38_0",
+      "label": "topmostSubform[0].Page2[0].f2_38[0]",
+      "caption": "c Other recapture taxes:",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        158.4,
+        600.0,
+        475.2,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_39_0",
+      "label": "topmostSubform[0].Page2[0].f2_39[0]",
+      "caption": "c Other recapture taxes: 6c",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        600.0,
+        576.0,
+        612.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_40_0",
+      "label": "topmostSubform[0].Page2[0].f2_40[0]",
+      "caption": ". . . . . . . . . 7",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        612.0,
+        576.0,
+        624.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_41_0",
+      "label": "topmostSubform[0].Page2[0].f2_41[0]",
+      "caption": ". . . . . . . . . 8",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        624.0,
+        576.0,
+        636.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page2_0_f2_42_0",
+      "label": "topmostSubform[0].Page2[0].f2_42[0]",
+      "caption": ". . . . . . . . . 9",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        504.0,
+        636.0,
+        576.0,
+        648.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_1_0",
+      "label": "topmostSubform[0].Page3[0].f3_1[0]",
+      "caption": "applied from preceding year\u2019s return . . . . 10",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        72.0,
+        576.0,
+        84.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_2_0",
+      "label": "topmostSubform[0].Page3[0].f3_2[0]",
+      "caption": ". . . . . . . . . 11",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        84.0,
+        576.0,
+        96.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_3_0",
+      "label": "topmostSubform[0].Page3[0].f3_3[0]",
+      "caption": ". . . . . . . . . 12",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        96.0,
+        576.0,
+        108.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_4_0",
+      "label": "topmostSubform[0].Page3[0].f3_4[0]",
+      "caption": ". . . . . . . . . 13",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        108.0,
+        576.0,
+        120.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_1_0",
+      "label": "topmostSubform[0].Page3[0].c3_1[0]",
+      "caption": ". . . . . . . .",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        347.0,
+        122.0,
+        355.0,
+        130.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_5_0",
+      "label": "topmostSubform[0].Page3[0].f3_5[0]",
+      "caption": ". . . . . . . . . 14",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        120.0,
+        576.0,
+        132.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_6_0",
+      "label": "topmostSubform[0].Page3[0].f3_6[0]",
+      "caption": "column (f) (see instructions) . . . . . 15",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        132.0,
+        576.0,
+        144.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_7_0",
+      "label": "topmostSubform[0].Page3[0].f3_7[0]",
+      "caption": ". . . . . . . . . 16",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        144.0,
+        576.0,
+        156.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_8_0",
+      "label": "topmostSubform[0].Page3[0].f3_8[0]",
+      "caption": ". . . . . . . . . 17",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        156.0,
+        576.0,
+        168.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_9_0",
+      "label": "topmostSubform[0].Page3[0].f3_9[0]",
+      "caption": ". . . . . . . . . 18a",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        168.0,
+        576.0,
+        180.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_10_0",
+      "label": "topmostSubform[0].Page3[0].f3_10[0]",
+      "caption": ". . . . . . . . . 18b",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        180.0,
+        576.0,
+        192.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_11_0",
+      "label": "topmostSubform[0].Page3[0].f3_11[0]",
+      "caption": "14 . . . . . . . . 18c",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        192.0,
+        576.0,
+        204.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_12_0",
+      "label": "topmostSubform[0].Page3[0].f3_12[0]",
+      "caption": ". . . . . . . . . 19",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        504.0,
+        216.0,
+        576.0,
+        228.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_2_0",
+      "label": "topmostSubform[0].Page3[0].c3_2[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        252.0,
+        549.6,
+        264.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_2_1",
+      "label": "topmostSubform[0].Page3[0].c3_2[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        252.0,
+        571.2,
+        264.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_f3_13_0",
+      "label": "topmostSubform[0].Page3[0].f3_13[0]",
+      "caption": "income and exempt-interest dividends . . . . . $",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        446.4,
+        264.0,
+        525.6,
+        276.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_3_0",
+      "label": "topmostSubform[0].Page3[0].c3_3[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        288.0,
+        549.6,
+        300.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_3_1",
+      "label": "topmostSubform[0].Page3[0].c3_3[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        288.0,
+        571.2,
+        300.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_4_0",
+      "label": "topmostSubform[0].Page3[0].c3_4[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        312.0,
+        549.6,
+        324.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_4_1",
+      "label": "topmostSubform[0].Page3[0].c3_4[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        312.0,
+        571.2,
+        324.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_seeinstructions_readorder_0_f3_14_0",
+      "label": "topmostSubform[0].Page3[0].SeeInstructions_ReadOrder[0].f3_14[0]",
+      "caption": "foreign country",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        129.6,
+        336.0,
+        525.6,
+        348.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_5_0",
+      "label": "topmostSubform[0].Page3[0].c3_5[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        372.0,
+        549.6,
+        384.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_5_1",
+      "label": "topmostSubform[0].Page3[0].c3_5[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        372.0,
+        571.2,
+        384.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_6_0",
+      "label": "topmostSubform[0].Page3[0].c3_6[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        396.0,
+        549.6,
+        408.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_6_1",
+      "label": "topmostSubform[0].Page3[0].c3_6[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        396.0,
+        571.2,
+        408.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_7_0",
+      "label": "topmostSubform[0].Page3[0].c3_7[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        516.6,
+        410.0,
+        524.6,
+        418.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_8_0",
+      "label": "topmostSubform[0].Page3[0].c3_8[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        516.6,
+        422.0,
+        524.6,
+        430.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_9_0",
+      "label": "topmostSubform[0].Page3[0].c3_9[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        516.6,
+        446.0,
+        524.6,
+        454.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_10_0",
+      "label": "topmostSubform[0].Page3[0].c3_10[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        456.0,
+        549.6,
+        468.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_10_1",
+      "label": "topmostSubform[0].Page3[0].c3_10[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        456.0,
+        571.2,
+        468.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_11_0",
+      "label": "topmostSubform[0].Page3[0].c3_11[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        480.0,
+        549.6,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_11_1",
+      "label": "topmostSubform[0].Page3[0].c3_11[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        480.0,
+        571.2,
+        492.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_12_0",
+      "label": "topmostSubform[0].Page3[0].c3_12[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        492.0,
+        549.6,
+        504.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_12_1",
+      "label": "topmostSubform[0].Page3[0].c3_12[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        492.0,
+        571.2,
+        504.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_13_0",
+      "label": "topmostSubform[0].Page3[0].c3_13[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        504.0,
+        549.6,
+        516.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_13_1",
+      "label": "topmostSubform[0].Page3[0].c3_13[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        504.0,
+        571.2,
+        516.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_14_0",
+      "label": "topmostSubform[0].Page3[0].c3_14[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        528.0,
+        549.6,
+        540.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_14_1",
+      "label": "topmostSubform[0].Page3[0].c3_14[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        528.0,
+        571.2,
+        540.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_15_0",
+      "label": "topmostSubform[0].Page3[0].c3_15[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        564.0,
+        549.6,
+        576.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_15_1",
+      "label": "topmostSubform[0].Page3[0].c3_15[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        564.0,
+        571.2,
+        576.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_16_0",
+      "label": "topmostSubform[0].Page3[0].c3_16[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        576.0,
+        549.6,
+        588.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_16_1",
+      "label": "topmostSubform[0].Page3[0].c3_16[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        576.0,
+        571.2,
+        588.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_17_0",
+      "label": "topmostSubform[0].Page3[0].c3_17[0]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        537.6,
+        588.0,
+        549.6,
+        600.0
+      ]
+    },
+    {
+      "field_id": "topmostsubform_0_page3_0_c3_17_1",
+      "label": "topmostSubform[0].Page3[0].c3_17[1]",
+      "caption": "",
+      "type": "checkbox",
+      "page": 2,
+      "rect": [
+        559.2,
+        588.0,
+        571.2,
+        600.0
+      ]
+    }
+  ]
+}

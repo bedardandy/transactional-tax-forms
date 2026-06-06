@@ -1,0 +1,31 @@
+{
+  "form_id": "IRS-2553",
+  "status": "vision-mapped",
+  "model": "qwen3.6-27b",
+  "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
+  "map": {
+    "topmostsubform_0_page1_0_nameaddress_0_f1_01_0": "entity.legal_name",
+    "topmostsubform_0_page1_0_nameaddress_0_f1_02_0": "entity.street_address",
+    "topmostsubform_0_page1_0_nameaddress_0_f1_03_0": "entity.mailing_address",
+    "topmostsubform_0_page1_0_f1_04_0": "entity.ein",
+    "topmostsubform_0_page1_0_f1_05_0": "entity.formation_date",
+    "topmostsubform_0_page1_0_f1_06_0": "entity.state_of_formation",
+    "topmostsubform_0_page1_0_f1_07_0": "facts.election_effective_date",
+    "topmostsubform_0_page1_0_f1_08_0": "facts.fiscal_year_end",
+    "topmostsubform_0_page1_0_f1_09_0": "facts.fiscal_year_end",
+    "topmostsubform_0_page1_0_f1_10_0": "responsible_party.name",
+    "topmostsubform_0_page1_0_f1_11_0": "entity.phone",
+    "topmostsubform_0_page1_0_f1_21_0": "responsible_party.title",
+    "topmostsubform_0_page2_0_f2_01_0": "entity.legal_name",
+    "topmostsubform_0_page2_0_f2_02_0": "entity.ein",
+    "topmostsubform_0_page3_0_f3_01_0": "entity.legal_name",
+    "topmostsubform_0_page3_0_f3_02_0": "entity.ein",
+    "topmostsubform_0_page4_0_f4_01_0": "entity.legal_name",
+    "topmostsubform_0_page4_0_f4_02_0": "entity.ein",
+    "topmostsubform_0_page4_0_f4_03_0": "responsible_party.name",
+    "topmostsubform_0_page4_0_f4_04_0": "responsible_party.ssn_itin_ein",
+    "topmostsubform_0_page4_0_f4_05_0": "trust.name",
+    "topmostsubform_0_page4_0_f4_06_0": "trust.ein",
+    "topmostsubform_0_page4_0_f4_07_0": "facts.election_effective_date"
+  }
+}

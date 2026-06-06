@@ -1,0 +1,1188 @@
+{
+  "form_id": "ME-RETTD",
+  "fields": [
+    {
+      "field_id": "text_field_5",
+      "label": "Text Field 5",
+      "caption": "2. Municipality",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        92.6,
+        129.3,
+        354.0,
+        145.5
+      ]
+    },
+    {
+      "field_id": "text_field_6",
+      "label": "Text Field 6",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        44.4,
+        181.0,
+        475.9,
+        197.2
+      ]
+    },
+    {
+      "field_id": "text_field_7",
+      "label": "Text Field 7",
+      "caption": "1. County",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        82.1,
+        105.3,
+        354.0,
+        121.5
+      ]
+    },
+    {
+      "field_id": "text_field_9",
+      "label": "Text Field 9",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        44.7,
+        210.8,
+        475.9,
+        227.0
+      ]
+    },
+    {
+      "field_id": "text_field_10",
+      "label": "Text Field 10",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        44.5,
+        241.0,
+        296.1,
+        257.2
+      ]
+    },
+    {
+      "field_id": "text_field_11",
+      "label": "Text Field 11",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        303.3,
+        240.5,
+        476.5,
+        256.8
+      ]
+    },
+    {
+      "field_id": "text_field_12",
+      "label": "Text Field 12",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        483.3,
+        181.0,
+        569.8,
+        197.2
+      ]
+    },
+    {
+      "field_id": "text_field_13",
+      "label": "Text Field 13",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        484.0,
+        210.8,
+        570.5,
+        227.0
+      ]
+    },
+    {
+      "field_id": "text_field_14",
+      "label": "Text Field 14",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        483.9,
+        240.5,
+        513.5,
+        256.8
+      ]
+    },
+    {
+      "field_id": "text_field_15",
+      "label": "Text Field 15",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        519.9,
+        241.0,
+        570.3,
+        257.2
+      ]
+    },
+    {
+      "field_id": "text_field_16",
+      "label": "Text Field 16",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        44.9,
+        287.5,
+        476.5,
+        303.8
+      ]
+    },
+    {
+      "field_id": "text_field_17",
+      "label": "Text Field 17",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        484.5,
+        288.0,
+        570.0,
+        304.2
+      ]
+    },
+    {
+      "field_id": "text_field_18",
+      "label": "Text Field 18",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        44.7,
+        323.5,
+        476.2,
+        339.8
+      ]
+    },
+    {
+      "field_id": "text_field_19",
+      "label": "Text Field 19",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        484.3,
+        324.0,
+        569.8,
+        340.2
+      ]
+    },
+    {
+      "field_id": "text_field_20",
+      "label": "Text Field 20",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        44.9,
+        360.0,
+        296.5,
+        376.2
+      ]
+    },
+    {
+      "field_id": "text_field_21",
+      "label": "Text Field 21",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        303.8,
+        359.5,
+        476.9,
+        375.8
+      ]
+    },
+    {
+      "field_id": "text_field_22",
+      "label": "Text Field 22",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        484.4,
+        359.5,
+        514.0,
+        375.8
+      ]
+    },
+    {
+      "field_id": "text_field_23",
+      "label": "Text Field 23",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        519.9,
+        359.5,
+        570.3,
+        375.8
+      ]
+    },
+    {
+      "field_id": "text_field_24",
+      "label": "Text Field 24",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        109.0,
+        392.5,
+        152.2,
+        408.8
+      ]
+    },
+    {
+      "field_id": "text_field_25",
+      "label": "Text Field 25",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        159.6,
+        392.5,
+        202.8,
+        408.8
+      ]
+    },
+    {
+      "field_id": "text_field_26",
+      "label": "Text Field 26",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        210.3,
+        393.0,
+        253.4,
+        409.2
+      ]
+    },
+    {
+      "field_id": "text_field_27",
+      "label": "Text Field 27",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        261.3,
+        392.5,
+        305.0,
+        408.8
+      ]
+    },
+    {
+      "field_id": "text_field_28",
+      "label": "Text Field 28",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        44.0,
+        429.0,
+        295.6,
+        445.2
+      ]
+    },
+    {
+      "field_id": "check_box_1",
+      "label": "Check Box 1",
+      "caption": "No maps exist erty being sold (see instructions).",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        317.7,
+        397.9,
+        323.8,
+        405.9
+      ]
+    },
+    {
+      "field_id": "check_box_2",
+      "label": "Check Box 2",
+      "caption": "Multiple parcels",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        318.0,
+        409.1,
+        324.1,
+        417.1
+      ]
+    },
+    {
+      "field_id": "check_box_3",
+      "label": "Check Box 3",
+      "caption": "Portion of parcel 5d. Acreage (see instructions) .",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        317.7,
+        422.1,
+        323.8,
+        430.1
+      ]
+    },
+    {
+      "field_id": "check_box_4",
+      "label": "Check Box 4",
+      "caption": "Not applicable .",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        317.9,
+        435.0,
+        324.0,
+        443.0
+      ]
+    },
+    {
+      "field_id": "text_field_29",
+      "label": "Text Field 29",
+      "caption": "No maps exist erty being sold (see instructions).",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        519.2,
+        393.0,
+        569.6,
+        409.2
+      ]
+    },
+    {
+      "field_id": "text_field_30",
+      "label": "Text Field 30",
+      "caption": "price (If the transfer is a gift, enter \u201c0\u201d)....................................................................... 6a.",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        442.6,
+        457.0,
+        549.5,
+        473.2
+      ]
+    },
+    {
+      "field_id": "text_field_31",
+      "label": "Text Field 31",
+      "caption": "6b. Adjusted assessed value.............................................................................................",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        441.3,
+        481.0,
+        548.2,
+        497.2
+      ]
+    },
+    {
+      "field_id": "check_box_5",
+      "label": "Check Box 5",
+      "caption": "Check the box if the transfer is fully",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        117.5,
+        498.6,
+        123.6,
+        506.6
+      ]
+    },
+    {
+      "field_id": "check_box_6",
+      "label": "Check Box 6",
+      "caption": "Check the box if the transfer is only",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        117.5,
+        519.1,
+        123.6,
+        527.1
+      ]
+    },
+    {
+      "field_id": "text_field_32",
+      "label": "Text Field 32",
+      "caption": "partially exempt from transfer tax. Enter the corresponding See Instructions",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        532.1,
+        516.2,
+        569.8,
+        533.5
+      ]
+    },
+    {
+      "field_id": "text_field_33",
+      "label": "Text Field 33",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        45.3,
+        552.0,
+        152.2,
+        568.2
+      ]
+    },
+    {
+      "field_id": "check_box_7",
+      "label": "Check Box 7",
+      "caption": "CLASSIFIED",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        506.3,
+        555.3,
+        512.3,
+        563.3
+      ]
+    },
+    {
+      "field_id": "check_box_8",
+      "label": "Check Box 8",
+      "caption": "Seller has qualified as a Maine resident",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        279.1,
+        596.1,
+        285.1,
+        604.1
+      ]
+    },
+    {
+      "field_id": "text_field_34",
+      "label": "Text Field 34",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        44.3,
+        610.0,
+        347.1,
+        644.3
+      ]
+    },
+    {
+      "field_id": "check_box_9",
+      "label": "Check Box 9",
+      "caption": "Seller has qualified as a Maine resident",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        354.8,
+        600.8,
+        360.8,
+        608.8
+      ]
+    },
+    {
+      "field_id": "check_box_10",
+      "label": "Check Box 10",
+      "caption": "A waiver has been received from the State",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        355.0,
+        612.0,
+        361.1,
+        620.0
+      ]
+    },
+    {
+      "field_id": "check_box_11",
+      "label": "Check Box 11",
+      "caption": "Consideration for the property is less than $100,000",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        354.7,
+        624.6,
+        360.8,
+        632.6
+      ]
+    },
+    {
+      "field_id": "check_box_12",
+      "label": "Check Box 12",
+      "caption": "The transfer is a foreclosure sale",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        355.3,
+        635.9,
+        361.3,
+        643.9
+      ]
+    },
+    {
+      "field_id": "text_field_35",
+      "label": "Text Field 35",
+      "caption": "Not applicable .",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        546.3,
+        429.0,
+        569.8,
+        445.2
+      ]
+    },
+    {
+      "field_id": "text_field_36",
+      "label": "Text Field 36",
+      "caption": "Not applicable",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        462.9,
+        429.0,
+        540.7,
+        445.2
+      ]
+    },
+    {
+      "field_id": "text_field_37",
+      "label": "Text Field 37",
+      "caption": "1.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.4,
+        189.4,
+        341.9,
+        206.4
+      ]
+    },
+    {
+      "field_id": "text_field_38",
+      "label": "Text Field 38",
+      "caption": "2.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.5,
+        207.5,
+        342.0,
+        224.5
+      ]
+    },
+    {
+      "field_id": "text_field_39",
+      "label": "Text Field 39",
+      "caption": "3.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.0,
+        225.1,
+        341.5,
+        242.1
+      ]
+    },
+    {
+      "field_id": "text_field_40",
+      "label": "Text Field 40",
+      "caption": "4.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.0,
+        243.4,
+        341.5,
+        260.5
+      ]
+    },
+    {
+      "field_id": "text_field_41",
+      "label": "Text Field 41",
+      "caption": "5.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.0,
+        261.4,
+        341.5,
+        278.5
+      ]
+    },
+    {
+      "field_id": "text_field_42",
+      "label": "Text Field 42",
+      "caption": "6.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.0,
+        279.4,
+        341.5,
+        296.5
+      ]
+    },
+    {
+      "field_id": "text_field_43",
+      "label": "Text Field 43",
+      "caption": "7.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.5,
+        297.4,
+        342.0,
+        314.5
+      ]
+    },
+    {
+      "field_id": "text_field_44",
+      "label": "Text Field 44",
+      "caption": "8.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        315.4,
+        342.1,
+        332.5
+      ]
+    },
+    {
+      "field_id": "text_field_45",
+      "label": "Text Field 45",
+      "caption": "1.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.4,
+        378.4,
+        341.9,
+        395.4
+      ]
+    },
+    {
+      "field_id": "text_field_46",
+      "label": "Text Field 46",
+      "caption": "2.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        396.6,
+        342.1,
+        413.6
+      ]
+    },
+    {
+      "field_id": "text_field_47",
+      "label": "Text Field 47",
+      "caption": "3.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        414.6,
+        342.1,
+        431.7
+      ]
+    },
+    {
+      "field_id": "text_field_48",
+      "label": "Text Field 48",
+      "caption": "4.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        432.3,
+        342.1,
+        449.3
+      ]
+    },
+    {
+      "field_id": "text_field_49",
+      "label": "Text Field 49",
+      "caption": "5.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        450.3,
+        342.1,
+        467.4
+      ]
+    },
+    {
+      "field_id": "text_field_50",
+      "label": "Text Field 50",
+      "caption": "6.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        468.6,
+        342.1,
+        485.6
+      ]
+    },
+    {
+      "field_id": "text_field_51",
+      "label": "Text Field 51",
+      "caption": "7.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        486.6,
+        342.1,
+        503.6
+      ]
+    },
+    {
+      "field_id": "text_field_52",
+      "label": "Text Field 52",
+      "caption": "8.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        504.6,
+        342.1,
+        521.6
+      ]
+    },
+    {
+      "field_id": "text_field_53",
+      "label": "Text Field 53",
+      "caption": "1.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        189.4,
+        575.5,
+        206.5
+      ]
+    },
+    {
+      "field_id": "text_field_54",
+      "label": "Text Field 54",
+      "caption": "2.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        207.5,
+        575.5,
+        224.5
+      ]
+    },
+    {
+      "field_id": "text_field_55",
+      "label": "Text Field 55",
+      "caption": "3.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        225.4,
+        575.5,
+        242.4
+      ]
+    },
+    {
+      "field_id": "text_field_56",
+      "label": "Text Field 56",
+      "caption": "4.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        243.4,
+        575.5,
+        260.5
+      ]
+    },
+    {
+      "field_id": "text_field_57",
+      "label": "Text Field 57",
+      "caption": "5.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        261.4,
+        575.5,
+        278.5
+      ]
+    },
+    {
+      "field_id": "text_field_58",
+      "label": "Text Field 58",
+      "caption": "6.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        279.4,
+        575.5,
+        296.5
+      ]
+    },
+    {
+      "field_id": "text_field_59",
+      "label": "Text Field 59",
+      "caption": "7.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        297.9,
+        575.5,
+        315.0
+      ]
+    },
+    {
+      "field_id": "text_field_60",
+      "label": "Text Field 60",
+      "caption": "8.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        315.4,
+        575.5,
+        332.5
+      ]
+    },
+    {
+      "field_id": "text_field_61",
+      "label": "Text Field 61",
+      "caption": "1.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        378.5,
+        575.5,
+        395.6
+      ]
+    },
+    {
+      "field_id": "text_field_62",
+      "label": "Text Field 62",
+      "caption": "2.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        396.6,
+        575.5,
+        413.6
+      ]
+    },
+    {
+      "field_id": "text_field_63",
+      "label": "Text Field 63",
+      "caption": "3.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        414.6,
+        575.5,
+        431.7
+      ]
+    },
+    {
+      "field_id": "text_field_64",
+      "label": "Text Field 64",
+      "caption": "4.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        432.3,
+        575.5,
+        449.3
+      ]
+    },
+    {
+      "field_id": "text_field_65",
+      "label": "Text Field 65",
+      "caption": "5.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        450.3,
+        575.5,
+        467.4
+      ]
+    },
+    {
+      "field_id": "text_field_66",
+      "label": "Text Field 66",
+      "caption": "6.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        468.6,
+        575.5,
+        485.6
+      ]
+    },
+    {
+      "field_id": "text_field_67",
+      "label": "Text Field 67",
+      "caption": "7.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        486.5,
+        575.5,
+        503.6
+      ]
+    },
+    {
+      "field_id": "text_field_68",
+      "label": "Text Field 68",
+      "caption": "8.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        504.5,
+        575.5,
+        521.6
+      ]
+    },
+    {
+      "field_id": "text_field_69",
+      "label": "Text Field 69",
+      "caption": "1.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        567.6,
+        342.1,
+        584.7
+      ]
+    },
+    {
+      "field_id": "text_field_71",
+      "label": "Text Field 71",
+      "caption": "2.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.4,
+        585.7,
+        341.9,
+        602.8
+      ]
+    },
+    {
+      "field_id": "text_field_72",
+      "label": "Text Field 72",
+      "caption": "3.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.6,
+        603.8,
+        342.1,
+        620.9
+      ]
+    },
+    {
+      "field_id": "text_field_73",
+      "label": "Text Field 73",
+      "caption": "4.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.4,
+        621.4,
+        341.9,
+        638.5
+      ]
+    },
+    {
+      "field_id": "text_field_74",
+      "label": "Text Field 74",
+      "caption": "5.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.4,
+        639.5,
+        341.9,
+        656.6
+      ]
+    },
+    {
+      "field_id": "text_field_75",
+      "label": "Text Field 75",
+      "caption": "6.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.4,
+        657.7,
+        341.9,
+        674.8
+      ]
+    },
+    {
+      "field_id": "text_field_76",
+      "label": "Text Field 76",
+      "caption": "7.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.4,
+        675.7,
+        341.9,
+        692.8
+      ]
+    },
+    {
+      "field_id": "text_field_77",
+      "label": "Text Field 77",
+      "caption": "8.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        54.4,
+        693.7,
+        341.9,
+        710.8
+      ]
+    },
+    {
+      "field_id": "text_field_78",
+      "label": "Text Field 78",
+      "caption": "1.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        567.5,
+        575.5,
+        584.5
+      ]
+    },
+    {
+      "field_id": "text_field_79",
+      "label": "Text Field 79",
+      "caption": "2.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        585.7,
+        575.5,
+        602.8
+      ]
+    },
+    {
+      "field_id": "text_field_80",
+      "label": "Text Field 80",
+      "caption": "3.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.5,
+        603.8,
+        575.5,
+        620.9
+      ]
+    },
+    {
+      "field_id": "text_field_81",
+      "label": "Text Field 81",
+      "caption": "4.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.6,
+        621.4,
+        575.6,
+        638.5
+      ]
+    },
+    {
+      "field_id": "text_field_82",
+      "label": "Text Field 82",
+      "caption": "5.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.6,
+        639.5,
+        575.6,
+        656.5
+      ]
+    },
+    {
+      "field_id": "text_field_83",
+      "label": "Text Field 83",
+      "caption": "6.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.6,
+        657.7,
+        575.6,
+        674.8
+      ]
+    },
+    {
+      "field_id": "text_field_84",
+      "label": "Text Field 84",
+      "caption": "7.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.6,
+        675.7,
+        575.6,
+        692.8
+      ]
+    },
+    {
+      "field_id": "text_field_85",
+      "label": "Text Field 85",
+      "caption": "8.",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        342.6,
+        693.7,
+        575.6,
+        710.8
+      ]
+    }
+  ]
+}

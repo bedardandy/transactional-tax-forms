@@ -4,4 +4,4 @@ agency: "Maine Revenue Services"
 domain: real-estate
 num_pages: 4
 n_widgets: 91
-status: inventoried   # fields.csv captured (heuristic captions); canonical mapping (vision-refined) pending
+status: vision-mapped   # 75 fields mapped (Qwen-VL draft); review before production
