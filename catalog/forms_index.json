@@ -7,7 +7,7 @@
       "agency": "IRS",
       "domain": "probate",
       "num_pages": 3,
-      "status": "unmapped"
+      "status": "inventoried"
     },
     {
       "form_id": "IRS-2553",
@@ -15,7 +15,7 @@
       "agency": "IRS",
       "domain": "corporations",
       "num_pages": 4,
-      "status": "unmapped"
+      "status": "inventoried"
     },
     {
       "form_id": "IRS-56",
@@ -23,7 +23,7 @@
       "agency": "IRS",
       "domain": "probate",
       "num_pages": 2,
-      "status": "unmapped"
+      "status": "inventoried"
     },
     {
       "form_id": "IRS-706",
@@ -31,7 +31,7 @@
       "agency": "IRS",
       "domain": "probate",
       "num_pages": 5,
-      "status": "unmapped"
+      "status": "inventoried"
     },
     {
       "form_id": "IRS-8832",
@@ -39,7 +39,7 @@
       "agency": "IRS",
       "domain": "corporations",
       "num_pages": 8,
-      "status": "unmapped"
+      "status": "inventoried"
     },
     {
       "form_id": "IRS-SS-4",
@@ -47,7 +47,7 @@
       "agency": "IRS",
       "domain": "corporations",
       "num_pages": 2,
-      "status": "unmapped"
+      "status": "inventoried"
     },
     {
       "form_id": "ME-RETTD",
@@ -55,7 +55,7 @@
       "agency": "Maine Revenue Services",
       "domain": "real-estate",
       "num_pages": 4,
-      "status": "unmapped"
+      "status": "inventoried"
     },
     {
       "form_id": "MRS-1041ME",
