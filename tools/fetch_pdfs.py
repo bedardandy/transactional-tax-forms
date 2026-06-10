@@ -84,7 +84,7 @@ def main() -> int:
             return 2
         forms = {f: forms[f] for f in want}
 
-    n_ok = n_skip = n_fetch = n_fail = 0
+    n_skip = n_fetch = n_fail = 0
     failures: list[str] = []
     for fid in sorted(forms):
         entry = forms[fid]
@@ -117,7 +117,6 @@ def main() -> int:
         dest.write_bytes(data)
         print(f"  OK     {fid}: {len(data)} bytes, verified")
         n_fetch += 1
-        n_ok += 1
 
     print(f"\nfetched {n_fetch}, skipped {n_skip} (already valid), "
           f"failed {n_fail} of {len(forms)}")

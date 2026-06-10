@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
 """Fill a form directly from its ``mapping.json`` + a canonical fact object.
 
-This is the **mapping.json-driven** fill path, and it is deliberately separate
-from ``engine/fill.py``:
-
-- ``engine/fill.py`` runs the generic ``map_form`` + form recipes from an
-  engine-shape case. It never reads ``mapping.json``.
-- this module resolves each canonical fact-key in a form's ``mapping.json``
-  against a canonical fact object and writes the result to the mapped widget.
-
-So this is what an external adapter (docassemble, LangChain, ...) conceptually
-does, and it's how you *verify* a `mapping.json`: fill from it, then check the
-output. Recipe-tier forms have a pointer-only ``mapping.json`` (empty ``map``)
-and are skipped — use ``engine/fill.py`` for those.
+This is the repo's one fill path: it resolves each canonical fact-key in a
+form's ``mapping.json`` against a canonical fact object (see
+``docs/integrations/README.md`` for the case shape) and writes the result to
+the mapped widget. It is also how you *verify* a ``mapping.json``: fill from
+it, then check the output. Forms whose mapping status is not fillable
+(``recipe`` pointers, ``remap-pending`` after upstream drift) are refused with
+a machine-readable reason.
 """
 from __future__ import annotations
 

@@ -18,30 +18,17 @@ import hashlib
 import json
 import pathlib
 import sys
-import time
-import urllib.request
 
 import fitz
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from tools.fetch_pdfs import _download  # shared retrying downloader  # noqa: E402
+
 SOURCE_URLS = ROOT / "catalog" / "source_urls.json"
 MANIFEST = ROOT / "catalog" / "pdf_manifest.json"
 FORMS = ROOT / "forms"
-USER_AGENT = "transactional-tax-forms/build_manifest (public records / public-domain forms)"
-
-
-def _download(url: str, timeout: int, retries: int) -> bytes:
-    last = None
-    for attempt in range(max(1, retries)):
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-            with urllib.request.urlopen(req, timeout=timeout) as r:  # noqa: S310
-                return r.read()
-        except Exception as e:  # noqa: BLE001
-            last = e
-            if attempt < retries - 1:
-                time.sleep(1.5 * (attempt + 1))
-    raise last
 
 
 def widget_inventory(data: bytes) -> dict:

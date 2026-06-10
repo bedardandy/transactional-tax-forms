@@ -7,18 +7,14 @@ per-form folders rather than hand-maintained. Run after adding or remapping a fo
 """
 import json
 import pathlib
-import re
+
+import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
 def load_yaml(p):
-    d = {}
-    for line in pathlib.Path(p).read_text().splitlines():
-        m = re.match(r"^([a-z_]+):\s*(.*)$", line)
-        if m:
-            d[m.group(1)] = m.group(2).split("#")[0].strip().strip('"')
-    return d
+    return yaml.safe_load(pathlib.Path(p).read_text()) or {}
 
 
 def main():

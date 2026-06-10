@@ -1,29 +1,27 @@
 #!/usr/bin/env python3
 """Runtime split of shared AcroForm fields, driven by ``field_splits.json``.
 
-Some court source PDFs reuse ONE AcroForm field across semantically different
-boxes — e.g. OTH-029 field ``2_5`` is a child-DOB table cell on pg4 AND the
-confidential "Mailing address" line on pg12. Because both are kid widgets of a
-single field they always hold the same value, so a value mapped to the table
-cell *fans out* onto the unrelated box (and a screen reader can name the field
-only once). This module detaches a named appearance into its OWN terminal
-field so it stops inheriting the other box's value.
+Some agency source PDFs reuse ONE AcroForm field across semantically different
+boxes — e.g. a "decedent SSN" widget on page 1 and an unrelated line on page 3
+that are kid widgets of a single field. Because the kids share one value, a
+value mapped to one box *fans out* onto the unrelated box (and a screen reader
+can name the field only once). This module detaches a named appearance into
+its OWN terminal field so it stops inheriting the other box's value.
 
 Driven by a per-form spec at ``forms/<ID>/field_splits.json``:
 
     {"splits": [
-      {"field": "2_5", "page": 12, "new_name": "confidential_mailing_address",
-       "clear": true}
+      {"field": "shared field name", "page": 3,
+       "new_name": "detached_box_name", "clear": true}
     ]}
 
 ``clear`` (default true) blanks the detached widget — showing a blank is
 correct when no distinct fact feeds that box (better blank than the other
 appearance's wrong value).
 
-This is the shared core used by BOTH the fill path (``fill_via_mapping``, so a
-plain fill no longer fans) and the accessibility path
-(``tools/accessibility/split_shared_fields.py``, for ``/TU`` per appearance).
-Always operates on a working copy via pikepdf; the repo blank is never touched.
+No form in this repo ships a ``field_splits.json`` yet; the fill path
+(``fill_via_mapping``) applies any that appear. Always operates on a working
+copy via pikepdf; the repo blank is never touched.
 """
 from __future__ import annotations
 
