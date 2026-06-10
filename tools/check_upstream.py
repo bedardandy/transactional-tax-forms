@@ -48,7 +48,7 @@ def check_one(fid: str, entry: dict, timeout: int, retries: int) -> dict:
     got = verify.sha256_bytes(data)
     if got == entry.get("sha256"):
         return {"form_id": fid, "status": "ok", "sha256": got, "bytes": len(data)}
-    return {
+    res = {
         "form_id": fid,
         "status": "CHANGED",
         "expected_sha256": entry.get("sha256"),
@@ -57,6 +57,17 @@ def check_one(fid: str, entry: dict, timeout: int, retries: int) -> dict:
         "got_bytes": len(data),
         "url": url,
     }
+    # Inspect the revised blank so --update-manifest can adopt every manifest
+    # field (num_pages / has_acroform), not just the hash.
+    try:
+        import fitz
+        doc = fitz.open(stream=data, filetype="pdf")
+        res["got_num_pages"] = doc.page_count
+        res["got_has_acroform"] = any((p.widgets() or []) for p in doc)
+        doc.close()
+    except Exception as e:  # noqa: BLE001 — drift report still stands
+        res["inspect_error"] = repr(e)[:120]
+    return res
 
 
 def main() -> int:
@@ -109,11 +120,20 @@ def main() -> int:
 
     if args.update_manifest and changed:
         for r in changed:
-            forms[r["form_id"]]["sha256"] = r["got_sha256"]
-            forms[r["form_id"]]["bytes"] = r["got_bytes"]
+            e = forms[r["form_id"]]
+            e["sha256"] = r["got_sha256"]
+            e["bytes"] = r["got_bytes"]
+            if "got_num_pages" in r:
+                e["num_pages"] = r["got_num_pages"]
+            if "got_has_acroform" in r:
+                e["has_acroform"] = r["got_has_acroform"]
         MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-        print(f"\nmanifest updated for {len(changed)} form(s). "
-              "Re-run mapping + audit for each before publishing.")
+        ids_changed = ",".join(r["form_id"] for r in changed)
+        print(f"\nmanifest updated for {len(changed)} form(s). The per-form "
+              "widget inventories are NOT refreshed by this tool — run\n"
+              f"  python3 tools/build_manifest.py --forms {ids_changed}\n"
+              "to rewrite widgets.json, then re-map + audit each form "
+              "before publishing.")
 
     return 1 if (changed or gone) else 0
 
