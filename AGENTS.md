@@ -45,6 +45,16 @@ engine; `catalog/by_domain.json` carries the same pointers per domain):
 - Probate/estates → probate court filings:
   [maine-probate-forms](https://github.com/bedardandy/maine-probate-forms)
 
+## Shared engine
+
+`engine/` and the drift tools are thin shims over the
+[`maine-forms-engine`](https://github.com/bedardandy/maine-forms-engine)
+package (in `requirements.txt`; **required**) — it provides the deterministic
+AcroForm fill core, the blank-revision drift guard, and the accessibility/MCP
+scaffolds shared by all four sibling repos. The shims pin this repo's policy
+(status allowlist, `built_against_sha256` staleness gate, diagnostics result
+dict), so every documented `engine.*` / `tools/*` command works unchanged.
+
 ## Rules
 - **Not tax or legal advice.** Filled output is a draft; say so, and say it must
   be verified against the official form before filing.

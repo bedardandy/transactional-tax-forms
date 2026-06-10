@@ -121,8 +121,12 @@ catalog/
   pdf_manifest.json  per-form sha256 + bytes + pages for fetching/verifying blanks
   forms_index.json   master list (generated)
   by_domain.json     forms grouped by transaction domain (generated)
-engine/              deterministic AcroForm fill engine (PyMuPDF)
+engine/              deterministic AcroForm fill engine (PyMuPDF) — thin shims over
   fill_via_mapping.py  form_filler.py  field_split.py  text_fit.py  verify.py
+                       the shared `maine-forms-engine` package (required; see
+                       requirements.txt), configured with this repo's policy:
+                       status allowlist, built_against_sha256 staleness gate,
+                       diagnostics result dict
 tools/
   fetch_pdfs.py       download verified blanks
   build_manifest.py   fetch + hash + dump widget inventory

@@ -1,141 +1,50 @@
 #!/usr/bin/env python3
 """Detect when an agency has re-issued a blank form out from under its mapping.
 
-Each form's mapping is built against one specific revision of the official PDF,
-pinned by SHA-256 in ``catalog/pdf_manifest.json``. Maine Revenue Services and
-the IRS re-issue forms (often yearly); when the bytes change, the widget layout
-can move and a fill built on the old mapping can land values in the wrong place.
-
-This tool re-downloads each blank from its official URL, hashes it, and compares
-to the manifest. It is read-only by default: nothing is written to ``forms/``,
-so it is safe to run on a schedule (CI/cron) as an early-warning that a form
-needs re-mapping.
-
-Exit code is non-zero if any form is CHANGED or GONE, so it gates a pipeline.
+Shim over the shared ``maine-forms-engine``
+(``maine_forms_engine.drift.check_upstream``); the CLI is unchanged, with this
+repo's ``catalog/pdf_manifest.json`` as the default manifest. Maine Revenue
+Services and the IRS re-issue forms (often yearly); when the bytes change, the
+widget layout can move and a fill built on the old mapping can land values in
+the wrong place. Read-only by default; exit code is non-zero if any form is
+CHANGED or GONE, so it gates a pipeline.
 
 Usage:
     python3 tools/check_upstream.py                      # check every form
     python3 tools/check_upstream.py --forms IRS-SS-4,MRS-706ME
     python3 tools/check_upstream.py --json               # machine-readable report
-    python3 tools/check_upstream.py --update-manifest     # after re-mapping: adopt new hashes
+    python3 tools/check_upstream.py --update-manifest    # after re-mapping: adopt new hashes
 """
-import argparse
-import json
 import pathlib
 import sys
 
+from maine_forms_engine.drift import check_upstream as _cu
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from tools.fetch_pdfs import _download  # noqa: E402,F401 — kept patchable for tests
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
-
-from engine import verify  # noqa: E402
-from tools.fetch_pdfs import _download  # reuse the verified-download helper  # noqa: E402
-
 MANIFEST = ROOT / "catalog" / "pdf_manifest.json"
 
 
 def check_one(fid: str, entry: dict, timeout: int, retries: int) -> dict:
     """Probe one form's official URL and classify it against the manifest."""
-    url = entry.get("url")
-    if not url:
-        return {"form_id": fid, "status": "NO_URL"}
-    try:
-        data = _download(url, timeout, retries)
-    except Exception as e:  # noqa: BLE001
-        return {"form_id": fid, "status": "GONE", "detail": str(e)[:160]}
-    if data[:5] != b"%PDF-":
-        return {"form_id": fid, "status": "GONE",
-                "detail": "response is not a PDF (error/HTML page)"}
-    got = verify.sha256_bytes(data)
-    if got == entry.get("sha256"):
-        return {"form_id": fid, "status": "ok", "sha256": got, "bytes": len(data)}
-    res = {
-        "form_id": fid,
-        "status": "CHANGED",
-        "expected_sha256": entry.get("sha256"),
-        "got_sha256": got,
-        "expected_bytes": entry.get("bytes"),
-        "got_bytes": len(data),
-        "url": url,
-    }
-    # Inspect the revised blank so --update-manifest can adopt every manifest
-    # field (num_pages / has_acroform), not just the hash.
-    try:
-        import fitz
-        doc = fitz.open(stream=data, filetype="pdf")
-        res["got_num_pages"] = doc.page_count
-        res["got_has_acroform"] = any((p.widgets() or []) for p in doc)
-        doc.close()
-    except Exception as e:  # noqa: BLE001 — drift report still stands
-        res["inspect_error"] = repr(e)[:120]
-    return res
+    return _cu.check_one(fid, entry, timeout, retries,
+                         downloader=lambda u, t, r: _download(u, t, r))
+
+
+def _update_hint(changed: list) -> str:
+    ids_changed = ",".join(r["form_id"] for r in changed)
+    return ("The per-form widget inventories are NOT refreshed by this "
+            "tool — run\n"
+            f"  python3 tools/build_manifest.py --forms {ids_changed}\n"
+            "to rewrite widgets.json, then re-map + audit each form "
+            "before publishing.")
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Detect upstream revisions of the blank PDFs")
-    ap.add_argument("--forms", help="comma-separated form ids (default: all)")
-    ap.add_argument("--timeout", type=int, default=30)
-    ap.add_argument("--retries", type=int, default=3)
-    ap.add_argument("--json", action="store_true", help="emit a JSON report")
-    ap.add_argument("--update-manifest", action="store_true",
-                    help="adopt the new sha256/bytes for CHANGED forms "
-                         "(only after the mapping has been re-verified)")
-    args = ap.parse_args()
-
-    manifest = verify.load_manifest(MANIFEST)
-    forms = manifest["forms"]
-
-    if args.forms:
-        want = [f.strip() for f in args.forms.split(",") if f.strip()]
-        unknown = [f for f in want if f not in forms]
-        if unknown:
-            print(f"unknown form ids (not in manifest): {', '.join(unknown)}")
-            return 2
-        ids = want
-    else:
-        ids = sorted(forms)
-
-    results = [check_one(f, forms[f], args.timeout, args.retries) for f in ids]
-
-    changed = [r for r in results if r["status"] == "CHANGED"]
-    gone = [r for r in results if r["status"] == "GONE"]
-    ok = [r for r in results if r["status"] == "ok"]
-
-    if args.json:
-        print(json.dumps({"ok": len(ok), "changed": changed, "gone": gone}, indent=2))
-    else:
-        for r in results:
-            if r["status"] == "ok":
-                continue
-            if r["status"] == "CHANGED":
-                print(f"  CHANGED  {r['form_id']}: upstream PDF revised — "
-                      f"{r['got_sha256'][:12]}… (was {(r['expected_sha256'] or '')[:12]}…), "
-                      f"{r['got_bytes']} bytes (was {r['expected_bytes']}). "
-                      f"Re-map before trusting fills.")
-            elif r["status"] == "GONE":
-                print(f"  GONE     {r['form_id']}: {r.get('detail', 'download failed')}")
-            else:
-                print(f"  {r['status']:<8} {r['form_id']}")
-        print(f"\nok={len(ok)} changed={len(changed)} gone={len(gone)} "
-              f"checked={len(results)}")
-
-    if args.update_manifest and changed:
-        for r in changed:
-            e = forms[r["form_id"]]
-            e["sha256"] = r["got_sha256"]
-            e["bytes"] = r["got_bytes"]
-            if "got_num_pages" in r:
-                e["num_pages"] = r["got_num_pages"]
-            if "got_has_acroform" in r:
-                e["has_acroform"] = r["got_has_acroform"]
-        MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-        ids_changed = ",".join(r["form_id"] for r in changed)
-        print(f"\nmanifest updated for {len(changed)} form(s). The per-form "
-              "widget inventories are NOT refreshed by this tool — run\n"
-              f"  python3 tools/build_manifest.py --forms {ids_changed}\n"
-              "to rewrite widgets.json, then re-map + audit each form "
-              "before publishing.")
-
-    return 1 if (changed or gone) else 0
+    return _cu.main(default_manifest=MANIFEST, update_hint=_update_hint,
+                    downloader=lambda u, t, r: _download(u, t, r))
 
 
 if __name__ == "__main__":

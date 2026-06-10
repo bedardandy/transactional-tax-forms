@@ -1,34 +1,42 @@
 #!/usr/bin/env python3
 """Fill a form directly from its ``mapping.json`` + a canonical fact object.
 
-This is the repo's one fill path: it resolves each canonical fact-key in a
-form's ``mapping.json`` against a canonical fact object (see
-``docs/integrations/README.md`` for the case shape) and writes the result to
-the mapped widget. It is also how you *verify* a ``mapping.json``: fill from
-it, then check the output. Forms whose mapping status is not fillable
-(``recipe`` pointers, ``remap-pending`` after upstream drift) are refused with
-a machine-readable reason.
+Shim over the shared ``maine-forms-engine``
+(``maine_forms_engine.fill.fill_via_mapping``), configured with this repo's
+policy; the CLI and the ``resolve_mapping`` / ``fill_via_mapping`` APIs are
+unchanged:
+
+- only the allowlisted ``FILLABLE_STATUSES`` fill; anything else — "recipe"
+  (pointer-only map), "remap-pending" (upstream blank drifted), "unmapped" —
+  is refused with a machine-readable reason instead of a silent partial fill.
+- a mapping recording ``built_against_sha256`` is refused when the manifest
+  no longer pins that revision (the MRS-1041ME incident class).
+- the fill-time blank guard reads ``TTF_VERIFY_BLANK`` (with
+  ``MCF_VERIFY_BLANK`` honored as a fallback for setups carried over from the
+  court-forms sibling repos).
+- results carry the fill diagnostics (``fields_written`` = widgets actually
+  written, ``missing_widgets``, ``overflowed``, ``blank_verified``).
 """
 from __future__ import annotations
 
 import argparse
-import datetime
 import json
-import os
 import pathlib
 
-from . import verify
-from .form_filler import fill_form
-from .field_split import split_to_copy
-from .text_fit import fit as _fit, widget_char_budget
+from maine_forms_engine.fill.fill_via_mapping import (  # noqa: F401
+    _resolve_key,
+    _split_name,
+    _width_fit,
+    fill_via_mapping as _pkg_fill_via_mapping,
+    resolve_mapping as _pkg_resolve_mapping,
+)
 
 OSS_ROOT = pathlib.Path(__file__).resolve().parent.parent
+_MANIFEST = OSS_ROOT / "catalog" / "pdf_manifest.json"
 
-# mapping.json statuses the engine will fill from. Anything else — "recipe"
-# (pointer-only map), "remap-pending" (upstream blank drifted), "unmapped" — is
-# refused with a machine-readable reason instead of silently writing a partial
-# fill. "vision-mapped" is a draft tier: filling it is how a draft is reviewed,
-# so it stays fillable; its status travels in the result for the caller to see.
+# mapping.json statuses the engine will fill from. "vision-mapped" is a draft
+# tier: filling it is how a draft is reviewed, so it stays fillable; its
+# status travels in the result for the caller to see.
 FILLABLE_STATUSES = frozenset({"verified", "opus-adjudicated", "mapped",
                                "vision-mapped"})
 
@@ -42,85 +50,6 @@ _SKIP_REASONS = {
                       "filling"),
 }
 
-_NAME_KEY_SUFFIX = (".full_name", ".first_name", ".middle_name", ".last_name")
-
-
-def _width_fit(fid_value: dict, fid_key: dict, rect_by_fid: dict) -> dict:
-    """Shrink overflowing names/addresses to their widget's char budget.
-
-    Mirrors the engine fill_one pass: names initial-collapse (never truncate a
-    legal name), addresses postal-abbreviate. Generic/narrative values are left
-    for form_filler's font auto-fit.
-    """
-    out = dict(fid_value)
-    for fid, v in fid_value.items():
-        rect = rect_by_fid.get(fid)
-        if not rect or not isinstance(v, str):
-            continue
-        budget = widget_char_budget(rect)
-        if len(v) <= budget:
-            continue
-        key = fid_key.get(fid, "")
-        if key.endswith(_NAME_KEY_SUFFIX):
-            out[fid] = _fit(v, budget, name=True)
-        elif key.endswith(".address"):
-            out[fid] = _fit(v, budget, address=True)
-    return out
-
-
-def _split_name(full: str, part: str) -> str | None:
-    """Derive a name part from a full name ("Jane Q. Doe")."""
-    toks = [t for t in str(full).split() if t]
-    if not toks:
-        return None
-    if part == "first_name":
-        return toks[0]
-    if part == "last_name":
-        return toks[-1] if len(toks) > 1 else None
-    if part == "middle_name":
-        return " ".join(toks[1:-1]) or None
-    return None
-
-
-def _resolve_key(key: str, facts: dict) -> str | None:
-    """Resolve a canonical fact-key against a canonical fact object.
-
-    ``today()`` is computed; dotted keys (``matter.docket_number``,
-    ``parties.plaintiff.full_name``) walk the object. Returns a string value or
-    None if the key is absent / non-scalar.
-    """
-    if key == "today()":
-        return datetime.date.today().strftime("%m/%d/%Y")
-    parts = key.split(".")
-    parent: object = facts
-    for p in parts[:-1]:
-        if isinstance(parent, dict) and p in parent:
-            parent = parent[p]
-        else:
-            return None
-    last = parts[-1]
-    if not isinstance(parent, dict):
-        return None
-    if last in parent:
-        cur = parent[last]
-    elif last in ("first_name", "middle_name", "last_name") and \
-            isinstance(parent.get("full_name"), str):
-        # Derive a name part from full_name when the contract's split-name
-        # keys aren't supplied explicitly (forms with First/Middle/Last boxes).
-        cur = _split_name(parent["full_name"], last)
-    else:
-        return None
-    if isinstance(cur, (str, int, float)):
-        s = str(cur)
-        # Render ISO dates the way the forms expect (mm/dd/yyyy).
-        if len(s) >= 10 and s[4] == "-" and s[7] == "-":
-            try:
-                return datetime.date.fromisoformat(s[:10]).strftime("%m/%d/%Y")
-            except ValueError:
-                pass
-        return s
-    return None
-
 
 def resolve_mapping(form_id: str, facts: dict,
                     forms_root: pathlib.Path = OSS_ROOT / "forms") -> dict:
@@ -128,127 +57,24 @@ def resolve_mapping(form_id: str, facts: dict,
 
     Pure (no PDF needed): returns coverage stats + the field_id->value map.
     """
-    fdir = forms_root / form_id
-    mapping = json.loads((fdir / "mapping.json").read_text())
-    status = mapping.get("status")
-    if status not in FILLABLE_STATUSES:
-        reason = _SKIP_REASONS.get(
-            status,
-            f"mapping status {status!r} is not fillable "
-            f"(fillable statuses: {', '.join(sorted(FILLABLE_STATUSES))})")
-        return {"form_id": form_id, "status": status, "skipped": True,
-                "reason": reason}
-    # Staleness gate: a mapping that records the blank revision it was built
-    # against (built_against_sha256) is only fillable while the manifest still
-    # pins that same revision. On drift the status flag alone can lie (the
-    # MRS-1041ME incident: status said fillable while 37 mapped widgets no
-    # longer existed); the hash comparison cannot.
-    built = (mapping.get("built_against_sha256") or "").lower()
-    if built:
-        pinned = ((verify.manifest_entry(form_id) or {}).get("sha256")
-                  or "").lower()
-        if pinned and built != pinned:
-            return {
-                "form_id": form_id, "status": status, "skipped": True,
-                "reason": (f"mapping.json was built against blank revision "
-                           f"{built[:12]}… but catalog/pdf_manifest.json now "
-                           f"pins {pinned[:12]}… — the upstream blank "
-                           "drifted; re-map before filling")}
-    m = mapping.get("map") or {}
-    fid_value, unresolved = {}, []
-    for fid, key in m.items():
-        v = _resolve_key(key, facts)
-        if v is not None and v != "":
-            fid_value[fid] = v
-        else:
-            unresolved.append((fid, key))
-    schema = json.loads((fdir / "schema.json").read_text())
-    total_fields = len(schema.get("fields", []))
-    return {
-        "form_id": form_id,
-        "status": mapping.get("status"),
-        "total_fields": total_fields,
-        "mapped_keys": len(m),
-        "resolved": len(fid_value),
-        "unresolved": unresolved,
-        "fid_value": fid_value,
-        "_map": m,
-        "_schema": schema,
-    }
+    return _pkg_resolve_mapping(form_id, facts, forms_root,
+                                fillable_statuses=FILLABLE_STATUSES,
+                                skip_reasons=_SKIP_REASONS,
+                                require_built_against=True,
+                                manifest_path=_MANIFEST)
 
 
 def fill_via_mapping(form_id: str, facts: dict, out_dir: pathlib.Path,
                      forms_root: pathlib.Path = OSS_ROOT / "forms") -> dict:
     """Resolve mapping.json and write a filled PDF."""
-    res = resolve_mapping(form_id, facts, forms_root)
-    if res.get("skipped"):
-        return {"form_id": form_id, "ok": False, "skipped": True,
-                "status": res.get("status"), "error": res["reason"]}
-    fdir = forms_root / form_id
-    pdf = fdir / f"{form_id}.pdf"
-    if not pdf.exists():
-        return {"form_id": form_id, "ok": False,
-                "error": f"blank PDF not found: {pdf} (run tools/fetch_pdfs.py)"}
-    # Guard: the on-disk blank must be the revision this mapping was built
-    # against (catalog/pdf_manifest.json). A mismatch warns by default; set
-    # TTF_VERIFY_BLANK=strict to refuse, =off to skip. (MCF_VERIFY_BLANK is
-    # honored as a fallback for setups carried over from the court-forms
-    # sibling repos.)
-    blank_verified = verify.guard_blank(
-        form_id, forms_root,
-        mode=os.environ.get("TTF_VERIFY_BLANK")
-        or os.environ.get("MCF_VERIFY_BLANK", "warn"))
-    # Width-fit overflowing values to their widget's char budget (mirrors the
-    # engine's fill_one pass): names initial-collapse, addresses postal-
-    # abbreviate, so a long real-world value shrinks instead of clipping.
-    rect_by_fid = {f["field_id"]: f.get("rect") for f in res["_schema"]["fields"]}
-    fitted = _width_fit(res["fid_value"], res["_map"], rect_by_fid)
-
-    # field_id -> widget label(s) (a field_id may back multiple widgets).
-    fid_to_widgets: dict[str, list[str]] = {}
-    for f in res["_schema"]["fields"]:
-        fid_to_widgets.setdefault(f["field_id"], []).append(f["label"])
-    field_data: dict[str, str] = {}
-    for fid, v in fitted.items():
-        for label in fid_to_widgets.get(fid, []):
-            field_data[label] = v
-    out_dir.mkdir(parents=True, exist_ok=True)
-    # Split any shared AcroForm fields (forms/<ID>/field_splits.json) on a
-    # working copy first, so a value mapped to one appearance no longer fans
-    # out onto the field's other, semantically different appearance — e.g.
-    # OTH-029 `2_5` is a child-DOB table cell AND a "Mailing address" line.
-    # The detached appearance is renamed + blanked, so the mapped value lands
-    # only on its intended box. The repo blank is never modified.
-    n_split = 0
-    try:
-        split_src = out_dir / f"{form_id}.split.pdf"
-        n_split = split_to_copy(pdf, split_src, form_id, forms_root)
-        if n_split:
-            pdf = split_src
-    except Exception:  # noqa: BLE001 — never block a fill on the split step
-        n_split = 0
-    out_pdf = out_dir / f"{form_id}.filled.pdf"
-    fill_res = fill_form(str(pdf), field_data, str(out_pdf),
-                         form_id=form_id, addendum_policy="none")
-    if n_split:  # drop the split working copy; the deliverable is .filled.pdf
-        try:
-            (out_dir / f"{form_id}.split.pdf").unlink()
-        except OSError:
-            pass
-    return {
-        "form_id": form_id, "ok": True, "status": res["status"],
-        "out_pdf": str(out_pdf),
-        "mapped_keys": res["mapped_keys"], "resolved": res["resolved"],
-        # canonical keys that resolved to nothing in the case object
-        "unresolved": [list(u) for u in res["unresolved"]],
-        # widgets actually written, counted by the filler (not the request)
-        "fields_written": fill_res["filled_count"],
-        # mapped widget names absent from the PDF — a stale-mapping signal
-        "missing_widgets": fill_res["missing_fields"],
-        "overflowed": fill_res["overflowed"],
-        "blank_verified": blank_verified,
-        "fields_split": n_split,
-    }
+    return _pkg_fill_via_mapping(form_id, facts, out_dir, forms_root,
+                                 fillable_statuses=FILLABLE_STATUSES,
+                                 skip_reasons=_SKIP_REASONS,
+                                 require_built_against=True,
+                                 manifest_path=_MANIFEST,
+                                 blank_verify_env=("TTF_VERIFY_BLANK",
+                                                   "MCF_VERIFY_BLANK"),
+                                 result_style="tax")
 
 
 def main() -> int:

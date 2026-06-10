@@ -1,5 +1,6 @@
+maine-forms-engine @ git+https://github.com/bedardandy/maine-forms-engine@v0.1.0
 pymupdf>=1.24
-pikepdf>=8.0       # engine/field_split.py — shared-field runtime split
+pikepdf>=8.0       # shared-field runtime split (via maine-forms-engine)
 PyYAML>=6.0        # form.yaml metadata (tools/gen_catalog.py, agent workflows)
 openai>=1.0
 # Optional: the MCP server (tools/agent_server.py) needs `pip install mcp`.
