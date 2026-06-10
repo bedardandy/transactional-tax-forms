@@ -63,12 +63,18 @@ SYSTEM = (
 
 
 def _caption_from_schema(fdir):
-    """field_id -> printed caption (vision_map.py wrote a caption column)."""
+    """field_id -> printed caption.
+
+    fields.csv is written by vision_map.py / infer_labels.py with the shared
+    ``field_id,label,caption,...`` header; rows without a field_id are skipped.
+    """
     caps = {}
     fcsv = fdir / "fields.csv"
     if fcsv.exists():
         for row in csv.DictReader(open(fcsv)):
-            caps[row["field_id"]] = (row.get("caption") or row.get("label") or "").strip()
+            fid = (row.get("field_id") or "").strip()
+            if fid:
+                caps[fid] = (row.get("caption") or row.get("label") or "").strip()
     return caps
 
 

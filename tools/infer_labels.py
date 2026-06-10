@@ -7,8 +7,13 @@ widget this finds the nearest printed text — to the LEFT on the same row for a
 text box, to the RIGHT for a checkbox, falling back to the line ABOVE — and
 writes a reviewable inventory to ``forms/<ID>/fields.csv``.
 
-The labels are heuristic (dense multi-column forms misattribute some); they are
-the first-pass input a mapping/vision step refines, not ground truth.
+The CSV schema (``field_id,label,caption,type,page,rect``) is shared with
+``tools/vision_map.py`` so ``tools/opus_adjudicate.py`` can read either tool's
+output. ``field_id`` is the slugged widget name, ``label`` the raw widget name,
+``caption`` the inferred printed text.
+
+The captions are heuristic (dense multi-column forms misattribute some); they
+are the first-pass input a mapping/vision step refines, not ground truth.
 
     python3 tools/infer_labels.py                 # all forms with a local blank
     python3 tools/infer_labels.py --forms IRS-SS-4
@@ -17,10 +22,15 @@ import argparse
 import csv
 import pathlib
 import re
+import sys
 
 import fitz
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from tools.vision_map import _slug  # shared field_id slugger  # noqa: E402
+
 FORMS = ROOT / "forms"
 
 
@@ -59,27 +69,32 @@ def inventory(fid: str) -> int:
     if not pdf.exists():
         return -1
     doc = fitz.open(pdf)
-    rows = []
+    rows, used = [], set()
     for pno in range(doc.page_count):
         page = doc[pno]
         words = page.get_text("words")
         for w in (page.widgets() or []):
             r = w.rect
-            is_cb = "CheckBox" in w.field_type_string or "RadioButton" in w.field_type_string
+            t = w.field_type_string
+            is_cb = "CheckBox" in t or "RadioButton" in t
             rows.append({
-                "widget_id": w.field_name,
-                "label": caption_for((r.x0, r.y0, r.x1, r.y1), words, is_cb),
-                "type": w.field_type_string,
+                "field_id": _slug(w.field_name, used),
+                "label": w.field_name,
+                "caption": caption_for((r.x0, r.y0, r.x1, r.y1), words, is_cb),
+                "type": ("checkbox" if "CheckBox" in t
+                         else "radio" if "RadioButton" in t
+                         else t.lower() if t != "Text" else "text"),
                 "page": pno,
-                "rect": f"{r.x0:.0f},{r.y0:.0f},{r.x1:.0f},{r.y1:.0f}",
+                "rect": f"{r.x0:.1f},{r.y0:.1f},{r.x1:.1f},{r.y1:.1f}",
             })
     doc.close()
     out = FORMS / fid / "fields.csv"
     with open(out, "w", newline="") as fh:
-        wr = csv.DictWriter(fh, fieldnames=["widget_id", "label", "type", "page", "rect"])
+        wr = csv.DictWriter(fh, fieldnames=["field_id", "label", "caption",
+                                            "type", "page", "rect"])
         wr.writeheader()
         wr.writerows(rows)
-    labeled = sum(1 for r in rows if r["label"])
+    labeled = sum(1 for r in rows if r["caption"])
     print(f"  {fid}: {len(rows)} widgets, {labeled} captioned ({100*labeled//max(len(rows),1)}%) -> {out.relative_to(ROOT)}")
     return labeled
 
