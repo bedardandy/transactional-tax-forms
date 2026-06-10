@@ -1,6 +1,6 @@
 {
   "form_id": "MRS-700SOV",
   "status": "recipe",
-  "note": "Authoritative mapping lives in engine/recipes/infer_*mrs700sov*.py (RECIPE3 dispatch). This file is a placeholder; do not hand-edit \u2014 regenerate from the recipe.",
+  "note": "Not yet fillable in this repo: the field map is empty. The authoritative mapping lives in the maine-court-forms sibling repo (github.com/bedardandy/maine-court-forms) as a form recipe and has not been ported here. To make this form fillable, build a direct map (tools/build_manifest.py --forms MRS-700SOV, then a mapping pass).",
   "map": {}
 }
