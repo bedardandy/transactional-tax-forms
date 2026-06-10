@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from engine import text_fit  # noqa: E402
-from engine.fill_via_mapping import _resolve_key  # noqa: E402
+from engine.fill_via_mapping import _resolve_key, resolve_mapping  # noqa: E402
 from engine.form_filler import _wrap_across_widgets, fill_form  # noqa: E402
 
 
@@ -194,6 +194,44 @@ class FillSyntheticPdf(unittest.TestCase):
         out = Path(self.td.name) / "filled.pdf"
         res = fill_form_from_json(self.blank, case, out)
         self.assertEqual(res["filled_count"], 1)
+
+
+class BuiltAgainstSha(unittest.TestCase):
+    """resolve_mapping refuses a mapping pinned to a drifted blank revision."""
+
+    FID = "MRS-1041ME"  # any form with a real catalog/pdf_manifest.json entry
+
+    def _root_with_mapping(self, td: Path, sha: str) -> Path:
+        fdir = td / self.FID
+        fdir.mkdir(parents=True)
+        (fdir / "mapping.json").write_text(json.dumps({
+            "form_id": self.FID, "status": "mapped",
+            "built_against_sha256": sha,
+            "map": {"some_field": "facts.amount"}}))
+        (fdir / "schema.json").write_text(json.dumps({
+            "form_id": self.FID,
+            "fields": [{"field_id": "some_field", "label": "Some Field",
+                        "type": "text", "page": 0, "rect": [0, 0, 100, 12]}]}))
+        return td
+
+    def test_drifted_revision_is_refused(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = self._root_with_mapping(Path(td), "0" * 64)
+            res = resolve_mapping(self.FID, {"facts": {"amount": 1}},
+                                  forms_root=root)
+        self.assertTrue(res.get("skipped"))
+        self.assertIn("drifted", res["reason"])
+
+    def test_matching_revision_resolves(self):
+        manifest = json.loads(
+            (ROOT / "catalog" / "pdf_manifest.json").read_text())
+        pinned = manifest["forms"][self.FID]["sha256"]
+        with tempfile.TemporaryDirectory() as td:
+            root = self._root_with_mapping(Path(td), pinned)
+            res = resolve_mapping(self.FID, {"facts": {"amount": 1}},
+                                  forms_root=root)
+        self.assertFalse(res.get("skipped"))
+        self.assertEqual(res["resolved"], 1)
 
 
 if __name__ == "__main__":

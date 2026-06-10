@@ -139,6 +139,22 @@ def resolve_mapping(form_id: str, facts: dict,
             f"(fillable statuses: {', '.join(sorted(FILLABLE_STATUSES))})")
         return {"form_id": form_id, "status": status, "skipped": True,
                 "reason": reason}
+    # Staleness gate: a mapping that records the blank revision it was built
+    # against (built_against_sha256) is only fillable while the manifest still
+    # pins that same revision. On drift the status flag alone can lie (the
+    # MRS-1041ME incident: status said fillable while 37 mapped widgets no
+    # longer existed); the hash comparison cannot.
+    built = (mapping.get("built_against_sha256") or "").lower()
+    if built:
+        pinned = ((verify.manifest_entry(form_id) or {}).get("sha256")
+                  or "").lower()
+        if pinned and built != pinned:
+            return {
+                "form_id": form_id, "status": status, "skipped": True,
+                "reason": (f"mapping.json was built against blank revision "
+                           f"{built[:12]}… but catalog/pdf_manifest.json now "
+                           f"pins {pinned[:12]}… — the upstream blank "
+                           "drifted; re-map before filling")}
     m = mapping.get("map") or {}
     fid_value, unresolved = {}, []
     for fid, key in m.items():

@@ -69,6 +69,17 @@ _ATTR_VALUE = {
     "county": "Cumberland",
     "domicile_county": "Cumberland",
     "phone": "(207) 555-0100",
+    "phone_area_code": "207",
+    "area_code": "207",
+    "fax": "(207) 555-0199",
+    "fax_number": "(207) 555-0199",
+    "fax_area_code": "207",
+    "first_name": "Riley",
+    "middle_name": "J.",
+    "middle_initial": "J",
+    "last_name": "Example",
+    "firm_name": "Example & Example LLP",
+    "ssn_or_ptin": "000-00-0000",
     "title": "Managing Member",
     "trade_name": "Example Trading Co",
     "state_of_formation": "Maine",
@@ -90,6 +101,20 @@ _MONEY_RE = re.compile(
 def _facts_value(attr: str) -> str:
     """Heuristic fictional value for a facts.<snake_case> key, by its name."""
     a = attr.lower()
+    if a.endswith("area_code"):
+        return "207"
+    if "first_name" in a:
+        return "Riley"
+    if "last_name" in a:
+        return "Example"
+    if "middle_initial" in a or a.endswith("_m_i"):
+        return "J"
+    if a == "pin" or a.endswith("_pin"):
+        return "12345"
+    if "routing" in a:
+        return "000000000"
+    if a.endswith("account_number"):
+        return "0000000000"
     if "ssn" in a:
         return "000-00-0000"
     if "ein" in a or a.endswith("_tin") or "_tin_" in a or a.startswith("tin_"):
@@ -139,7 +164,7 @@ def _value_for(key: str, checkbox_only: bool) -> str | None:
     role, _, attr = key.partition(".")
     if role == "facts":
         return _facts_value(attr)
-    if attr in ("name", "legal_name"):
+    if attr in ("name", "legal_name", "full_name"):
         return _ROLE_NAME.get(role, "Riley J. Example")
     if attr in _ATTR_VALUE:
         return _ATTR_VALUE[attr]
