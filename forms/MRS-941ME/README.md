@@ -1,14 +1,14 @@
-# MRS-941ME — MRS-941ME
+# MRS-941ME — Maine Employer Income Tax Withholding Return (Quarterly)
 
-- **Category:** Uncategorized
-- **Court:** Maine Judicial Branch
+- **Agency:** Maine Revenue Services
+- **Domain:** corporations
 - **Pages:** 3  |  **Fillable fields:** 263
 - **Revision:** 2024
 - **Automation:** schema-only
 
 ## Purpose
 
-Maine court form MRS-941ME.
+Maine Employer Income Tax Withholding Return (Quarterly) (Maine Revenue Services).
 
 ## Files in this folder
 
@@ -24,4 +24,4 @@ Maine court form MRS-941ME.
 
 ## Disclaimer
 
-This is an automation artifact, not legal advice. The blank form is an official Maine Judicial Branch document; the surrounding metadata and fill guidance are community-maintained and may lag form revisions. Always verify against the official source before filing.
+This is an automation artifact, not legal advice. The blank form is an official Maine Revenue Services document; the surrounding metadata and fill guidance are community-maintained and may lag form revisions. Always verify against the official source before filing.

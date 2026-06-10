@@ -1,11 +1,11 @@
-# MRS-1041ME — MRS-1041ME
+# MRS-1041ME — Maine Fiduciary Income Tax Return
 
-**Category:**   |  **Court:** 
-**Fields:** 118  |  **Automation:** schema-only
+**Agency:** Maine Revenue Services  |  **Domain:** probate  |  **Status:** `remap-pending`
+**Fields:** 118  |  **Mapped:** 93
 
 ## What an agent needs to fill this form
 
-Provide a matter/case object with party names, court (county + location + docket), and any form-specific facts. The field table below lists every fillable widget; map your case data to each `field_id`.
+This form is not yet fillable here (see `mapping.json` for status and notes). The field table below lists the fillable widgets from the revision this folder was inventoried against.
 
 ## Field map
 

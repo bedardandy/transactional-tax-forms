@@ -1,0 +1,33 @@
+{
+  "decedent": {
+    "address": "123 Main St, Portland, ME 04101",
+    "date_of_death": "2025-01-15",
+    "domicile_county": "Cumberland",
+    "name": "Morgan T. Example",
+    "ssn": "000-00-0000"
+  },
+  "facts": {
+    "authority_description": "Authority description (example)",
+    "authority_period": "Authority period (example)",
+    "court_address": "123 Main St, Portland, ME 04101",
+    "court_city_state_zip": "04101",
+    "court_name": "Example LLC",
+    "date_of_appointment": "2025-01-15",
+    "docket_number": "Docket number (example)",
+    "identifying_number": "Identifying number (example)",
+    "other_form_number": "Other form number (example)",
+    "other_tax_type": "1000",
+    "place_of_other_proceedings": "Place of other proceedings (example)",
+    "proceeding_date": "2025-01-15",
+    "proceeding_initiated_date": "2025-01-15",
+    "proceeding_time": "Proceeding time (example)",
+    "reason_for_termination": "Reason for termination (example)"
+  },
+  "fiduciary": {
+    "address": "123 Main St, Portland, ME 04101",
+    "name": "Pat Q. Example",
+    "phone": "(207) 555-0100"
+  },
+  "signature": "Riley J. Example",
+  "_note": "All values are fictional placeholders for testing fills (Example names, 000/555 numbers). Replace every value with real case data before any actual use."
+}

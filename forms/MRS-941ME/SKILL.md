@@ -1,11 +1,11 @@
-# MRS-941ME — MRS-941ME
+# MRS-941ME — Maine Employer Income Tax Withholding Return (Quarterly)
 
-**Category:**   |  **Court:** 
-**Fields:** 263  |  **Automation:** schema-only
+**Agency:** Maine Revenue Services  |  **Domain:** corporations  |  **Status:** `verified`
+**Fields:** 263  |  **Mapped:** 126
 
 ## What an agent needs to fill this form
 
-Provide a matter/case object with party names, court (county + location + docket), and any form-specific facts. The field table below lists every fillable widget; map your case data to each `field_id`.
+Provide a canonical fact object (JSON) with the taxpayer parties and the form's `facts.*` line items — see `mapping.json` for the exact keys this form consumes (these inherited Maine Revenue mappings use the court library's `parties.<role>` key shape) and `examples/sample_case.json` for a worked fictional example. The field table below lists every fillable widget; `mapping.json` routes each canonical key to a `field_id`.
 
 ## Field map
 

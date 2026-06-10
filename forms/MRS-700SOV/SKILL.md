@@ -1,11 +1,11 @@
-# MRS-700SOV — MRS-700SOV
+# MRS-700SOV — Maine Estate Tax Statement of Value (Lien Discharge)
 
-**Category:**   |  **Court:** 
-**Fields:** 46  |  **Automation:** recipe
+**Agency:** Maine Revenue Services  |  **Domain:** probate  |  **Status:** `recipe`
+**Fields:** 46  |  **Mapped:** 0
 
 ## What an agent needs to fill this form
 
-Provide a matter/case object with party names, court (county + location + docket), and any form-specific facts. The field table below lists every fillable widget; map your case data to each `field_id`.
+This form is not yet fillable here (see `mapping.json` for status and notes). The field table below lists the fillable widgets from the revision this folder was inventoried against.
 
 > A dedicated fill recipe exists in `engine/recipes/` and encodes the authoritative, audit-verified mapping (including non-obvious widget quirks). Prefer it over the raw table below.
 

@@ -1,0 +1,22 @@
+{
+  "entity": {
+    "ein": "00-0000000",
+    "legal_name": "Example LLC",
+    "mailing_address": "123 Main St",
+    "street_address": "123 Main St"
+  },
+  "facts": {
+    "contact_person_name_and_title": "Example LLC",
+    "contact_person_phone": "(207) 555-0100",
+    "election_effective_date": "2025-01-15",
+    "explanation_for_late_filing": "Explanation for late filing (example)",
+    "foreign_country_of_organization": "United States",
+    "parent_corporation_ein": "00-0000000",
+    "parent_corporation_name": "1.000000"
+  },
+  "responsible_party": {
+    "name": "Riley J. Example",
+    "ssn_itin_ein": "000-00-0000"
+  },
+  "_note": "All values are fictional placeholders for testing fills (Example names, 000/555 numbers). Replace every value with real case data before any actual use."
+}

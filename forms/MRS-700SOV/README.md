@@ -1,14 +1,14 @@
-# MRS-700SOV — MRS-700SOV
+# MRS-700SOV — Maine Estate Tax Statement of Value (Lien Discharge)
 
-- **Category:** Uncategorized
-- **Court:** Maine Judicial Branch
+- **Agency:** Maine Revenue Services
+- **Domain:** probate
 - **Pages:** 2  |  **Fillable fields:** 46
 - **Revision:** 2024
 - **Automation:** recipe
 
 ## Purpose
 
-Maine court form MRS-700SOV.
+Maine Estate Tax Statement of Value (Lien Discharge) (Maine Revenue Services).
 
 ## Files in this folder
 
@@ -24,4 +24,4 @@ Maine court form MRS-700SOV.
 
 ## Disclaimer
 
-This is an automation artifact, not legal advice. The blank form is an official Maine Judicial Branch document; the surrounding metadata and fill guidance are community-maintained and may lag form revisions. Always verify against the official source before filing.
+This is an automation artifact, not legal advice. The blank form is an official Maine Revenue Services document; the surrounding metadata and fill guidance are community-maintained and may lag form revisions. Always verify against the official source before filing.

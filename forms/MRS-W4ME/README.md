@@ -1,14 +1,14 @@
-# MRS-W4ME — MRS-W4ME
+# MRS-W4ME — Employee's Maine Withholding Allowance Certificate
 
-- **Category:** Uncategorized
-- **Court:** Maine Judicial Branch
+- **Agency:** Maine Revenue Services
+- **Domain:** corporations
 - **Pages:** 3  |  **Fillable fields:** 28
 - **Revision:** 2024
 - **Automation:** schema-only
 
 ## Purpose
 
-Maine court form MRS-W4ME.
+Employee's Maine Withholding Allowance Certificate (Maine Revenue Services).
 
 ## Files in this folder
 
@@ -24,4 +24,4 @@ Maine court form MRS-W4ME.
 
 ## Disclaimer
 
-This is an automation artifact, not legal advice. The blank form is an official Maine Judicial Branch document; the surrounding metadata and fill guidance are community-maintained and may lag form revisions. Always verify against the official source before filing.
+This is an automation artifact, not legal advice. The blank form is an official Maine Revenue Services document; the surrounding metadata and fill guidance are community-maintained and may lag form revisions. Always verify against the official source before filing.

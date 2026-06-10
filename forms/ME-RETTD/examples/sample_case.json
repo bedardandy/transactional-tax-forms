@@ -1,0 +1,32 @@
+{
+  "facts": {
+    "adjusted_assessed_value": "1000",
+    "special_circumstances_explanation": "Special circumstances explanation (example)"
+  },
+  "property": {
+    "address": "123 Main St, Portland, ME 04101",
+    "county": "Cumberland",
+    "map_block_lot": "Map 1, Block 2, Lot 3",
+    "purchase_price": "250000",
+    "town": "Portland",
+    "transfer_date": "2025-01-15",
+    "type": "Single-family residence"
+  },
+  "transferee": {
+    "mailing_address": "123 Main St",
+    "mailing_city": "Portland",
+    "mailing_state": "ME",
+    "mailing_zip": "04101",
+    "name": "Casey L. Example",
+    "ssn_or_ein": "000-00-0000"
+  },
+  "transferor": {
+    "address": "123 Main St, Portland, ME 04101",
+    "mailing_city": "Portland",
+    "mailing_state": "ME",
+    "mailing_zip": "04101",
+    "name": "Sam R. Example",
+    "ssn_or_ein": "000-00-0000"
+  },
+  "_note": "All values are fictional placeholders for testing fills (Example names, 000/555 numbers). Replace every value with real case data before any actual use."
+}

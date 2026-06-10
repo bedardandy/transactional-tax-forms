@@ -1,0 +1,57 @@
+{
+  "decedent": {
+    "ssn": "000-00-0000"
+  },
+  "entity": {
+    "county": "Cumberland",
+    "ein": "00-0000000",
+    "formation_date": "2025-01-15",
+    "legal_name": "Example LLC",
+    "mailing_address": "123 Main St",
+    "mailing_city": "Portland",
+    "phone": "(207) 555-0100",
+    "state_of_formation": "Maine",
+    "street_address": "123 Main St",
+    "trade_name": "Example Trading Co"
+  },
+  "executor": {
+    "name": "Pat Q. Example"
+  },
+  "facts": {
+    "accounting_year_closing_month": "2025",
+    "agricultural_employees": "Agricultural employees (example)",
+    "banking_purpose": "Banking purpose (example)",
+    "corp_form_number": "Corp form number (example)",
+    "designee_address": "123 Main St, Portland, ME 04101",
+    "designee_fax": "(207) 555-0100",
+    "designee_name": "Example LLC",
+    "designee_phone": "(207) 555-0100",
+    "first_date_wages_paid": "2025-01-15",
+    "foreign_country": "United States",
+    "group_exemption_number": "1000",
+    "household_employees": "Household employees (example)",
+    "new_business_type": "New business type (example)",
+    "new_org_type": "New org type (example)",
+    "nonprofit_org_specify": "Nonprofit org specify (example)",
+    "number_of_llc_members": "1",
+    "other_activity_specify": "Other activity specify (example)",
+    "other_employees": "Other employees (example)",
+    "other_entity_type_specify": "Other entity type specify (example)",
+    "other_reason_specify": "Other reason specify (example)",
+    "pension_plan_type": "Pension plan type (example)",
+    "plan_administrator_tin": "00-0000000",
+    "previous_ein": "00-0000000",
+    "principal_line_of_merchandise": "Principal line of merchandise (example)",
+    "sole_proprietor_ssn": "000-00-0000",
+    "street_city_state_zip": "04101",
+    "trust_type": "Trust type (example)"
+  },
+  "responsible_party": {
+    "name": "Riley J. Example",
+    "ssn_itin_ein": "000-00-0000"
+  },
+  "trust": {
+    "ein": "00-0000000"
+  },
+  "_note": "All values are fictional placeholders for testing fills (Example names, 000/555 numbers). Replace every value with real case data before any actual use."
+}

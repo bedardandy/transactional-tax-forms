@@ -1,0 +1,28 @@
+{
+  "entity": {
+    "ein": "00-0000000",
+    "formation_date": "2025-01-15",
+    "legal_name": "Example LLC",
+    "mailing_address": "123 Main St",
+    "phone": "(207) 555-0100",
+    "state_of_formation": "Maine",
+    "street_address": "123 Main St"
+  },
+  "facts": {
+    "election_effective_date": "2025-01-15",
+    "fiscal_year_52_53_week_month": "2025",
+    "fiscal_year_end": "2025",
+    "income_beneficiary_name": "1000",
+    "income_beneficiary_ssn": "000-00-0000",
+    "stock_transfer_date": "2025-01-15"
+  },
+  "responsible_party": {
+    "name": "Riley J. Example",
+    "title": "Managing Member"
+  },
+  "trust": {
+    "ein": "00-0000000",
+    "name": "Example Family Trust"
+  },
+  "_note": "All values are fictional placeholders for testing fills (Example names, 000/555 numbers). Replace every value with real case data before any actual use."
+}
