@@ -1,8 +1,8 @@
 {
   "form_id": "MRS-1041ME",
-  "status": "verified",
+  "status": "remap-pending",
   "model": "qwen3.6-27b+opus-4-7",
-  "note": "Filled; 3x consensus flagged 1 value(s); Opus 4.8 reviewed the filled form and confirmed no mapping change needed.",
+  "note": "Mapping was verified against an older maine.gov revision, but the current blank drifted: 37 mapped field_ids reference widgets absent from the current widgets.json. Re-map against the current blank before filling. (Original verification: filled; 3x consensus flagged 1 value(s); Opus reviewed the filled form and confirmed no mapping change needed.)",
   "map": {
     "fidu_1041_year_from": "facts.tax_period_start",
     "fidu_1040_year_to": "facts.tax_period_end",

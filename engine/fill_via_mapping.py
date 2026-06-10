@@ -29,6 +29,25 @@ from .text_fit import fit as _fit, widget_char_budget
 
 OSS_ROOT = pathlib.Path(__file__).resolve().parent.parent
 
+# mapping.json statuses the engine will fill from. Anything else — "recipe"
+# (pointer-only map), "remap-pending" (upstream blank drifted), "unmapped" — is
+# refused with a machine-readable reason instead of silently writing a partial
+# fill. "vision-mapped" is a draft tier: filling it is how a draft is reviewed,
+# so it stays fillable; its status travels in the result for the caller to see.
+FILLABLE_STATUSES = frozenset({"verified", "opus-adjudicated", "mapped",
+                               "vision-mapped"})
+
+_SKIP_REASONS = {
+    "recipe": ("mapping.json is a pointer with an empty map; the authoritative "
+               "mapping lives in the maine-court-forms sibling repo "
+               "(github.com/bedardandy/maine-court-forms) and has not been "
+               "ported here yet"),
+    "remap-pending": ("the upstream blank drifted from the revision this "
+                      "mapping was built against; re-map "
+                      "(tools/build_manifest.py + a mapping pass) before "
+                      "filling"),
+}
+
 _NAME_KEY_SUFFIX = (".full_name", ".first_name", ".middle_name", ".last_name")
 
 
@@ -117,9 +136,14 @@ def resolve_mapping(form_id: str, facts: dict,
     """
     fdir = forms_root / form_id
     mapping = json.loads((fdir / "mapping.json").read_text())
-    if mapping.get("status") == "recipe":
-        return {"form_id": form_id, "status": "recipe", "skipped": True,
-                "reason": "mapping.json is a pointer; use engine.fill"}
+    status = mapping.get("status")
+    if status not in FILLABLE_STATUSES:
+        reason = _SKIP_REASONS.get(
+            status,
+            f"mapping status {status!r} is not fillable "
+            f"(fillable statuses: {', '.join(sorted(FILLABLE_STATUSES))})")
+        return {"form_id": form_id, "status": status, "skipped": True,
+                "reason": reason}
     m = mapping.get("map") or {}
     fid_value, unresolved = {}, []
     for fid, key in m.items():
@@ -148,7 +172,8 @@ def fill_via_mapping(form_id: str, facts: dict, out_dir: pathlib.Path,
     """Resolve mapping.json and write a filled PDF."""
     res = resolve_mapping(form_id, facts, forms_root)
     if res.get("skipped"):
-        return {"form_id": form_id, "ok": False, "error": res["reason"]}
+        return {"form_id": form_id, "ok": False, "skipped": True,
+                "status": res.get("status"), "error": res["reason"]}
     fdir = forms_root / form_id
     pdf = fdir / f"{form_id}.pdf"
     if not pdf.exists():
