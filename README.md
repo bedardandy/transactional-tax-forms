@@ -33,14 +33,19 @@ SS-4 and 706 are cross-listed (an estate also needs an EIN). See
 
 ## Status
 
-14 forms. The seven Maine Revenue forms were mapped in `maine-court-forms` and
-lifted here; the rest are fetched and inventoried, with mappings in progress.
+14 forms — every form now fills. Seven Maine Revenue forms were mapped in
+`maine-court-forms` and lifted here; the rest were mapped in this repo.
 
 - **Mapped & verified (5):** MRS 706ME, 1120ME, 941ME, 900ME, W-4ME —
   widget-survival confirmed against the current maine.gov blanks.
-- **Re-map pending (2):** MRS 1041ME (current maine.gov blank drifted from the
-  mapped revision — 44 of 117 widgets renamed) and MRS 700-SOV (was recipe-tier
-  in `maine-court-forms` with an empty field map; needs a direct map).
+- **Mapped, machine-verified (2):** MRS 1041ME (the current maine.gov blank
+  had drifted from the mapped revision; rebuilt deterministically against the
+  current widget tree — 123/125 widgets, with a `field_splits.json` detaching
+  its shared area-code field) and MRS 700-SOV (was an empty recipe pointer;
+  direct-mapped from its descriptive widget names — 42/44 widgets). Both
+  record `built_against_sha256`, fill end-to-end with every sample value
+  confirmed on reopen, and leave only their Yes/No radio groups unmapped
+  (noted in `mapping.json`); not yet human-verified field-by-field.
 - **Opus-adjudicated (7):** IRS SS-4 (44 fields), 2553 (23), 8832 (53), 706
   (146), 1041 (79), 56 (33), ME RETTD (74). Drafted from the rendered form by the
   Qwen-VL cluster (`tools/vision_map.py`), then reviewed field-by-field against

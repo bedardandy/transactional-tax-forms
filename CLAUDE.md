@@ -10,10 +10,13 @@ When the user says *"use this project to prepare \<tax form / transaction\>"*:
 1. **Route by domain:** read `catalog/by_domain.json` (corporations /
    real-estate / probate) or `catalog/forms_index.json` to pick the form.
 2. **Understand:** read `forms/<ID>/form.yaml` (title, agency, domain, status).
-   - `status: mapped` — verified `mapping.json`; fillable now.
+   - `status: mapped` — deterministic `mapping.json` (human-verified or
+     machine fill-verified — the form's `mapping.json.note` says which);
+     fillable now.
    - `status: opus-adjudicated` — Qwen-VL draft reviewed/corrected by Opus
      (corrections under `mapping.json.adjudication`); fillable, verify placement.
-   - `status: remap-pending` — the upstream blank drifted; mapping is stale.
+   - `status: remap-pending` — the upstream blank drifted; mapping is stale
+     (none currently; the engine also self-checks via `built_against_sha256`).
    - `status: unmapped` — only `widgets.json` (raw AcroForm inventory) exists;
      not yet fillable.
 3. **Fetch the blank:** `python3 tools/fetch_pdfs.py --forms <ID>` (verified

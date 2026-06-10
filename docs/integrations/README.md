@@ -29,7 +29,8 @@ Read each form's `mapping.json` for the exact keys it consumes; every mapped
 form also ships an `examples/sample_case.json` that exercises all of them.
 
 **Tax-native roles** — the vision-mapped/opus-adjudicated tier
-(`IRS-*`, `ME-RETTD`) and facts-only forms (`MRS-900ME`):
+(`IRS-*`, `ME-RETTD`), the direct-mapped `MRS-700SOV`, and facts-only forms
+(`MRS-900ME`):
 
 | role | attributes seen in shipped mappings |
 |---|---|
@@ -45,8 +46,8 @@ form also ships an `examples/sample_case.json` that exercises all of them.
 
 **Court-shaped roles** — the five Maine Revenue mappings inherited from
 [`maine-court-forms`](https://github.com/bedardandy/maine-court-forms)
-(`MRS-706ME`, `MRS-1120ME`, `MRS-941ME`, `MRS-W4ME`, and the remap-pending
-`MRS-1041ME`). These predate the tax-native roles and name parties by
+(`MRS-706ME`, `MRS-1120ME`, `MRS-941ME`, `MRS-W4ME`, and — for its carried
+fiduciary fields — `MRS-1041ME`). These predate the tax-native roles and name parties by
 litigation role; migrating them is a roadmap item:
 
 | key | shape |

@@ -33,10 +33,9 @@ FILLABLE_STATUSES = frozenset({"verified", "opus-adjudicated", "mapped",
                                "vision-mapped"})
 
 _SKIP_REASONS = {
-    "recipe": ("mapping.json is a pointer with an empty map; the authoritative "
-               "mapping lives in the maine-court-forms sibling repo "
-               "(github.com/bedardandy/maine-court-forms) and has not been "
-               "ported here yet"),
+    "recipe": ("mapping.json is a pointer with an empty map — no direct "
+               "mapping exists in this repo; build one (tools/build_manifest.py "
+               "+ a mapping pass) before filling"),
     "remap-pending": ("the upstream blank drifted from the revision this "
                       "mapping was built against; re-map "
                       "(tools/build_manifest.py + a mapping pass) before "
