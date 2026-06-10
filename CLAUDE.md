@@ -18,14 +18,29 @@ When the user says *"use this project to prepare \<tax form / transaction\>"*:
      not yet fillable.
 3. **Fetch the blank:** `python3 tools/fetch_pdfs.py --forms <ID>` (verified
    against `catalog/pdf_manifest.json`).
-4. **Build the case data** (canonical fact object) and fill:
-   `python3 -m engine.fill_via_mapping --form <ID> --case case.json --out out.pdf`.
+4. **Build the case data** (canonical fact object — see
+   `docs/integrations/README.md` and the form's `examples/sample_case.json`)
+   and fill:
+   `python3 -m engine.fill_via_mapping --form <ID> --case case.json --out out/`.
 5. **Verify & report:** open the output, surface the form's `status`, any
    unresolved fields, and that it must be verified before filing.
 
 **Or use the MCP server** (`python3 tools/agent_server.py`): exposes
 `find_forms` / `get_form` / `fill_form` — register with
 `claude mcp add transactional-tax-forms -- python3 tools/agent_server.py`.
+
+## Companion repos
+
+This repo covers only the **tax** side of each transaction. An agent working
+the full matter will also need the sibling libraries (same layout, same fill
+engine; `catalog/by_domain.json` carries the same pointers per domain):
+
+- Real-estate closings → deed/court forms:
+  [maine-court-forms](https://github.com/bedardandy/maine-court-forms)
+- Corporate transactions → Maine SoS entity filings:
+  [maine-corporation-forms](https://github.com/bedardandy/maine-corporation-forms)
+- Probate/estates → probate court filings:
+  [maine-probate-forms](https://github.com/bedardandy/maine-probate-forms)
 
 ## Rules
 - **Not tax or legal advice.** Filled output is a draft; say so, and say it must

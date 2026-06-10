@@ -39,7 +39,11 @@
           "form_id": "MRS-W4ME",
           "title": "Employee's Maine Withholding Allowance Certificate"
         }
-      ]
+      ],
+      "companion_repo": {
+        "repo": "github.com/bedardandy/maine-corporation-forms",
+        "for": "the Maine SoS entity filings (formation, amendment, annual report) the tax forms ride along with"
+      }
     },
     "real-estate": {
       "form_ids": [
@@ -50,7 +54,11 @@
           "form_id": "ME-RETTD",
           "title": "Maine Real Estate Transfer Tax Declaration"
         }
-      ]
+      ],
+      "companion_repo": {
+        "repo": "github.com/bedardandy/maine-court-forms",
+        "for": "deed and court forms a Maine real-estate closing may also need"
+      }
     },
     "probate": {
       "form_ids": [
@@ -86,7 +94,11 @@
           "form_id": "MRS-706ME",
           "title": "Maine Estate Tax Return"
         }
-      ]
+      ],
+      "companion_repo": {
+        "repo": "github.com/bedardandy/maine-probate-forms",
+        "for": "the Maine probate court filings (the estate's court side)"
+      }
     }
   },
   "cross_listed": {
