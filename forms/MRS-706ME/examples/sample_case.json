@@ -1,81 +1,58 @@
 {
+  "_note": "Fictional Maine estate tax (Form 706ME) fact pattern for testing fills. All names, SSNs (000-00-xxxx), and amounts are placeholders. This inherited mapping uses court-shaped role keys: parties.plaintiff = the DECEDENT, party = the PERSONAL REPRESENTATIVE, parties.attorney = the authorized ESTATE REPRESENTATIVE. See examples/README.md.",
   "matter": {
-    "docket_number": "FM-2024-00000",
-    "court_county": "Cumberland",
-    "court_location": "Portland",
-    "court_type": "District Court",
-    "case_type": "family_matters",
-    "filing_date": "2024-03-15"
+    "filing_date": "2025-09-15"
   },
   "parties": {
     "plaintiff": {
-      "full_name": "Jane Q. Doe",
-      "address": "123 Main Street",
+      "full_name": "Morgan T. Example",
+      "address": "10 Harbor View Lane",
       "city": "Portland",
       "state": "ME",
-      "zip": "04101",
-      "phone": "207-555-0101",
-      "email": "jane.doe@example.com",
-      "date_of_birth": "1985-01-15"
-    },
-    "defendant": {
-      "full_name": "John R. Roe",
-      "address": "456 Oak Avenue",
-      "city": "Portland",
-      "state": "ME",
-      "zip": "04101",
-      "phone": "207-555-0102",
-      "email": "john.roe@example.com",
-      "date_of_birth": "1983-06-20"
+      "zip": "04101"
     },
     "attorney": {
-      "full_name": "Pat L. Lawyer, Esq.",
-      "bar_number": "ME-000000",
-      "address": "1 Court Plaza, Suite 100",
+      "full_name": "Alex P. Counsel",
+      "address": "1 Monument Square, Suite 400",
       "city": "Portland",
       "state": "ME",
       "zip": "04101",
-      "phone": "207-555-0150",
-      "email": "attorney@example.com"
-    },
-    "child_1": {
-      "full_name": "Sam Doe",
-      "date_of_birth": "2015-04-10",
-      "address": "123 Main Street",
-      "city": "Portland",
-      "state": "ME",
-      "zip": "04101"
-    },
-    "child_2": {
-      "full_name": "Alex Doe",
-      "date_of_birth": "2018-09-05",
-      "address": "123 Main Street",
-      "city": "Portland",
-      "state": "ME",
-      "zip": "04101"
+      "email": "counsel@example.com"
     }
   },
   "party": {
-    "full_name": "Jane Q. Doe",
-    "address": "123 Main Street",
-    "city": "Portland",
+    "full_name": "Pat Q. Example",
+    "address": "25 Spring Street",
+    "city": "Brunswick",
     "state": "ME",
-    "zip": "04101",
-    "phone": "207-555-0101",
-    "email": "jane.doe@example.com",
-    "date_of_birth": "1985-01-15",
-    "signature": "Jane Q. Doe"
+    "zip": "04011",
+    "email": "pat.example@example.com",
+    "signature": "Pat Q. Example"
   },
   "facts": {
-    "marriage_date": "2012-06-30",
-    "separation_date": "2023-11-01",
-    "grounds": "Irreconcilable Differences",
-    "issues": [
-      "Division of Marital Assets",
-      "Child Custody",
-      "Child Support",
-      "Spousal Support"
-    ],
-    "summary": "Sample fact pattern for testing form fills. All names, contacts, and dates here are fictitious placeholders (Doe/Roe, example.com, 555 phone range)."
+    "date_of_death": "2025-01-15",
+    "decedent_ssn": "000-00-0001",
+    "spouse_ssn": "000-00-0002",
+    "federal_taxable_estate": "8500000",
+    "maine_qualified_terminable_interest_property": "0",
+    "maine_elective_property": "0",
+    "value_of_gifts_included_in_federal_form_706": "0",
+    "maine_taxable_estate": "8500000",
+    "apportionable_base": "8500000",
+    "real_and_tangible_personal_property_in_maine": "8500000",
+    "intangible_personal_property_included_in_line_6": "0",
+    "resident_apportionment_factor": "1.000000",
+    "nonresident_apportionment_factor": "0.000000",
+    "gross_maine_estate_tax": "164000",
+    "net_maine_estate_tax": "164000",
+    "payments_estimated_extension_paid_with_return": "164000",
+    "interest_and_penalty_amounts": "0",
+    "amount_due": "0",
+    "refund_due": "0",
+    "preparer_ptin": "P00000000",
+    "firm_name": "Example Tax Advisors LLC",
+    "preparer_address": "100 Middle St, Portland, ME 04101",
+    "preparer_phone": "(207) 555-0142",
+    "summary": "Sample estate fact pattern for testing form fills. All identifiers and amounts are fictitious placeholders."
   }
 }
