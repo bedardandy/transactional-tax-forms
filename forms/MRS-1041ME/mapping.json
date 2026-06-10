@@ -12,9 +12,14 @@
     "facts.medical_cannabis_registration_number": "2020 line 2e registration number is a print-only blank, no widget",
     "facts.adult_use_cannabis_registration_number": "no adult-use cannabis line on the 2020 blank"
   },
-  "unmapped_widgets": {
-    "do_you_want_to_allow_someone_to_discuss_return_with_mrs": "third-party-designee Yes/No radio group; the fill engine has no radio-group support (a write would be treated as wrapped text), so it is left unmapped",
-    "do_you_want_to_allow_someone_to_discuss_return_with_mrs_2": "second appearance of the same radio group"
+  "manual": {
+    "do_you_want_to_allow_someone_to_discuss_return_with_mrs": {
+      "fill": "manual",
+      "kind": "radio_group",
+      "key": "facts.third_party_designee",
+      "options": ["Yes", "No"],
+      "note": "Third-party-designee Yes/No radio group ('Do you want to allow someone to discuss this return with MRS?'). The engine never writes radio groups: the fill report carries a yellow-light entry with the option suggested from facts.third_party_designee; select it by hand on the PDF. schema.json's ..._2 field is the No button of this same group."
+    }
   },
   "map": {
     "fidu_1041_year_from": "facts.tax_period_start",

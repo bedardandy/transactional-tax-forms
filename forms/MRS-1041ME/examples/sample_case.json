@@ -108,6 +108,7 @@
     "tax_balance_due": "1000",
     "tax_period_end": "2025-12-31",
     "tax_period_start": "2025-01-01",
+    "third_party_designee": "yes",
     "total_additions": "1000",
     "total_amount_due": "1000",
     "total_maine_source_income": "1000",

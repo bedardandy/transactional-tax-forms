@@ -79,7 +79,11 @@ def _build():
     @mcp.tool()
     def fill_form(form_id: str, case: dict, out_path: str) -> dict:
         """Fill the form from a canonical case object; returns {ok, path} plus
-        fill diagnostics (fields_written, unresolved keys, missing widgets)."""
+        fill diagnostics (fields_written, unresolved keys, missing widgets).
+        Yellow lights (warnings, never blocking): ``radio_groups`` lists radio
+        groups the engine never writes (with a suggested option to select by
+        hand) and ``constraint_warnings`` lists paradoxical selections
+        declared in the form's constraints.json."""
         try:
             dest = pathlib.Path(out_path)
             if dest.suffix.lower() == ".pdf":
@@ -91,14 +95,19 @@ def _build():
             if r.get("ok") and dest is not None and path and str(dest) != path:
                 shutil.move(path, dest)
                 path = str(dest)
-            return {"ok": bool(r.get("ok")), "path": path,
-                    "fields_written": r.get("fields_written"),
-                    "unresolved": r.get("unresolved"),
-                    "missing_widgets": r.get("missing_widgets"),
-                    "overflowed": r.get("overflowed"),
-                    "blank_verified": r.get("blank_verified"),
-                    "status": r.get("status"),
-                    "error": r.get("error")}
+            out = {"ok": bool(r.get("ok")), "path": path,
+                   "fields_written": r.get("fields_written"),
+                   "unresolved": r.get("unresolved"),
+                   "missing_widgets": r.get("missing_widgets"),
+                   "overflowed": r.get("overflowed"),
+                   "blank_verified": r.get("blank_verified"),
+                   "status": r.get("status"),
+                   "error": r.get("error")}
+            # yellow lights — present only when the form declares them
+            for k in ("radio_groups", "constraint_warnings"):
+                if r.get(k):
+                    out[k] = r[k]
+            return out
         except Exception as e:  # noqa: BLE001
             return {"ok": False, "error": f"{type(e).__name__}: {e}"}
 

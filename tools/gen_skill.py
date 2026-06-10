@@ -194,12 +194,19 @@ def build_sample_case(mapping: dict, schema: dict) -> tuple[dict, list[str]]:
     for fid, key in mapping["map"].items():
         key_types.setdefault(key, set()).update(fid_types.get(fid, set()))
 
+    # Manual radio groups ("fill": "manual"): the key is never written to the
+    # PDF, but the sample carries it so the fill report's yellow-light entry
+    # demonstrates a resolved suggestion (first option).
+    manual_values = {spec["key"]: (spec.get("options") or [""])[0].lower()
+                     for spec in (mapping.get("manual") or {}).values()
+                     if isinstance(spec, dict) and spec.get("key")}
+
     case: dict = {}
     conflicts: list[str] = []
-    for key in sorted(key_types):
-        types = key_types[key]
+    for key in sorted(set(key_types) | set(manual_values)):
+        types = key_types.get(key, set())
         cb_only = bool(types) and types <= {"checkbox", "radio"}
-        v = _value_for(key, cb_only)
+        v = manual_values.get(key) or _value_for(key, cb_only)
         if v is None:
             continue
         parts = key.split(".")
@@ -299,6 +306,25 @@ def render_skill(fid: str, meta: dict, mapping: dict, schema: dict) -> str:
         f"python3 -m engine.fill_via_mapping --form {fid} \\",
         f"    --case forms/{fid}/examples/sample_case.json --out /tmp/out",
         "```",
+    ]
+    manual = mapping.get("manual") or {}
+    if manual:
+        lines += [
+            "",
+            "## Manual selections (radio groups)",
+            "",
+            "The engine **never writes radio groups** (soft lock). The fill "
+            "result carries a yellow-light `radio_groups` entry per group "
+            "below, with the option suggested from the case key — make the "
+            "selection by hand on the output PDF before use.",
+            "",
+            "| group | case key | options |",
+            "|---|---|---|",
+        ]
+        for mfid, spec in sorted(manual.items()):
+            opts = " / ".join(spec.get("options") or [])
+            lines.append(f"| `{mfid}` | `{spec.get('key', '')}` | {opts} |")
+    lines += [
         "",
         "## Canonical keys",
         "",

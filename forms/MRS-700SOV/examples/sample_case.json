@@ -5,6 +5,7 @@
     "first_name": "Morgan",
     "last_name": "Example",
     "middle_name": "T.",
+    "residency_status": "resident",
     "ssn": "000-00-0000"
   },
   "executor": {

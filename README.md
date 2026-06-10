@@ -44,8 +44,11 @@ SS-4 and 706 are cross-listed (an estate also needs an EIN). See
   its shared area-code field) and MRS 700-SOV (was an empty recipe pointer;
   direct-mapped from its descriptive widget names — 42/44 widgets). Both
   record `built_against_sha256`, fill end-to-end with every sample value
-  confirmed on reopen, and leave only their Yes/No radio groups unmapped
-  (noted in `mapping.json`); not yet human-verified field-by-field.
+  confirmed on reopen. Their radio groups (1041ME third-party designee
+  Yes/No, 700-SOV Resident/Nonresident) are declared `"fill": "manual"` in
+  `mapping.json`: the engine never writes radio groups, and the fill report
+  carries a yellow-light `radio_groups` entry with the option suggested from
+  the case — select it by hand. Not yet human-verified field-by-field.
 - **Opus-adjudicated (7):** IRS SS-4 (44 fields), 2553 (23), 8832 (53), 706
   (146), 1041 (79), 56 (33), ME RETTD (74). Drafted from the rendered form by the
   Qwen-VL cluster (`tools/vision_map.py`), then reviewed field-by-field against

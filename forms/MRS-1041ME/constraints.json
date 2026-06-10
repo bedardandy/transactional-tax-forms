@@ -1,0 +1,28 @@
+{
+  "form_id": "MRS-1041ME",
+  "generated_by": "tools/harvest_constraints.py",
+  "note": "Warnings-only paradox constraints (see the shared engine's constraints layer); a firing constraint never blocks or alters a fill.",
+  "mutually_exclusive": [
+    {
+      "keys": [
+        "facts.resident_estate_or_trust",
+        "facts.nonresident_estate_or_trust"
+      ],
+      "note": "Resident / Nonresident \u2014 a return is filed under exactly one residency status."
+    },
+    {
+      "keys": [
+        "facts.entity_type_decedents_estate",
+        "facts.entity_type_qualified_funeral_trust",
+        "facts.entity_type_qualified_disability_trust",
+        "facts.entity_type_bankruptcy_estate_ch7",
+        "facts.entity_type_simple_trust",
+        "facts.entity_type_complex_trust",
+        "facts.entity_type_esbt",
+        "facts.entity_type_pooled_income",
+        "facts.entity_type_bankruptcy_estate_ch11"
+      ],
+      "note": "The form says \"Type of entity (check one box)\" \u2014 exactly one entity-type box."
+    }
+  ]
+}

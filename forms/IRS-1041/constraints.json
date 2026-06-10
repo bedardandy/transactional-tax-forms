@@ -1,0 +1,21 @@
+{
+  "form_id": "IRS-1041",
+  "generated_by": "tools/harvest_constraints.py",
+  "note": "Warnings-only paradox constraints (see the shared engine's constraints layer); a firing constraint never blocks or alters a fill.",
+  "mutually_exclusive": [
+    {
+      "keys": [
+        "facts.may_irs_discuss_yes",
+        "facts.may_irs_discuss_no"
+      ],
+      "note": "Yes/No answer pair for one printed question \u2014 at most one box can be checked."
+    },
+    {
+      "keys": [
+        "facts.account_type_checking",
+        "facts.account_type_savings"
+      ],
+      "note": "Refund account type: Checking / Savings \u2014 one account, one type."
+    }
+  ]
+}

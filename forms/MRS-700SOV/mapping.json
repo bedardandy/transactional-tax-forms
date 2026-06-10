@@ -4,9 +4,14 @@
   "model": "deterministic",
   "built_against_sha256": "881fd7927b3a0c67ed7f4d3d05c6775498444fba6bed1acbe68d78882fadf753",
   "note": "Direct map built 2026-06-10 against the current maine.gov blank (verified vs catalog/pdf_manifest.json), replacing the old empty recipe pointer at the maine-court-forms sibling repo. The blank carries descriptive widget names; every text widget was mapped deterministically by widget name + printed label. Machine fill-verified end-to-end; not yet human-verified field-by-field.",
-  "unmapped_widgets": {
-    "residency_status": "Resident/Nonresident radio group; the fill engine has no radio-group support (a write would be treated as wrapped text), so it is left unmapped",
-    "residency_status_2": "second appearance of the same radio group"
+  "manual": {
+    "residency_status": {
+      "fill": "manual",
+      "kind": "radio_group",
+      "key": "decedent.residency_status",
+      "options": ["Resident", "Nonresident"],
+      "note": "Residency Status radio group. The engine never writes radio groups: the fill report carries a yellow-light entry with the option suggested from decedent.residency_status; select it by hand on the PDF. schema.json's residency_status_2 field is the Nonresident button of this same group."
+    }
   },
   "map": {
     "estate_of_first_name": "decedent.first_name",

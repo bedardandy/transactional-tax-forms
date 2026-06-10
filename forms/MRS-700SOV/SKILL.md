@@ -17,6 +17,14 @@ python3 -m engine.fill_via_mapping --form MRS-700SOV \
     --case forms/MRS-700SOV/examples/sample_case.json --out /tmp/out
 ```
 
+## Manual selections (radio groups)
+
+The engine **never writes radio groups** (soft lock). The fill result carries a yellow-light `radio_groups` entry per group below, with the option suggested from the case key — make the selection by hand on the output PDF before use.
+
+| group | case key | options |
+|---|---|---|
+| `residency_status` | `decedent.residency_status` | Resident / Nonresident |
+
 ## Canonical keys
 
 | key | filled into (printed caption) |

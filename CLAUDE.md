@@ -58,6 +58,13 @@ dict), so every documented `engine.*` / `tools/*` command works unchanged.
 ## Rules
 - **Not tax or legal advice.** Filled output is a draft; say so, and say it must
   be verified against the official form before filing.
+- **Yellow lights are warnings, never blocks.** Fill results (CLI and MCP) may
+  carry `radio_groups` (radio groups the engine never writes — soft lock; each
+  entry suggests the option resolved from the case, to be selected by hand)
+  and `constraint_warnings` (paradoxical selections per the form's
+  `constraints.json`, e.g. both Resident and Nonresident checked — harvested
+  by `tools/harvest_constraints.py`). They list problems for a human to
+  resolve; they never fail or alter a fill.
 - **Respect the manifest guard.** The engine warns if the on-disk blank is not
   the revision the mapping was built against (`TTF_VERIFY_BLANK`; `MCF_VERIFY_BLANK` works as a fallback). Don't suppress
   it without re-verifying the mapping.
