@@ -7,7 +7,7 @@ the Qwen-VL cluster to map each marker to a canonical fact-key by the PRINTED
 label beside it. Writes mapping.json (status ``vision-mapped`` — a draft tier,
 review before production), schema.json, and fields.csv for the form.
 
-    MCF_LLM_ENDPOINTS=http://host:8080/v1 python3 tools/vision_map.py --forms IRS-SS-4
+    TTF_LLM_ENDPOINTS=http://host:8080/v1 python3 tools/vision_map.py --forms IRS-SS-4
 
 Needs the blank PDF on disk (tools/fetch_pdfs.py) and the local Qwen-VL cluster.
 """
@@ -26,8 +26,13 @@ import fitz
 import openai
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-ENDPOINTS = os.environ.get("MCF_LLM_ENDPOINTS", "http://localhost:8080/v1").split(",")
-VL_MODEL = os.environ.get("MCF_VL_MODEL", "qwen3.6-27b")
+# TTF_* is this repo's prefix; MCF_* is honored as a fallback for setups
+# carried over from the court-forms sibling repos.
+ENDPOINTS = (os.environ.get("TTF_LLM_ENDPOINTS")
+             or os.environ.get("MCF_LLM_ENDPOINTS",
+                               "http://localhost:8080/v1")).split(",")
+VL_MODEL = (os.environ.get("TTF_VL_MODEL")
+            or os.environ.get("MCF_VL_MODEL", "qwen3.6-27b"))
 MAX_PAGES = 8
 FILLABLE = ("Text", "CheckBox", "RadioButton")
 

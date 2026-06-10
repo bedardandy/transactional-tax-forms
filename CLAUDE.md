@@ -31,7 +31,7 @@ When the user says *"use this project to prepare \<tax form / transaction\>"*:
 - **Not tax or legal advice.** Filled output is a draft; say so, and say it must
   be verified against the official form before filing.
 - **Respect the manifest guard.** The engine warns if the on-disk blank is not
-  the revision the mapping was built against (`MCF_VERIFY_BLANK`). Don't suppress
+  the revision the mapping was built against (`TTF_VERIFY_BLANK`; `MCF_VERIFY_BLANK` works as a fallback). Don't suppress
   it without re-verifying the mapping.
 - **Don't redistribute the blanks.** Maine forms are public records; IRS forms
   are public domain — but this repo ships metadata only, fetched on demand.

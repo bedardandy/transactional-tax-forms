@@ -83,8 +83,9 @@ python3 tools/check_upstream.py            # re-probe official URLs; flag CHANGE
 `check_upstream` re-downloads each blank, hashes it, and reports drift; it is
 read-only and exits non-zero on any change, so it runs as a weekly early-warning
 (`.github/workflows/drift.yml`). At **fill time** the engine checks the on-disk
-blank against the manifest — `MCF_VERIFY_BLANK=warn` (default), `strict`, or
-`off` — so a re-issued blank can't be filled unnoticed.
+blank against the manifest — `TTF_VERIFY_BLANK=warn` (default), `strict`, or
+`off` (`MCF_VERIFY_BLANK` is honored as a fallback) — so a re-issued blank
+can't be filled unnoticed.
 
 ## Quickstart — fill a form
 

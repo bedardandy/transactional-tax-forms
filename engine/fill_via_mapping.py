@@ -181,9 +181,13 @@ def fill_via_mapping(form_id: str, facts: dict, out_dir: pathlib.Path,
                 "error": f"blank PDF not found: {pdf} (run tools/fetch_pdfs.py)"}
     # Guard: the on-disk blank must be the revision this mapping was built
     # against (catalog/pdf_manifest.json). A mismatch warns by default; set
-    # MCF_VERIFY_BLANK=strict to refuse, =off to skip.
+    # TTF_VERIFY_BLANK=strict to refuse, =off to skip. (MCF_VERIFY_BLANK is
+    # honored as a fallback for setups carried over from the court-forms
+    # sibling repos.)
     blank_verified = verify.guard_blank(
-        form_id, forms_root, mode=os.environ.get("MCF_VERIFY_BLANK", "warn"))
+        form_id, forms_root,
+        mode=os.environ.get("TTF_VERIFY_BLANK")
+        or os.environ.get("MCF_VERIFY_BLANK", "warn"))
     # Width-fit overflowing values to their widget's char budget (mirrors the
     # engine's fill_one pass): names initial-collapse, addresses postal-
     # abbreviate, so a long real-world value shrinks instead of clipping.
