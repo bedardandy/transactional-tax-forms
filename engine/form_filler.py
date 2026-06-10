@@ -178,7 +178,7 @@ def fill_form(
     output_path: str | Path | None = None,
     *,
     tree: dict | None = None,
-    addendum_policy: str = "auto",
+    addendum_policy: str = "none",
     form_id: str | None = None,
 ) -> str:
     """Fill an AcroForm PDF with field data.
@@ -187,45 +187,38 @@ def fill_form(
         pdf_path: Path to a fillable PDF (from output/).
         field_data: Dict mapping field_name → value.
         output_path: Where to save. If None, appends '_filled' to filename.
-        tree: Optional parsed tree YAML (dict). Used for two things:
-            (a) prompt labels for the addendum question headers
-            (b) per-tree `addendum_policy` override
-        addendum_policy: One of "auto" (default — append addendum pages
-            for overflowed answers), "none" (truncate overflow inline,
-            no addendum), or "court_form" (skip addendum, assume the
-            user will attach a court-published continuation form).
-        form_id: Form identifier used in the addendum header. Defaults
-            to the PDF filename stem.
+        tree: Optional form metadata (dict); only ``form_id`` is read.
+        addendum_policy: Only "none" is supported in this repo: overflow
+            past the last widget is truncated inline and logged. The
+            court-forms sibling repos render addendum continuation pages
+            ("auto" / "court_form" policies); passing those here raises
+            ValueError rather than silently dropping overflow.
+        form_id: Form identifier used in log messages. Defaults to the
+            PDF filename stem.
 
-    Multi-widget handling: when N>1 widgets share a field name (the
-    tree-builder's "continuation line" pattern), the value is greedy
-    word-wrapped across all N widgets using each widget's actual rect
-    width — so a narrow line-1 followed by full-width lines 2..N gets
-    the right split. Overflow past the last widget is routed to an
-    appended addendum page (unless addendum_policy disables it), and
-    the last inline widget is rewritten to read "See Addendum QN".
+    Multi-widget handling: when N>1 widgets share a field name, the
+    value is greedy word-wrapped across all N widgets using each
+    widget's actual rect width — so a narrow line-1 followed by
+    full-width lines 2..N gets the right split. Overflow past the last
+    widget is truncated inline and reported.
     """
     pdf_path = Path(pdf_path)
     if output_path is None:
         output_path = pdf_path.parent / f"{pdf_path.stem}_filled.pdf"
     output_path = Path(output_path)
 
-    # Tree-level overrides (e.g. some forms use a court-published
-    # continuation form and shouldn't have an auto-generated addendum).
     if tree:
         addendum_policy = tree.get("addendum_policy") or addendum_policy
         if not form_id:
             form_id = tree.get("form_id")
+    if addendum_policy != "none":
+        raise ValueError(
+            f"addendum_policy={addendum_policy!r} is not supported here: "
+            "this repo does not ship the addendum renderer (engine/addendum.py "
+            "lives in the maine-court-forms sibling repo). "
+            "Use addendum_policy='none'.")
     if not form_id:
         form_id = pdf_path.stem.split(" ")[0]
-
-    prompts: dict[str, str] = {}
-    if tree:
-        for n in tree.get("nodes", []):
-            if isinstance(n, dict) and n.get("id"):
-                prompts[n["id"]] = (
-                    n.get("prompt") or n.get("label") or n["id"]
-                )
 
     doc = fitz.open(str(pdf_path))
     filled_count = 0
@@ -297,7 +290,6 @@ def fill_form(
     # overlay text. Because PDF widget appearances render on top of page
     # content, we delete the kid widgets first — the consolidated
     # AcroForm field is replaced with stamped text. Track overflows.
-    rect_overlays: dict[str, tuple] = {}  # name -> (rect, fs, page_idx)
     for name in multi_groups:
         value = field_data[name]
         group = groups[name]
@@ -324,7 +316,6 @@ def fill_form(
             remainder = ""
         else:
             lines, remainder = _wrap_across_widgets(value, caps)
-        field_data[f"__wrap_cache_{name}"] = lines  # type: ignore[assignment]
         if remainder:
             overflowed.append((name, remainder))
             logger.info(
@@ -356,8 +347,6 @@ def fill_form(
                     fontname=BODY_FONT, fontsize=fs, color=(0, 0, 0),
                 )
                 filled_count += 1
-            if entry["pos"] == len(group) - 1:
-                rect_overlays[name] = (rect, fs, page_idx)
 
     # Check for fields in data that weren't found in the PDF.
     # Multi-widget groups were intentionally deleted in pass 2; exclude
@@ -370,56 +359,10 @@ def fill_form(
             if w.field_type == fitz.PDF_WIDGET_TYPE_CHECKBOX:
                 checkbox_names.add(w.field_name)
     available = set(groups.keys()) | checkbox_names
-    missing_fields = [
-        k for k in field_data
-        if k not in available and not k.startswith("__wrap_cache_")
-    ]
+    missing_fields = [k for k in field_data if k not in available]
 
-    # Addendum: render overflow pages and rewrite the last inline widget
-    # of each overflowed field to point to the addendum entry.
-    if overflowed and addendum_policy == "auto":
-        from .addendum import render_addendum_pages  # local import: optional
-        # For each overflowed field, addendum body = wrapped-last-line +
-        # remainder. We replace the last widget's text with "See Addendum
-        # QN" so the inline form is unambiguous and the addendum carries
-        # the tail from where line N-1 left off.
-        addendum_bodies: list[tuple[str, str]] = []
-        for name, remainder in overflowed:
-            cache_key = f"__wrap_cache_{name}"
-            lines = field_data.get(cache_key) or []
-            tail_inline = lines[-1] if lines else ""
-            body = (tail_inline + " " + remainder).strip()
-            addendum_bodies.append((name, body))
-        refs = render_addendum_pages(doc, form_id, addendum_bodies, prompts)
-        ref_map = dict(refs)
-        # Multi-widget groups have already been deleted in pass 2 and
-        # their text drawn on the page. Cover the last rect with white
-        # and stamp "See Addendum QN" in its place.
-        for name, ref_text in ref_map.items():
-            overlay = rect_overlays.get(name)
-            if overlay is not None:
-                rect, fs, page_idx = overlay
-                page = doc[page_idx]
-                page.draw_rect(rect, color=None, fill=(1, 1, 1))
-                baseline_y = rect.y1 - max(2.0, (rect.height - fs) / 2.0)
-                page.insert_text(
-                    (rect.x0 + 1.5, baseline_y), ref_text,
-                    fontname=BODY_FONT, fontsize=fs, color=(0, 0, 0),
-                )
-            else:
-                # Single-widget field overflow (rare): write via /V.
-                for pg in doc:
-                    for w in pg.widgets() or []:
-                        if w.field_name == name:
-                            w.field_value = ref_text
-                            w.update()
-                            break
-    elif overflowed and addendum_policy == "none":
-        logger.info("addendum_policy=none: %d fields truncated inline",
-                    len(overflowed))
-    elif overflowed and addendum_policy == "court_form":
-        logger.info("addendum_policy=court_form: %d fields overflowed; "
-                    "user must attach court continuation form",
+    if overflowed:
+        logger.info("%d fields truncated inline (overflow past last widget)",
                     len(overflowed))
 
     doc.save(str(output_path))
@@ -430,7 +373,7 @@ def fill_form(
         logger.warning("Fields not found in PDF: %s", missing_fields)
     if overflowed:
         logger.warning(
-            "%d fields overflowed (need addendum): %s",
+            "%d fields overflowed their widgets (truncated inline): %s",
             len(overflowed),
             ", ".join(name for name, _ in overflowed[:5]),
         )
