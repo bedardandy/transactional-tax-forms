@@ -1,131 +1,144 @@
 # MRS-1041ME — Maine Fiduciary Income Tax Return
 
-**Agency:** Maine Revenue Services  |  **Domain:** probate  |  **Status:** `remap-pending`
-**Fields:** 118  |  **Mapped:** 93
+**Agency:** Maine Revenue Services  |  **Domain:** probate  |  **Status:** `mapped`
+**Pages:** 3  |  **Fillable widgets:** 129  |  **Mapped:** 123 fields / 121 keys
 
-## What an agent needs to fill this form
+> Not tax or legal advice. The fill output is a draft; verify every value against the current official form before filing.
 
-This form is not yet fillable here (see `mapping.json` for status and notes). The field table below lists the fillable widgets from the revision this folder was inventoried against.
+## What an agent needs
 
-## Field map
+Build a canonical fact object (JSON) using the keys in the table below — tax-native roles (`entity`, `decedent`, `executor`, `transferor`/`transferee`, `property`, …) plus `facts.<snake_case>` for the form's labeled line items. `examples/sample_case.json` exercises every mapped key with fictional placeholder values.
 
-| field_id | type | page | printed label |
-|---|---|---|---|
-| `clear_form` | checkbox | 0 | Clear Form |
-| `print_form` | checkbox | 0 | Print Form |
-| `fidu_1041_year_from` | text | 0 | Fidu 1041 Year from |
-| `fidu_1040_year_to` | text | 0 | Fidu 1040 Year to |
-| `fidu_1041_amended_return` | text | 0 | Fidu 1041 Amended return |
-| `fidu_1041_name_of_estate_or_trust` | text | 0 | Fidu 1041 Name of estate or trust |
-| `fidu_1041_estate_trust_qft_ein` | text | 0 | Fidu 1041 Estate/trust/qft/ein |
-| `fidu_1041_name_and_title_of_fiduciary_trustee` | text | 0 | Fidu 1041 Name and title of fiduciary trustee |
-| `fidu_1041_address_of_fiduciary` | text | 0 | Fidu 1041 Address of fiduciary |
-| `fidu_1041_city` | text | 0 | Fidu 1041 City |
-| `fidu_1041_state` | text | 0 | Fidu 1041 State |
-| `fidu_1041_zip_code` | text | 0 | Fidu 1041 Zip code |
-| `fidu_de` | text | 0 | Fidu DE |
-| `decedent_ssn` | text | 0 | decedent ssn |
-| `qualified_funeral_trust_1` | text | 0 | Qualified Funeral Trust.1 |
-| `qualified_disability_trust_1` | text | 0 | Qualified Disability Trust.1 |
-| `bankruptcy_ch_7_0` | text | 0 | bankruptcy ch 7.0 |
-| `simple_trust` | text | 0 | Simple Trust |
-| `complex_trust` | text | 0 | Complex Trust |
-| `esbt` | text | 0 | ESBT |
-| `pooled_income` | text | 0 | Pooled Income |
-| `bankruptcy_ch_11` | text | 0 | bankruptcy ch 11 |
-| `fidu_1041_resident` | text | 0 | Fidu 1041 Resident |
-| `fidu_1041_nonresident` | text | 0 | Fidu 1041 Nonresident |
-| `fidu_1041_initial_return` | text | 0 | Fidu 1041 Initial return |
-| `fidu_1041_final_return` | text | 0 | Fidu 1041 Final Return |
-| `fidu_1041_federal_taxable_income` | text | 0 | Fidu 1041 Federal taxable income |
-| `fidu_1041_adjustment` | text | 0 | Fidu 1041 adjustment |
-| `fidu_1041_maine_taxable_income` | text | 0 | Fidu 1041 Maine Taxable Income |
-| `fidu_1041_maine_income_tax` | text | 0 | Fidu 1041 Maine income tax |
-| `fidu_1041_adjustments_tax` | text | 0 | Fidu 1041 Adjustments tax |
-| `fidu_1041_adjusted_maine_income_tax` | text | 0 | Fidu 1041 Adjusted Maine income tax |
-| `fidu_1041_maine_income_tax_withheld` | text | 0 | Fidu 1041 Maine Income tax withheld |
-| `fidu_1041_estimated_tax_payments` | text | 0 | Fidu 1041 Estimated tax payments |
-| `fidu_1041_refunable_tax_credits` | text | 0 | Fidu 1041 Refunable tax credits |
-| `fidu_1041_total_payments` | text | 0 | Fidu 1041 Total payments |
-| `fidu_1041_amended_overpayment` | text | 0 | Fidu 1041 Amended Overpayment |
-| `fidu_1041_line_9` | text | 0 | Fidu 1041 Line 9 |
-| `fidu_1041_tax_balance_due` | text | 0 | Fidu 1041 Tax Balance due |
-| `attatch_form_2210me` | text | 0 | Attatch Form 2210ME |
-| `fidu_1041penalty` | text | 0 | Fidu 1041Penalty |
-| `fidu_1041_total_amount_due` | text | 0 | Fidu 1041 Total Amount Due |
-| `fidu_1041_estate_trust_ein` | text | 1 | Fidu 1041 Estate/Trust EIN |
-| `fidu_1041_overpayment` | text | 1 | Fidu 1041 Overpayment |
-| `fidu_1041_caryforward` | text | 1 | Fidu 1041 Caryforward |
-| `fidu_1041_refund` | text | 1 | Fidu 1041 Refund |
-| `foriegn_account` | text | 1 | Foriegn Account |
-| `routing_number` | text | 1 | Routing Number |
-| `text5` | text | 1 | Text5 |
-| `third_party_designee` | text | 1 | Third Party Designee |
-| `third_party_designee_dup1` | text | 1 | Third Party Designee |
-| `designee_s_name` | text | 1 | Designee's name |
-| `postal_code` | text | 1 | Postal Code |
-| `phone_number` | text | 1 | Phone number |
-| `pin` | text | 1 | PIN |
-| `date_signed_fidu_officer` | text | 1 | Date signed fidu officer |
-| `date_estate_or_trust_created` | text | 1 | Date estate or trust created |
-| `date_preparer_signed` | text | 1 | Date preparer signed |
-| `preparers_phone_number` | text | 1 | Preparers phone number |
-| `preparer_ssn_or_ptin` | text | 1 | Preparer SSN or PTIN |
-| `fidu_1041_estate_trust_ein` | text | 2 | Fidu 1041 Estate/trust EIN |
-| `fidu_1041_additions_1a` | text | 2 | Fidu 1041 Additions, 1a |
-| `fidu_1041_additions_1b` | text | 2 | Fidu 1041 Additions 1b |
-| `fidu_1041_additions_1c` | text | 2 | Fidu 1041 Additions 1c |
-| `fidu_1041_additions_1d` | text | 2 | Fidu 1041 Additions 1d |
-| `fidu_1041_additions_1e` | text | 2 | Fidu 1041 Additions 1e |
-| `fidu_1041_additions_1f` | text | 2 | Fidu 1041 Additions 1f |
-| `fidu_1041_additions_1g` | text | 2 | Fidu 1041 Additions 1g |
-| `fidu_1041_additions_1h` | text | 2 | Fidu 1041 Additions 1h |
-| `fidu_1041_1i` | text | 2 | Fidu 1041 1i |
-| `fidu_1041_2a` | text | 2 | FIdu 1041 2a |
-| `fidu_1041_subtractions_2b` | text | 2 | Fidu 1041 Subtractions 2b |
-| `fidu_1041_subtractions_2c` | text | 2 | Fidu 1041 Subtractions 2c |
-| `fidu_1041_subtractions_2d` | text | 2 | Fidu 1041 Subtractions 2d |
-| `medical_cannabis_sales_tax_number` | text | 2 | Medical cannabis sales tax number |
-| `fidu_1041_subtractions_2e` | text | 2 | Fidu 1041 Subtractions 2e |
-| `adult_use_cannabis_sales_tax_number` | text | 2 | Adult use cannabis sales tax number |
-| `fidu_1041_subtractions_2f` | text | 2 | Fidu 1041 Subtractions 2f |
-| `fidu_1041_2g` | text | 2 | Fidu 1041 2g |
-| `fidu_1041_subtractions_2h` | text | 2 | Fidu 1041 Subtractions 2h |
-| `fidu_10412i` | text | 2 | Fidu 10412i |
-| `fidu_1041_3` | text | 2 | Fidu 1041 3 |
-| `fidu_1041_page_3_estate_trust_ein` | text | 3 | Fidu 1041 Page 3 Estate/Trust EIN |
-| `fidu_1041_page_3_name` | text | 3 | Fidu 1041 Page 3 name |
-| `fidu_1041_page_3_share_of_income` | text | 3 | Fidu 1041 Page 3 share of income |
-| `fidu_1041_page_3_percent` | text | 3 | Fidu 1041 Page 3 percent |
-| `fidu_1041_page_3_state` | text | 3 | Fidu 1041 Page 3 state |
-| `fidu1041_page_3_fiduciary_ss_or_ein_number` | text | 3 | Fidu1041 Page 3 Fiduciary ss or EIN number |
-| `fidu_1041_page_3_maine_source_income` | text | 3 | Fidu 1041 Page 3 Maine source income |
-| `fidu_1041_page_3a_name` | text | 3 | Fidu 1041 Page 3A name |
-| `fidu_1041_page_3a_share_of_income` | text | 3 | Fidu 1041 Page 3A share of income |
-| `fidu_1041_page_3b_percent` | text | 3 | Fidu 1041 Page 3B percent% |
-| `fidu_1041_page_3a_state` | text | 3 | Fidu 1041 Page 3A state |
-| `fidu_1041_page_3a_fiduciary_ss_or_ein_number` | text | 3 | Fidu 1041 Page 3A Fiduciary ss or EIN number |
-| `fidu_1041_page_3a_maine_source_income` | text | 3 | Fidu 1041 Page 3A Maine source income |
-| `fidu_1041_page_3b_name` | text | 3 | Fidu 1041 Page 3B name |
-| `fidu_1041_page_3b_share_of_income` | text | 3 | Fidu 1041 Page 3B share of income |
-| `fidu_1041_page_3a_percent` | text | 3 | Fidu 1041 Page 3A percent |
-| `fidu_1041_page_3b_state` | text | 3 | Fidu 1041 Page 3B state |
-| `fidu_1041_page_3b_fiduciary_ss_or_ein_number` | text | 3 | Fidu 1041 Page 3B Fiduciary ss or EIN number |
-| `fidu_1041_page_3c_maine_source_income` | text | 3 | Fidu 1041 Page 3C maine source income |
-| `fidu_1041_page_3c_name` | text | 3 | Fidu 1041 Page 3C name |
-| `fidu_1041_page_3c_share_of_income` | text | 3 | Fidu 1041 Page 3C share of income |
-| `fidu_1041_page_3c_percent` | text | 3 | Fidu 1041 Page 3C percent |
-| `fidu_1041_page_3c_state` | text | 3 | Fidu 1041 Page 3C state |
-| `fidu_1041_page_3c_fiduciary_ss_or_ein_number` | text | 3 | Fidu 1041 Page 3C Fiduciary ss or EIN number |
-| `fidu_1041_page_3d_maine_source_income` | text | 3 | Fidu 1041 Page 3D Maine source income |
-| `fidu_1041_page_3d_name` | text | 3 | Fidu 1041 Page 3D name |
-| `fidu_1041_page_3d_share_of_income` | text | 3 | Fidu 1041 Page 3D share of income |
-| `fidu_1041_page_3d_percent` | text | 3 | Fidu 1041 Page 3D percent |
-| `fidu_1041_page_3d_state` | text | 3 | Fidu 1041 Page 3D state |
-| `fidu_1041_page_3d_fiduciary_ss_or_ein_number` | text | 3 | Fidu 1041 Page 3D Fiduciary ss or EIN number |
-| `fidu_1041_page_3e_maine_source_income` | text | 3 | Fidu 1041 Page 3E Maine source income |
-| `fidu_1041_page_3e_name` | text | 3 | Fidu 1041 Page 3E name |
-| `fidu_1041_page_3e_share_of_income` | text | 3 | Fidu 1041 Page 3E share of income |
-| `fidu_1041_page_3e_percent` | text | 3 | Fidu 1041 Page 3E percent |
-| `fidu_1041_page_3f_share_of_income` | text | 3 | Fidu 1041 Page 3F share of income |
-| `fidu_1041_page_3f_maine_source_income` | text | 3 | Fidu 1041 Page 3F Maine source income |
+## Fill
+
+```bash
+python3 tools/fetch_pdfs.py --forms MRS-1041ME   # verified official blank
+python3 -m engine.fill_via_mapping --form MRS-1041ME \
+    --case forms/MRS-1041ME/examples/sample_case.json --out /tmp/out
+```
+
+## Canonical keys
+
+| key | filled into (printed caption) |
+|---|---|
+| `facts.additions_bonus_depreciation_addback` | facts — additions bonus depreciation addback |
+| `facts.additions_capital_investment_credit_bonus_depreciation_addback` | facts — additions capital investment credit bonus depreciation addback |
+| `facts.additions_installment_sale_gains` | facts — additions installment sale gains |
+| `facts.additions_mainepers_contributions` | facts — additions mainepers contributions |
+| `facts.additions_municipal_state_bond_income` | from municipal and state bonds, other than Maine. ........................................ |
+| `facts.additions_net_operating_loss_adjustment` | b Net Operating Loss Adjustment. (Attach schedule.) ...................................... |
+| `facts.additions_other` | facts — additions other |
+| `facts.additions_qbi_deduction_addback` | facts — additions qbi deduction addback |
+| `facts.adjusted_maine_income_tax` | facts — adjusted maine income tax |
+| `facts.adjustments_to_tax` | 5. Adjustments to tax. (From Schedule A, line 19.) ....................................... |
+| `facts.amended_return` | Amended Return |
+| `facts.beneficiary_1_maine_source_income` | facts — beneficiary 1 maine source income |
+| `facts.beneficiary_1_name` | facts — beneficiary 1 name |
+| `facts.beneficiary_1_percent` | (a) B- $ |
+| `facts.beneficiary_1_share_of_income` | facts — beneficiary 1 share of income |
+| `facts.beneficiary_1_ssn_or_ein` | facts — beneficiary 1 ssn or ein |
+| `facts.beneficiary_1_state_of_domicile` | facts — beneficiary 1 state of domicile |
+| `facts.beneficiary_2_maine_source_income` | facts — beneficiary 2 maine source income |
+| `facts.beneficiary_2_name` | (b) B- |
+| `facts.beneficiary_2_percent` | (b) B- $ |
+| `facts.beneficiary_2_share_of_income` | (b) B- $ |
+| `facts.beneficiary_2_ssn_or_ein` | (b) B- $ % |
+| `facts.beneficiary_2_state_of_domicile` | (b) B- $ % |
+| `facts.beneficiary_3_maine_source_income` | (c) B- $ % $ |
+| `facts.beneficiary_3_name` | (c) B- |
+| `facts.beneficiary_3_percent` | (c) B- $ |
+| `facts.beneficiary_3_share_of_income` | (c) B- $ |
+| `facts.beneficiary_3_ssn_or_ein` | (c) B- $ % |
+| `facts.beneficiary_3_state_of_domicile` | (c) B- $ % |
+| `facts.beneficiary_4_maine_source_income` | (d) B- $ % $ |
+| `facts.beneficiary_4_name` | (d) B- |
+| `facts.beneficiary_4_percent` | (d) B- $ |
+| `facts.beneficiary_4_share_of_income` | (d) B- $ |
+| `facts.beneficiary_4_ssn_or_ein` | (d) B- $ % |
+| `facts.beneficiary_4_state_of_domicile` | (d) B- $ % |
+| `facts.beneficiary_5_maine_source_income` | (e) B- $ % $ |
+| `facts.beneficiary_5_name` | (e) B- |
+| `facts.beneficiary_5_percent` | (e) B- $ |
+| `facts.beneficiary_5_share_of_income` | (e) B- $ |
+| `facts.beneficiary_5_ssn_or_ein` | (e) B- $ % |
+| `facts.beneficiary_5_state_of_domicile` | (e) B- $ % |
+| `facts.checking_account_number` | account outside the |
+| `facts.contact_area_code` | facts — contact area code |
+| `facts.contact_first_name` | facts — contact first name |
+| `facts.contact_last_name` | facts — contact last name |
+| `facts.contact_phone` | facts — contact phone |
+| `facts.credit_other_jurisdiction_allowable_credit` | facts — credit other jurisdiction allowable credit |
+| `facts.credit_other_jurisdiction_income_taxed` | facts — credit other jurisdiction income taxed |
+| `facts.credit_other_jurisdiction_limit_amount` | ____________ multiplied by ________% on line 3 above. .......................... 4a |
+| `facts.credit_other_jurisdiction_limit_maine_tax` | a Form 1041ME, page 1, line 4 $ |
+| `facts.credit_other_jurisdiction_limit_percent` | Form 1041ME, page 1, line 4 $ ____________ multiplied by |
+| `facts.credit_other_jurisdiction_maine_taxable_income` | facts — credit other jurisdiction maine taxable income |
+| `facts.credit_other_jurisdiction_name` | facts — credit other jurisdiction name |
+| `facts.credit_other_jurisdiction_percent_taxed` | facts — credit other jurisdiction percent taxed |
+| `facts.credit_other_jurisdiction_taxes_paid` | facts — credit other jurisdiction taxes paid |
+| `facts.decedent_ssn` | one box): |
+| `facts.designee_area_code` | Designee Designee’s name Phone no. ( |
+| `facts.designee_name` | Designee Designee’s name |
+| `facts.designee_phone` | Designee Designee’s name Phone no. ( ) |
+| `facts.designee_pin` | Designee’s name Phone no. ( ) Personal Identiﬁ cation number |
+| `facts.entity_type_bankruptcy_estate_ch11` | Bankruptcy estate |
+| `facts.entity_type_bankruptcy_estate_ch7` | Bankruptcy estate |
+| `facts.entity_type_complex_trust` | Bankruptcy estate |
+| `facts.entity_type_decedents_estate` | Decedent’s estate Qualiﬁ ed Funeral Trust (QFT) Qualiﬁ |
+| `facts.entity_type_esbt` | Bankruptcy estate |
+| `facts.entity_type_pooled_income` | Bankruptcy estate |
+| `facts.entity_type_qualified_disability_trust` | Qualiﬁ ed Bankruptcy estate |
+| `facts.entity_type_qualified_funeral_trust` | Qualiﬁ ed Funeral Trust (QFT) Qualiﬁ ed Bankruptcy |
+| `facts.entity_type_simple_trust` | Bankruptcy estate |
+| `facts.estate_ein` | facts — estate ein |
+| `facts.estate_name` | facts — estate name |
+| `facts.estate_or_trust_name` | (f) E/T- |
+| `facts.estate_or_trust_percent` | (f) E/T- $ |
+| `facts.estate_or_trust_share_of_income` | (f) E/T- $ |
+| `facts.estate_trust_created_date` | facts — estate trust created date |
+| `facts.estate_trust_ein` | facts — estate trust ein (+1 more field) |
+| `facts.estimated_tax_payments` | extension payments. (Include any real estate withholding tax payments.) ....7b |
+| `facts.federal_taxable_income` | facts — federal taxable income |
+| `facts.fiduciary_adjustment` | Fiduciary Adjustment: Resident estates and trusts only. (See instructions.) .............. |
+| `facts.final_return` | facts — final return |
+| `facts.form_2210me_box_checked` | ............. 8b .00 |
+| `facts.initial_return` | facts — initial return |
+| `facts.maine_income_tax` | tax. (From tax table on page 2 of instructions.) ......................................... |
+| `facts.maine_income_tax_withheld` | facts — maine income tax withheld |
+| `facts.maine_taxable_income` | or trust - Schedule NR, line 9, Column B.) ............................................... |
+| `facts.net_fiduciary_adjustment` | — see instructions [may be a negative amount].) ......... 3 |
+| `facts.nonresident_estate_or_trust` | facts — nonresident estate or trust |
+| `facts.overpayment_amount` | line 7d is greater than line 6, enter OVERPAYMENT. ....................................... |
+| `facts.overpayment_credited_amount` | to next year’s estimated tax. ....... 10a |
+| `facts.penalty` | facts — penalty |
+| `facts.preparer_name` | facts — preparer name |
+| `facts.preparer_phone` | facts — preparer phone |
+| `facts.preparer_ssn_or_ptin` | facts — preparer ssn or ptin |
+| `facts.refund_account_outside_us` | facts — refund account outside us |
+| `facts.refund_amount` | to next year’s estimated tax. ....... 10a .00 REFUNDED............10b |
+| `facts.refundable_tax_credits` | c. Refundable tax credits. (From Schedule A, line 4.) .................................... |
+| `facts.resident_estate_or_trust` | facts — resident estate or trust |
+| `facts.routing_number` | Check this box if this |
+| `facts.subtractions_bonus_depreciation_section_179_recapture` | facts — subtractions bonus depreciation section 179 recapture |
+| `facts.subtractions_mainepers_pickup_contributions` | been previously taxed by the state. (See instructions.) .................................. |
+| `facts.subtractions_medical_cannabis_expenses` | e Medical Marijuana Business Expenses. (See instructions.) ............................... |
+| `facts.subtractions_net_operating_loss_recapture` | f Net Operating Loss recapture. (See instructions) ....................................... |
+| `facts.subtractions_other` | facts — subtractions other |
+| `facts.subtractions_social_security_railroad_benefits` | ts included in federal taxable income (See instructions.) ....... 2b |
+| `facts.subtractions_us_government_bond_interest` | Government Bond interest included in federal taxable income. ............................. |
+| `facts.tax_balance_due` | is greater than line 7d, enter TAX BALANCE DUE. .......................................... |
+| `facts.tax_period_end` | 2 0 2 0 to |
+| `facts.tax_period_start` | (mm dd yyyy) |
+| `facts.total_additions` | facts — total additions |
+| `facts.total_amount_due` | 8b.) Make checks payable to Treasurer, State of Maine. 8c |
+| `facts.total_maine_source_income` | (g) Total $ 100% $ |
+| `facts.total_payments` | facts — total payments |
+| `facts.total_share_of_income` | facts — total share of income |
+| `facts.total_subtractions` | facts — total subtractions |
+| `party.address` | party — address |
+| `party.city` | party — city |
+| `party.full_name` | party — full name |
+| `party.ssn_or_ein` | party — ssn or ein |
+| `party.state` | party — state |
+| `party.zip` | party — zip |
+| `today()` | today() (+1 more field) |

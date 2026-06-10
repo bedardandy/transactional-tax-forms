@@ -121,6 +121,10 @@ def _facts_value(attr: str) -> str:
         return "00-0000000"
     if "date" in a:
         return "2025-01-15"
+    if "period" in a and ("start" in a or "begin" in a):
+        return "2025-01-01"
+    if "period" in a and "end" in a:
+        return "2025-12-31"
     if "phone" in a or "fax" in a:
         return "(207) 555-0100"
     if "email" in a:
@@ -143,6 +147,8 @@ def _facts_value(attr: str) -> str:
         return "1"
     if "percent" in a or "factor" in a or "ratio" in a:
         return "1.000000"
+    if a == "name" or a.endswith("_name"):
+        return "Example LLC"
     if _MONEY_RE.search(a):
         return "1000"
     if "name" in a:

@@ -1,0 +1,11 @@
+{
+  "splits": [
+    {
+      "field": "Fidu 1041 Area code",
+      "page": 2,
+      "new_name": "Fidu 1041 Designee area code",
+      "clear": true,
+      "why": "one AcroForm field backs both the page-1 contact area-code box and the page-2 third-party-designee area-code box; without the split a value mapped to either fans out onto both"
+    }
+  ]
+}

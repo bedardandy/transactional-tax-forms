@@ -4,4 +4,4 @@ agency: "Maine Revenue Services"
 domain: probate
 num_pages: 3
 n_widgets: 129
-status: remap-pending  # 44/117 mapped widgets drift vs current maine.gov blank; re-map needed
+status: mapped  # deterministic remap vs the 2020 maine.gov blank (123/125 widgets), fill-verified; not yet human-verified

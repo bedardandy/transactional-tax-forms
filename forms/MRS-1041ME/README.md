@@ -2,9 +2,9 @@
 
 - **Agency:** Maine Revenue Services
 - **Domain:** probate
-- **Pages:** 4  |  **Fillable fields:** 118
-- **Revision:** 2024
-- **Automation:** schema-only
+- **Pages:** 3  |  **Fillable fields:** 125
+- **Revision:** 2020 (current maine.gov posting, pinned in catalog/pdf_manifest.json)
+- **Automation:** mapped (deterministic remap, fill-verified; not yet human-verified)
 
 ## Purpose
 
@@ -20,6 +20,7 @@ Maine Fiduciary Income Tax Return (Maine Revenue Services).
 | `form.yaml` | Machine-readable metadata |
 | `SKILL.md` | Agent fill guide (facts needed, field mapping) |
 | `mapping.json` | Canonical fact-key → field_id map |
+| `field_splits.json` | Fill-time split of the shared area-code field (page-1 contact vs page-2 designee) |
 | `examples/` | Sample fact pattern(s) |
 
 ## Disclaimer

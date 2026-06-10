@@ -1,119 +1,126 @@
-field_id,label,widget_id,type,data_type,category,subcategory,page,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
-clear_form,Clear Form,W001,checkbox,boolean,narrative_derived,choice,0,5,green,,Y,,llm_over_narrative,
-print_form,Print Form,W002,checkbox,boolean,narrative_derived,choice,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_year_from,Fidu 1041 Year from,W003,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1040_year_to,Fidu 1040 Year to,W004,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_amended_return,Fidu 1041 Amended return,W005,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_name_of_estate_or_trust,Fidu 1041 Name of estate or trust,W006,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_estate_trust_qft_ein,Fidu 1041 Estate/trust/qft/ein,W007,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_name_and_title_of_fiduciary_trustee,Fidu 1041 Name and title of fiduciary trustee,W008,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_address_of_fiduciary,Fidu 1041 Address of fiduciary,W009,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_city,Fidu 1041 City,W010,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_state,Fidu 1041 State,W011,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_zip_code,Fidu 1041 Zip code,W012,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_de,Fidu DE,W013,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-decedent_ssn,decedent ssn,W014,text,text,party_attr,decedent,0,0,green,Y,,,case_dict,
-qualified_funeral_trust_1,Qualified Funeral Trust.1,W015,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-qualified_disability_trust_1,Qualified Disability Trust.1,W016,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-bankruptcy_ch_7_0,bankruptcy ch 7.0,W017,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-simple_trust,Simple Trust,W018,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-complex_trust,Complex Trust,W019,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-esbt,ESBT,W020,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-pooled_income,Pooled Income,W021,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-bankruptcy_ch_11,bankruptcy ch 11,W022,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_resident,Fidu 1041 Resident,W023,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_nonresident,Fidu 1041 Nonresident,W024,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_initial_return,Fidu 1041 Initial return,W025,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_final_return,Fidu 1041 Final Return,W026,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_federal_taxable_income,Fidu 1041 Federal taxable income,W027,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_adjustment,Fidu 1041 adjustment,W028,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_maine_taxable_income,Fidu 1041 Maine Taxable Income,W029,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_maine_income_tax,Fidu 1041 Maine income tax,W030,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_adjustments_tax,Fidu 1041 Adjustments tax,W031,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_adjusted_maine_income_tax,Fidu 1041 Adjusted Maine income tax,W032,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_maine_income_tax_withheld,Fidu 1041 Maine Income tax withheld,W033,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_estimated_tax_payments,Fidu 1041 Estimated tax payments,W034,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_refunable_tax_credits,Fidu 1041 Refunable tax credits,W035,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_total_payments,Fidu 1041 Total payments,W036,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_amended_overpayment,Fidu 1041 Amended Overpayment,W037,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_line_9,Fidu 1041 Line 9,W038,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_tax_balance_due,Fidu 1041 Tax Balance due,W039,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-attatch_form_2210me,Attatch Form 2210ME,W040,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041penalty,Fidu 1041Penalty,W041,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_total_amount_due,Fidu 1041 Total Amount Due,W042,text,text,narrative_derived,free_text,0,5,green,,Y,,llm_over_narrative,
-fidu_1041_estate_trust_ein,Fidu 1041 Estate/Trust EIN,W043,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-fidu_1041_overpayment,Fidu 1041 Overpayment,W044,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-fidu_1041_caryforward,Fidu 1041 Caryforward,W045,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-fidu_1041_refund,Fidu 1041 Refund,W046,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-foriegn_account,Foriegn Account,W047,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-routing_number,Routing Number,W048,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-text5,Text5,W049,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-third_party_designee,Third Party Designee,W050,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-third_party_designee_dup1,Third Party Designee,W051,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-designee_s_name,Designee's name,W052,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-postal_code,Postal Code,W053,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-phone_number,Phone number,W054,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-pin,PIN,W055,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-date_signed_fidu_officer,Date signed fidu officer,W056,text,text,narrative_derived,date,1,5,green,,Y,,llm_over_narrative,
-date_estate_or_trust_created,Date estate or trust created,W057,text,text,narrative_derived,date,1,5,green,,Y,,llm_over_narrative,
-date_preparer_signed,Date preparer signed,W058,text,text,narrative_derived,date,1,5,green,,Y,,llm_over_narrative,
-preparers_phone_number,Preparers phone number,W059,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-preparer_ssn_or_ptin,Preparer SSN or PTIN,W060,text,text,narrative_derived,free_text,1,5,green,,Y,,llm_over_narrative,
-fidu_1041_estate_trust_ein,Fidu 1041 Estate/trust EIN,W061,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_additions_1a,"Fidu 1041 Additions, 1a",W062,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_additions_1b,Fidu 1041 Additions 1b,W063,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_additions_1c,Fidu 1041 Additions 1c,W064,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_additions_1d,Fidu 1041 Additions 1d,W065,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_additions_1e,Fidu 1041 Additions 1e,W066,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_additions_1f,Fidu 1041 Additions 1f,W067,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_additions_1g,Fidu 1041 Additions 1g,W068,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_additions_1h,Fidu 1041 Additions 1h,W069,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_1i,Fidu 1041 1i,W070,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_2a,FIdu 1041 2a,W071,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_subtractions_2b,Fidu 1041 Subtractions 2b,W072,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_subtractions_2c,Fidu 1041 Subtractions 2c,W073,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_subtractions_2d,Fidu 1041 Subtractions 2d,W074,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-medical_cannabis_sales_tax_number,Medical cannabis sales tax number,W075,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_subtractions_2e,Fidu 1041 Subtractions 2e,W076,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-adult_use_cannabis_sales_tax_number,Adult use cannabis sales tax number,W077,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_subtractions_2f,Fidu 1041 Subtractions 2f,W078,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_2g,Fidu 1041 2g,W079,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_subtractions_2h,Fidu 1041 Subtractions 2h,W080,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_10412i,Fidu 10412i,W081,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_3,Fidu 1041 3,W082,text,text,narrative_derived,free_text,2,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3_estate_trust_ein,Fidu 1041 Page 3 Estate/Trust EIN,W083,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3_name,Fidu 1041 Page 3 name,W084,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3_share_of_income,Fidu 1041 Page 3 share of income,W085,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3_percent,Fidu 1041 Page 3 percent,W086,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3_state,Fidu 1041 Page 3 state,W087,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu1041_page_3_fiduciary_ss_or_ein_number,Fidu1041 Page 3 Fiduciary ss or EIN number,W088,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3_maine_source_income,Fidu 1041 Page 3 Maine source income,W089,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3a_name,Fidu 1041 Page 3A name,W090,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3a_share_of_income,Fidu 1041 Page 3A share of income,W091,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3b_percent,Fidu 1041 Page 3B percent%,W092,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3a_state,Fidu 1041 Page 3A state,W093,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3a_fiduciary_ss_or_ein_number,Fidu 1041 Page 3A Fiduciary ss or EIN number,W094,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3a_maine_source_income,Fidu 1041 Page 3A Maine source income,W095,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3b_name,Fidu 1041 Page 3B name,W096,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3b_share_of_income,Fidu 1041 Page 3B share of income,W097,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3a_percent,Fidu 1041 Page 3A percent,W098,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3b_state,Fidu 1041 Page 3B state,W099,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3b_fiduciary_ss_or_ein_number,Fidu 1041 Page 3B Fiduciary ss or EIN number,W100,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3c_maine_source_income,Fidu 1041 Page 3C maine source income,W101,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3c_name,Fidu 1041 Page 3C name,W102,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3c_share_of_income,Fidu 1041 Page 3C share of income,W103,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3c_percent,Fidu 1041 Page 3C percent,W104,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3c_state,Fidu 1041 Page 3C state,W105,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3c_fiduciary_ss_or_ein_number,Fidu 1041 Page 3C Fiduciary ss or EIN number,W106,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3d_maine_source_income,Fidu 1041 Page 3D Maine source income,W107,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3d_name,Fidu 1041 Page 3D name,W108,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3d_share_of_income,Fidu 1041 Page 3D share of income,W109,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3d_percent,Fidu 1041 Page 3D percent,W110,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3d_state,Fidu 1041 Page 3D state,W111,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3d_fiduciary_ss_or_ein_number,Fidu 1041 Page 3D Fiduciary ss or EIN number,W112,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3e_maine_source_income,Fidu 1041 Page 3E Maine source income,W113,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3e_name,Fidu 1041 Page 3E name,W114,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3e_share_of_income,Fidu 1041 Page 3E share of income,W115,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3e_percent,Fidu 1041 Page 3E percent,W116,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3f_share_of_income,Fidu 1041 Page 3F share of income,W117,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
-fidu_1041_page_3f_maine_source_income,Fidu 1041 Page 3F Maine source income,W118,text,text,narrative_derived,free_text,3,5,green,,Y,,llm_over_narrative,
+field_id,label,caption,type,page,rect
+fidu_1041_year_from,Fidu 1041 Year from,(mm dd yyyy),text,0,"131.8,78.6,193.0,96.6"
+fidu_1040_year_to,Fidu 1040 Year to,2 0 2 0 to,text,0,"259.9,78.4,369.1,96.4"
+fidu_1041_amended_return,Fidu 1041 Amended return,Amended Return,checkbox,0,"397.6,78.8,415.6,96.8"
+fidu_1041_name_of_estate_or_trust,Fidu 1041 Name of estate or trust,,text,0,"44.4,102.7,369.0,120.7"
+fidu_1041_name_and_title_of_fiduciary_trustee,Fidu 1041 Name and title of fiduciary trustee,,text,0,"44.4,137.6,369.0,155.6"
+fidu_1041_address_of_fiduciary,Fidu 1041 Address of fiduciary,,text,0,"44.4,174.2,348.0,192.2"
+fidu_1041_city,Fidu 1041 City,,text,0,"44.4,209.7,261.3,227.7"
+fidu_1041_state,Fidu 1041 State,,text,0,"283.5,210.0,304.3,228.0"
+fidu_1041_zip_code,Fidu 1041 Zip code,,text,0,"314.1,209.8,369.0,227.8"
+fidu_1041_estate_trust_qft_ein,Fidu 1041 Estate/trust/qft/ein,,text,0,"452.6,102.8,570.3,120.8"
+fidu_1041_ss_or_ein_number,Fidu 1041 ss or EIN number,,text,0,"452.9,137.5,569.6,155.5"
+fidu_1041_contact_persons_first_name,FIdu 1041 Contact persons first name,,text,0,"390.0,173.8,462.7,191.8"
+fidu_1041_contact_persons_last_name,Fidu 1041 Contact persons last name,,text,0,"476.4,173.6,568.1,191.6"
+fidu_1041_area_code,Fidu 1041 Area code,,text,0,"441.0,209.2,471.4,227.2"
+fidu_1041_telephone_number,Fidu 1041 Telephone number,,text,0,"485.5,209.2,568.1,227.2"
+fidu_de,Fidu DE,Decedent’s estate Qualiﬁ ed Funeral Trust (QFT) Qualiﬁ,checkbox,0,"125.1,245.3,138.8,264.2"
+decedent_ssn,decedent ssn,one box):,text,0,"140.0,265.5,228.6,281.5"
+qualified_funeral_trust_1,Qualified Funeral Trust.1,Qualiﬁ ed Funeral Trust (QFT) Qualiﬁ ed Bankruptcy,checkbox,0,"237.6,246.2,251.1,264.2"
+qualified_disability_trust_1,Qualified Disability Trust.1,Qualiﬁ ed Bankruptcy estate,checkbox,0,"370.6,245.3,384.3,264.2"
+bankruptcy_ch_7_0,bankruptcy ch 7.0,Bankruptcy estate,checkbox,0,"457.2,246.2,470.7,264.2"
+simple_trust,Simple Trust,Bankruptcy estate,checkbox,0,"46.9,282.3,60.5,301.0"
+complex_trust,Complex Trust,Bankruptcy estate,checkbox,0,"125.1,281.6,138.8,301.0"
+esbt,ESBT,Bankruptcy estate,checkbox,0,"237.6,282.2,251.3,301.0"
+pooled_income,Pooled Income,Bankruptcy estate,checkbox,0,"371.1,281.6,384.8,301.0"
+bankruptcy_ch_11,bankruptcy ch 11,Bankruptcy estate,checkbox,0,"456.7,282.2,470.2,301.0"
+fidu_1041_resident,Fidu 1041 Resident,,checkbox,0,"149.0,305.9,167.0,323.9"
+fidu_1041_nonresident,Fidu 1041 Nonresident,,checkbox,0,"268.6,305.9,286.6,323.9"
+fidu_1041_initial_return,Fidu 1041 Initial return,,checkbox,0,"405.5,305.9,423.5,323.9"
+fidu_1041_final_return,Fidu 1041 Final Return,,checkbox,0,"492.2,305.9,510.2,323.9"
+fidu_1041_federal_taxable_income,Fidu 1041 Federal taxable income,,text,0,"432.4,329.9,547.9,347.9"
+fidu_1041_adjustment,Fidu 1041 adjustment,Fiduciary Adjustment: Resident estates and trusts only. (See instructions.) ................................2,text,0,"432.1,354.8,547.9,372.8"
+fidu_1041_maine_taxable_income,Fidu 1041 Maine Taxable Income,"or trust - Schedule NR, line 9, Column B.) ............................................................3",text,0,"432.9,378.5,547.9,396.5"
+fidu_1041_maine_income_tax,Fidu 1041 Maine income tax,tax. (From tax table on page 2 of instructions.) ...........................................................4,text,0,"438.1,402.7,547.9,420.7"
+fidu_1041_adjustments_tax,Fidu 1041 Adjustments tax,"5. Adjustments to tax. (From Schedule A, line 19.) .....................................................................",text,0,"437.0,426.1,547.9,444.1"
+fidu_1041_adjusted_maine_income_tax,Fidu 1041 Adjusted Maine income tax,,text,0,"436.8,449.6,547.9,467.6"
+fidu_1041_tax_payments,Fidu 1041 Tax payments,,text,0,"436.6,473.8,547.9,491.8"
+fidu_1041_estimated_tax_payments,Fidu 1041 Estimated tax payments,extension payments. (Include any real estate withholding tax payments.) ....7b,text,0,"437.2,498.4,547.9,516.4"
+fidu_1041_refunable_tax_credits,Fidu 1041 Refunable tax credits,"c. Refundable tax credits. (From Schedule A, line 4.) ...........................................7c",text,0,"437.2,522.3,547.9,540.3"
+fidu_1041_total_payments,Fidu 1041 Total payments,,text,0,"436.4,545.0,547.9,563.0"
+fidu_1041_tax_balance_due,Fidu 1041 Tax balance due,"is greater than line 7d, enter TAX BALANCE DUE. .........................................................8a",text,0,"468.7,570.1,547.9,588.1"
+fidu_1041_check_here,Fidu 1041 Check here,............. 8b .00,checkbox,0,"344.5,595.3,362.5,613.3"
+fidu_1041_penalty_for_underpayment,Fidu 1041 Penalty for underpayment,,text,0,"436.0,593.7,547.9,611.7"
+fidu_1041_total_amount_due,Fidu 1041 Total amount due,"8b.) Make checks payable to Treasurer, State of Maine. 8c",text,0,"436.4,618.1,547.9,636.1"
+fidu_1041_overpayment,Fidu 1041 Overpayment,"line 7d is greater than line 6, enter OVERPAYMENT. .....................................................................",text,0,"437.4,642.3,547.9,660.3"
+fidu_1041_credited,Fidu 1041 Credited,to next year’s estimated tax. ....... 10a,text,0,"202.5,666.8,290.3,684.8"
+fidu_1041_refunded,Fidu 1041 Refunded,to next year’s estimated tax. ....... 10a .00 REFUNDED............10b,text,0,"436.8,666.0,547.9,684.0"
+fidu_1041_check_if_refund_going_outside_united_states,Fidu 1041 Check if refund going outside United States,,checkbox,0,"143.5,725.6,161.5,743.6"
+fidu_1041_routing_numbers,Fidu 1041 Routing numbers,Check this box if this,text,0,"302.5,700.6,433.4,718.6"
+fidu_1041_checking_account_number,Fidu 1041 Checking account number,account outside the,text,0,"302.6,725.6,546.9,743.6"
+fidu_1041_estate_trust_ein,Fidu 1041 Estate/trust EIN,,text,1,"39.9,64.9,149.3,82.9"
+fidu_1041_additions_income_from_municipal_and_state_bonds,"Fidu 1041 Additions, Income from Municipal and state bonds","from municipal and state bonds, other than Maine. ......................................................................",text,1,"467.1,92.9,546.3,110.9"
+fidu_1041_additions_net_operating_loss,"Fidu 1041 Additions, Net operating loss",b Net Operating Loss Adjustment. (Attach schedule.) ....................................................................,text,1,"467.1,116.4,546.3,134.4"
+fidu_1041_additions_maine_public_retirement_contributions,"Fidu 1041 Additions, Maine public retirement contributions",,text,1,"467.1,138.3,546.3,156.3"
+fidu_1041_additions_qualified_income_deduction_add_back,"Fidu 1041 Additions, Qualified income deduction add-back",,text,1,"467.1,162.9,546.3,180.9"
+fidu_1041_additions_bonus_depreciation_add_back,"Fidu 1041 Additions, Bonus depreciation add-back",,text,1,"467.1,187.6,546.3,205.6"
+fidu_1041_additions_capital_investment_credit_bonus_depreciation_add_back,"Fidu 1041 Additions, Capital investment credit bonus depreciation add-back",,text,1,"467.1,210.7,546.3,228.7"
+fidu_1041_additions_other,"Fidu 1041 Additions, Other",,text,1,"467.1,259.0,546.3,277.0"
+fidu_1041_total_additions,Fidu 1041 Total additions,,text,1,"467.1,307.7,546.3,325.7"
+fidu_1041_government_bond_interest,FIdu 1041 Government Bond Interest,Government Bond interest included in federal taxable income. ...........................................................,text,1,"467.1,332.5,546.3,350.5"
+fidu_1041_subtractions_ss_and_railroad_retirement_benefits,"Fidu 1041 Subtractions, SS and railroad retirement benefits",ts included in federal taxable income (See instructions.) ....... 2b,text,1,"467.1,356.6,546.3,374.6"
+fidu_1041_subtractions_maine_public_retirement,"Fidu 1041 Subtractions, Maine public retirement",been previously taxed by the state. (See instructions.) ................................................................,text,1,"467.1,379.5,546.3,397.5"
+fidu_1041_subtractions_bonus_depreciation,"Fidu 1041 Subtractions, Bonus depreciation",,text,1,"467.1,403.0,546.3,421.0"
+fidu_1041_subtractions_medical_marijuana,"Fidu 1041 Subtractions, Medical marijuana",e Medical Marijuana Business Expenses. (See instructions.) .............................................................,text,1,"467.1,427.3,546.3,445.3"
+fidu_1041_nol,Fidu 1041 NOL,f Net Operating Loss recapture. (See instructions) .....................................................................,text,1,"467.1,451.2,546.3,469.2"
+fidu_1041_subtractions_other_see_instructions,"Fidu 1041 Subtractions, Other (see instructions)",,text,1,"467.1,474.4,546.3,492.4"
+fidu_1041_total_deductions,Fidu 1041 Total deductions,,text,1,"467.1,522.3,546.3,540.3"
+fidu_1041_net_fidu_adjustment,Fidu 1041 Net fidu adjustment,— see instructions [may be a negative amount].) ......... 3,text,1,"467.1,546.2,546.3,564.2"
+do_you_want_to_allow_someone_to_discuss_return_with_mrs,Do you want to allow someone to discuss return with MRS,Yes (complete the following). No.,radio,1,"392.1,586.9,405.8,604.9"
+fidu_1041_designee_s_name,Fidu 1041 Designee's name,Designee Designee’s name,text,1,"147.1,606.4,244.9,624.4"
+fidu_1041_area_code_2,Fidu 1041 Designee area code,Designee Designee’s name Phone no. (,text,1,"287.9,606.6,310.5,624.6"
+do_you_want_to_allow_someone_to_discuss_return_with_mrs_2,Do you want to allow someone to discuss return with MRS,No.,radio,1,"521.1,585.9,535.1,603.9"
+fidu_1041_phone_number,Fidu 1041 Phone number,Designee Designee’s name Phone no. ( ),text,1,"319.6,605.6,398.8,623.6"
+fidu_1041_pin_number,Fidu 1041 PIN number,Designee’s name Phone no. ( ) Personal Identiﬁ cation number,text,1,"508.5,605.6,575.7,623.6"
+fidu_1041_date,Fidu 1041 Date,,text,1,"292.3,642.6,404.4,660.6"
+fidu_1041_date_estate_or_trust_created,Fidu 1041 Date estate or trust created,,text,1,"438.6,643.2,548.7,661.2"
+fidu_1041_date1,Fidu 1041 Date1,,text,1,"292.2,670.9,404.5,688.9"
+fidu_1041_print_preparer_s_name,Fidu 1041 Print preparer's name,,text,1,"49.3,701.4,282.5,719.4"
+fidu_1041_preparer_s_phone_number,Fidu 1041 Preparer's phone number,,text,1,"294.3,701.4,422.2,719.4"
+fidu_1041_preparer_s_social_or_ptin,Fidu 1041 Preparer's social or PTIN,,text,1,"438.3,701.4,548.3,719.4"
+fidu_1041_additions_certain_gains_on_installment_sales,"Fidu 1041 Additions, certain gains on installment sales",,text,1,"467.1,234.8,546.3,252.8"
+fidu_1041_page_3_estate_trust_ein,Fidu 1041 Page 3 Estate/Trust EIN,,text,2,"134.3,64.7,284.3,86.7"
+fidu_1041_page_3_name,Fidu 1041 Page 3 name,,text,2,"63.2,148.0,176.8,166.0"
+fidu_1041_page_3_share_of_income,Fidu 1041 Page 3 share of income,,text,2,"193.6,146.6,304.4,164.6"
+fidu_1041_page_3_percent,Fidu 1041 Page 3 percent,(a) B- $,text,2,"308.9,146.4,339.1,164.4"
+fidu_1041_page_3_state,Fidu 1041 Page 3 state,,text,2,"363.6,147.2,384.4,165.2"
+fidu1041_page_3_fiduciary_ss_or_ein_number,Fidu1041 Page 3 Fiduciary ss or EIN number,,text,2,"399.6,147.5,462.3,165.5"
+fidu_1041_page_3_maine_source_income,Fidu 1041 Page 3 Maine source income,,text,2,"480.7,147.7,575.3,165.7"
+fidu_1041_page_3a_name,Fidu 1041 Page 3A name,(b) B-,text,2,"63.2,170.4,176.8,188.4"
+fidu_1041_page_3a_share_of_income,Fidu 1041 Page 3A share of income,(b) B- $,text,2,"194.2,169.4,304.6,187.4"
+fidu_1041_page_3b_percent,Fidu 1041 Page 3B percent%,(b) B- $,text,2,"308.9,170.4,339.1,188.4"
+fidu_1041_page_3a_state,Fidu 1041 Page 3A state,(b) B- $ %,text,2,"363.6,169.4,384.4,187.4"
+fidu_1041_page_3a_fiduciary_ss_or_ein_number,Fidu 1041 Page 3A Fiduciary ss or EIN number,(b) B- $ %,text,2,"399.6,169.4,462.3,187.4"
+fidu_1041_page_3a_maine_source_income,Fidu 1041 Page 3A Maine source income,,text,2,"480.7,171.0,575.3,189.0"
+fidu_1041_page_3b_name,Fidu 1041 Page 3B name,(c) B-,text,2,"63.2,193.4,176.8,211.4"
+fidu_1041_page_3b_share_of_income,Fidu 1041 Page 3B share of income,(c) B- $,text,2,"193.6,192.4,304.4,210.4"
+fidu_1041_page_3a_percent,Fidu 1041 Page 3A percent,(c) B- $,text,2,"308.9,192.4,339.1,210.4"
+fidu_1041_page_3b_state,Fidu 1041 Page 3B state,(c) B- $ %,text,2,"363.6,192.4,384.4,210.4"
+fidu_1041_page_3b_fiduciary_ss_or_ein_number,Fidu 1041 Page 3B Fiduciary ss or EIN number,(c) B- $ %,text,2,"399.6,192.7,462.3,210.7"
+fidu_1041_page_3c_maine_source_income,Fidu 1041 Page 3C maine source income,(c) B- $ % $,text,2,"480.7,192.7,575.3,210.7"
+fidu_1041_page_3c_name,Fidu 1041 Page 3C name,(d) B-,text,2,"63.2,215.7,176.8,233.7"
+fidu_1041_page_3c_share_of_income,Fidu 1041 Page 3C share of income,(d) B- $,text,2,"193.6,215.7,304.4,233.7"
+fidu_1041_page_3c_percent,Fidu 1041 Page 3C percent,(d) B- $,text,2,"308.9,214.7,339.1,232.7"
+fidu_1041_page_3c_state,Fidu 1041 Page 3C state,(d) B- $ %,text,2,"363.6,214.7,384.4,232.7"
+fidu_1041_page_3c_fiduciary_ss_or_ein_number,Fidu 1041 Page 3C Fiduciary ss or EIN number,(d) B- $ %,text,2,"399.6,214.7,462.3,232.7"
+fidu_1041_page_3d_maine_source_income,Fidu 1041 Page 3D Maine source income,(d) B- $ % $,text,2,"480.7,214.7,575.3,232.7"
+fidu_1041_page_3d_name,Fidu 1041 Page 3D name,(e) B-,text,2,"63.2,237.7,176.8,255.7"
+fidu_1041_page_3d_share_of_income,Fidu 1041 Page 3D share of income,(e) B- $,text,2,"193.6,237.7,304.4,255.7"
+fidu_1041_page_3d_percent,Fidu 1041 Page 3D percent,(e) B- $,text,2,"308.9,238.3,339.1,255.7"
+fidu_1041_page_3d_state,Fidu 1041 Page 3D state,(e) B- $ %,text,2,"363.6,237.7,384.4,255.7"
+fidu_1041_page_3d_fiduciary_ss_or_ein_number,Fidu 1041 Page 3D Fiduciary ss or EIN number,(e) B- $ %,text,2,"399.6,237.7,462.3,255.7"
+fidu_1041_page_3e_maine_source_income,Fidu 1041 Page 3E Maine source income,(e) B- $ % $,text,2,"480.7,237.7,575.3,255.7"
+fidu_1041_page_3e_name,Fidu 1041 Page 3E name,(f) E/T-,text,2,"66.2,259.7,176.2,278.9"
+fidu_1041_page_3e_share_of_income,Fidu 1041 Page 3E share of income,(f) E/T- $,text,2,"193.6,259.7,304.4,277.7"
+fidu_1041_page_3e_percent,Fidu 1041 Page 3E percent,(f) E/T- $,text,2,"308.9,259.7,339.1,277.7"
+fidu_1041_page_3f_share_of_income,Fidu 1041 Page 3F share of income,,text,2,"193.6,282.7,304.4,300.7"
+fidu_1041_page_3f_maine_source_income,Fidu 1041 Page 3F Maine source income,(g) Total $ 100% $,text,2,"480.7,283.1,575.3,301.1"
+fidu_1041_schedule_3_1,Fidu 1041 Schedule 3 1,,text,2,"462.6,367.1,543.4,385.1"
+fidu_1041_income_taxed_by,Fidu 1041 Income taxed by,,text,2,"162.5,391.0,240.3,409.0"
+fidu_1041_schedule_3_1a,Fidu 1041 Schedule 3 1A,,text,2,"463.4,391.0,543.4,409.0"
+fidu_1041_schedule_3_1b,Fidu 1041 Schedule 3 1B,,text,2,"462.6,415.0,543.4,433.0"
+fidu_1041_schedule_3_1c,Fidu 1041 Schedule 3 1C,"a Form 1041ME, page 1, line 4 $",text,2,"170.3,453.4,222.1,471.4"
+fidu_1041_schedule_3_1d,Fidu 1041 Schedule 3 1D,"Form 1041ME, page 1, line 4 $ ____________ multiplied by",text,2,"270.1,453.6,305.3,471.8"
+fidu_1041_schedule_3_1e,Fidu 1041 Schedule 3 1E,____________ multiplied by ________% on line 3 above. .......................... 4a,text,2,"462.6,452.8,543.4,470.8"
+fidu_1041_schedule_3_1f,Fidu 1041 Schedule 3 1F,,text,2,"462.6,474.8,543.4,492.8"
+fidu_1041_schedule_3_1g,Fidu 1041 Schedule 3 1G,,text,2,"462.6,498.8,543.4,516.8"

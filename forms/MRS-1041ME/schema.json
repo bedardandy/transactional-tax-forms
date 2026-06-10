@@ -1,5450 +1,1630 @@
 {
   "form_id": "MRS-1041ME",
-  "schema_version": "0.3",
-  "source_pdf": "pdfs/MRS-1041ME.pdf",
-  "artifact_pdf": "form.pdf",
-  "n_pages": 4,
-  "n_fields": 118,
-  "by_category": {
-    "narrative_derived": 117,
-    "party_attr": 1
-  },
-  "by_risk_tier": {
-    "green": 118
-  },
-  "by_data_type": {
-    "boolean": 2,
-    "text": 116
-  },
-  "_skill_metadata_override": {},
   "fields": [
     {
-      "field_id": "clear_form",
-      "widget_id": "W001",
-      "label": "Clear Form",
-      "type": "checkbox",
-      "data_type": "boolean",
-      "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "choice",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "print_form",
-      "widget_id": "W002",
-      "label": "Print Form",
-      "type": "checkbox",
-      "data_type": "boolean",
-      "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "choice",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
       "field_id": "fidu_1041_year_from",
-      "widget_id": "W003",
       "label": "Fidu 1041 Year from",
+      "caption": "(mm dd yyyy)",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        131.8,
+        78.6,
+        193.0,
+        96.6
+      ]
     },
     {
       "field_id": "fidu_1040_year_to",
-      "widget_id": "W004",
       "label": "Fidu 1040 Year to",
+      "caption": "2 0 2 0 to",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        259.9,
+        78.4,
+        369.1,
+        96.4
+      ]
     },
     {
       "field_id": "fidu_1041_amended_return",
-      "widget_id": "W005",
       "label": "Fidu 1041 Amended return",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Amended Return",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        397.6,
+        78.8,
+        415.6,
+        96.8
+      ]
     },
     {
       "field_id": "fidu_1041_name_of_estate_or_trust",
-      "widget_id": "W006",
       "label": "Fidu 1041 Name of estate or trust",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "fidu_1041_estate_trust_qft_ein",
-      "widget_id": "W007",
-      "label": "Fidu 1041 Estate/trust/qft/ein",
-      "type": "text",
-      "data_type": "text",
-      "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        44.4,
+        102.7,
+        369.0,
+        120.7
+      ]
     },
     {
       "field_id": "fidu_1041_name_and_title_of_fiduciary_trustee",
-      "widget_id": "W008",
       "label": "Fidu 1041 Name and title of fiduciary trustee",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        44.4,
+        137.6,
+        369.0,
+        155.6
+      ]
     },
     {
       "field_id": "fidu_1041_address_of_fiduciary",
-      "widget_id": "W009",
       "label": "Fidu 1041 Address of fiduciary",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        44.4,
+        174.2,
+        348.0,
+        192.2
+      ]
     },
     {
       "field_id": "fidu_1041_city",
-      "widget_id": "W010",
       "label": "Fidu 1041 City",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        44.4,
+        209.7,
+        261.3,
+        227.7
+      ]
     },
     {
       "field_id": "fidu_1041_state",
-      "widget_id": "W011",
       "label": "Fidu 1041 State",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        283.5,
+        210.0,
+        304.3,
+        228.0
+      ]
     },
     {
       "field_id": "fidu_1041_zip_code",
-      "widget_id": "W012",
       "label": "Fidu 1041 Zip code",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        314.1,
+        209.8,
+        369.0,
+        227.8
+      ]
+    },
+    {
+      "field_id": "fidu_1041_estate_trust_qft_ein",
+      "label": "Fidu 1041 Estate/trust/qft/ein",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        452.6,
+        102.8,
+        570.3,
+        120.8
+      ]
+    },
+    {
+      "field_id": "fidu_1041_ss_or_ein_number",
+      "label": "Fidu 1041 ss or EIN number",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        452.9,
+        137.5,
+        569.6,
+        155.5
+      ]
+    },
+    {
+      "field_id": "fidu_1041_contact_persons_first_name",
+      "label": "FIdu 1041 Contact persons first name",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        390.0,
+        173.8,
+        462.7,
+        191.8
+      ]
+    },
+    {
+      "field_id": "fidu_1041_contact_persons_last_name",
+      "label": "Fidu 1041 Contact persons last name",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        476.4,
+        173.6,
+        568.1,
+        191.6
+      ]
+    },
+    {
+      "field_id": "fidu_1041_area_code",
+      "label": "Fidu 1041 Area code",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        441.0,
+        209.2,
+        471.4,
+        227.2
+      ]
+    },
+    {
+      "field_id": "fidu_1041_telephone_number",
+      "label": "Fidu 1041 Telephone number",
+      "caption": "",
+      "type": "text",
+      "page": 0,
+      "rect": [
+        485.5,
+        209.2,
+        568.1,
+        227.2
+      ]
     },
     {
       "field_id": "fidu_de",
-      "widget_id": "W013",
       "label": "Fidu DE",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Decedent\u2019s estate Quali\ufb01 ed Funeral Trust (QFT) Quali\ufb01",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        125.1,
+        245.3,
+        138.8,
+        264.2
+      ]
     },
     {
       "field_id": "decedent_ssn",
-      "widget_id": "W014",
       "label": "decedent ssn",
+      "caption": "one box):",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "party_attr",
-      "subcategory": "decedent",
-      "party": "decedent",
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": true,
-        "llm_eligible": false,
-        "human_required": false,
-        "source": "case_dict"
-      },
-      "risk_score": 0,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        140.0,
+        265.5,
+        228.6,
+        281.5
+      ]
     },
     {
       "field_id": "qualified_funeral_trust_1",
-      "widget_id": "W015",
       "label": "Qualified Funeral Trust.1",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Quali\ufb01 ed Funeral Trust (QFT) Quali\ufb01 ed Bankruptcy",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        237.6,
+        246.2,
+        251.1,
+        264.2
+      ]
     },
     {
       "field_id": "qualified_disability_trust_1",
-      "widget_id": "W016",
       "label": "Qualified Disability Trust.1",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Quali\ufb01 ed Bankruptcy estate",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        370.6,
+        245.3,
+        384.3,
+        264.2
+      ]
     },
     {
       "field_id": "bankruptcy_ch_7_0",
-      "widget_id": "W017",
       "label": "bankruptcy ch 7.0",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Bankruptcy estate",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        457.2,
+        246.2,
+        470.7,
+        264.2
+      ]
     },
     {
       "field_id": "simple_trust",
-      "widget_id": "W018",
       "label": "Simple Trust",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Bankruptcy estate",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        46.9,
+        282.3,
+        60.5,
+        301.0
+      ]
     },
     {
       "field_id": "complex_trust",
-      "widget_id": "W019",
       "label": "Complex Trust",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Bankruptcy estate",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        125.1,
+        281.6,
+        138.8,
+        301.0
+      ]
     },
     {
       "field_id": "esbt",
-      "widget_id": "W020",
       "label": "ESBT",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Bankruptcy estate",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        237.6,
+        282.2,
+        251.3,
+        301.0
+      ]
     },
     {
       "field_id": "pooled_income",
-      "widget_id": "W021",
       "label": "Pooled Income",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Bankruptcy estate",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        371.1,
+        281.6,
+        384.8,
+        301.0
+      ]
     },
     {
       "field_id": "bankruptcy_ch_11",
-      "widget_id": "W022",
       "label": "bankruptcy ch 11",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Bankruptcy estate",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        456.7,
+        282.2,
+        470.2,
+        301.0
+      ]
     },
     {
       "field_id": "fidu_1041_resident",
-      "widget_id": "W023",
       "label": "Fidu 1041 Resident",
-      "type": "text",
-      "data_type": "text",
+      "caption": "",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        149.0,
+        305.9,
+        167.0,
+        323.9
+      ]
     },
     {
       "field_id": "fidu_1041_nonresident",
-      "widget_id": "W024",
       "label": "Fidu 1041 Nonresident",
-      "type": "text",
-      "data_type": "text",
+      "caption": "",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        268.6,
+        305.9,
+        286.6,
+        323.9
+      ]
     },
     {
       "field_id": "fidu_1041_initial_return",
-      "widget_id": "W025",
       "label": "Fidu 1041 Initial return",
-      "type": "text",
-      "data_type": "text",
+      "caption": "",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        405.5,
+        305.9,
+        423.5,
+        323.9
+      ]
     },
     {
       "field_id": "fidu_1041_final_return",
-      "widget_id": "W026",
       "label": "Fidu 1041 Final Return",
-      "type": "text",
-      "data_type": "text",
+      "caption": "",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        492.2,
+        305.9,
+        510.2,
+        323.9
+      ]
     },
     {
       "field_id": "fidu_1041_federal_taxable_income",
-      "widget_id": "W027",
       "label": "Fidu 1041 Federal taxable income",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        432.4,
+        329.9,
+        547.9,
+        347.9
+      ]
     },
     {
       "field_id": "fidu_1041_adjustment",
-      "widget_id": "W028",
       "label": "Fidu 1041 adjustment",
+      "caption": "Fiduciary Adjustment: Resident estates and trusts only. (See instructions.) ................................2",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        432.1,
+        354.8,
+        547.9,
+        372.8
+      ]
     },
     {
       "field_id": "fidu_1041_maine_taxable_income",
-      "widget_id": "W029",
       "label": "Fidu 1041 Maine Taxable Income",
+      "caption": "or trust - Schedule NR, line 9, Column B.) ............................................................3",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        432.9,
+        378.5,
+        547.9,
+        396.5
+      ]
     },
     {
       "field_id": "fidu_1041_maine_income_tax",
-      "widget_id": "W030",
       "label": "Fidu 1041 Maine income tax",
+      "caption": "tax. (From tax table on page 2 of instructions.) ...........................................................4",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        438.1,
+        402.7,
+        547.9,
+        420.7
+      ]
     },
     {
       "field_id": "fidu_1041_adjustments_tax",
-      "widget_id": "W031",
       "label": "Fidu 1041 Adjustments tax",
+      "caption": "5. Adjustments to tax. (From Schedule A, line 19.) .....................................................................",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        437.0,
+        426.1,
+        547.9,
+        444.1
+      ]
     },
     {
       "field_id": "fidu_1041_adjusted_maine_income_tax",
-      "widget_id": "W032",
       "label": "Fidu 1041 Adjusted Maine income tax",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        436.8,
+        449.6,
+        547.9,
+        467.6
+      ]
     },
     {
-      "field_id": "fidu_1041_maine_income_tax_withheld",
-      "widget_id": "W033",
-      "label": "Fidu 1041 Maine Income tax withheld",
+      "field_id": "fidu_1041_tax_payments",
+      "label": "Fidu 1041 Tax payments",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        436.6,
+        473.8,
+        547.9,
+        491.8
+      ]
     },
     {
       "field_id": "fidu_1041_estimated_tax_payments",
-      "widget_id": "W034",
       "label": "Fidu 1041 Estimated tax payments",
+      "caption": "extension payments. (Include any real estate withholding tax payments.) ....7b",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        437.2,
+        498.4,
+        547.9,
+        516.4
+      ]
     },
     {
       "field_id": "fidu_1041_refunable_tax_credits",
-      "widget_id": "W035",
       "label": "Fidu 1041 Refunable tax credits",
+      "caption": "c. Refundable tax credits. (From Schedule A, line 4.) ...........................................7c",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        437.2,
+        522.3,
+        547.9,
+        540.3
+      ]
     },
     {
       "field_id": "fidu_1041_total_payments",
-      "widget_id": "W036",
       "label": "Fidu 1041 Total payments",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "fidu_1041_amended_overpayment",
-      "widget_id": "W037",
-      "label": "Fidu 1041 Amended Overpayment",
-      "type": "text",
-      "data_type": "text",
-      "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "fidu_1041_line_9",
-      "widget_id": "W038",
-      "label": "Fidu 1041 Line 9",
-      "type": "text",
-      "data_type": "text",
-      "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        436.4,
+        545.0,
+        547.9,
+        563.0
+      ]
     },
     {
       "field_id": "fidu_1041_tax_balance_due",
-      "widget_id": "W039",
-      "label": "Fidu 1041 Tax Balance due",
+      "label": "Fidu 1041 Tax balance due",
+      "caption": "is greater than line 7d, enter TAX BALANCE DUE. .........................................................8a",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        468.7,
+        570.1,
+        547.9,
+        588.1
+      ]
     },
     {
-      "field_id": "attatch_form_2210me",
-      "widget_id": "W040",
-      "label": "Attatch Form 2210ME",
-      "type": "text",
-      "data_type": "text",
+      "field_id": "fidu_1041_check_here",
+      "label": "Fidu 1041 Check here",
+      "caption": "............. 8b .00",
+      "type": "checkbox",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        344.5,
+        595.3,
+        362.5,
+        613.3
+      ]
     },
     {
-      "field_id": "fidu_1041penalty",
-      "widget_id": "W041",
-      "label": "Fidu 1041Penalty",
+      "field_id": "fidu_1041_penalty_for_underpayment",
+      "label": "Fidu 1041 Penalty for underpayment",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        436.0,
+        593.7,
+        547.9,
+        611.7
+      ]
     },
     {
       "field_id": "fidu_1041_total_amount_due",
-      "widget_id": "W042",
-      "label": "Fidu 1041 Total Amount Due",
+      "label": "Fidu 1041 Total amount due",
+      "caption": "8b.) Make checks payable to Treasurer, State of Maine. 8c",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "fidu_1041_estate_trust_ein",
-      "widget_id": "W043",
-      "label": "Fidu 1041 Estate/Trust EIN",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        436.4,
+        618.1,
+        547.9,
+        636.1
+      ]
     },
     {
       "field_id": "fidu_1041_overpayment",
-      "widget_id": "W044",
       "label": "Fidu 1041 Overpayment",
+      "caption": "line 7d is greater than line 6, enter OVERPAYMENT. .....................................................................",
       "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 0,
+      "rect": [
+        437.4,
+        642.3,
+        547.9,
+        660.3
+      ]
     },
     {
-      "field_id": "fidu_1041_caryforward",
-      "widget_id": "W045",
-      "label": "Fidu 1041 Caryforward",
+      "field_id": "fidu_1041_credited",
+      "label": "Fidu 1041 Credited",
+      "caption": "to next year\u2019s estimated tax. ....... 10a",
       "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 0,
+      "rect": [
+        202.5,
+        666.8,
+        290.3,
+        684.8
+      ]
     },
     {
-      "field_id": "fidu_1041_refund",
-      "widget_id": "W046",
-      "label": "Fidu 1041 Refund",
+      "field_id": "fidu_1041_refunded",
+      "label": "Fidu 1041 Refunded",
+      "caption": "to next year\u2019s estimated tax. ....... 10a .00 REFUNDED............10b",
       "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 0,
+      "rect": [
+        436.8,
+        666.0,
+        547.9,
+        684.0
+      ]
     },
     {
-      "field_id": "foriegn_account",
-      "widget_id": "W047",
-      "label": "Foriegn Account",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "field_id": "fidu_1041_check_if_refund_going_outside_united_states",
+      "label": "Fidu 1041 Check if refund going outside United States",
+      "caption": "",
+      "type": "checkbox",
+      "page": 0,
+      "rect": [
+        143.5,
+        725.6,
+        161.5,
+        743.6
+      ]
     },
     {
-      "field_id": "routing_number",
-      "widget_id": "W048",
-      "label": "Routing Number",
+      "field_id": "fidu_1041_routing_numbers",
+      "label": "Fidu 1041 Routing numbers",
+      "caption": "Check this box if this",
       "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 0,
+      "rect": [
+        302.5,
+        700.6,
+        433.4,
+        718.6
+      ]
     },
     {
-      "field_id": "text5",
-      "widget_id": "W049",
-      "label": "Text5",
+      "field_id": "fidu_1041_checking_account_number",
+      "label": "Fidu 1041 Checking account number",
+      "caption": "account outside the",
       "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "third_party_designee",
-      "widget_id": "W050",
-      "label": "Third Party Designee",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "third_party_designee_dup1",
-      "widget_id": "W051",
-      "label": "Third Party Designee",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "designee_s_name",
-      "widget_id": "W052",
-      "label": "Designee's name",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "postal_code",
-      "widget_id": "W053",
-      "label": "Postal Code",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "phone_number",
-      "widget_id": "W054",
-      "label": "Phone number",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "pin",
-      "widget_id": "W055",
-      "label": "PIN",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "date_signed_fidu_officer",
-      "widget_id": "W056",
-      "label": "Date signed fidu officer",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "date",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "date_estate_or_trust_created",
-      "widget_id": "W057",
-      "label": "Date estate or trust created",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "date",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "date_preparer_signed",
-      "widget_id": "W058",
-      "label": "Date preparer signed",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "date",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "preparers_phone_number",
-      "widget_id": "W059",
-      "label": "Preparers phone number",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "preparer_ssn_or_ptin",
-      "widget_id": "W060",
-      "label": "Preparer SSN or PTIN",
-      "type": "text",
-      "data_type": "text",
-      "page": 1,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 0,
+      "rect": [
+        302.6,
+        725.6,
+        546.9,
+        743.6
+      ]
     },
     {
       "field_id": "fidu_1041_estate_trust_ein",
-      "widget_id": "W061",
       "label": "Fidu 1041 Estate/trust EIN",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        39.9,
+        64.9,
+        149.3,
+        82.9
+      ]
     },
     {
-      "field_id": "fidu_1041_additions_1a",
-      "widget_id": "W062",
-      "label": "Fidu 1041 Additions, 1a",
+      "field_id": "fidu_1041_additions_income_from_municipal_and_state_bonds",
+      "label": "Fidu 1041 Additions, Income from Municipal and state bonds",
+      "caption": "from municipal and state bonds, other than Maine. ......................................................................",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        92.9,
+        546.3,
+        110.9
+      ]
     },
     {
-      "field_id": "fidu_1041_additions_1b",
-      "widget_id": "W063",
-      "label": "Fidu 1041 Additions 1b",
+      "field_id": "fidu_1041_additions_net_operating_loss",
+      "label": "Fidu 1041 Additions, Net operating loss",
+      "caption": "b Net Operating Loss Adjustment. (Attach schedule.) ....................................................................",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        116.4,
+        546.3,
+        134.4
+      ]
     },
     {
-      "field_id": "fidu_1041_additions_1c",
-      "widget_id": "W064",
-      "label": "Fidu 1041 Additions 1c",
+      "field_id": "fidu_1041_additions_maine_public_retirement_contributions",
+      "label": "Fidu 1041 Additions, Maine public retirement contributions",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        138.3,
+        546.3,
+        156.3
+      ]
     },
     {
-      "field_id": "fidu_1041_additions_1d",
-      "widget_id": "W065",
-      "label": "Fidu 1041 Additions 1d",
+      "field_id": "fidu_1041_additions_qualified_income_deduction_add_back",
+      "label": "Fidu 1041 Additions, Qualified income deduction add-back",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        162.9,
+        546.3,
+        180.9
+      ]
     },
     {
-      "field_id": "fidu_1041_additions_1e",
-      "widget_id": "W066",
-      "label": "Fidu 1041 Additions 1e",
+      "field_id": "fidu_1041_additions_bonus_depreciation_add_back",
+      "label": "Fidu 1041 Additions, Bonus depreciation add-back",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        187.6,
+        546.3,
+        205.6
+      ]
     },
     {
-      "field_id": "fidu_1041_additions_1f",
-      "widget_id": "W067",
-      "label": "Fidu 1041 Additions 1f",
+      "field_id": "fidu_1041_additions_capital_investment_credit_bonus_depreciation_add_back",
+      "label": "Fidu 1041 Additions, Capital investment credit bonus depreciation add-back",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        210.7,
+        546.3,
+        228.7
+      ]
     },
     {
-      "field_id": "fidu_1041_additions_1g",
-      "widget_id": "W068",
-      "label": "Fidu 1041 Additions 1g",
+      "field_id": "fidu_1041_additions_other",
+      "label": "Fidu 1041 Additions, Other",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        259.0,
+        546.3,
+        277.0
+      ]
     },
     {
-      "field_id": "fidu_1041_additions_1h",
-      "widget_id": "W069",
-      "label": "Fidu 1041 Additions 1h",
+      "field_id": "fidu_1041_total_additions",
+      "label": "Fidu 1041 Total additions",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        307.7,
+        546.3,
+        325.7
+      ]
     },
     {
-      "field_id": "fidu_1041_1i",
-      "widget_id": "W070",
-      "label": "Fidu 1041 1i",
+      "field_id": "fidu_1041_government_bond_interest",
+      "label": "FIdu 1041 Government Bond Interest",
+      "caption": "Government Bond interest included in federal taxable income. ...........................................................",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        332.5,
+        546.3,
+        350.5
+      ]
     },
     {
-      "field_id": "fidu_1041_2a",
-      "widget_id": "W071",
-      "label": "FIdu 1041 2a",
+      "field_id": "fidu_1041_subtractions_ss_and_railroad_retirement_benefits",
+      "label": "Fidu 1041 Subtractions, SS and railroad retirement benefits",
+      "caption": "ts included in federal taxable income (See instructions.) ....... 2b",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        356.6,
+        546.3,
+        374.6
+      ]
     },
     {
-      "field_id": "fidu_1041_subtractions_2b",
-      "widget_id": "W072",
-      "label": "Fidu 1041 Subtractions 2b",
+      "field_id": "fidu_1041_subtractions_maine_public_retirement",
+      "label": "Fidu 1041 Subtractions, Maine public retirement",
+      "caption": "been previously taxed by the state. (See instructions.) ................................................................",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        379.5,
+        546.3,
+        397.5
+      ]
     },
     {
-      "field_id": "fidu_1041_subtractions_2c",
-      "widget_id": "W073",
-      "label": "Fidu 1041 Subtractions 2c",
+      "field_id": "fidu_1041_subtractions_bonus_depreciation",
+      "label": "Fidu 1041 Subtractions, Bonus depreciation",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        403.0,
+        546.3,
+        421.0
+      ]
     },
     {
-      "field_id": "fidu_1041_subtractions_2d",
-      "widget_id": "W074",
-      "label": "Fidu 1041 Subtractions 2d",
+      "field_id": "fidu_1041_subtractions_medical_marijuana",
+      "label": "Fidu 1041 Subtractions, Medical marijuana",
+      "caption": "e Medical Marijuana Business Expenses. (See instructions.) .............................................................",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        427.3,
+        546.3,
+        445.3
+      ]
     },
     {
-      "field_id": "medical_cannabis_sales_tax_number",
-      "widget_id": "W075",
-      "label": "Medical cannabis sales tax number",
+      "field_id": "fidu_1041_nol",
+      "label": "Fidu 1041 NOL",
+      "caption": "f Net Operating Loss recapture. (See instructions) .....................................................................",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        451.2,
+        546.3,
+        469.2
+      ]
     },
     {
-      "field_id": "fidu_1041_subtractions_2e",
-      "widget_id": "W076",
-      "label": "Fidu 1041 Subtractions 2e",
+      "field_id": "fidu_1041_subtractions_other_see_instructions",
+      "label": "Fidu 1041 Subtractions, Other (see instructions)",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        474.4,
+        546.3,
+        492.4
+      ]
     },
     {
-      "field_id": "adult_use_cannabis_sales_tax_number",
-      "widget_id": "W077",
-      "label": "Adult use cannabis sales tax number",
+      "field_id": "fidu_1041_total_deductions",
+      "label": "Fidu 1041 Total deductions",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        522.3,
+        546.3,
+        540.3
+      ]
     },
     {
-      "field_id": "fidu_1041_subtractions_2f",
-      "widget_id": "W078",
-      "label": "Fidu 1041 Subtractions 2f",
+      "field_id": "fidu_1041_net_fidu_adjustment",
+      "label": "Fidu 1041 Net fidu adjustment",
+      "caption": "\u2014 see instructions [may be a negative amount].) ......... 3",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        467.1,
+        546.2,
+        546.3,
+        564.2
+      ]
     },
     {
-      "field_id": "fidu_1041_2g",
-      "widget_id": "W079",
-      "label": "Fidu 1041 2g",
-      "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "field_id": "do_you_want_to_allow_someone_to_discuss_return_with_mrs",
+      "label": "Do you want to allow someone to discuss return with MRS",
+      "caption": "Yes (complete the following). No.",
+      "type": "radio",
+      "page": 1,
+      "rect": [
+        392.1,
+        586.9,
+        405.8,
+        604.9
+      ]
     },
     {
-      "field_id": "fidu_1041_subtractions_2h",
-      "widget_id": "W080",
-      "label": "Fidu 1041 Subtractions 2h",
+      "field_id": "fidu_1041_designee_s_name",
+      "label": "Fidu 1041 Designee's name",
+      "caption": "Designee Designee\u2019s name",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        147.1,
+        606.4,
+        244.9,
+        624.4
+      ]
     },
     {
-      "field_id": "fidu_10412i",
-      "widget_id": "W081",
-      "label": "Fidu 10412i",
+      "field_id": "fidu_1041_area_code_2",
+      "label": "Fidu 1041 Designee area code",
+      "caption": "Designee Designee\u2019s name Phone no. (",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        287.9,
+        606.6,
+        310.5,
+        624.6
+      ]
     },
     {
-      "field_id": "fidu_1041_3",
-      "widget_id": "W082",
-      "label": "Fidu 1041 3",
+      "field_id": "do_you_want_to_allow_someone_to_discuss_return_with_mrs_2",
+      "label": "Do you want to allow someone to discuss return with MRS",
+      "caption": "No.",
+      "type": "radio",
+      "page": 1,
+      "rect": [
+        521.1,
+        585.9,
+        535.1,
+        603.9
+      ]
+    },
+    {
+      "field_id": "fidu_1041_phone_number",
+      "label": "Fidu 1041 Phone number",
+      "caption": "Designee Designee\u2019s name Phone no. ( )",
       "type": "text",
-      "data_type": "text",
-      "page": 2,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 1,
+      "rect": [
+        319.6,
+        605.6,
+        398.8,
+        623.6
+      ]
+    },
+    {
+      "field_id": "fidu_1041_pin_number",
+      "label": "Fidu 1041 PIN number",
+      "caption": "Designee\u2019s name Phone no. ( ) Personal Identi\ufb01 cation number",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        508.5,
+        605.6,
+        575.7,
+        623.6
+      ]
+    },
+    {
+      "field_id": "fidu_1041_date",
+      "label": "Fidu 1041 Date",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        292.3,
+        642.6,
+        404.4,
+        660.6
+      ]
+    },
+    {
+      "field_id": "fidu_1041_date_estate_or_trust_created",
+      "label": "Fidu 1041 Date estate or trust created",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        438.6,
+        643.2,
+        548.7,
+        661.2
+      ]
+    },
+    {
+      "field_id": "fidu_1041_date1",
+      "label": "Fidu 1041 Date1",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        292.2,
+        670.9,
+        404.5,
+        688.9
+      ]
+    },
+    {
+      "field_id": "fidu_1041_print_preparer_s_name",
+      "label": "Fidu 1041 Print preparer's name",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        49.3,
+        701.4,
+        282.5,
+        719.4
+      ]
+    },
+    {
+      "field_id": "fidu_1041_preparer_s_phone_number",
+      "label": "Fidu 1041 Preparer's phone number",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        294.3,
+        701.4,
+        422.2,
+        719.4
+      ]
+    },
+    {
+      "field_id": "fidu_1041_preparer_s_social_or_ptin",
+      "label": "Fidu 1041 Preparer's social or PTIN",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        438.3,
+        701.4,
+        548.3,
+        719.4
+      ]
+    },
+    {
+      "field_id": "fidu_1041_additions_certain_gains_on_installment_sales",
+      "label": "Fidu 1041 Additions, certain gains on installment sales",
+      "caption": "",
+      "type": "text",
+      "page": 1,
+      "rect": [
+        467.1,
+        234.8,
+        546.3,
+        252.8
+      ]
     },
     {
       "field_id": "fidu_1041_page_3_estate_trust_ein",
-      "widget_id": "W083",
       "label": "Fidu 1041 Page 3 Estate/Trust EIN",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        134.3,
+        64.7,
+        284.3,
+        86.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3_name",
-      "widget_id": "W084",
       "label": "Fidu 1041 Page 3 name",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        63.2,
+        148.0,
+        176.8,
+        166.0
+      ]
     },
     {
       "field_id": "fidu_1041_page_3_share_of_income",
-      "widget_id": "W085",
       "label": "Fidu 1041 Page 3 share of income",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        193.6,
+        146.6,
+        304.4,
+        164.6
+      ]
     },
     {
       "field_id": "fidu_1041_page_3_percent",
-      "widget_id": "W086",
       "label": "Fidu 1041 Page 3 percent",
+      "caption": "(a) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        308.9,
+        146.4,
+        339.1,
+        164.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3_state",
-      "widget_id": "W087",
       "label": "Fidu 1041 Page 3 state",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        363.6,
+        147.2,
+        384.4,
+        165.2
+      ]
     },
     {
       "field_id": "fidu1041_page_3_fiduciary_ss_or_ein_number",
-      "widget_id": "W088",
       "label": "Fidu1041 Page 3 Fiduciary ss or EIN number",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        399.6,
+        147.5,
+        462.3,
+        165.5
+      ]
     },
     {
       "field_id": "fidu_1041_page_3_maine_source_income",
-      "widget_id": "W089",
       "label": "Fidu 1041 Page 3 Maine source income",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        480.7,
+        147.7,
+        575.3,
+        165.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3a_name",
-      "widget_id": "W090",
       "label": "Fidu 1041 Page 3A name",
+      "caption": "(b) B-",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        63.2,
+        170.4,
+        176.8,
+        188.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3a_share_of_income",
-      "widget_id": "W091",
       "label": "Fidu 1041 Page 3A share of income",
+      "caption": "(b) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        194.2,
+        169.4,
+        304.6,
+        187.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3b_percent",
-      "widget_id": "W092",
       "label": "Fidu 1041 Page 3B percent%",
+      "caption": "(b) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        308.9,
+        170.4,
+        339.1,
+        188.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3a_state",
-      "widget_id": "W093",
       "label": "Fidu 1041 Page 3A state",
+      "caption": "(b) B- $ %",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        363.6,
+        169.4,
+        384.4,
+        187.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3a_fiduciary_ss_or_ein_number",
-      "widget_id": "W094",
       "label": "Fidu 1041 Page 3A Fiduciary ss or EIN number",
+      "caption": "(b) B- $ %",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        399.6,
+        169.4,
+        462.3,
+        187.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3a_maine_source_income",
-      "widget_id": "W095",
       "label": "Fidu 1041 Page 3A Maine source income",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        480.7,
+        171.0,
+        575.3,
+        189.0
+      ]
     },
     {
       "field_id": "fidu_1041_page_3b_name",
-      "widget_id": "W096",
       "label": "Fidu 1041 Page 3B name",
+      "caption": "(c) B-",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        63.2,
+        193.4,
+        176.8,
+        211.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3b_share_of_income",
-      "widget_id": "W097",
       "label": "Fidu 1041 Page 3B share of income",
+      "caption": "(c) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        193.6,
+        192.4,
+        304.4,
+        210.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3a_percent",
-      "widget_id": "W098",
       "label": "Fidu 1041 Page 3A percent",
+      "caption": "(c) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        308.9,
+        192.4,
+        339.1,
+        210.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3b_state",
-      "widget_id": "W099",
       "label": "Fidu 1041 Page 3B state",
+      "caption": "(c) B- $ %",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        363.6,
+        192.4,
+        384.4,
+        210.4
+      ]
     },
     {
       "field_id": "fidu_1041_page_3b_fiduciary_ss_or_ein_number",
-      "widget_id": "W100",
       "label": "Fidu 1041 Page 3B Fiduciary ss or EIN number",
+      "caption": "(c) B- $ %",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        399.6,
+        192.7,
+        462.3,
+        210.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3c_maine_source_income",
-      "widget_id": "W101",
       "label": "Fidu 1041 Page 3C maine source income",
+      "caption": "(c) B- $ % $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        480.7,
+        192.7,
+        575.3,
+        210.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3c_name",
-      "widget_id": "W102",
       "label": "Fidu 1041 Page 3C name",
+      "caption": "(d) B-",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        63.2,
+        215.7,
+        176.8,
+        233.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3c_share_of_income",
-      "widget_id": "W103",
       "label": "Fidu 1041 Page 3C share of income",
+      "caption": "(d) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        193.6,
+        215.7,
+        304.4,
+        233.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3c_percent",
-      "widget_id": "W104",
       "label": "Fidu 1041 Page 3C percent",
+      "caption": "(d) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        308.9,
+        214.7,
+        339.1,
+        232.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3c_state",
-      "widget_id": "W105",
       "label": "Fidu 1041 Page 3C state",
+      "caption": "(d) B- $ %",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        363.6,
+        214.7,
+        384.4,
+        232.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3c_fiduciary_ss_or_ein_number",
-      "widget_id": "W106",
       "label": "Fidu 1041 Page 3C Fiduciary ss or EIN number",
+      "caption": "(d) B- $ %",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        399.6,
+        214.7,
+        462.3,
+        232.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3d_maine_source_income",
-      "widget_id": "W107",
       "label": "Fidu 1041 Page 3D Maine source income",
+      "caption": "(d) B- $ % $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        480.7,
+        214.7,
+        575.3,
+        232.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3d_name",
-      "widget_id": "W108",
       "label": "Fidu 1041 Page 3D name",
+      "caption": "(e) B-",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        63.2,
+        237.7,
+        176.8,
+        255.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3d_share_of_income",
-      "widget_id": "W109",
       "label": "Fidu 1041 Page 3D share of income",
+      "caption": "(e) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        193.6,
+        237.7,
+        304.4,
+        255.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3d_percent",
-      "widget_id": "W110",
       "label": "Fidu 1041 Page 3D percent",
+      "caption": "(e) B- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        308.9,
+        238.3,
+        339.1,
+        255.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3d_state",
-      "widget_id": "W111",
       "label": "Fidu 1041 Page 3D state",
+      "caption": "(e) B- $ %",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        363.6,
+        237.7,
+        384.4,
+        255.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3d_fiduciary_ss_or_ein_number",
-      "widget_id": "W112",
       "label": "Fidu 1041 Page 3D Fiduciary ss or EIN number",
+      "caption": "(e) B- $ %",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        399.6,
+        237.7,
+        462.3,
+        255.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3e_maine_source_income",
-      "widget_id": "W113",
       "label": "Fidu 1041 Page 3E Maine source income",
+      "caption": "(e) B- $ % $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        480.7,
+        237.7,
+        575.3,
+        255.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3e_name",
-      "widget_id": "W114",
       "label": "Fidu 1041 Page 3E name",
+      "caption": "(f) E/T-",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        66.2,
+        259.7,
+        176.2,
+        278.9
+      ]
     },
     {
       "field_id": "fidu_1041_page_3e_share_of_income",
-      "widget_id": "W115",
       "label": "Fidu 1041 Page 3E share of income",
+      "caption": "(f) E/T- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        193.6,
+        259.7,
+        304.4,
+        277.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3e_percent",
-      "widget_id": "W116",
       "label": "Fidu 1041 Page 3E percent",
+      "caption": "(f) E/T- $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        308.9,
+        259.7,
+        339.1,
+        277.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3f_share_of_income",
-      "widget_id": "W117",
       "label": "Fidu 1041 Page 3F share of income",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        193.6,
+        282.7,
+        304.4,
+        300.7
+      ]
     },
     {
       "field_id": "fidu_1041_page_3f_maine_source_income",
-      "widget_id": "W118",
       "label": "Fidu 1041 Page 3F Maine source income",
+      "caption": "(g) Total $ 100% $",
       "type": "text",
-      "data_type": "text",
-      "page": 3,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "page": 2,
+      "rect": [
+        480.7,
+        283.1,
+        575.3,
+        301.1
+      ]
+    },
+    {
+      "field_id": "fidu_1041_schedule_3_1",
+      "label": "Fidu 1041 Schedule 3 1",
+      "caption": "",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        462.6,
+        367.1,
+        543.4,
+        385.1
+      ]
+    },
+    {
+      "field_id": "fidu_1041_income_taxed_by",
+      "label": "Fidu 1041 Income taxed by",
+      "caption": "",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        162.5,
+        391.0,
+        240.3,
+        409.0
+      ]
+    },
+    {
+      "field_id": "fidu_1041_schedule_3_1a",
+      "label": "Fidu 1041 Schedule 3 1A",
+      "caption": "",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        463.4,
+        391.0,
+        543.4,
+        409.0
+      ]
+    },
+    {
+      "field_id": "fidu_1041_schedule_3_1b",
+      "label": "Fidu 1041 Schedule 3 1B",
+      "caption": "",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        462.6,
+        415.0,
+        543.4,
+        433.0
+      ]
+    },
+    {
+      "field_id": "fidu_1041_schedule_3_1c",
+      "label": "Fidu 1041 Schedule 3 1C",
+      "caption": "a Form 1041ME, page 1, line 4 $",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        170.3,
+        453.4,
+        222.1,
+        471.4
+      ]
+    },
+    {
+      "field_id": "fidu_1041_schedule_3_1d",
+      "label": "Fidu 1041 Schedule 3 1D",
+      "caption": "Form 1041ME, page 1, line 4 $ ____________ multiplied by",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        270.1,
+        453.6,
+        305.3,
+        471.8
+      ]
+    },
+    {
+      "field_id": "fidu_1041_schedule_3_1e",
+      "label": "Fidu 1041 Schedule 3 1E",
+      "caption": "____________ multiplied by ________% on line 3 above. .......................... 4a",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        462.6,
+        452.8,
+        543.4,
+        470.8
+      ]
+    },
+    {
+      "field_id": "fidu_1041_schedule_3_1f",
+      "label": "Fidu 1041 Schedule 3 1F",
+      "caption": "",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        462.6,
+        474.8,
+        543.4,
+        492.8
+      ]
+    },
+    {
+      "field_id": "fidu_1041_schedule_3_1g",
+      "label": "Fidu 1041 Schedule 3 1G",
+      "caption": "",
+      "type": "text",
+      "page": 2,
+      "rect": [
+        462.6,
+        498.8,
+        543.4,
+        516.8
+      ]
     }
   ]
 }
