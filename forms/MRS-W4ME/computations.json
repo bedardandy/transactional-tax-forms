@@ -1,0 +1,16 @@
+{
+  "form_id": "MRS-W4ME",
+  "_comment": "Printed-arithmetic computed fields consumed by maine_forms_engine.computations. Every formula_text is the instruction printed verbatim on the blank (tests/test_computations.py re-checks this against the fetched PDF). Warnings-only: a supplied value is always written as-is.",
+  "computed": {
+    "facts.total_allowances_worksheet": {
+      "op": "sum",
+      "inputs": [
+        "facts.allowance_self",
+        "facts.allowance_spouse",
+        "facts.allowance_head_of_household",
+        "facts.allowance_dependents"
+      ],
+      "formula_text": "E. Add lines A through D. (Maximum number of allowances you may claim)"
+    }
+  }
+}

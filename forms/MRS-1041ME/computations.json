@@ -1,0 +1,69 @@
+{
+  "form_id": "MRS-1041ME",
+  "_comment": "Printed-arithmetic computed fields consumed by maine_forms_engine.computations. Every formula_text is the instruction printed verbatim on the blank (tests/test_computations.py re-checks this against the fetched PDF). Warnings-only: a supplied value is always written as-is.",
+  "computed": {
+    "facts.adjusted_maine_income_tax": {
+      "op": "sum",
+      "inputs": [
+        "facts.maine_income_tax",
+        "facts.adjustments_to_tax"
+      ],
+      "formula_text": "6. Adjusted Maine income tax. (Line 4 plus or minus line 5.)",
+      "note": "line 5 (adjustments to tax) enters signed — the form says plus or minus"
+    },
+    "facts.total_payments": {
+      "op": "sum",
+      "inputs": [
+        "facts.maine_income_tax_withheld",
+        "facts.estimated_tax_payments",
+        "facts.refundable_tax_credits"
+      ],
+      "formula_text": "d. Total payments. (Add lines 7a, 7b and 7c.)"
+    },
+    "facts.total_amount_due": {
+      "op": "sum",
+      "inputs": [
+        "facts.tax_balance_due",
+        "facts.penalty"
+      ],
+      "formula_text": "c. TOTAL AMOUNT DUE. (Add lines 8a and 8b.)"
+    },
+    "facts.total_additions": {
+      "op": "sum",
+      "inputs": [
+        "facts.additions_municipal_state_bond_income",
+        "facts.additions_net_operating_loss_adjustment",
+        "facts.additions_mainepers_contributions",
+        "facts.additions_qbi_deduction_addback",
+        "facts.additions_bonus_depreciation_addback",
+        "facts.additions_capital_investment_credit_bonus_depreciation_addback",
+        "facts.additions_installment_sale_gains",
+        "facts.additions_other"
+      ],
+      "formula_text": "j Total Additions. (Add lines 1a through 1i.)",
+      "note": "line 1i is printed Reserved on this revision, so lines 1a-1h are the addends"
+    },
+    "facts.total_subtractions": {
+      "op": "sum",
+      "inputs": [
+        "facts.subtractions_us_government_bond_interest",
+        "facts.subtractions_social_security_railroad_benefits",
+        "facts.subtractions_mainepers_pickup_contributions",
+        "facts.subtractions_bonus_depreciation_section_179_recapture",
+        "facts.subtractions_medical_cannabis_expenses",
+        "facts.subtractions_net_operating_loss_recapture",
+        "facts.subtractions_other"
+      ],
+      "formula_text": "i Total Subtractions. (Add lines 2a through 2h.)",
+      "note": "line 2h is printed Reserved on this revision, so lines 2a-2g are the addends"
+    },
+    "facts.net_fiduciary_adjustment": {
+      "op": "difference",
+      "inputs": [
+        "facts.total_additions",
+        "facts.total_subtractions"
+      ],
+      "formula_text": "3 Net Fiduciary Adjustment. (Subtract line 2i from line 1j — see instructions [may be a negative amount].)"
+    }
+  }
+}

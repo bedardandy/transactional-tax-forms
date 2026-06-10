@@ -19,6 +19,18 @@ python3 -m engine.fill_via_mapping --form IRS-1041 \
     --case forms/IRS-1041/examples/sample_case.json --out /tmp/out
 ```
 
+## Computed lines (printed arithmetic)
+
+This form prints arithmetic instructions, declared in `computations.json` and evaluated by the shared engine. Omit a computed key (with its inputs supplied) and the engine fills it from the printed formula (reported under `computed_fields`); supply it and your value is written **as-is** — a contradiction only adds a `COMPUTATION_MISMATCH` warning, never a block or an override.
+
+| computed key | printed instruction |
+|---|---|
+| `facts.add_lines_10_15b` | Add lines 10 through 15b |
+| `facts.add_lines_18_21` | Add lines 18 through 21 |
+| `facts.adjusted_total_income` | Adjusted total income or (loss). Subtract line 16 from line 9 |
+| `facts.taxable_income` | Taxable income. Subtract line 22 from line 17. If a loss, see instructions |
+| `facts.total_income` | Total income. Combine lines 1, 2a, and 3 through 8 |
+
 ## Canonical keys
 
 | key | filled into (printed caption) |

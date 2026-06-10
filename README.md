@@ -66,6 +66,23 @@ SS-4 and 706 are cross-listed (an estate also needs an EIN). See
 > roadmap item; until then, read each form's `mapping.json` for its keys —
 > both shapes are documented in `docs/integrations/README.md`.
 
+## Computed lines (printed arithmetic)
+
+Six forms (MRS 1041ME, 1120ME, 706ME, W-4ME; IRS 1041, 706) carry a
+`computations.json` next to `mapping.json` declaring the arithmetic the form
+itself prints ("Total payments. (Add lines 7a, 7b and 7c.)" — every
+`formula_text` is quoted verbatim from the blank; no statutory rates or tax
+tables are encoded from memory). The shared engine evaluates it
+topologically: omit a computed key (with its inputs supplied) and it is
+computed and filled, reported under `computed_fields`; supply it and your
+value is written **as-is** — a contradiction only adds a
+`COMPUTATION_MISMATCH` entry under `computation_warnings` (CLI and MCP
+`fill_form` alike). Warnings only, never blocking, and nothing is embedded in
+the PDF — no AcroForm calculation JavaScript. Lines whose printed math is
+conditional (e.g. 706ME amount-due vs refund-due, 1120ME tax-due vs
+overpayment) or split across dollars/cents widgets (941ME) are deliberately
+not declared.
+
 ## Getting the blanks
 
 Blank forms are **not redistributed** here. Maine forms are public records of

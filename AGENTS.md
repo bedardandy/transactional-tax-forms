@@ -63,7 +63,12 @@ dict), so every documented `engine.*` / `tools/*` command works unchanged.
   entry suggests the option resolved from the case, to be selected by hand)
   and `constraint_warnings` (paradoxical selections per the form's
   `constraints.json`, e.g. both Resident and Nonresident checked — harvested
-  by `tools/harvest_constraints.py`). They list problems for a human to
+  by `tools/harvest_constraints.py`), plus the computed-field surface per the
+  form's `computations.json` (arithmetic printed verbatim on the form, e.g.
+  "Total payments. (Add lines 7a, 7b and 7c.)"): a target the case omits is
+  computed and filled (`computed_fields`), a supplied value is always written
+  as-is, and a contradiction only adds a `COMPUTATION_MISMATCH` entry under
+  `computation_warnings`. They list problems for a human to
   resolve; they never fail or alter a fill.
 - **Respect the manifest guard.** The engine warns if the on-disk blank is not
   the revision the mapping was built against (`TTF_VERIFY_BLANK`; `MCF_VERIFY_BLANK` works as a fallback). Don't suppress

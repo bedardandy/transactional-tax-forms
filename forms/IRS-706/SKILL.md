@@ -19,6 +19,28 @@ python3 -m engine.fill_via_mapping --form IRS-706 \
     --case forms/IRS-706/examples/sample_case.json --out /tmp/out
 ```
 
+## Computed lines (printed arithmetic)
+
+This form prints arithmetic instructions, declared in `computations.json` and evaluated by the shared engine. Omit a computed key (with its inputs supplied) and the engine fills it from the printed formula (reported under `computed_fields`); supply it and your value is written **as-is** — a contradiction only adds a `COMPUTATION_MISMATCH` warning, never a block or an override.
+
+| computed key | printed instruction |
+|---|---|
+| `facts.add_lines_3c_and_4` | Add lines 3c and 4 |
+| `facts.allowable_applicable_credit_amount` | Allowable applicable credit amount. Subtract line 10 from line 9e |
+| `facts.alternate_value_total_gross_estate` | Total gross estate. Add items 1 through 10 |
+| `facts.alternate_value_total_gross_estate_less_exclusion` | Total gross estate less exclusion. Subtract item 12 from item 11. |
+| `facts.gross_estate_tax` | Gross estate tax. Subtract line 7 from line 6 |
+| `facts.net_estate_tax` | Net estate tax. Subtract line 17 from line 12 |
+| `facts.tax_due_or_refund` | Subtract line 11 from line 8. If zero or less, enter -0- |
+| `facts.taxable_estate` | Taxable estate. Subtract line 3b from line 3a |
+| `facts.tentative_taxable_estate` | Tentative taxable estate. Subtract line 2 from line 1 |
+| `facts.tentative_total_allowable_deductions` | Tentative total allowable deductions. Add items 18 through 23. |
+| `facts.total_credits` | Total credits. Add lines 13 through 16 |
+| `facts.total_deductions_items_14_through_16` | Add items 14 through 16 |
+| `facts.total_gross_estate` | Total gross estate. Add items 1 through 10 |
+| `facts.total_gross_estate_less_exclusion` | Total gross estate less exclusion. Subtract item 12 from item 11. |
+| `facts.total_transfer_taxes` | Total transfer taxes. Add lines 18 and 19 |
+
 ## Canonical keys
 
 | key | filled into (printed caption) |

@@ -7,6 +7,14 @@
 
 Provide a canonical fact object (JSON) with the taxpayer parties and the form's `facts.*` line items — see `mapping.json` for the exact keys this form consumes (these inherited Maine Revenue mappings use the court library's `parties.<role>` key shape) and `examples/sample_case.json` for a worked fictional example. The field table below lists every fillable widget; `mapping.json` routes each canonical key to a `field_id`.
 
+## Computed lines (printed arithmetic)
+
+This form prints arithmetic instructions, declared in `computations.json` and evaluated by the shared engine. Omit a computed key (with its inputs supplied) and the engine fills it from the printed formula (reported under `computed_fields`); supply it and your value is written **as-is** — a contradiction only adds a `COMPUTATION_MISMATCH` warning, never a block or an override.
+
+| computed key | printed instruction |
+|---|---|
+| `facts.maine_taxable_estate` | 5. Maine taxable estate (line 1 minus line 2 plus lines 3 and 4) |
+
 ## Field map
 
 | field_id | type | page | printed label |

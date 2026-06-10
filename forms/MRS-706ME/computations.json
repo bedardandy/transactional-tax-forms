@@ -1,0 +1,16 @@
+{
+  "form_id": "MRS-706ME",
+  "_comment": "Printed-arithmetic computed fields consumed by maine_forms_engine.computations. Every formula_text is the instruction printed verbatim on the blank (tests/test_computations.py re-checks this against the fetched PDF). Warnings-only: a supplied value is always written as-is.",
+  "computed": {
+    "facts.maine_taxable_estate": {
+      "op": "sum",
+      "inputs": [
+        "facts.federal_taxable_estate",
+        "-facts.maine_qualified_terminable_interest_property",
+        "facts.maine_elective_property",
+        "facts.value_of_gifts_included_in_federal_form_706"
+      ],
+      "formula_text": "5. Maine taxable estate (line 1 minus line 2 plus lines 3 and 4)"
+    }
+  }
+}

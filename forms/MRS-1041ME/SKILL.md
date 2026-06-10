@@ -25,6 +25,19 @@ The engine **never writes radio groups** (soft lock). The fill result carries a 
 |---|---|---|
 | `do_you_want_to_allow_someone_to_discuss_return_with_mrs` | `facts.third_party_designee` | Yes / No |
 
+## Computed lines (printed arithmetic)
+
+This form prints arithmetic instructions, declared in `computations.json` and evaluated by the shared engine. Omit a computed key (with its inputs supplied) and the engine fills it from the printed formula (reported under `computed_fields`); supply it and your value is written **as-is** — a contradiction only adds a `COMPUTATION_MISMATCH` warning, never a block or an override.
+
+| computed key | printed instruction |
+|---|---|
+| `facts.adjusted_maine_income_tax` | 6. Adjusted Maine income tax. (Line 4 plus or minus line 5.) |
+| `facts.net_fiduciary_adjustment` | 3 Net Fiduciary Adjustment. (Subtract line 2i from line 1j — see instructions [may be a negative amount].) |
+| `facts.total_additions` | j Total Additions. (Add lines 1a through 1i.) |
+| `facts.total_amount_due` | c. TOTAL AMOUNT DUE. (Add lines 8a and 8b.) |
+| `facts.total_payments` | d. Total payments. (Add lines 7a, 7b and 7c.) |
+| `facts.total_subtractions` | i Total Subtractions. (Add lines 2a through 2h.) |
+
 ## Canonical keys
 
 | key | filled into (printed caption) |

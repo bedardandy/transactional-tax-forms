@@ -1,0 +1,60 @@
+{
+  "form_id": "IRS-1041",
+  "_comment": "Printed-arithmetic computed fields consumed by maine_forms_engine.computations. Every formula_text is the instruction printed verbatim on the blank (tests/test_computations.py re-checks this against the fetched PDF). Warnings-only: a supplied value is always written as-is.",
+  "computed": {
+    "facts.total_income": {
+      "op": "sum",
+      "inputs": [
+        "facts.interest_income",
+        "facts.total_ordinary_dividends",
+        "facts.business_income_loss",
+        "facts.capital_gain_loss",
+        "facts.rents_royalties",
+        "facts.farm_income_loss",
+        "facts.ordinary_gain_loss",
+        "facts.other_income"
+      ],
+      "formula_text": "Total income. Combine lines 1, 2a, and 3 through 8",
+      "note": "loss lines enter signed (combine)"
+    },
+    "facts.add_lines_10_15b": {
+      "op": "sum",
+      "inputs": [
+        "facts.interest_deduction",
+        "facts.taxes",
+        "facts.fiduciary_fees",
+        "facts.charitable_deduction",
+        "facts.attorney_accountant_fees",
+        "facts.other_deductions",
+        "facts.net_operating_loss_deduction"
+      ],
+      "formula_text": "Add lines 10 through 15b"
+    },
+    "facts.adjusted_total_income": {
+      "op": "difference",
+      "inputs": [
+        "facts.total_income",
+        "facts.add_lines_10_15b"
+      ],
+      "formula_text": "Adjusted total income or (loss). Subtract line 16 from line 9"
+    },
+    "facts.add_lines_18_21": {
+      "op": "sum",
+      "inputs": [
+        "facts.income_distribution_deduction",
+        "facts.estate_tax_deduction",
+        "facts.qualified_business_income_deduction",
+        "facts.exemption"
+      ],
+      "formula_text": "Add lines 18 through 21"
+    },
+    "facts.taxable_income": {
+      "op": "difference",
+      "inputs": [
+        "facts.adjusted_total_income",
+        "facts.add_lines_18_21"
+      ],
+      "formula_text": "Taxable income. Subtract line 22 from line 17. If a loss, see instructions"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "form_id": "MRS-1120ME",
+  "_comment": "Printed-arithmetic computed fields consumed by maine_forms_engine.computations. Every formula_text is the instruction printed verbatim on the blank (tests/test_computations.py re-checks this against the fetched PDF). Warnings-only: a supplied value is always written as-is.",
+  "computed": {
+    "facts.adjusted_federal_taxable_income": {
+      "op": "sum",
+      "inputs": [
+        "facts.federal_taxable_income",
+        "-facts.income_subtraction_modifications",
+        "facts.income_addition_modifications"
+      ],
+      "formula_text": "Adjusted federal taxable income (line 1 minus line 2 plus line 3)"
+    },
+    "facts.total_tax": {
+      "op": "sum",
+      "inputs": [
+        "facts.maine_corporate_income_tax",
+        "facts.credit_recapture"
+      ],
+      "formula_text": "Total tax (add lines 6a and 6b)"
+    },
+    "facts.total_payments_and_credits": {
+      "op": "sum",
+      "inputs": [
+        "facts.maine_estimated_tax_paid",
+        "facts.extension_payment",
+        "facts.tax_credits",
+        "facts.income_tax_withheld",
+        "facts.amended_payments",
+        "-facts.amended_overpayments"
+      ],
+      "formula_text": "Total payments and credits (add lines 7a through 7e and subtract line 7f; if the result is negative, enter a minus sign to the left of the number)"
+    }
+  }
+}

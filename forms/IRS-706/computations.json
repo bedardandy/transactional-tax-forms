@@ -1,0 +1,154 @@
+{
+  "form_id": "IRS-706",
+  "_comment": "Printed-arithmetic computed fields consumed by maine_forms_engine.computations. Every formula_text is the instruction printed verbatim on the blank (tests/test_computations.py re-checks this against the fetched PDF). Warnings-only: a supplied value is always written as-is.",
+  "computed": {
+    "facts.total_gross_estate": {
+      "op": "sum",
+      "inputs": [
+        "facts.total_real_estate",
+        "facts.total_stocks_and_bonds",
+        "facts.total_mortgage_notes_and_cash",
+        "facts.total_insurance_on_decedents_life",
+        "facts.total_jointly_owned_property",
+        "facts.total_other_miscellaneous_property",
+        "facts.total_transfers_during_decedents_lifetime",
+        "facts.total_powers_of_appointment",
+        "facts.total_annuities",
+        "facts.estimated_value_of_assets_subject_to_special_rule"
+      ],
+      "formula_text": "Total gross estate. Add items 1 through 10"
+    },
+    "facts.alternate_value_total_gross_estate": {
+      "op": "sum",
+      "inputs": [
+        "facts.alternate_value_total_real_estate",
+        "facts.alternate_value_total_stocks_and_bonds",
+        "facts.alternate_value_total_mortgage_notes_and_cash",
+        "facts.alternate_value_total_insurance_on_decedents_life",
+        "facts.alternate_value_total_jointly_owned_property",
+        "facts.alternate_value_total_other_miscellaneous_property",
+        "facts.alternate_value_total_transfers_during_decedents_lifetime",
+        "facts.alternate_value_total_powers_of_appointment",
+        "facts.alternate_value_total_annuities",
+        "facts.alternate_value_estimated_value_of_assets_subject_to_special_rule"
+      ],
+      "formula_text": "Total gross estate. Add items 1 through 10",
+      "note": "alternate value column of Part 5, same printed instruction"
+    },
+    "facts.total_gross_estate_less_exclusion": {
+      "op": "difference",
+      "inputs": [
+        "facts.total_gross_estate",
+        "facts.total_qualified_conservation_easement_exclusion"
+      ],
+      "formula_text": "Total gross estate less exclusion. Subtract item 12 from item 11."
+    },
+    "facts.alternate_value_total_gross_estate_less_exclusion": {
+      "op": "difference",
+      "inputs": [
+        "facts.alternate_value_total_gross_estate",
+        "facts.alternate_value_total_qualified_conservation_easement_exclusion"
+      ],
+      "formula_text": "Total gross estate less exclusion. Subtract item 12 from item 11.",
+      "note": "alternate value column of Part 5, same printed instruction"
+    },
+    "facts.total_deductions_items_14_through_16": {
+      "op": "sum",
+      "inputs": [
+        "facts.total_funeral_expenses_and_administration_expenses",
+        "facts.total_debts_of_the_decedent",
+        "facts.total_mortgages_and_liens"
+      ],
+      "formula_text": "Add items 14 through 16"
+    },
+    "facts.tentative_total_allowable_deductions": {
+      "op": "sum",
+      "inputs": [
+        "facts.allowable_amount_of_deductions",
+        "facts.total_net_losses_during_administration",
+        "facts.total_expenses_incurred_in_administering_property_not_subject_to_claims",
+        "facts.total_amount_of_property_interests_for_marital_deduction",
+        "facts.total_charitable_public_and_similar_gifts_and_beqeusts",
+        "facts.estimated_value_of_deductible_assets_subject_to_special_rule"
+      ],
+      "formula_text": "Tentative total allowable deductions. Add items 18 through 23."
+    },
+    "facts.tentative_taxable_estate": {
+      "op": "difference",
+      "inputs": [
+        "facts.total_gross_estate",
+        "facts.total_allowable_deductions"
+      ],
+      "formula_text": "Tentative taxable estate. Subtract line 2 from line 1",
+      "note": "inputs follow this repo's mapping: the Part 2 line 1 widget is mapped facts.total_gross_estate, line 2 facts.total_allowable_deductions"
+    },
+    "facts.taxable_estate": {
+      "op": "difference",
+      "inputs": [
+        "facts.tentative_taxable_estate",
+        "facts.state_death_tax_deduction"
+      ],
+      "formula_text": "Taxable estate. Subtract line 3b from line 3a"
+    },
+    "facts.add_lines_3c_and_4": {
+      "op": "sum",
+      "inputs": [
+        "facts.taxable_estate",
+        "facts.adjusted_taxable_gifts"
+      ],
+      "formula_text": "Add lines 3c and 4"
+    },
+    "facts.gross_estate_tax": {
+      "op": "difference",
+      "inputs": [
+        "facts.tentative_tax",
+        "facts.total_gift_tax_paid_or_payable"
+      ],
+      "formula_text": "Gross estate tax. Subtract line 7 from line 6"
+    },
+    "facts.allowable_applicable_credit_amount": {
+      "op": "difference",
+      "inputs": [
+        "facts.applicable_credit_amount",
+        "facts.adjustment_to_applicable_credit_amount"
+      ],
+      "formula_text": "Allowable applicable credit amount. Subtract line 10 from line 9e"
+    },
+    "facts.tax_due_or_refund": {
+      "op": "difference",
+      "inputs": [
+        "facts.gross_estate_tax",
+        "facts.allowable_applicable_credit_amount"
+      ],
+      "floor": 0,
+      "formula_text": "Subtract line 11 from line 8. If zero or less, enter -0-",
+      "note": "Part 2 line 12; the floor is the printed clamp"
+    },
+    "facts.total_credits": {
+      "op": "sum",
+      "inputs": [
+        "facts.credit_for_foreign_death_taxes",
+        "facts.credit_for_tax_on_prior_transfers",
+        "facts.credit_for_pre_1977_federal_gift_taxes",
+        "facts.marital_credit"
+      ],
+      "formula_text": "Total credits. Add lines 13 through 16"
+    },
+    "facts.net_estate_tax": {
+      "op": "difference",
+      "inputs": [
+        "facts.tax_due_or_refund",
+        "facts.total_credits"
+      ],
+      "formula_text": "Net estate tax. Subtract line 17 from line 12"
+    },
+    "facts.total_transfer_taxes": {
+      "op": "sum",
+      "inputs": [
+        "facts.net_estate_tax",
+        "facts.generation_skipping_transfer_taxes"
+      ],
+      "formula_text": "Total transfer taxes. Add lines 18 and 19"
+    }
+  }
+}

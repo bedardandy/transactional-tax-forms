@@ -83,7 +83,11 @@ def _build():
         Yellow lights (warnings, never blocking): ``radio_groups`` lists radio
         groups the engine never writes (with a suggested option to select by
         hand) and ``constraint_warnings`` lists paradoxical selections
-        declared in the form's constraints.json."""
+        declared in the form's constraints.json. ``computed_fields`` lists
+        values computed from the form's printed arithmetic (computations.json)
+        when the case omitted them; a supplied value always wins as-is, with
+        any contradiction surfaced under ``computation_warnings`` as
+        COMPUTATION_MISMATCH."""
         try:
             dest = pathlib.Path(out_path)
             if dest.suffix.lower() == ".pdf":
@@ -104,7 +108,9 @@ def _build():
                    "status": r.get("status"),
                    "error": r.get("error")}
             # yellow lights — present only when the form declares them
-            for k in ("radio_groups", "constraint_warnings"):
+            for k in ("radio_groups", "constraint_warnings",
+                      "computed_fields", "computation_warnings",
+                      "computation_notes"):
                 if r.get(k):
                     out[k] = r[k]
             return out

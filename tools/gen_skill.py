@@ -324,6 +324,28 @@ def render_skill(fid: str, meta: dict, mapping: dict, schema: dict) -> str:
         for mfid, spec in sorted(manual.items()):
             opts = " / ".join(spec.get("options") or [])
             lines.append(f"| `{mfid}` | `{spec.get('key', '')}` | {opts} |")
+    comp_path = ROOT / "forms" / fid / "computations.json"
+    computed = (json.loads(comp_path.read_text()).get("computed") or {}
+                if comp_path.exists() else {})
+    if computed:
+        lines += [
+            "",
+            "## Computed lines (printed arithmetic)",
+            "",
+            "This form prints arithmetic instructions, declared in "
+            "`computations.json` and evaluated by the shared engine. Omit a "
+            "computed key (with its inputs supplied) and the engine fills it "
+            "from the printed formula (reported under `computed_fields`); "
+            "supply it and your value is written **as-is** — a contradiction "
+            "only adds a `COMPUTATION_MISMATCH` warning, never a block or an "
+            "override.",
+            "",
+            "| computed key | printed instruction |",
+            "|---|---|",
+        ]
+        for key in sorted(computed):
+            ft = computed[key].get("formula_text", "").replace("|", "/")
+            lines.append(f"| `{key}` | {ft} |")
     lines += [
         "",
         "## Canonical keys",
