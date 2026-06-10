@@ -2,9 +2,9 @@
 
 - **Agency:** Maine Revenue Services
 - **Domain:** probate
-- **Pages:** 2  |  **Fillable fields:** 46
-- **Revision:** 2024
-- **Automation:** recipe
+- **Pages:** 2  |  **Fillable fields:** 44
+- **Revision:** current maine.gov posting, pinned in catalog/pdf_manifest.json
+- **Automation:** mapped (direct deterministic map, fill-verified; not yet human-verified)
 
 ## Purpose
 

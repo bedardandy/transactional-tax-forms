@@ -4,4 +4,4 @@ agency: "Maine Revenue Services"
 domain: probate
 num_pages: 2
 n_widgets: 46
-status: remap-pending   # recipe-tier in court (empty field map); needs a direct map
+status: mapped   # direct deterministic map vs current maine.gov blank (42/44 widgets), fill-verified; not yet human-verified

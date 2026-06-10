@@ -172,6 +172,12 @@ def _value_for(key: str, checkbox_only: bool) -> str | None:
         return _facts_value(attr)
     if attr in ("name", "legal_name", "full_name"):
         return _ROLE_NAME.get(role, "Riley J. Example")
+    if attr in ("first_name", "middle_name", "middle_initial", "last_name") \
+            and role in _ROLE_NAME:
+        toks = _ROLE_NAME[role].split()
+        return {"first_name": toks[0], "middle_name": toks[1],
+                "middle_initial": toks[1].rstrip("."),
+                "last_name": toks[-1]}[attr]
     if attr in _ATTR_VALUE:
         return _ATTR_VALUE[attr]
     if "date" in attr:

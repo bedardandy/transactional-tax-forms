@@ -1,61 +1,64 @@
 # MRS-700SOV — Maine Estate Tax Statement of Value (Lien Discharge)
 
-**Agency:** Maine Revenue Services  |  **Domain:** probate  |  **Status:** `recipe`
-**Fields:** 46  |  **Mapped:** 0
+**Agency:** Maine Revenue Services  |  **Domain:** probate  |  **Status:** `mapped`
+**Pages:** 2  |  **Fillable widgets:** 46  |  **Mapped:** 42 fields / 41 keys
 
-## What an agent needs to fill this form
+> Not tax or legal advice. The fill output is a draft; verify every value against the current official form before filing.
 
-This form is not yet fillable here (see `mapping.json` for status and notes). The field table below lists the fillable widgets from the revision this folder was inventoried against.
+## What an agent needs
 
-> A dedicated fill recipe exists in `engine/recipes/` and encodes the authoritative, audit-verified mapping (including non-obvious widget quirks). Prefer it over the raw table below.
+Build a canonical fact object (JSON) using the keys in the table below — tax-native roles (`entity`, `decedent`, `executor`, `transferor`/`transferee`, `property`, …) plus `facts.<snake_case>` for the form's labeled line items. `examples/sample_case.json` exercises every mapped key with fictional placeholder values.
 
-## Field map
+## Fill
 
-| field_id | type | page | printed label |
-|---|---|---|---|
-| `clear` | checkbox | 0 | Clear |
-| `print` | checkbox | 0 | Print |
-| `estate_of_first_name` | text | 0 | Estate of First Name |
-| `estate_of_m_i` | text | 0 | Estate of M.I |
-| `estate_of_last_name` | text | 0 | Estate of Last Name |
-| `social_security_number` | text | 0 | Social Security Number |
-| `date_of_death` | text | 0 | Date of death |
-| `residency_status` | text | 0 | Residency Status |
-| `residency_status_dup1` | text | 0 | Residency Status |
-| `state_of_residency` | text | 0 | State of Residency |
-| `married_widow_widower_spouse_s_name` | text | 0 | Married/widow/widower, spouse's name |
-| `spouse_ssn` | text | 0 | Spouse ssn |
-| `personal_rep_first_name` | text | 0 | Personal Rep First Name |
-| `personal_rep_m_i` | text | 0 | Personal Rep M.I |
-| `personal_rep_last_name` | text | 0 | Personal Rep Last Name |
-| `per_rep_ssn` | text | 0 | Per Rep SSN |
-| `per_rep_area_code` | text | 0 | Per Rep Area Code |
-| `per_rep_telephone_number` | text | 0 | Per Rep Telephone number |
-| `per_rep_fax_area_code` | text | 0 | Per Rep Fax Area Code |
-| `per_rep_fax_number` | text | 0 | Per Rep Fax number |
-| `personal_rep_street_address` | text | 0 | Personal Rep Street Address |
-| `personal_rep_city_town` | text | 0 | Personal Rep City/Town |
-| `per_rep_state` | text | 0 | Per Rep State |
-| `personal_rep_zip_code` | text | 0 | Personal Rep Zip Code |
-| `personal_rep_email_address` | text | 0 | Personal Rep Email Address |
-| `firm_name` | text | 0 | Firm Name |
-| `contact_person_first_name` | text | 0 | Contact Person First Name |
-| `contact_person_m_i` | text | 0 | Contact Person M.I |
-| `contact_person_last_name` | text | 0 | Contact Person Last Name |
-| `contact_person_mailing_address` | text | 0 | Contact Person Mailing Address |
-| `contact_person_city_town` | text | 0 | Contact Person City/Town |
-| `contact_person_state` | text | 0 | Contact Person State |
-| `contact_zip_code` | text | 0 | Contact Zip Code |
-| `contact_area_code` | text | 0 | Contact Area Code |
-| `contact_telephone_number` | text | 0 | Contact Telephone number |
-| `contact_email_address` | text | 0 | contact email address |
-| `contact_fax_area_code` | text | 0 | Contact  Fax Area Code |
-| `contact_fax_number` | text | 0 | Contact Fax number |
-| `signature_line_of_personal_rep` | text | 0 | signature line of personal rep |
-| `date_of_signature` | text | 0 | Date of signature |
-| `signature_of_preparer` | text | 0 | Signature of Preparer |
-| `preparer_ssn_or_ptin` | text | 0 | Preparer SSN or PTIN |
-| `date_of_preparer_signature` | text | 0 | Date of Preparer signature |
-| `firm_name_or_preparer` | text | 0 | Firm Name or preparer |
-| `preparer_address` | text | 0 | Preparer address |
-| `preparer_telephone_number` | text | 0 | Preparer telephone number |
+```bash
+python3 tools/fetch_pdfs.py --forms MRS-700SOV   # verified official blank
+python3 -m engine.fill_via_mapping --form MRS-700SOV \
+    --case forms/MRS-700SOV/examples/sample_case.json --out /tmp/out
+```
+
+## Canonical keys
+
+| key | filled into (printed caption) |
+|---|---|
+| `decedent.date_of_death` | Social Security Number (SSN): Date of Death: |
+| `decedent.domicile_state` | Residency Status: Resident Nonresident |
+| `decedent.first_name` | decedent — first name |
+| `decedent.last_name` | decedent — last name |
+| `decedent.middle_name` | decedent — middle name |
+| `decedent.ssn` | Social Security Number (SSN): |
+| `executor.city` | executor — city |
+| `executor.email` | executor — email |
+| `executor.fax_area_code` | executor — fax area code |
+| `executor.fax_number` | executor — fax number |
+| `executor.first_name` | executor — first name |
+| `executor.last_name` | executor — last name |
+| `executor.middle_name` | executor — middle name |
+| `executor.phone` | executor — phone |
+| `executor.phone_area_code` | executor — phone area code |
+| `executor.ssn` | executor — ssn |
+| `executor.state` | executor — state |
+| `executor.street_address` | executor — street address |
+| `executor.zip` | executor — zip |
+| `facts.contact_area_code` | facts — contact area code |
+| `facts.contact_city` | facts — contact city |
+| `facts.contact_email` | facts — contact email |
+| `facts.contact_fax_area_code` | facts — contact fax area code |
+| `facts.contact_fax_number` | facts — contact fax number |
+| `facts.contact_first_name` | facts — contact first name |
+| `facts.contact_last_name` | facts — contact last name |
+| `facts.contact_mailing_address` | facts — contact mailing address |
+| `facts.contact_middle_initial` | facts — contact middle initial |
+| `facts.contact_phone` | facts — contact phone |
+| `facts.contact_state` | facts — contact state |
+| `facts.contact_zip` | facts — contact zip |
+| `facts.representative_firm_name` | facts — representative firm name |
+| `facts.spouse_name` | If married or widow(er), enter spouse’s name: |
+| `facts.spouse_ssn` | If married or widow(er), enter spouse’s name: Spouse’s SSN: |
+| `preparer.address` | preparer — address |
+| `preparer.firm_name` | preparer — firm name |
+| `preparer.name` | preparer — name |
+| `preparer.phone` | preparer — phone |
+| `preparer.ssn_or_ptin` | preparer — ssn or ptin |
+| `signature` | signature |
+| `today()` | today() (+1 more field) |

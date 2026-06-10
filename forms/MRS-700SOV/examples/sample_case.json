@@ -1,81 +1,51 @@
 {
-  "matter": {
-    "docket_number": "FM-2024-00000",
-    "court_county": "Cumberland",
-    "court_location": "Portland",
-    "court_type": "District Court",
-    "case_type": "family_matters",
-    "filing_date": "2024-03-15"
+  "decedent": {
+    "date_of_death": "2025-01-15",
+    "domicile_state": "ME",
+    "first_name": "Morgan",
+    "last_name": "Example",
+    "middle_name": "T.",
+    "ssn": "000-00-0000"
   },
-  "parties": {
-    "plaintiff": {
-      "full_name": "Jane Q. Doe",
-      "address": "123 Main Street",
-      "city": "Portland",
-      "state": "ME",
-      "zip": "04101",
-      "phone": "207-555-0101",
-      "email": "jane.doe@example.com",
-      "date_of_birth": "1985-01-15"
-    },
-    "defendant": {
-      "full_name": "John R. Roe",
-      "address": "456 Oak Avenue",
-      "city": "Portland",
-      "state": "ME",
-      "zip": "04101",
-      "phone": "207-555-0102",
-      "email": "john.roe@example.com",
-      "date_of_birth": "1983-06-20"
-    },
-    "attorney": {
-      "full_name": "Pat L. Lawyer, Esq.",
-      "bar_number": "ME-000000",
-      "address": "1 Court Plaza, Suite 100",
-      "city": "Portland",
-      "state": "ME",
-      "zip": "04101",
-      "phone": "207-555-0150",
-      "email": "attorney@example.com"
-    },
-    "child_1": {
-      "full_name": "Sam Doe",
-      "date_of_birth": "2015-04-10",
-      "address": "123 Main Street",
-      "city": "Portland",
-      "state": "ME",
-      "zip": "04101"
-    },
-    "child_2": {
-      "full_name": "Alex Doe",
-      "date_of_birth": "2018-09-05",
-      "address": "123 Main Street",
-      "city": "Portland",
-      "state": "ME",
-      "zip": "04101"
-    }
-  },
-  "party": {
-    "full_name": "Jane Q. Doe",
-    "address": "123 Main Street",
+  "executor": {
     "city": "Portland",
+    "email": "name@example.com",
+    "fax_area_code": "207",
+    "fax_number": "(207) 555-0199",
+    "first_name": "Pat",
+    "last_name": "Example",
+    "middle_name": "Q.",
+    "phone": "(207) 555-0100",
+    "phone_area_code": "207",
+    "ssn": "000-00-0000",
     "state": "ME",
-    "zip": "04101",
-    "phone": "207-555-0101",
-    "email": "jane.doe@example.com",
-    "date_of_birth": "1985-01-15",
-    "signature": "Jane Q. Doe"
+    "street_address": "123 Main St",
+    "zip": "04101"
   },
   "facts": {
-    "marriage_date": "2012-06-30",
-    "separation_date": "2023-11-01",
-    "grounds": "Irreconcilable Differences",
-    "issues": [
-      "Division of Marital Assets",
-      "Child Custody",
-      "Child Support",
-      "Spousal Support"
-    ],
-    "summary": "Sample fact pattern for testing form fills. All names, contacts, and dates here are fictitious placeholders (Doe/Roe, example.com, 555 phone range)."
-  }
+    "contact_area_code": "207",
+    "contact_city": "Portland",
+    "contact_email": "name@example.com",
+    "contact_fax_area_code": "207",
+    "contact_fax_number": "(207) 555-0100",
+    "contact_first_name": "Riley",
+    "contact_last_name": "Example",
+    "contact_mailing_address": "123 Main St, Portland, ME 04101",
+    "contact_middle_initial": "J",
+    "contact_phone": "(207) 555-0100",
+    "contact_state": "ME",
+    "contact_zip": "04101",
+    "representative_firm_name": "Example LLC",
+    "spouse_name": "Example LLC",
+    "spouse_ssn": "000-00-0000"
+  },
+  "preparer": {
+    "address": "123 Main St, Portland, ME 04101",
+    "firm_name": "Example & Example LLP",
+    "name": "Alex P. Example",
+    "phone": "(207) 555-0100",
+    "ssn_or_ptin": "000-00-0000"
+  },
+  "signature": "Riley J. Example",
+  "_note": "All values are fictional placeholders for testing fills (Example names, 000/555 numbers). Replace every value with real case data before any actual use."
 }

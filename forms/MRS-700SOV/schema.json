@@ -1,2139 +1,577 @@
 {
   "form_id": "MRS-700SOV",
-  "schema_version": "0.3",
-  "source_pdf": "pdfs/MRS-700SOV.pdf",
-  "artifact_pdf": "form.pdf",
-  "n_pages": 2,
-  "n_fields": 46,
-  "by_category": {
-    "narrative_derived": 42,
-    "signature": 4
-  },
-  "by_risk_tier": {
-    "green": 42,
-    "orange": 4
-  },
-  "by_data_type": {
-    "boolean": 2,
-    "text": 44
-  },
-  "_skill_metadata_override": {},
   "fields": [
     {
-      "field_id": "clear",
-      "widget_id": "W001",
-      "label": "Clear",
-      "type": "checkbox",
-      "data_type": "boolean",
-      "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "choice",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
-      "field_id": "print",
-      "widget_id": "W002",
-      "label": "Print",
-      "type": "checkbox",
-      "data_type": "boolean",
-      "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "choice",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
-    },
-    {
       "field_id": "estate_of_first_name",
-      "widget_id": "W003",
       "label": "Estate of First Name",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.3,
+        101.8,
+        202.8,
+        119.9
+      ]
     },
     {
       "field_id": "estate_of_m_i",
-      "widget_id": "W004",
       "label": "Estate of M.I",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        223.9,
+        101.7,
+        237.5,
+        120.0
+      ]
     },
     {
       "field_id": "estate_of_last_name",
-      "widget_id": "W005",
       "label": "Estate of Last Name",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        259.1,
+        101.8,
+        562.2,
+        119.9
+      ]
     },
     {
       "field_id": "social_security_number",
-      "widget_id": "W006",
       "label": "Social Security Number",
+      "caption": "Social Security Number (SSN):",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        172.6,
+        137.5,
+        331.6,
+        156.0
+      ]
     },
     {
       "field_id": "date_of_death",
-      "widget_id": "W007",
       "label": "Date of death",
+      "caption": "Social Security Number (SSN): Date of Death:",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "date",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        417.5,
+        137.5,
+        561.8,
+        156.0
+      ]
     },
     {
       "field_id": "residency_status",
-      "widget_id": "W008",
       "label": "Residency Status",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Resident Nonresident State of Residency (abbreviate)",
+      "type": "radio",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        130.0,
+        162.0,
+        143.6,
+        180.2
+      ]
     },
     {
-      "field_id": "residency_status_dup1",
-      "widget_id": "W009",
+      "field_id": "residency_status_2",
       "label": "Residency Status",
-      "type": "text",
-      "data_type": "text",
+      "caption": "Nonresident State of Residency (abbreviate)",
+      "type": "radio",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        194.9,
+        162.0,
+        208.6,
+        180.2
+      ]
     },
     {
       "field_id": "state_of_residency",
-      "widget_id": "W010",
       "label": "State of Residency",
+      "caption": "Residency Status: Resident Nonresident",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        287.9,
+        162.0,
+        309.7,
+        180.2
+      ]
     },
     {
       "field_id": "married_widow_widower_spouse_s_name",
-      "widget_id": "W011",
       "label": "Married/widow/widower, spouse's name",
+      "caption": "If married or widow(er), enter spouse\u2019s name:",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        215.5,
+        186.1,
+        366.6,
+        204.6
+      ]
     },
     {
       "field_id": "spouse_ssn",
-      "widget_id": "W012",
       "label": "Spouse ssn",
+      "caption": "If married or widow(er), enter spouse\u2019s name: Spouse\u2019s SSN:",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        417.6,
+        186.1,
+        562.1,
+        204.6
+      ]
     },
     {
       "field_id": "personal_rep_first_name",
-      "widget_id": "W013",
       "label": "Personal Rep First Name",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.0,
+        221.3,
+        202.8,
+        239.8
+      ]
     },
     {
       "field_id": "personal_rep_m_i",
-      "widget_id": "W014",
       "label": "Personal Rep M.I",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        216.1,
+        221.3,
+        230.5,
+        239.8
+      ]
     },
     {
       "field_id": "personal_rep_last_name",
-      "widget_id": "W015",
       "label": "Personal Rep Last Name",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        244.1,
+        221.3,
+        561.9,
+        239.8
+      ]
     },
     {
       "field_id": "per_rep_ssn",
-      "widget_id": "W016",
       "label": "Per Rep SSN",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.5,
+        257.6,
+        206.4,
+        276.1
+      ]
     },
     {
       "field_id": "per_rep_area_code",
-      "widget_id": "W017",
       "label": "Per Rep Area Code",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        225.1,
+        257.6,
+        264.2,
+        276.1
+      ]
     },
     {
       "field_id": "per_rep_telephone_number",
-      "widget_id": "W018",
       "label": "Per Rep Telephone number",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        277.7,
+        257.6,
+        385.2,
+        276.1
+      ]
     },
     {
       "field_id": "per_rep_fax_area_code",
-      "widget_id": "W019",
       "label": "Per Rep Fax Area Code",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        400.6,
+        257.6,
+        439.7,
+        276.1
+      ]
     },
     {
       "field_id": "per_rep_fax_number",
-      "widget_id": "W020",
       "label": "Per Rep Fax number",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        454.2,
+        257.6,
+        562.2,
+        276.1
+      ]
     },
     {
       "field_id": "personal_rep_street_address",
-      "widget_id": "W021",
       "label": "Personal Rep Street Address",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.3,
+        294.3,
+        562.4,
+        312.8
+      ]
     },
     {
       "field_id": "personal_rep_city_town",
-      "widget_id": "W022",
       "label": "Personal Rep City/Town",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.1,
+        329.6,
+        231.8,
+        348.1
+      ]
     },
     {
       "field_id": "per_rep_state",
-      "widget_id": "W023",
       "label": "Per Rep State",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        244.9,
+        329.6,
+        270.9,
+        348.1
+      ]
     },
     {
       "field_id": "personal_rep_zip_code",
-      "widget_id": "W024",
       "label": "Personal Rep Zip Code",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        287.9,
+        329.6,
+        360.6,
+        348.1
+      ]
     },
     {
       "field_id": "personal_rep_email_address",
-      "widget_id": "W025",
       "label": "Personal Rep Email Address",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        379.2,
+        329.6,
+        561.9,
+        348.1
+      ]
     },
     {
       "field_id": "firm_name",
-      "widget_id": "W026",
       "label": "Firm Name",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.7,
+        425.8,
+        562.2,
+        444.8
+      ]
     },
     {
       "field_id": "contact_person_first_name",
-      "widget_id": "W027",
       "label": "Contact Person First Name",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.1,
+        462.2,
+        203.1,
+        481.1
+      ]
     },
     {
       "field_id": "contact_person_m_i",
-      "widget_id": "W028",
       "label": "Contact Person M.I",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        217.0,
+        462.2,
+        230.3,
+        481.1
+      ]
     },
     {
       "field_id": "contact_person_last_name",
-      "widget_id": "W029",
       "label": "Contact Person Last Name",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        244.9,
+        462.2,
+        562.2,
+        481.1
+      ]
     },
     {
       "field_id": "contact_person_mailing_address",
-      "widget_id": "W030",
       "label": "Contact Person Mailing Address",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.7,
+        498.3,
+        562.0,
+        517.3
+      ]
     },
     {
       "field_id": "contact_person_city_town",
-      "widget_id": "W031",
       "label": "Contact Person City/Town",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.3,
+        533.9,
+        231.6,
+        552.9
+      ]
     },
     {
       "field_id": "contact_person_state",
-      "widget_id": "W032",
       "label": "Contact Person State",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        244.5,
+        533.9,
+        273.7,
+        552.9
+      ]
     },
     {
       "field_id": "contact_zip_code",
-      "widget_id": "W033",
       "label": "Contact Zip Code",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        287.6,
+        533.9,
+        360.2,
+        552.9
+      ]
     },
     {
       "field_id": "contact_area_code",
-      "widget_id": "W034",
       "label": "Contact Area Code",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        387.7,
+        533.9,
+        432.0,
+        552.9
+      ]
     },
     {
       "field_id": "contact_telephone_number",
-      "widget_id": "W035",
       "label": "Contact Telephone number",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        447.3,
+        533.9,
+        561.9,
+        552.9
+      ]
     },
     {
       "field_id": "contact_email_address",
-      "widget_id": "W036",
       "label": "contact email address",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        56.9,
+        569.8,
+        367.1,
+        588.7
+      ]
     },
     {
       "field_id": "contact_fax_area_code",
-      "widget_id": "W037",
       "label": "Contact  Fax Area Code",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        387.5,
+        569.8,
+        431.9,
+        588.7
+      ]
     },
     {
       "field_id": "contact_fax_number",
-      "widget_id": "W038",
       "label": "Contact Fax number",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        447.3,
+        569.8,
+        561.9,
+        588.7
+      ]
     },
     {
       "field_id": "signature_line_of_personal_rep",
-      "widget_id": "W039",
       "label": "signature line of personal rep",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "signature",
-      "subcategory": "signature",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": false,
-        "human_required": true,
-        "source": "wet_ink"
-      },
-      "risk_score": 53,
-      "risk_tier": "orange",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.1,
+        654.2,
+        475.2,
+        673.2
+      ]
     },
     {
       "field_id": "date_of_signature",
-      "widget_id": "W040",
       "label": "Date of signature",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "signature",
-      "subcategory": "signature",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": false,
-        "human_required": true,
-        "source": "wet_ink"
-      },
-      "risk_score": 53,
-      "risk_tier": "orange",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        486.7,
+        654.2,
+        561.9,
+        673.2
+      ]
     },
     {
       "field_id": "signature_of_preparer",
-      "widget_id": "W041",
       "label": "Signature of Preparer",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "signature",
-      "subcategory": "signature",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": false,
-        "human_required": true,
-        "source": "wet_ink"
-      },
-      "risk_score": 53,
-      "risk_tier": "orange",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.3,
+        688.4,
+        334.0,
+        707.4
+      ]
     },
     {
       "field_id": "preparer_ssn_or_ptin",
-      "widget_id": "W042",
       "label": "Preparer SSN or PTIN",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        345.6,
+        688.4,
+        475.1,
+        707.4
+      ]
     },
     {
       "field_id": "date_of_preparer_signature",
-      "widget_id": "W043",
       "label": "Date of Preparer signature",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "signature",
-      "subcategory": "signature",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": false,
-        "human_required": true,
-        "source": "wet_ink"
-      },
-      "risk_score": 53,
-      "risk_tier": "orange",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        486.4,
+        688.4,
+        562.0,
+        707.4
+      ]
     },
     {
       "field_id": "firm_name_or_preparer",
-      "widget_id": "W044",
       "label": "Firm Name or preparer",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        57.3,
+        725.5,
+        212.6,
+        744.5
+      ]
     },
     {
       "field_id": "preparer_address",
-      "widget_id": "W045",
       "label": "Preparer address",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        227.6,
+        725.5,
+        406.5,
+        744.5
+      ]
     },
     {
       "field_id": "preparer_telephone_number",
-      "widget_id": "W046",
       "label": "Preparer telephone number",
+      "caption": "",
       "type": "text",
-      "data_type": "text",
       "page": 0,
-      "rect": null,
-      "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
-      "party": null,
-      "writable_when": null,
-      "required_when": null,
-      "choice_group": null,
-      "choice_value": null,
-      "formula": null,
-      "depends_on": [],
-      "validators": [],
-      "fill_strategy": {
-        "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
-      },
-      "risk_score": 5,
-      "risk_tier": "green",
-      "risk_breakdown": {
-        "category_base": 5,
-        "eval_wrong": 0,
-        "eval_oc": 0,
-        "eval_miscompr": 0
-      },
-      "hand_review": {
-        "reasons": []
-      },
-      "eval_evidence": {
-        "wrong": 0,
-        "overconfident": 0,
-        "underconfident": 0,
-        "misunderstood": 0,
-        "matches": 0,
-        "not_applicable": 0,
-        "patterns_scored": 0
-      }
+      "rect": [
+        439.1,
+        725.5,
+        562.0,
+        744.5
+      ]
     }
   ]
 }
