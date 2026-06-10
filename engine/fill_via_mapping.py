@@ -182,8 +182,8 @@ def fill_via_mapping(form_id: str, facts: dict, out_dir: pathlib.Path,
     # Guard: the on-disk blank must be the revision this mapping was built
     # against (catalog/pdf_manifest.json). A mismatch warns by default; set
     # MCF_VERIFY_BLANK=strict to refuse, =off to skip.
-    verify.guard_blank(form_id, forms_root,
-                       mode=os.environ.get("MCF_VERIFY_BLANK", "warn"))
+    blank_verified = verify.guard_blank(
+        form_id, forms_root, mode=os.environ.get("MCF_VERIFY_BLANK", "warn"))
     # Width-fit overflowing values to their widget's char budget (mirrors the
     # engine's fill_one pass): names initial-collapse, addresses postal-
     # abbreviate, so a long real-world value shrinks instead of clipping.
@@ -214,16 +214,27 @@ def fill_via_mapping(form_id: str, facts: dict, out_dir: pathlib.Path,
     except Exception:  # noqa: BLE001 — never block a fill on the split step
         n_split = 0
     out_pdf = out_dir / f"{form_id}.filled.pdf"
-    fill_form(str(pdf), field_data, str(out_pdf),
-              form_id=form_id, addendum_policy="none")
+    fill_res = fill_form(str(pdf), field_data, str(out_pdf),
+                         form_id=form_id, addendum_policy="none")
     if n_split:  # drop the split working copy; the deliverable is .filled.pdf
         try:
             (out_dir / f"{form_id}.split.pdf").unlink()
         except OSError:
             pass
-    return {"form_id": form_id, "ok": True, "out_pdf": str(out_pdf),
-            "mapped_keys": res["mapped_keys"], "resolved": res["resolved"],
-            "fields_written": len(field_data), "fields_split": n_split}
+    return {
+        "form_id": form_id, "ok": True, "status": res["status"],
+        "out_pdf": str(out_pdf),
+        "mapped_keys": res["mapped_keys"], "resolved": res["resolved"],
+        # canonical keys that resolved to nothing in the case object
+        "unresolved": [list(u) for u in res["unresolved"]],
+        # widgets actually written, counted by the filler (not the request)
+        "fields_written": fill_res["filled_count"],
+        # mapped widget names absent from the PDF — a stale-mapping signal
+        "missing_widgets": fill_res["missing_fields"],
+        "overflowed": fill_res["overflowed"],
+        "blank_verified": blank_verified,
+        "fields_split": n_split,
+    }
 
 
 def main() -> int:

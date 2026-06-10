@@ -180,8 +180,18 @@ def fill_form(
     tree: dict | None = None,
     addendum_policy: str = "none",
     form_id: str | None = None,
-) -> str:
+) -> dict:
     """Fill an AcroForm PDF with field data.
+
+    Returns a result dict:
+        output_path: where the filled PDF was written.
+        filled_count: number of widgets actually written.
+        missing_fields: field_data keys with no matching widget in the
+            PDF — the signature of a stale mapping (the blank was
+            re-issued and widgets were renamed), so callers must surface
+            it rather than treat the fill as complete.
+        overflowed: names of fields whose value didn't fit their
+            widget(s) and was truncated inline.
 
     Args:
         pdf_path: Path to a fillable PDF (from output/).
@@ -378,15 +388,20 @@ def fill_form(
             ", ".join(name for name, _ in overflowed[:5]),
         )
 
-    return str(output_path)
+    return {
+        "output_path": str(output_path),
+        "filled_count": filled_count,
+        "missing_fields": missing_fields,
+        "overflowed": [name for name, _ in overflowed],
+    }
 
 
 def fill_form_from_json(
     pdf_path: str | Path,
     json_path: str | Path,
     output_path: str | Path | None = None,
-) -> str:
-    """Fill a form using data from a JSON file.
+) -> dict:
+    """Fill a form using data from a JSON file; returns the fill_form result.
 
     JSON format: {"field_name": "value", ...}
     """

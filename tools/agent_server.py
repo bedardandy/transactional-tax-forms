@@ -5,6 +5,8 @@ Tools (stdio, FastMCP):
   find_forms(situation, top_k=5)        -> candidate tax forms (lexical router)
   get_form(form_id)                     -> metadata + mapping summary
   fill_form(form_id, case, out_path)    -> write a filled PDF, return {ok, path}
+                                           + fill diagnostics; out_path may be
+                                           a target .pdf filename or a directory
 
 Run:      python3 tools/agent_server.py
 Register: claude mcp add transactional-tax-forms -- python3 tools/agent_server.py
@@ -17,6 +19,7 @@ from __future__ import annotations
 import json
 import pathlib
 import re
+import shutil
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -75,12 +78,27 @@ def _build():
 
     @mcp.tool()
     def fill_form(form_id: str, case: dict, out_path: str) -> dict:
-        """Fill the form from a canonical case object; returns {ok, path}."""
+        """Fill the form from a canonical case object; returns {ok, path} plus
+        fill diagnostics (fields_written, unresolved keys, missing widgets)."""
         try:
-            out_dir = pathlib.Path(out_path).parent or pathlib.Path(".")
+            dest = pathlib.Path(out_path)
+            if dest.suffix.lower() == ".pdf":
+                out_dir = dest.parent  # honor the requested filename
+            else:
+                out_dir, dest = dest, None  # out_path is a directory
             r = fill_via_mapping(form_id, case, out_dir)
-            return {"ok": bool(r.get("ok")), "path": r.get("out_pdf"),
-                    "fields_written": r.get("fields_written"), "error": r.get("error")}
+            path = r.get("out_pdf")
+            if r.get("ok") and dest is not None and path and str(dest) != path:
+                shutil.move(path, dest)
+                path = str(dest)
+            return {"ok": bool(r.get("ok")), "path": path,
+                    "fields_written": r.get("fields_written"),
+                    "unresolved": r.get("unresolved"),
+                    "missing_widgets": r.get("missing_widgets"),
+                    "overflowed": r.get("overflowed"),
+                    "blank_verified": r.get("blank_verified"),
+                    "status": r.get("status"),
+                    "error": r.get("error")}
         except Exception as e:  # noqa: BLE001
             return {"ok": False, "error": f"{type(e).__name__}: {e}"}
 
