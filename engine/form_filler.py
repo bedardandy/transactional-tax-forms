@@ -110,7 +110,7 @@ def _wrap_across_widgets(
     """Greedy word-wrap `value` across widgets of given char capacities
     (top-to-bottom). Returns (per_widget_lines, overflow_remainder).
     Overflow is the remaining text that didn't fit in any widget; the
-    caller decides whether to truncate, route to addendum, or warn.
+    caller decides whether to truncate or warn.
 
     A single word wider than the current widget skips ahead to the first
     widget that can hold it. Words wider than every widget overflow
@@ -241,8 +241,9 @@ def fill_form(
     # consolidated widgets share one /V — setting any one would propagate
     # the same value to all kids. Instead we draw the wrapped text as
     # overlay via page.insert_text() in pass 2.
-    # NOTE: we store page INDEX (not page object) because doc.new_page()
-    # later (addendum) can invalidate earlier page references.
+    # NOTE: we store page INDEX (not page object) because Widget objects
+    # are re-created on every page.widgets() call and page references can
+    # be invalidated by later document mutations.
     multi_groups: dict[str, list[tuple[int, int]]] = {}
     for page_idx, page in enumerate(doc):
         for widget in page.widgets():

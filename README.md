@@ -55,7 +55,8 @@ lifted here; the rest are fetched and inventoried, with mappings in progress.
 > the court library's `parties.<role>` model; the vision-mapped forms above use
 > the tax-native roles (`entity`, `responsible_party`, `decedent`, `executor`,
 > `fiduciary`, `transferor`/`transferee`, `property`). Unifying the two is a
-> roadmap item; until then, read each form's `mapping.json` for its keys.
+> roadmap item; until then, read each form's `mapping.json` for its keys —
+> both shapes are documented in `docs/integrations/README.md`.
 
 ## Getting the blanks
 
@@ -109,6 +110,7 @@ forms/<FORM_ID>/
   schema.json        JSON Schema for the fill data (mapped forms)
   fields.csv         reviewable field inventory (mapped forms)
   SKILL.md / README  per-form guide (mapped forms)
+  examples/          sample_case.json — fictional fact pattern covering the mapping
 catalog/
   source_urls.json   form_id -> official URL + domain grouping
   pdf_manifest.json  per-form sha256 + bytes + pages for fetching/verifying blanks
@@ -124,7 +126,9 @@ tools/
   opus_adjudicate.py  Opus caption-grounded review of the drafts
   infer_labels.py     heuristic widget-caption inventory
   gen_catalog.py      regenerate the catalogs
+  gen_skill.py        regenerate per-form SKILL.md + sample case (mapped forms)
   agent_server.py     MCP server (find_forms / get_form / fill_form)
+docs/integrations/    the canonical fact object (case shape) reference
 .mcp.json             MCP registration; AGENTS.md / CLAUDE.md — agent guide
 ```
 
