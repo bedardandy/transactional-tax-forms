@@ -3,6 +3,15 @@
   "status": "verified",
   "model": "qwen3.6-27b+opus-4-7",
   "note": "Filled from the canonical sample and audited clean by 3x5-sample Qwen-VL cluster consensus + deterministic party-attribution check.",
+  "manual": {
+    "filing_status_single": {
+      "fill": "manual",
+      "kind": "radio_group",
+      "key": "facts.filing_status",
+      "options": ["Single or Head of Household", "Married", "Married, but withholding at higher single rate"],
+      "note": "Line 3 filing-status radio group (printed options: 'Single or Head of Household', 'Married', 'Married, but withholding at higher single rate'; the blank's internal on-state for the third button misspells 'higher' as 'higer'). The engine never writes radio groups: the fill report carries a yellow-light entry with the option suggested from facts.filing_status; select it by hand on the PDF. schema.json's filing_status_single_dup1 / _dup2 fields are the Married and Married-but-withholding buttons of this same group."
+    }
+  },
   "map": {
     "your_first_name": "party.first_name",
     "m_i": "party.middle_name",

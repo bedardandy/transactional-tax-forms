@@ -37,7 +37,10 @@ SS-4 and 706 are cross-listed (an estate also needs an EIN). See
 `maine-court-forms` and lifted here; the rest were mapped in this repo.
 
 - **Mapped & verified (5):** MRS 706ME, 1120ME, 941ME, 900ME, W-4ME —
-  widget-survival confirmed against the current maine.gov blanks.
+  widget-survival confirmed against the current maine.gov blanks. The 706ME
+  residency and marital-status groups and the W-4ME filing-status group are
+  declared `"fill": "manual"` radio groups (same yellow-light treatment as
+  below).
 - **Mapped, machine-verified (2):** MRS 1041ME (the current maine.gov blank
   had drifted from the mapped revision; rebuilt deterministically against the
   current widget tree — 123/125 widgets, with a `field_splits.json` detaching

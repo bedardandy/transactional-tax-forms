@@ -3,6 +3,22 @@
   "status": "verified",
   "model": "qwen3.6-27b+opus-4-7",
   "note": "Filled from the canonical sample and audited clean by 3x5-sample Qwen-VL cluster consensus + deterministic party-attribution check.",
+  "manual": {
+    "decedents_residency": {
+      "fill": "manual",
+      "kind": "radio_group",
+      "key": "facts.decedent_residency_status",
+      "options": ["Resident", "Nonresident"],
+      "note": "Page 1 \"Decedent's Maine Residency Status (check one)\" radio group. The engine never writes radio groups: the fill report carries a yellow-light entry with the option suggested from facts.decedent_residency_status; select it by hand on the PDF. schema.json's decedents_residency_dup1 field is the Nonresident button of this same group."
+    },
+    "marital_status_of_decedent": {
+      "fill": "manual",
+      "kind": "radio_group",
+      "key": "facts.decedent_marital_status",
+      "options": ["Married with surviving spouse", "Widow/Widower", "Single / Divorced"],
+      "note": "Page 3 'Marital Status of Decedent:' radio group. The engine never writes radio groups: the fill report carries a yellow-light entry with the option suggested from facts.decedent_marital_status; select it by hand on the PDF. schema.json's marital_status_of_decedent_dup1 / _dup2 fields are the Widow/Widower and Single / Divorced buttons of this same group."
+    }
+  },
   "map": {
     "decedent_first_name": "parties.plaintiff.first_name",
     "middle_initial_decedent": "parties.plaintiff.middle_name",

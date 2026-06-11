@@ -7,6 +7,15 @@
 
 Provide a canonical fact object (JSON) with the taxpayer parties and the form's `facts.*` line items — see `mapping.json` for the exact keys this form consumes (these inherited Maine Revenue mappings use the court library's `parties.<role>` key shape) and `examples/sample_case.json` for a worked fictional example. The field table below lists every fillable widget; `mapping.json` routes each canonical key to a `field_id`.
 
+## Manual selections (radio groups)
+
+The engine **never writes radio groups** (soft lock). The fill result carries a yellow-light `radio_groups` entry per group below, with the option suggested from the case key — make the selection by hand on the output PDF before use.
+
+| group | case key | options |
+|---|---|---|
+| `decedents_residency` | `facts.decedent_residency_status` | Resident / Nonresident |
+| `marital_status_of_decedent` | `facts.decedent_marital_status` | `Married with surviving spouse` / `Widow/Widower` / `Single / Divorced` |
+
 ## Computed lines (printed arithmetic)
 
 This form prints arithmetic instructions, declared in `computations.json` and evaluated by the shared engine. Omit a computed key (with its inputs supplied) and the engine fills it from the printed formula (reported under `computed_fields`); supply it and your value is written **as-is** — a contradiction only adds a `COMPUTATION_MISMATCH` warning, never a block or an override.
@@ -58,8 +67,8 @@ This form prints arithmetic instructions, declared in `computations.json` and ev
 | `estate_rep_email` | text | 0 | Estate Rep Email |
 | `estate_fax_area_code` | text | 0 | Estate Fax Area Code |
 | `estate_fax_telephone_number` | text | 0 | Estate Fax Telephone number |
-| `decedents_residency` | text | 0 | Decedents Residency |
-| `decedents_residency_dup1` | text | 0 | Decedents Residency |
+| `decedents_residency` | radio | 0 | Decedents Residency |
+| `decedents_residency_dup1` | radio | 0 | Decedents Residency |
 | `decedents_ssn_pg_2` | text | 1 | Decedents SSN pg 2 |
 | `federal_taxable_estate` | text | 1 | Federal Taxable Estate |
 | `maine_qualified_terminable_interest_property` | text | 1 | Maine qualified terminable interest property |
@@ -78,9 +87,9 @@ This form prints arithmetic instructions, declared in `computations.json` and ev
 | `amount_due` | text | 1 | Amount due |
 | `refund_due` | text | 1 | Refund due |
 | `decedents_ssn_pg_3` | text | 2 | Decedents SSN  Pg 3 |
-| `marital_status_of_decedent` | text | 2 | Marital Status of Decedent |
-| `marital_status_of_decedent_dup1` | text | 2 | Marital Status of Decedent |
-| `marital_status_of_decedent_dup2` | text | 2 | Marital Status of Decedent |
+| `marital_status_of_decedent` | radio | 2 | Marital Status of Decedent |
+| `marital_status_of_decedent_dup1` | radio | 2 | Marital Status of Decedent |
+| `marital_status_of_decedent_dup2` | radio | 2 | Marital Status of Decedent |
 | `spouse_ssn` | text | 2 | Spouse SSN |
 | `signature_of_representative` | text | 2 | Signature of Representative |
 | `rep_month` | text | 2 | Rep Month |

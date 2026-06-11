@@ -7,6 +7,14 @@
 
 Provide a canonical fact object (JSON) with the taxpayer parties and the form's `facts.*` line items — see `mapping.json` for the exact keys this form consumes (these inherited Maine Revenue mappings use the court library's `parties.<role>` key shape) and `examples/sample_case.json` for a worked fictional example. The field table below lists every fillable widget; `mapping.json` routes each canonical key to a `field_id`.
 
+## Manual selections (radio groups)
+
+The engine **never writes radio groups** (soft lock). The fill result carries a yellow-light `radio_groups` entry per group below, with the option suggested from the case key — make the selection by hand on the output PDF before use.
+
+| group | case key | options |
+|---|---|---|
+| `filing_status_single` | `facts.filing_status` | `Single or Head of Household` / `Married` / `Married, but withholding at higher single rate` |
+
 ## Computed lines (printed arithmetic)
 
 This form prints arithmetic instructions, declared in `computations.json` and evaluated by the shared engine. Omit a computed key (with its inputs supplied) and the engine fills it from the printed formula (reported under `computed_fields`); supply it and your value is written **as-is** — a contradiction only adds a `COMPUTATION_MISMATCH` warning, never a block or an override.
@@ -29,9 +37,9 @@ This form prints arithmetic instructions, declared in `computations.json` and ev
 | `city_or_town` | text | 0 | City or town |
 | `state` | text | 0 | State |
 | `zip_code` | text | 0 | Zip code |
-| `filing_status_single` | text | 0 | Filing status--single |
-| `filing_status_single_dup1` | text | 0 | Filing status--single |
-| `filing_status_single_dup2` | text | 0 | Filing status--single |
+| `filing_status_single` | radio | 0 | Filing status--single |
+| `filing_status_single_dup1` | radio | 0 | Filing status--single |
+| `filing_status_single_dup2` | radio | 0 | Filing status--single |
 | `total_number_of_allowances` | text | 0 | Total number of allowances |
 | `additional_amount` | text | 0 | Additional amount |
 | `you_claimed_exempt` | text | 0 | You claimed exempt |

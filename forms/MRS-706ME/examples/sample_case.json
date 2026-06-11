@@ -32,6 +32,8 @@
   "facts": {
     "date_of_death": "2025-01-15",
     "decedent_ssn": "000-00-0001",
+    "decedent_residency_status": "resident",
+    "decedent_marital_status": "married with surviving spouse",
     "spouse_ssn": "000-00-0002",
     "federal_taxable_estate": "8500000",
     "maine_qualified_terminable_interest_property": "0",
