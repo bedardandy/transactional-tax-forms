@@ -1,7 +1,7 @@
 # IRS-706 — United States Estate (and GST) Tax Return
 
 **Agency:** IRS  |  **Domain:** probate  |  **Status:** `opus-adjudicated`
-**Pages:** 5  |  **Fillable widgets:** 316  |  **Mapped:** 146 fields / 101 keys
+**Pages:** 5  |  **Fillable widgets:** 316  |  **Mapped:** 146 fields / 100 keys
 
 > Not tax or legal advice. The fill output is a draft; verify every value against the current official form before filing.
 
@@ -118,8 +118,7 @@ This form prints arithmetic instructions, declared in `computations.json` and ev
 | `facts.taxable_estate` | . . . . . . . . . 3c |
 | `facts.tentative_tax` | . . . . . . . . . 6 |
 | `facts.tentative_taxable_estate` | . . . . . . . . . 3a |
-| `facts.tentative_total_allowable_deductions` | on Part II, line 2 . . . . 24 |
-| `facts.total_allowable_deductions` | . . . . . . . . . 2 |
+| `facts.tentative_total_allowable_deductions` | . . . . . . . . . 2 (+1 more field) |
 | `facts.total_amount_of_property_interests_for_marital_deduction` | deduction is being claimed. Schedule M, line 14 . 21 |
 | `facts.total_annuities` | . . . . . . . . . 9 |
 | `facts.total_benefits_received` | . . . . . . . . . 5d |
