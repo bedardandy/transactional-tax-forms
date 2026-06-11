@@ -2,6 +2,7 @@
   "form_id": "MRS-900ME",
   "status": "verified",
   "model": "qwen3.6-27b+opus-4-7",
+  "built_against_sha256": "62a4f72b90de633e73f94be90fe88ee7342f7fdd29649d28e37cab2d06b19f56",
   "note": "Filled from the canonical sample and audited clean by 3x5-sample Qwen-VL cluster consensus + deterministic party-attribution check.",
   "map": {
     "withholding_account_number": "facts.withholding_account_number",

@@ -2,6 +2,7 @@
   "form_id": "IRS-2553",
   "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
+  "built_against_sha256": "b462579a45e4ce3877019b02ee159b11d5abee6e71a5a8c9d9271daa7ec25b66",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
     "topmostsubform_0_page1_0_nameaddress_0_f1_01_0": "entity.legal_name",

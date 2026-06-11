@@ -46,8 +46,9 @@ SS-4 and 706 are cross-listed (an estate also needs an EIN). See
   current widget tree — 123/125 widgets, with a `field_splits.json` detaching
   its shared area-code field) and MRS 700-SOV (was an empty recipe pointer;
   direct-mapped from its descriptive widget names — 42/44 widgets). Both
-  record `built_against_sha256`, fill end-to-end with every sample value
-  confirmed on reopen. Their radio groups (1041ME third-party designee
+  fill end-to-end with every sample value confirmed on reopen (every fillable
+  mapping now records `built_against_sha256` — see
+  [Staying current](#staying-current--detecting-a-revised-form)). Their radio groups (1041ME third-party designee
   Yes/No, 700-SOV Resident/Nonresident) are declared `"fill": "manual"` in
   `mapping.json`: the engine never writes radio groups, and the fill report
   carries a yellow-light `radio_groups` entry with the option suggested from
@@ -116,6 +117,13 @@ blank against the manifest — `TTF_VERIFY_BLANK=warn` (default), `strict`, or
 `off` (`MCF_VERIFY_BLANK` is honored as a fallback) — so a re-issued blank
 can't be filled unnoticed.
 
+Every fillable `mapping.json` also records `built_against_sha256` — the
+manifest revision its widget references were last verified against
+(`tools/verify_mapping_fields.py`, which re-checks every mapped field against
+the pinned blank's AcroForm tree before stamping). The engine refuses to fill
+when the manifest moves off that revision; a mapping that fails verification
+stays unstamped and goes `remap-pending` instead.
+
 ## Quickstart — fill a form
 
 ```bash
@@ -154,6 +162,7 @@ tools/
   fetch_pdfs.py       download verified blanks
   build_manifest.py   fetch + hash + dump widget inventory
   check_upstream.py   re-probe official URLs; flag revised forms
+  verify_mapping_fields.py  re-verify mapped fields vs the pinned blank; stamp built_against_sha256
   vision_map.py       Qwen-VL draft mapping from the rendered form
   opus_adjudicate.py  Opus caption-grounded review of the drafts
   infer_labels.py     heuristic widget-caption inventory

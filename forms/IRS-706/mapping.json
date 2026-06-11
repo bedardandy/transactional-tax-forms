@@ -2,6 +2,7 @@
   "form_id": "IRS-706",
   "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
+  "built_against_sha256": "7cd9b5370e1eb29f89916a00fe4fd762b13f3244926a4d1d0818385e1415885d",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production. Part 2 line 1 (f1_33) is printed 'Total gross estate less exclusion from Part V, item 13', so it carries facts.total_gross_estate_less_exclusion (Part 5 item 13: 'Total gross estate less exclusion. Subtract item 12 from item 11. Enter here and on Part II, line 1'), not facts.total_gross_estate \u2014 the two diverge whenever the item 12 conservation-easement exclusion is nonzero. facts.total_gross_estate stays only on Part 5 item 11 ('Total gross estate. Add items 1 through 10'). The analogous Part 2 line 2 carry ('Tentative total allowable deductions from Part V, item 24') still uses its own key facts.total_allowable_deductions, distinct from item 24's facts.tentative_total_allowable_deductions.",
   "map": {
     "topmostsubform_0_page1_0_f1_1_0": "decedent.name",

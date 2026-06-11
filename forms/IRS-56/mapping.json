@@ -2,6 +2,7 @@
   "form_id": "IRS-56",
   "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
+  "built_against_sha256": "e5d5258289c677a091527e492491daf9d412149994dde10ea747152f001ae9d8",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
     "topmostsubform_0_page1_0_f1_01_0": "decedent.name",

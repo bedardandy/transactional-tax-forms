@@ -2,6 +2,7 @@
   "form_id": "IRS-1041",
   "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
+  "built_against_sha256": "95540fbdb580102735b89866554bb0b556d37f3e6c8781c677c8398db7908c10",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
     "topmostsubform_0_page1_0_datenameaddress_readorder_0_f1_1_0": "facts.fiscal_year_beginning",

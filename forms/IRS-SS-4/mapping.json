@@ -2,6 +2,7 @@
   "form_id": "IRS-SS-4",
   "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
+  "built_against_sha256": "23d295529950b05979596cf58d559db6c433a4ec852407b1820265c117cb3ca2",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
     "topmostsubform_0_page1_0_pgheader_0_f1_1_0": "entity.ein",

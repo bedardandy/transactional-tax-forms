@@ -2,6 +2,7 @@
   "form_id": "ME-RETTD",
   "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
+  "built_against_sha256": "bf4b299bc203475985a1a250ede1f4c1330aa0e1347c6faceb5351c8e18c99f8",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
     "text_field_7": "property.county",

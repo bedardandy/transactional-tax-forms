@@ -2,6 +2,7 @@
   "form_id": "MRS-941ME",
   "status": "verified",
   "model": "qwen3.6-27b+opus-4-7",
+  "built_against_sha256": "7861d454bc3a1d0dc8cf920532be4965d6fbb93e23dd7ca261cec01bc2db90e4",
   "note": "Filled from the canonical sample and audited clean by 3x5-sample Qwen-VL cluster consensus + deterministic party-attribution check.",
   "map": {
     "due_on_or_before": "facts.due_date",

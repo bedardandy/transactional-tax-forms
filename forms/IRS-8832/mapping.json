@@ -2,6 +2,7 @@
   "form_id": "IRS-8832",
   "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
+  "built_against_sha256": "bc7f2715e631b5bc3fc60eedaace27f68bd71cfc9236589f1e08f600dc37507f",
   "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
   "map": {
     "topmostsubform_0_page1_0_p1_t1_0": "entity.legal_name",

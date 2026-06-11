@@ -2,13 +2,18 @@
   "form_id": "MRS-W4ME",
   "status": "verified",
   "model": "qwen3.6-27b+opus-4-7",
+  "built_against_sha256": "4033ea2fcc3620cba73907e4a9d5a39dcdf8bbdb4255d30c596bf051c4270e8a",
   "note": "Filled from the canonical sample and audited clean by 3x5-sample Qwen-VL cluster consensus + deterministic party-attribution check.",
   "manual": {
     "filing_status_single": {
       "fill": "manual",
       "kind": "radio_group",
       "key": "facts.filing_status",
-      "options": ["Single or Head of Household", "Married", "Married, but withholding at higher single rate"],
+      "options": [
+        "Single or Head of Household",
+        "Married",
+        "Married, but withholding at higher single rate"
+      ],
       "note": "Line 3 filing-status radio group (printed options: 'Single or Head of Household', 'Married', 'Married, but withholding at higher single rate'; the blank's internal on-state for the third button misspells 'higher' as 'higer'). The engine never writes radio groups: the fill report carries a yellow-light entry with the option suggested from facts.filing_status; select it by hand on the PDF. schema.json's filing_status_single_dup1 / _dup2 fields are the Married and Married-but-withholding buttons of this same group."
     }
   },

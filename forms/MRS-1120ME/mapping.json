@@ -2,6 +2,7 @@
   "form_id": "MRS-1120ME",
   "status": "verified",
   "model": "qwen3.6-27b+opus-4-7",
+  "built_against_sha256": "6ff66647a90940fec3da549b60bc08879c24b3087b20422ff20e823dfe6dae7f",
   "note": "Filled from the canonical sample and audited clean by 3x5-sample Qwen-VL cluster consensus + deterministic party-attribution check.",
   "map": {
     "tax_year_begin": "facts.tax_year_begin",
