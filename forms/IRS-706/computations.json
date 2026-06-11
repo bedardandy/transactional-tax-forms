@@ -76,11 +76,11 @@
     "facts.tentative_taxable_estate": {
       "op": "difference",
       "inputs": [
-        "facts.total_gross_estate",
+        "facts.total_gross_estate_less_exclusion",
         "facts.total_allowable_deductions"
       ],
       "formula_text": "Tentative taxable estate. Subtract line 2 from line 1",
-      "note": "inputs follow this repo's mapping: the Part 2 line 1 widget is mapped facts.total_gross_estate, line 2 facts.total_allowable_deductions"
+      "note": "line 1 is printed 'Total gross estate less exclusion from Part V, item 13' and is mapped facts.total_gross_estate_less_exclusion; line 2 is mapped facts.total_allowable_deductions"
     },
     "facts.taxable_estate": {
       "op": "difference",

@@ -131,8 +131,8 @@ This form prints arithmetic instructions, declared in `computations.json` and ev
 | `facts.total_from_attachment` | . . . . . . . . . 5b |
 | `facts.total_funeral_expenses_and_administration_expenses` | administering property subject to claims. Schedule J, line 12 14 |
 | `facts.total_gift_tax_paid_or_payable` | . . . . . . . . . 7 |
-| `facts.total_gross_estate` | . . . . . . . . . 1 (+1 more field) |
-| `facts.total_gross_estate_less_exclusion` | . . . . . . . . . 13 |
+| `facts.total_gross_estate` | . . . . . . . . . 11 |
+| `facts.total_gross_estate_less_exclusion` | . . . . . . . . . 1 (+1 more field) |
 | `facts.total_insurance_on_decedents_life` | life. Schedule D, line 4. Attach Form(s) 712 . 4 |
 | `facts.total_jointly_owned_property` | . . . . . . . . . 5 |
 | `facts.total_mortgage_notes_and_cash` | 4 . . . . . . . . 3 |
