@@ -3,7 +3,7 @@
   "status": "verified",
   "model": "qwen3.6-27b+opus-4-7",
   "built_against_sha256": "7861d454bc3a1d0dc8cf920532be4965d6fbb93e23dd7ca261cec01bc2db90e4",
-  "note": "Filled from the canonical sample and audited clean by 3x5-sample Qwen-VL cluster consensus + deterministic party-attribution check.",
+  "note": "Filled from the canonical sample and audited clean by 3x5-sample Qwen-VL cluster consensus + deterministic party-attribution check. Computations sweep (2026-06): no computations.json \u2014 every printed-arithmetic candidate is refused rather than approximated. Line 2c is printed 'Line 2a minus line 2b', but every amount on this form is split across separate dollars and cents widgets (facts.line_2c + facts.line_2c_cents), so a whole-number difference over the dollars keys is wrong whenever the cents borrow. Line 2a's own caption is conditional: 'Payments made (semiweekly payments from Schedule 1, line 5 plus, if amended, any payments made with, or after filing, the original return)'. Schedule 1 line 5, 'Total payment amount (Enter on Form 941ME, line 2a)', names no addends (the Subtotal A/B/C boxes carry no printed add instruction). Schedule 2 line 6 'Total of column C' and line 7 'Total of column D' are open column totals over the 19 per-payee rows a-s, sparse by design; the engine skips any computation with a missing input, and treating blank payee rows as zeros is nowhere printed on the form.",
   "map": {
     "due_on_or_before": "facts.due_date",
     "quarter": "facts.quarter_number",

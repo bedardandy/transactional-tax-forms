@@ -3,7 +3,7 @@
   "status": "opus-adjudicated",
   "model": "qwen3.6-27b",
   "built_against_sha256": "bf4b299bc203475985a1a250ede1f4c1330aa0e1347c6faceb5351c8e18c99f8",
-  "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production.",
+  "note": "Vision-grounded draft mapping (tools/vision_map.py); review before production. Computations sweep (2026-06): no computations.json \u2014 the only printed arithmetic is line 6b, whose instruction reads 'Adjusted assessed value is the most recent municipal assessed value of the property divided by the certified ratio of the municipality where the property is located for that property tax year': a division by an off-form municipal ratio, with neither operand mapped on the blank, so it is refused. No transfer-tax rate is printed on the form and none is encoded.",
   "map": {
     "text_field_7": "property.county",
     "text_field_5": "property.town",
