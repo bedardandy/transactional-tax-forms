@@ -86,7 +86,23 @@ def _opus(system: str, user: str, timeout: float = 1500.0) -> str:
         input=prompt, capture_output=True, text=True, env=env, timeout=timeout)
     if p.returncode != 0:
         raise RuntimeError(f"claude CLI failed: {p.stderr[:200]}")
-    return json.loads(p.stdout)["result"]
+    try:
+        obj = json.loads(p.stdout)
+    except json.JSONDecodeError as e:
+        raise RuntimeError(
+            f"claude CLI non-JSON output: {p.stdout[:200]}") from e
+    # The CLI can report an error inside a rc=0 JSON envelope (is_error/subtype);
+    # mirror the sibling corp repo's claude_cli.py and fail loudly rather than
+    # silently adjudicating on an error payload (which would leave the draft
+    # fillable). KeyError on a missing "result" is likewise a failure, not None.
+    if obj.get("is_error"):
+        raise RuntimeError(
+            f"claude CLI error (subtype={obj.get('subtype')!r}): "
+            f"{str(obj.get('result'))[:200]}")
+    if "result" not in obj:
+        raise RuntimeError(
+            f"claude CLI returned no 'result' field: {p.stdout[:200]}")
+    return obj["result"]
 
 
 def _parse_json(txt: str) -> dict:

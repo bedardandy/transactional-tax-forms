@@ -126,6 +126,19 @@ the pinned blank's AcroForm tree before stamping). The engine refuses to fill
 when the manifest moves off that revision; a mapping that fails verification
 stays unstamped and goes `remap-pending` instead.
 
+**Draft (`vision-mapped`) tier.** A `vision-mapped` mapping is an *unreviewed*
+vision-LLM draft ("review before production") that has not yet been through
+`opus-adjudicated`/`verified`. Because these maps back real IRS/MRS PDFs, the
+engine **refuses `vision-mapped` by default** — it is not in the reviewed
+`FILLABLE_STATUSES`. Filling a draft is an explicit opt-in, which warns loudly
+and must be human-reviewed before any real filing:
+
+```bash
+python3 -m engine.fill_via_mapping --form IRS-SS-4 --allow-draft ...
+# or:  TTF_ALLOW_DRAFT=1 python3 -m engine.fill_via_mapping --form IRS-SS-4 ...
+# or, in code:  fill_via_mapping(form_id, facts, out_dir, allow_draft=True)
+```
+
 ## Quickstart — fill a form
 
 ```bash
