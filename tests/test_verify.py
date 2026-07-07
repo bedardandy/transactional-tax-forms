@@ -114,14 +114,19 @@ class MappingBuiltAgainstStamps(unittest.TestCase):
     are exempt: the engine refuses them at fill time anyway."""
 
     def test_every_fillable_mapping_is_stamped_with_manifest_sha(self):
-        from engine.fill_via_mapping import FILLABLE_STATUSES
+        # Include the draft tier: the stamping invariant applies to any map
+        # the engine can fill (drafts fill under allow_draft), so they must be
+        # pinned too. Reviewed-only FILLABLE_STATUSES would skip today's 14
+        # vision-mapped maps entirely.
+        from engine.fill_via_mapping import DRAFT_STATUSES, FILLABLE_STATUSES
+        fillable = FILLABLE_STATUSES | DRAFT_STATUSES
         manifest = json.loads(
             (ROOT / "catalog" / "pdf_manifest.json").read_text())["forms"]
         checked = 0
         for mp in sorted((ROOT / "forms").glob("*/mapping.json")):
             fid = mp.parent.name
             mapping = json.loads(mp.read_text())
-            if (mapping.get("status") not in FILLABLE_STATUSES
+            if (mapping.get("status") not in fillable
                     or not mapping.get("map")):
                 continue  # pending/pointer: unstamped AND unfillable
             checked += 1

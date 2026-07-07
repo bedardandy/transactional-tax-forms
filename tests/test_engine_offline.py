@@ -8,6 +8,7 @@ import json
 import sys
 import tempfile
 import unittest
+import warnings
 from pathlib import Path
 
 import fitz
@@ -232,6 +233,90 @@ class BuiltAgainstSha(unittest.TestCase):
                                   forms_root=root)
         self.assertFalse(res.get("skipped"))
         self.assertEqual(res["resolved"], 1)
+
+
+class VisionMappedDraftGate(unittest.TestCase):
+    """The unreviewed 'vision-mapped' DRAFT tier is refused by default and
+    only fills under an explicit opt-in (allow_draft / TTF_ALLOW_DRAFT)."""
+
+    FID = "MRS-1041ME"  # any form with a real catalog/pdf_manifest.json entry
+
+    def _root_with_vision_draft(self, td: Path) -> Path:
+        manifest = json.loads(
+            (ROOT / "catalog" / "pdf_manifest.json").read_text())
+        pinned = manifest["forms"][self.FID]["sha256"]
+        fdir = td / self.FID
+        fdir.mkdir(parents=True)
+        (fdir / "mapping.json").write_text(json.dumps({
+            "form_id": self.FID, "status": "vision-mapped",
+            "built_against_sha256": pinned,
+            "map": {"some_field": "facts.amount"}}))
+        (fdir / "schema.json").write_text(json.dumps({
+            "form_id": self.FID,
+            "fields": [{"field_id": "some_field", "label": "Some Field",
+                        "type": "text", "page": 0, "rect": [0, 0, 100, 12]}]}))
+        return td
+
+    def test_vision_mapped_not_in_default_fillable_statuses(self):
+        from engine.fill_via_mapping import (DRAFT_STATUSES,
+                                             FILLABLE_STATUSES)
+        self.assertNotIn("vision-mapped", FILLABLE_STATUSES)
+        self.assertIn("vision-mapped", DRAFT_STATUSES)
+
+    def test_draft_refused_by_default(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = self._root_with_vision_draft(Path(td))
+            res = resolve_mapping(self.FID, {"facts": {"amount": 1}},
+                                  forms_root=root)
+        self.assertTrue(res.get("skipped"))
+        self.assertIn("not fillable", res["reason"])
+        self.assertNotIn("resolved", res)  # nothing was resolved
+
+    def test_draft_fills_with_allow_draft_arg_and_warns(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = self._root_with_vision_draft(Path(td))
+            with warnings.catch_warnings(record=True) as caught:
+                warnings.simplefilter("always")
+                res = resolve_mapping(self.FID, {"facts": {"amount": 1}},
+                                      forms_root=root, allow_draft=True)
+        self.assertFalse(res.get("skipped"))
+        self.assertEqual(res["resolved"], 1)
+        self.assertTrue(any("allow_draft" in str(w.message)
+                            for w in caught),
+                        "allow_draft must emit a loud warning")
+
+    def test_draft_fills_via_env_var(self):
+        import os
+        with tempfile.TemporaryDirectory() as td:
+            root = self._root_with_vision_draft(Path(td))
+            old = os.environ.get("TTF_ALLOW_DRAFT")
+            os.environ["TTF_ALLOW_DRAFT"] = "1"
+            try:
+                res = resolve_mapping(self.FID, {"facts": {"amount": 1}},
+                                      forms_root=root)  # allow_draft=None
+            finally:
+                if old is None:
+                    os.environ.pop("TTF_ALLOW_DRAFT", None)
+                else:
+                    os.environ["TTF_ALLOW_DRAFT"] = old
+        self.assertFalse(res.get("skipped"))
+        self.assertEqual(res["resolved"], 1)
+
+    def test_env_falsey_values_do_not_enable(self):
+        import os
+        with tempfile.TemporaryDirectory() as td:
+            root = self._root_with_vision_draft(Path(td))
+            old = os.environ.get("TTF_ALLOW_DRAFT")
+            os.environ["TTF_ALLOW_DRAFT"] = "0"
+            try:
+                res = resolve_mapping(self.FID, {"facts": {"amount": 1}},
+                                      forms_root=root)
+            finally:
+                if old is None:
+                    os.environ.pop("TTF_ALLOW_DRAFT", None)
+                else:
+                    os.environ["TTF_ALLOW_DRAFT"] = old
+        self.assertTrue(res.get("skipped"))
 
 
 if __name__ == "__main__":
